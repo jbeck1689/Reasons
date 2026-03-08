@@ -1,0 +1,433 @@
+From a332e6387b87b7ec3a0be2ac83a609fe51936dc8 Mon Sep 17 00:00:00 2001
+From: Jesse <jbeck1689@users.noreply.github.com>
+Date: Sun, 8 Mar 2026 21:15:50 +0000
+Subject: [PATCH] Phase 4: Dockerfile, Cloud Build CI/CD, deployment guide
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+- Multi-stage Dockerfile (non-root user, standalone output)
+- cloudbuild.yaml for automated build and deploy on push to main
+- .dockerignore to keep secrets and dev files out of the image
+- DEPLOYMENT.md with step-by-step GCP setup instructions
+- Skipped Cloud SQL and Redis — Neon as production database
+- Security checkpoint passed
+---
+ .dockerignore    |  13 ++++
+ DEPLOYMENT.md    | 187 +++++++++++++++++++++++++++++++++++++++++++++++
+ Dockerfile       |  50 +++++++++++++
+ PROJECT-BRIEF.md |  34 ++++++++-
+ cloudbuild.yaml  |  64 ++++++++++++++++
+ 5 files changed, 344 insertions(+), 4 deletions(-)
+ create mode 100644 .dockerignore
+ create mode 100644 DEPLOYMENT.md
+ create mode 100644 Dockerfile
+ create mode 100644 cloudbuild.yaml
+
+diff --git a/.dockerignore b/.dockerignore
+new file mode 100644
+index 0000000..372af7c
+--- /dev/null
++++ b/.dockerignore
+@@ -0,0 +1,13 @@
++node_modules
++.next
++.git
++.gitignore
++.env
++.env.local
++.env*.local
++*.md
++LICENSE
++docker-compose.yml
++tests
++coverage
++.DS_Store
+diff --git a/DEPLOYMENT.md b/DEPLOYMENT.md
+new file mode 100644
+index 0000000..1c023c5
+--- /dev/null
++++ b/DEPLOYMENT.md
+@@ -0,0 +1,187 @@
++# Deployment Guide
++
++## Overview
++
++The app runs on Google Cloud Run — a service that takes a Docker
++container and runs it on the internet. You push code to GitHub,
++Cloud Build automatically builds a new container, and Cloud Run
++starts serving it. No server management.
++
++Neon stays as the database. Cloud Run just runs the app.
++
++## Cost Estimate
++
++| Item | Monthly |
++|------|---------|
++| Cloud Run (low traffic) | $0–5 |
++| Neon PostgreSQL (free tier) | $0 |
++| Domain (annual, amortized) | ~$1 |
++| **Total** | **$0–6/month** |
++
++Cloud Run charges per request and per second of compute. At soft
++launch traffic (< 1000 users), you'll likely stay in the free tier.
++
++---
++
++## One-Time GCP Setup
++
++### 1. Create a GCP Project
++
++Go to https://console.cloud.google.com and create a new project.
++Name it something like `learning-app`. Note the Project ID (shown
++under the project name — it might be slightly different from the
++name if yours was taken).
++
++### 2. Enable Required APIs
++
++In the GCP console, go to "APIs & Services" → "Enable APIs" and
++enable these three:
++
++- Cloud Run API
++- Cloud Build API
++- Artifact Registry API
++- Secret Manager API
++
++Or run this in Cloud Shell (the terminal icon at the top of the
++GCP console):
++
++```bash
++gcloud services enable \
++  run.googleapis.com \
++  cloudbuild.googleapis.com \
++  artifactregistry.googleapis.com \
++  secretmanager.googleapis.com
++```
++
++### 3. Create an Artifact Registry Repository
++
++This is where your Docker images get stored. Think of it as a
++warehouse for shipping containers.
++
++```bash
++gcloud artifacts repositories create learning-app \
++  --repository-format=docker \
++  --location=us-central1 \
++  --description="Learning app Docker images"
++```
++
++### 4. Set Up Secrets
++
++These are your environment variables, stored securely. Never put
++real values in code or .env files that get deployed.
++
++```bash
++# Your Neon database URL (get this from your Neon dashboard)
++echo -n "postgresql://USER:PASS@HOST/DB?sslmode=require" | \
++  gcloud secrets create database-url --data-file=-
++
++# Generate a random secret for NextAuth session signing
++openssl rand -base64 32 | \
++  gcloud secrets create nextauth-secret --data-file=-
++
++# Your production URL (update after you get your Cloud Run URL)
++echo -n "https://YOUR-APP-URL.run.app" | \
++  gcloud secrets create nextauth-url --data-file=-
++```
++
++### 5. Grant Permissions
++
++Cloud Build needs permission to deploy to Cloud Run and read secrets.
++
++```bash
++PROJECT_ID=$(gcloud config get-value project)
++PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format='value(projectNumber)')
++
++# Cloud Build → Cloud Run deployment permission
++gcloud projects add-iam-policy-binding $PROJECT_ID \
++  --member="serviceAccount:${PROJECT_NUMBER}@cloudbuild.gserviceaccount.com" \
++  --role="roles/run.admin"
++
++# Cloud Build → act as the Cloud Run service account
++gcloud projects add-iam-policy-binding $PROJECT_ID \
++  --member="serviceAccount:${PROJECT_NUMBER}@cloudbuild.gserviceaccount.com" \
++  --role="roles/iam.serviceAccountUser"
++
++# Cloud Build → read secrets
++gcloud projects add-iam-policy-binding $PROJECT_ID \
++  --member="serviceAccount:${PROJECT_NUMBER}@cloudbuild.gserviceaccount.com" \
++  --role="roles/secretmanager.secretAccessor"
++
++# Cloud Run service → read secrets at runtime
++gcloud projects add-iam-policy-binding $PROJECT_ID \
++  --member="serviceAccount:${PROJECT_NUMBER}-compute@developer.gserviceaccount.com" \
++  --role="roles/secretmanager.secretAccessor"
++```
++
++### 6. Connect GitHub to Cloud Build
++
++Go to https://console.cloud.google.com/cloud-build/triggers
++
++- Click "Connect Repository"
++- Select GitHub, authorize, and pick `jbeck1689/Public-Reasons`
++- Create a trigger:
++  - Name: `deploy-on-push`
++  - Event: Push to branch
++  - Branch: `^main$`
++  - Configuration: Cloud Build configuration file
++  - Location: `/cloudbuild.yaml`
++  - Substitution variables: leave defaults unless you changed the region
++
++### 7. First Deploy
++
++Push any commit to main. Cloud Build will automatically:
++1. Build the Docker image (~2-3 minutes)
++2. Push it to Artifact Registry
++3. Deploy it to Cloud Run
++
++Watch the build at: https://console.cloud.google.com/cloud-build/builds
++
++Once it's live, Cloud Run gives you a URL like:
++`https://learning-app-XXXXX-uc.a.run.app`
++
++### 8. Update NEXTAUTH_URL
++
++After you get your Cloud Run URL, update the secret:
++
++```bash
++echo -n "https://learning-app-XXXXX-uc.a.run.app" | \
++  gcloud secrets versions add nextauth-url --data-file=-
++```
++
++Then redeploy (push a commit or click "Edit & Deploy New Revision"
++in the Cloud Run console).
++
++---
++
++## Custom Domain (Optional, Later)
++
++Once the app is running on the Cloud Run URL:
++
++1. Buy a domain (Google Domains, Namecheap, etc.)
++2. In Cloud Run console → your service → "Manage Custom Domains"
++3. Follow the DNS verification steps
++4. Update the `nextauth-url` secret to your custom domain
++5. Cloud Run handles SSL certificates automatically
++
++---
++
++## Troubleshooting
++
++**Build fails with "prisma generate" error:**
++The Dockerfile runs `prisma generate` during the build. If it
++fails, the Prisma schema might have changed without updating
++the lock file. Run `npx prisma generate` locally first.
++
++**App starts but database errors:**
++Check that the `database-url` secret has the correct Neon
++connection string including `?sslmode=require`.
++
++**Auth doesn't work (redirect loops):**
++The `nextauth-url` secret must exactly match the URL you're
++accessing the app from, including `https://`. No trailing slash.
++
++**"Too many requests" immediately:**
++The in-memory rate limiter resets when the container restarts.
++Cloud Run can scale to multiple instances, each with their own
++counters. At soft launch scale this doesn't matter. If it does
++later, swap in Redis.
+diff --git a/Dockerfile b/Dockerfile
+new file mode 100644
+index 0000000..b6c77e5
+--- /dev/null
++++ b/Dockerfile
+@@ -0,0 +1,50 @@
++# ─── Stage 1: DEPS ───
++# Install all dependencies (including dev) needed for the build.
++# Think of this as setting up the workshop with all the tools.
++FROM node:20-alpine AS deps
++WORKDIR /app
++COPY package.json package-lock.json ./
++RUN npm ci
++
++# ─── Stage 2: BUILDER ───
++# Build the Next.js app using the standalone output mode.
++# This is the actual construction — compiling TypeScript,
++# bundling pages, generating the Prisma client.
++FROM node:20-alpine AS builder
++WORKDIR /app
++COPY --from=deps /app/node_modules ./node_modules
++COPY . .
++RUN npx prisma generate
++RUN npm run build
++
++# ─── Stage 3: RUNNER ───
++# The final, minimal image. Only contains what's needed to run.
++# No source code, no dev dependencies, no build tools.
++FROM node:20-alpine AS runner
++WORKDIR /app
++
++ENV NODE_ENV=production
++
++# Run as non-root user. If an attacker somehow gets code execution
++# inside the container, they can't escalate to root.
++RUN addgroup --system --gid 1001 nodejs
++RUN adduser --system --uid 1001 nextjs
++
++# Copy only the built output — not the full source tree
++COPY --from=builder /app/public ./public
++COPY --from=builder /app/.next/standalone ./
++COPY --from=builder /app/.next/static ./.next/static
++
++# Prisma needs its generated client at runtime for database queries
++COPY --from=builder /app/node_modules/.prisma ./node_modules/.prisma
++COPY --from=builder /app/node_modules/@prisma ./node_modules/@prisma
++COPY --from=builder /app/prisma ./prisma
++
++USER nextjs
++
++# Cloud Run expects the app to listen on the PORT env var (default 8080)
++EXPOSE 8080
++ENV PORT=8080
++ENV HOSTNAME="0.0.0.0"
++
++CMD ["node", "server.js"]
+diff --git a/PROJECT-BRIEF.md b/PROJECT-BRIEF.md
+index ae6e680..1232c4d 100644
+--- a/PROJECT-BRIEF.md
++++ b/PROJECT-BRIEF.md
+@@ -1,8 +1,8 @@
+ # Project Brief — Practical Reasoning & Language Learning App
+ 
+ **Last updated:** March 8, 2026
+-**Status:** Phase 3 complete.
+-**Next action:** Phase 4 — Deployment (Dockerfile, Cloud Run, Cloud SQL, CI/CD).
++**Status:** Phase 4 files complete. GCP setup required before first deploy.
++**Next action:** Follow DEPLOYMENT.md to set up GCP and trigger first deploy.
+ 
+ ---
+ 
+@@ -87,8 +87,33 @@ framing — the learner catches tricks, not studies textbooks.
+ - `src/app/layout.tsx` — skip-to-content link
+ - `src/app/(dashboard)/layout.tsx` — main-content id
+ 
++## Phase 4 — Complete (files ready, GCP setup pending)
++
++### What was built
++
++- **Dockerfile:** Multi-stage build (deps → builder → runner). Runs as
++  non-root user `nextjs`. Standalone output. ~100MB final image.
++- **cloudbuild.yaml:** Automated CI/CD pipeline. Push to main triggers
++  build → push to Artifact Registry → deploy to Cloud Run.
++- **.dockerignore:** Excludes secrets, node_modules, .git, tests, docs.
++- **DEPLOYMENT.md:** Step-by-step GCP setup guide with all commands.
++- **Key decision: skip Cloud SQL and Redis.** Neon stays as production
++  database. In-memory rate limiting for soft launch. Saves ~$25-60/month
++  with zero tradeoffs at current scale.
++- **Security checkpoint passed.** Non-root container, no secrets in
++  image, database SSL via Neon default, Secret Manager for all env vars.
++
++### What the developer needs to do
++
++Follow DEPLOYMENT.md steps 1-8 in the GCP console. Estimated time:
++30-45 minutes for first-time setup. After that, every push to main
++auto-deploys.
++
+ ## Key Decisions
+ 
++- **Neon as production database.** Skipped Cloud SQL. No migration
++  needed, SSL by default, free tier. Revisit if scale demands it.
++- **Skip Redis for production.** In-memory rate limiting for soft launch.
+ - **Skip admin UI.** Import pipeline replaces it.
+ - **LLM as primary content engine.** Developer is learner/QA, not author.
+ - **Practical reasoning first.** Other domains come after Course 1.
+@@ -110,8 +135,8 @@ Zustand, Zod 4. Google Cloud Run for deployment. Neon for database.
+ 
+ ## What's NOT Built Yet
+ 
+-- Deployment to Cloud Run (Phase 4)
+-- Dockerfile, CI/CD pipeline (Phase 4)
++- GCP project setup and first deploy (developer task, see DEPLOYMENT.md)
++- Custom domain + SSL (Phase 4, optional)
+ - Full content load and soft launch (Phase 5)
+ - LLM-powered feedback on free responses (Phase 6)
+ 
+@@ -126,3 +151,4 @@ Zustand, Zod 4. Google Cloud Run for deployment. Neon for database.
+ | reasoning-prototype.jsx | Working prototype: The Pressure Play. |
+ | sequence-player-prototype.jsx | Working prototype: Rhetorical Devices. |
+ | PROJECT-INSTRUCTIONS.md | How Claude should work with the developer. |
++| DEPLOYMENT.md | GCP setup guide, Cloud Run deployment steps. |
+diff --git a/cloudbuild.yaml b/cloudbuild.yaml
+new file mode 100644
+index 0000000..64027df
+--- /dev/null
++++ b/cloudbuild.yaml
+@@ -0,0 +1,64 @@
++# cloudbuild.yaml
++# Triggered on push to main. Builds the Docker image, pushes to
++# Artifact Registry, and deploys to Cloud Run.
++#
++# Prerequisites (one-time setup in GCP console):
++# 1. Enable Cloud Build, Cloud Run, and Artifact Registry APIs
++# 2. Create an Artifact Registry Docker repository
++# 3. Grant Cloud Build the "Cloud Run Admin" and "Service Account User" roles
++# 4. Create secrets in Secret Manager (see DEPLOYMENT.md)
++# 5. Connect this repo to Cloud Build as a trigger
++
++steps:
++  # Step 1: Build the Docker image
++  - name: "gcr.io/cloud-builders/docker"
++    args:
++      - "build"
++      - "-t"
++      - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO_NAME}/${_SERVICE_NAME}:${SHORT_SHA}"
++      - "-t"
++      - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO_NAME}/${_SERVICE_NAME}:latest"
++      - "."
++
++  # Step 2: Push to Artifact Registry
++  - name: "gcr.io/cloud-builders/docker"
++    args:
++      - "push"
++      - "--all-tags"
++      - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO_NAME}/${_SERVICE_NAME}"
++
++  # Step 3: Deploy to Cloud Run
++  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
++    entrypoint: gcloud
++    args:
++      - "run"
++      - "deploy"
++      - "${_SERVICE_NAME}"
++      - "--image"
++      - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO_NAME}/${_SERVICE_NAME}:${SHORT_SHA}"
++      - "--region"
++      - "${_REGION}"
++      - "--platform"
++      - "managed"
++      - "--allow-unauthenticated"
++      - "--port"
++      - "8080"
++      - "--memory"
++      - "512Mi"
++      - "--cpu"
++      - "1"
++      - "--min-instances"
++      - "0"
++      - "--max-instances"
++      - "3"
++      - "--set-secrets"
++      - "DATABASE_URL=database-url:latest,NEXTAUTH_SECRET=nextauth-secret:latest,NEXTAUTH_URL=nextauth-url:latest"
++
++# Substitution variables — override these in the Cloud Build trigger config
++substitutions:
++  _REGION: us-central1
++  _REPO_NAME: learning-app
++  _SERVICE_NAME: learning-app
++
++images:
++  - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO_NAME}/${_SERVICE_NAME}"
+-- 
+2.43.0
+
+

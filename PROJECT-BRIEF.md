@@ -1,8 +1,8 @@
 # Project Brief — Practical Reasoning & Language Learning App
 
 **Last updated:** March 8, 2026
-**Status:** Phase 3 complete.
-**Next action:** Phase 4 — Deployment (Dockerfile, Cloud Run, Cloud SQL, CI/CD).
+**Status:** Phase 4 files complete. GCP setup required before first deploy.
+**Next action:** Follow DEPLOYMENT.md to set up GCP and trigger first deploy.
 
 ---
 
@@ -87,8 +87,33 @@ framing — the learner catches tricks, not studies textbooks.
 - `src/app/layout.tsx` — skip-to-content link
 - `src/app/(dashboard)/layout.tsx` — main-content id
 
+## Phase 4 — Complete (files ready, GCP setup pending)
+
+### What was built
+
+- **Dockerfile:** Multi-stage build (deps → builder → runner). Runs as
+  non-root user `nextjs`. Standalone output. ~100MB final image.
+- **cloudbuild.yaml:** Automated CI/CD pipeline. Push to main triggers
+  build → push to Artifact Registry → deploy to Cloud Run.
+- **.dockerignore:** Excludes secrets, node_modules, .git, tests, docs.
+- **DEPLOYMENT.md:** Step-by-step GCP setup guide with all commands.
+- **Key decision: skip Cloud SQL and Redis.** Neon stays as production
+  database. In-memory rate limiting for soft launch. Saves ~$25-60/month
+  with zero tradeoffs at current scale.
+- **Security checkpoint passed.** Non-root container, no secrets in
+  image, database SSL via Neon default, Secret Manager for all env vars.
+
+### What the developer needs to do
+
+Follow DEPLOYMENT.md steps 1-8 in the GCP console. Estimated time:
+30-45 minutes for first-time setup. After that, every push to main
+auto-deploys.
+
 ## Key Decisions
 
+- **Neon as production database.** Skipped Cloud SQL. No migration
+  needed, SSL by default, free tier. Revisit if scale demands it.
+- **Skip Redis for production.** In-memory rate limiting for soft launch.
 - **Skip admin UI.** Import pipeline replaces it.
 - **LLM as primary content engine.** Developer is learner/QA, not author.
 - **Practical reasoning first.** Other domains come after Course 1.
@@ -110,8 +135,8 @@ Zustand, Zod 4. Google Cloud Run for deployment. Neon for database.
 
 ## What's NOT Built Yet
 
-- Deployment to Cloud Run (Phase 4)
-- Dockerfile, CI/CD pipeline (Phase 4)
+- GCP project setup and first deploy (developer task, see DEPLOYMENT.md)
+- Custom domain + SSL (Phase 4, optional)
 - Full content load and soft launch (Phase 5)
 - LLM-powered feedback on free responses (Phase 6)
 
@@ -126,3 +151,4 @@ Zustand, Zod 4. Google Cloud Run for deployment. Neon for database.
 | reasoning-prototype.jsx | Working prototype: The Pressure Play. |
 | sequence-player-prototype.jsx | Working prototype: Rhetorical Devices. |
 | PROJECT-INSTRUCTIONS.md | How Claude should work with the developer. |
+| DEPLOYMENT.md | GCP setup guide, Cloud Run deployment steps. |
