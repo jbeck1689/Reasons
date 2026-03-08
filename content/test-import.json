@@ -1,0 +1,46 @@
+{
+  "title": "Import Test Course",
+  "slug": "import-test",
+  "description": "A minimal course to verify the import pipeline works correctly. Delete after testing.",
+  "sortOrder": 99,
+  "published": false,
+  "sequences": [
+    {
+      "title": "Test Sequence",
+      "slug": "test-sequence",
+      "description": "One of each step type to verify validation and import.",
+      "sortOrder": 1,
+      "published": false,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 0,
+          "content": {
+            "body": "This is a test instruction step.\n\nIf you can see this in the app, the import pipeline works."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 1,
+          "content": {
+            "prompt": "Which of the following is true?",
+            "options": [
+              { "id": "a", "text": "The import script is broken.", "isCorrect": false, "explanation": "If you're reading this, it clearly isn't." },
+              { "id": "b", "text": "The import script works.", "isCorrect": true, "explanation": "Correct. The data went from a JSON file through Zod validation into your Neon database and is now rendering in the app." },
+              { "id": "c", "text": "This is a hallucination.", "isCorrect": false, "explanation": "Unlikely, but philosophically interesting." }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 2,
+          "content": {
+            "prompt": "Describe in your own words what the import pipeline does. Where does the content start, what checks does it pass through, and where does it end up?",
+            "sampleAnswer": "The content starts as a JSON file. The import script reads it, validates the structure with Zod schemas, validates each step's content against its type-specific schema, then writes it to the Neon database using Prisma. The app reads it from the database and renders it in the sequence player."
+          }
+        }
+      ]
+    }
+  ]
+}
