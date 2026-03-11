@@ -1,14 +1,14 @@
 {
-  "title": "Build Your Case — Constructing Sound Arguments",
+  "title": "Build Your Case \u2014 Constructing Sound Arguments",
   "slug": "build-your-case",
-  "description": "You've learned to spot bad arguments. Now learn to build good ones. This course teaches the structure of sound reasoning — how to make claims, support them with evidence, anticipate objections, and argue persuasively without crossing into manipulation.",
+  "description": "Spotting bad arguments is half the skill. The other half is building good ones. Learn to construct claims that hold up under scrutiny.",
   "sortOrder": 4,
   "published": true,
   "sequences": [
     {
       "title": "Claims and Evidence",
       "slug": "claims-and-evidence",
-      "description": "What counts as support for a claim and what doesn't — the foundation of every argument.",
+      "description": "What counts as support for a claim and what doesn't \u2014 the foundation of every argument.",
       "sortOrder": 1,
       "published": true,
       "steps": [
@@ -16,39 +16,39 @@
           "type": "INSTRUCTION",
           "sortOrder": 0,
           "content": {
-            "body": "Every argument starts with a **claim** — a statement that something is true, should be done, or is better than an alternative.\n\n> \"We should switch to a four-day work week.\"\n> \"Electric cars are better for the environment than gas cars.\"\n> \"Pineapple belongs on pizza.\"\n\nEach of these is a claim. None of them, by themselves, is an argument. A claim becomes an argument when it's supported by **evidence** — reasons to believe the claim is true.\n\nThis seems obvious. But most of what passes for argument in daily life is just claims repeated louder, claims supported by other unsupported claims, or claims supported by things that feel like evidence but aren't.\n\nThis sequence teaches you to distinguish real support from the appearance of support — and to build arguments that actually hold up."
+            "body": "Every argument starts with a claim \u2014 a statement that something is true, should be done, or matters. But a claim by itself is just an assertion. What turns an assertion into an argument is **evidence**.\n\nThis sounds obvious. But most disagreements aren't about conclusions \u2014 they're about what counts as evidence. One person thinks personal experience is sufficient. Another wants data. A third trusts expert opinion. A fourth wants logical proof.\n\nThis sequence teaches you to distinguish between strong and weak evidence, to recognize when evidence is missing entirely, and to build claims that are supported rather than just stated."
           }
         },
         {
           "type": "INSTRUCTION",
           "sortOrder": 1,
           "content": {
-            "body": "## Types of Evidence\n\nNot all evidence is equal. Here's a rough hierarchy, from strongest to weakest:\n\n**Empirical data.** Numbers from systematic observation, experiments, or measurement. \"Companies that adopted four-day work weeks in the Microsoft Japan trial saw a 40% productivity increase.\" This is strong because it's specific, measurable, and came from a controlled setting.\n\n**Expert testimony.** Claims from people with demonstrated expertise in the relevant domain. \"The American Medical Association recommends...\" This is strong when the expert is relevant to the claim and when expert consensus exists. It's weak when the expert is speaking outside their field or when experts disagree.\n\n**Case studies and examples.** Specific instances that illustrate the claim. \"Iceland tested a four-day work week nationally and found no drop in productivity.\" Stronger than anecdote because it's documented and verifiable, but limited because a single case may not generalize.\n\n**Analogies.** Comparisons to similar situations. \"Other countries that reduced work hours saw productivity gains, so we probably would too.\" Useful for making claims plausible but never sufficient on their own, because analogies can always break down.\n\n**Personal anecdote.** \"My friend works four days a week and she's way more productive.\" This is the weakest form of evidence because it's a sample of one, subject to selection bias, and not verifiable. It can illustrate a point, but it can't prove one."
+            "body": "## Types of Evidence\n\nNot all evidence is created equal. Here's a rough hierarchy from weakest to strongest:\n\n**Anecdote.** \"My uncle smoked his whole life and lived to 95.\" Personal stories are vivid and memorable, which is exactly why they're unreliable as evidence. One data point tells you nothing about patterns.\n\n**Testimony.** \"My doctor told me this works.\" Expert testimony is stronger than personal anecdote, but it depends entirely on the expert's qualifications and potential biases.\n\n**Data.** \"A study of 10,000 patients found a 30% reduction in symptoms.\" Empirical data from well-designed studies is strong evidence \u2014 but the design matters. Sample size, controls, methodology all affect reliability.\n\n**Converging evidence.** \"Multiple independent studies using different methods have found similar results.\" The strongest evidence comes from multiple sources that agree despite using different approaches. If the same conclusion emerges from different angles, it's robust.\n\nThe type of evidence you need depends on the type of claim. \"I enjoyed this movie\" needs no evidence beyond your experience. \"This policy will reduce crime\" needs data, not anecdotes."
           }
         },
         {
           "type": "MULTIPLE_CHOICE",
           "sortOrder": 2,
           "content": {
-            "prompt": "Someone argues: \"Meditation is scientifically proven to reduce anxiety. My neighbor started meditating and she's way calmer now.\"\n\nWhat's the quality of the evidence here?",
+            "prompt": "A colleague argues for switching project management tools:\n\n> *\"We should switch to Notion. I used it at my last company and it was great. Plus, a lot of top startups use it.\"*\n\nWhat kinds of evidence are being offered, and how strong are they?",
             "options": [
               {
                 "id": "a",
-                "text": "Strong — they cited scientific proof and gave a real-world example.",
-                "isCorrect": false,
-                "explanation": "'Scientifically proven' is a claim about evidence, not evidence itself. Which studies? How large? What methodology? The phrase sounds authoritative but contains no actual data. And the neighbor anecdote is a sample of one with no controls — maybe she's calmer because of other life changes, or because believing meditation works has a placebo effect. There's a real body of evidence supporting meditation for anxiety, but this argument doesn't actually present any of it."
+                "text": "Anecdote (personal experience) and appeal to popularity (top startups use it). Neither is strong evidence for a team-wide tool change.",
+                "isCorrect": true,
+                "explanation": "The personal experience is one data point from a different context (different team, different workflows). The fact that top startups use it is social proof, not evidence of fit for your team. Stronger evidence would be: a trial period with your team, comparison of features against your specific needs, or data on adoption outcomes in similar organizations."
               },
               {
                 "id": "b",
-                "text": "Mixed — 'scientifically proven' is a vague appeal to evidence without citing specifics, and the personal anecdote adds illustration but not proof. The claim might be true, but this argument doesn't demonstrate it.",
-                "isCorrect": true,
-                "explanation": "Exactly. The claim is plausible and probably correct — research does support meditation for anxiety. But the argument is poorly constructed: 'scientifically proven' is a label rather than evidence, and the anecdote is illustrative rather than probative. A strong version would cite specific studies, note the effect sizes, acknowledge limitations, and use the anecdote as illustration rather than proof."
+                "text": "Expert testimony and data \u2014 they have real experience with the tool and market validation.",
+                "isCorrect": false,
+                "explanation": "Personal experience with a tool isn't expert testimony \u2014 it's anecdote. And \"top startups use it\" isn't data \u2014 it's an appeal to popularity. Neither addresses the question that actually matters: will this tool work for your specific team's needs? The evidence sounds relevant but doesn't actually support the conclusion."
               },
               {
                 "id": "c",
-                "text": "Weak — personal anecdotes are never valid evidence.",
+                "text": "The evidence is fine \u2014 personal experience and industry adoption are legitimate reasons to switch.",
                 "isCorrect": false,
-                "explanation": "Personal anecdotes are weak evidence, but saying they're 'never valid' goes too far. Anecdotes are valuable for generating hypotheses, illustrating patterns, and making abstract data concrete. The error is in using an anecdote as primary proof rather than as support for stronger evidence. A well-constructed argument might use the neighbor's experience to make a study's findings relatable — but the study does the proving."
+                "explanation": "They're reasons to *investigate*, not reasons to *switch*. A tool that worked for one person at one company might not work for your team. Industry adoption might reflect marketing budgets more than quality. Evidence should match the weight of the decision. A team-wide tool change deserves more than anecdote and popularity."
               }
             ],
             "shuffleOptions": false
@@ -58,32 +58,32 @@
           "type": "INSTRUCTION",
           "sortOrder": 3,
           "content": {
-            "body": "## Things That Look Like Evidence But Aren't\n\nThese show up constantly in everyday arguments. Learn to spot them:\n\n**Repetition.** Saying a claim multiple times, or having multiple people say it, doesn't make it true. \"Everyone knows this\" is not evidence — it's an appeal to popularity disguised as a fact.\n\n**Confidence.** The certainty with which someone states a claim has zero relationship to its truth. Confident people are wrong all the time. The feeling that someone \"seems like they know what they're talking about\" is not evidence.\n\n**Emotional resonance.** If a claim makes you feel something — outrage, fear, hope, vindication — that feeling is not evidence that the claim is true. Feelings tell you about your values and psychology, not about external reality.\n\n**Common sense.** \"It just makes sense\" is an intuition, not an argument. Many true things are counterintuitive, and many intuitive things are false. Common sense is a useful starting point but a terrible finishing point.\n\n**Precedent without relevance.** \"We've always done it this way\" is only evidence if there's a reason the old way is better. History of practice doesn't establish quality of practice."
+            "body": "## The Evidence Gap\n\nThe most common failure in everyday arguments isn't bad evidence \u2014 it's **no evidence**. Claims are stated as if they're self-evident, and nobody asks for support.\n\n\"Remote work kills collaboration.\" Evidence? \"It just does.\"\n\"Young people don't want to work hard anymore.\" Evidence? \"Look around.\"\n\"This market is about to explode.\" Evidence? \"I can feel it.\"\n\nEach of these might be true. But without evidence, they're not arguments \u2014 they're vibes. And vibes are fine for personal preferences but dangerous for decisions that affect other people.\n\nThe habit to build: when you hear a claim (including your own), ask **\"What's the evidence for that?\"** If the answer is a feeling, an anecdote, or \"everyone knows,\" the claim hasn't been supported \u2014 it's just been asserted."
           }
         },
         {
           "type": "MULTIPLE_CHOICE",
           "sortOrder": 4,
           "content": {
-            "prompt": "**This one is designed to fool you.**\n\nA colleague argues against changing your team's project management tool:\n\n> *\"We've been using this tool for three years. The team knows it inside and out. Switching would mean months of retraining. If it ain't broke, don't fix it.\"*\n\nIs this a well-supported argument?",
+            "prompt": "**This one is designed to fool you.**\n\nYou're in a meeting and state: \"We need to prioritize mobile users \u2014 that's where all the growth is.\"\n\nA colleague asks: \"What's our data on that?\"\n\nYou realize you don't have specific data. You've read some industry articles, but nothing about your company's users.\n\nWhat's the right response?",
             "options": [
               {
                 "id": "a",
-                "text": "Yes — familiarity and switching costs are real, practical considerations.",
+                "text": "Stand by your claim \u2014 the general industry trend supports it even without company-specific data.",
                 "isCorrect": false,
-                "explanation": "The observations are real — familiarity and switching costs exist. But the argument has a structural problem: it's entirely about the cost of change without weighing the benefit of change. 'If it ain't broke, don't fix it' assumes the current tool isn't broke — but whether it's broke is exactly the question being debated. The argument also treats familiarity as an inherent good, when familiarity with a suboptimal tool is just comfortable inefficiency."
+                "explanation": "Industry trends don't automatically apply to your company. Your users might be overwhelmingly desktop-based. The claim might be true in general but false for your context. Asserting a claim without relevant evidence because the *general* evidence sounds supportive is a common error \u2014 it feels justified but isn't."
               },
               {
                 "id": "b",
-                "text": "It identifies real costs of switching but fails to weigh them against the benefits of the new tool. 'If it ain't broke' assumes the conclusion (that the current tool works well enough) rather than arguing for it.",
+                "text": "Acknowledge the gap: \"I'm basing that on industry trends, not our data. Let me pull our actual numbers before we decide.\"",
                 "isCorrect": true,
-                "explanation": "The argument has evidence for one side of the ledger (costs of switching) and none for the other (whether the current tool is actually adequate, and what benefits the new tool would provide). It then uses a folk saying — 'if it ain't broke, don't fix it' — as though it's a logical principle rather than a proverb. A complete argument would acknowledge the switching costs and then weigh them against specific, evidenced benefits of the alternative."
+                "explanation": "This is intellectual honesty in action. You're not withdrawing the claim \u2014 you're acknowledging that the evidence is weaker than the confidence. Pulling actual user data converts the claim from an assertion into an argument. And if the data contradicts the industry trend, you've avoided a bad decision."
               },
               {
                 "id": "c",
-                "text": "No — 'if it ain't broke don't fix it' is just a cliché, which means the entire argument is worthless.",
+                "text": "Redirect: \"Everyone knows mobile is the future \u2014 we don't need data to confirm the obvious.\"",
                 "isCorrect": false,
-                "explanation": "The cliché is the weakest part of the argument, but the observations about familiarity and retraining costs are legitimate considerations. Dismissing the entire argument because it ends with a cliché is its own error — you'd be rejecting valid points because of how they're packaged. The argument is incomplete, not worthless. It needs to be supplemented, not discarded."
+                "explanation": "\"Everyone knows\" is an appeal to popularity replacing evidence. \"The obvious\" is an assertion replacing proof. This response doubles down on the evidence gap rather than closing it. Many \"obvious\" claims in business have turned out to be wrong for specific companies."
               }
             ],
             "shuffleOptions": false
@@ -93,22 +93,22 @@
           "type": "INSTRUCTION",
           "sortOrder": 5,
           "content": {
-            "body": "## Building an Evidence Base\n\nWhen you're constructing your own argument, think of evidence as a **portfolio**, not a single proof.\n\nNo single piece of evidence is usually sufficient. A study can be flawed. An expert can be wrong. An example can be unrepresentative. But when multiple types of evidence point in the same direction — a study, an expert, a case study, and a clear logical mechanism — the argument becomes much stronger.\n\nThis is called **convergent evidence**. Each piece alone is imperfect, but together they triangulate toward a conclusion. The more independent the sources, the stronger the convergence.\n\nWhen building your case:\n\n**Lead with your strongest evidence.** Don't bury the best support behind weaker points. Your audience's attention is finite.\n\n**Use different types.** Data plus an example is stronger than data alone because the example makes the data tangible. An expert's view plus a logical argument is stronger than the expert alone because it shows the reasoning behind the authority.\n\n**Acknowledge what your evidence doesn't show.** An argument that admits its limits is paradoxically more persuasive than one that claims too much, because acknowledged limits signal honesty."
+            "body": "## Matching Evidence to Claims\n\nDifferent claims require different evidence:\n\n**Factual claims** (\"Sales increased 20% last quarter\") need data. A specific, verifiable number from a reliable source.\n\n**Causal claims** (\"The new campaign caused the sales increase\") need controlled comparison. What would have happened without the campaign? This is much harder to establish than a factual claim.\n\n**Value claims** (\"Customer satisfaction matters more than growth\") need argument, not data. You can't prove a value claim empirically \u2014 you can only argue for why one priority should outweigh another.\n\n**Policy claims** (\"We should invest in customer retention\") need evidence supporting the causal chain: retention investment \u2192 specific outcomes \u2192 those outcomes are worth the cost.\n\nThe most common error is treating causal claims like factual ones. \"Sales went up after the campaign\" is a fact. \"Sales went up *because of* the campaign\" is a causal claim that requires much stronger evidence."
           }
         },
         {
           "type": "FREE_RESPONSE",
           "sortOrder": 6,
           "content": {
-            "prompt": "Pick a claim you believe is true — anything from \"remote work is better\" to \"everyone should learn to cook\" to something in your professional domain.\n\nBuild the strongest evidence base you can for it. List at least three pieces of evidence, identify what type each one is (data, expert testimony, case study, analogy, anecdote), and note where your evidence is weakest.\n\nThen ask: if someone challenged your weakest piece of evidence, would the argument still stand?",
-            "sampleAnswer": "The exercise works when it reveals the difference between a claim you believe and a claim you can support. Many beliefs we hold confidently are backed by surprisingly thin evidence — often just anecdotes and common sense. Building the evidence base explicitly forces you to confront those gaps. The strongest responses identify genuine weak points and assess whether the argument survives without them."
+            "prompt": "Think of a claim you've made recently \u2014 at work, in a conversation, online. It could be an opinion, a prediction, or a recommendation.\n\nWrite the claim down. Then honestly assess: what evidence did you actually have? Was it anecdote, data, expert opinion, or just a feeling? What evidence *should* you have needed for a claim of that type?",
+            "sampleAnswer": "Most people discover that their everyday claims are supported by much less evidence than they realized. The gap between the confidence of the claim and the strength of the evidence is the space where better arguments get built."
           }
         },
         {
           "type": "INSTRUCTION",
           "sortOrder": 7,
           "content": {
-            "body": "## What You Learned\n\nEvery argument has two parts: a **claim** (what you're asserting) and **evidence** (why anyone should believe it). Most everyday arguments are heavy on claims and light on evidence.\n\nEvidence exists on a spectrum from strong (empirical data, expert consensus) to weak (personal anecdotes, common sense). Things that feel like evidence but aren't include repetition, confidence, emotional resonance, and appeals to tradition.\n\nStrong arguments use **convergent evidence** — multiple independent types of support pointing the same direction. They lead with the strongest evidence, use different types for depth, and acknowledge their own limits.\n\nThe first skill of argument construction: know the difference between having a belief and having a case."
+            "body": "## What You Learned\n\nEvery argument needs evidence. Evidence ranges from weak (anecdote, feeling) to strong (converging data from multiple methods).\n\nThe most common failure is **no evidence at all** \u2014 claims asserted as if they're self-evident.\n\nDifferent claims need different evidence: factual claims need data, causal claims need controlled comparison, value claims need argument, policy claims need a supported causal chain.\n\nThe habit: when you hear a claim \u2014 especially your own \u2014 ask \"What's the evidence?\" If the answer is a feeling or \"everyone knows,\" the claim hasn't been argued. It's just been said."
           }
         }
       ]
@@ -116,7 +116,7 @@
     {
       "title": "The Structure of an Argument",
       "slug": "structure-of-argument",
-      "description": "Premise, inference, conclusion — the skeleton that holds every argument together.",
+      "description": "Premise, inference, conclusion \u2014 the anatomy of reasoning that holds up.",
       "sortOrder": 2,
       "published": true,
       "steps": [
@@ -124,39 +124,39 @@
           "type": "INSTRUCTION",
           "sortOrder": 0,
           "content": {
-            "body": "An argument has three parts:\n\n**Premises** — the starting points. These are the facts, observations, or assumptions that you begin with.\n\n**Inference** — the logical step. This is the reasoning that connects your premises to your conclusion. It answers the question: \"Why do these premises lead to this conclusion?\"\n\n**Conclusion** — the destination. This is the claim you're arguing for.\n\nMost arguments in everyday life leave at least one of these parts unstated. When someone says \"you should bring an umbrella — it looks like rain,\" the full argument is:\n\n*Premise 1:* It looks like rain.\n*Premise 2 (unstated):* Getting rained on without an umbrella is unpleasant.\n*Inference:* If it's going to rain and you'll be outside, an umbrella prevents getting wet.\n*Conclusion:* You should bring an umbrella.\n\nThe argument is fine even with the unstated parts — because the missing premises are obvious and uncontroversial. Arguments break down when the unstated parts are controversial, wrong, or hidden deliberately."
+            "body": "An argument isn't just a claim with evidence attached. It's a **structure** \u2014 a chain of reasoning that connects premises to a conclusion through inference.\n\n**Premise:** A statement accepted as true (or argued for separately).\n**Inference:** The logical step that connects premises to a conclusion.\n**Conclusion:** The claim that follows from the premises.\n\nExample:\nPremise 1: All products in this line have been profitable.\nPremise 2: The new product is in this line.\nConclusion: The new product will likely be profitable.\n\nThe inference here is inductive \u2014 it's based on pattern, not certainty. The conclusion follows from the premises, but it could be wrong (maybe the market has changed). Understanding structure lets you evaluate *where* an argument might fail \u2014 in its premises, its inference, or both."
           }
         },
         {
           "type": "INSTRUCTION",
           "sortOrder": 1,
           "content": {
-            "body": "## Valid vs. Sound\n\nThere's an important distinction between a **valid** argument and a **sound** one.\n\nAn argument is **valid** when the conclusion follows logically from the premises — *if* the premises are true, the conclusion must be true.\n\nAn argument is **sound** when it's valid *and* the premises are actually true.\n\nThis means you can have a perfectly valid argument that's completely wrong:\n\n*Premise 1:* All birds can fly.\n*Premise 2:* Penguins are birds.\n*Conclusion:* Penguins can fly.\n\nThe logic is flawless. If all birds could fly, and penguins are birds, then penguins could fly. But Premise 1 is false — not all birds can fly. The argument is valid but not sound.\n\nThis distinction matters because people often defend bad arguments by pointing to their logical structure. \"My reasoning is perfectly logical!\" Maybe so — but are your premises true? Logic is a truth-preserving machine: if you put truth in, you get truth out. If you put falsehood in, the logic runs perfectly but the output is garbage."
+            "body": "## Valid vs. Sound\n\nTwo critical distinctions:\n\nAn argument is **valid** when the conclusion follows logically from the premises \u2014 *even if the premises are false.*\n\nPremise: All birds can fly.\nPremise: Penguins are birds.\nConclusion: Penguins can fly.\n\nThis argument is valid \u2014 the conclusion follows from the premises. But it's not **sound**, because the first premise is false. Not all birds can fly.\n\nAn argument is **sound** when it is valid AND the premises are true.\n\nThis distinction matters because people often attack the logic of an argument when the real problem is a false premise, or accept true premises without checking whether the conclusion actually follows.\n\nWhen evaluating an argument, check both: Are the premises true? Does the conclusion actually follow from them?"
           }
         },
         {
           "type": "MULTIPLE_CHOICE",
           "sortOrder": 2,
           "content": {
-            "prompt": "Consider this argument:\n\n> *\"Countries with more gun control have less gun violence. The US has less gun control than those countries. Therefore, more gun control in the US would reduce gun violence.\"*\n\nIs this argument valid? Is it sound?",
+            "prompt": "Evaluate this argument:\n\nPremise: Companies that invest in employee development outperform those that don't.\nPremise: Our company does not invest in employee development.\nConclusion: Therefore, we should invest in employee development.\n\nIs this argument valid? Is it sound?",
             "options": [
               {
                 "id": "a",
-                "text": "Valid and sound — the logic follows and the premises are factually true.",
+                "text": "Valid and sound \u2014 the premises support the conclusion and are likely true.",
                 "isCorrect": false,
-                "explanation": "The premises may be broadly true, but the inference has a gap. The argument assumes that the *relationship* between gun control and gun violence in other countries would hold in the US — but the US may differ in relevant ways (existing gun ownership rates, cultural factors, enforcement capacity, constitutional constraints). The argument is valid in structure but the hidden premise — 'what worked elsewhere would work here' — is debatable, which makes soundness uncertain."
+                "explanation": "The premises might both be true, but look at the structure carefully. The first premise is about correlation (companies that invest outperform). The conclusion is a recommendation (we should invest). There's a hidden logical gap: outperformance in general doesn't guarantee outperformance for your specific company. And \"outperform\" doesn't specify by how much, or whether the investment cost exceeds the benefit. The argument is missing a bridge between a general observation and a specific recommendation."
               },
               {
                 "id": "b",
-                "text": "Valid in structure, but soundness is uncertain — the hidden premise is that the correlation in other countries would translate to the US, which is debatable given the differences in context.",
+                "text": "The premises are plausible, but the conclusion doesn't fully follow \u2014 there's a gap between 'companies in general outperform' and 'our specific company should invest.' The cost, context, and magnitude are unaddressed.",
                 "isCorrect": true,
-                "explanation": "The logical form is correct: if A leads to B elsewhere, and the US lacks A, then adding A should produce B. But the inference rests on a premise that's unstated and contestable: that the relationship is causal and transferable across very different contexts. A sound version of this argument would need to address why the relationship would hold despite contextual differences. This isn't about the politics — it's about the structural gap between observing a correlation elsewhere and predicting a causal effect here."
+                "explanation": "The argument looks clean on the surface but has a structural gap. General correlations don't automatically translate into specific recommendations. How much do these companies invest? What kind of development? What's the return? Is the correlation causal or just associated? The premises point in the direction of the conclusion but don't lock it in. A stronger argument would address these gaps."
               },
               {
                 "id": "c",
-                "text": "Invalid — correlation between countries doesn't prove causation.",
+                "text": "Invalid \u2014 the conclusion contradicts the premises.",
                 "isCorrect": false,
-                "explanation": "The 'correlation isn't causation' objection is relevant but imprecise. The argument isn't claiming a raw correlation proves a cause — it's making an inference from a pattern across multiple countries. The real structural issue is the unstated premise about transferability, not about correlation versus causation in general. 'Correlation isn't causation' is often used as a thought-terminating cliché when the more productive move is to examine which specific causal assumptions are being made."
+                "explanation": "The conclusion doesn't contradict the premises \u2014 it's in the same direction. The issue isn't contradiction; it's an inferential gap. The premises don't fully support the conclusion because general correlations don't establish specific recommendations. That's a weakness in the inference, not a logical contradiction."
               }
             ],
             "shuffleOptions": false
@@ -166,32 +166,32 @@
           "type": "INSTRUCTION",
           "sortOrder": 3,
           "content": {
-            "body": "## Finding the Hidden Premises\n\nEvery argument you encounter in the wild has hidden premises — assumptions that are necessary for the conclusion to follow but that the speaker didn't state.\n\nFinding them is the most powerful analytical move you can make, because **hidden premises are where most arguments actually break down.**\n\n\"We should hire Sarah — she has ten years of experience.\"\n\nHidden premises:\n- More experience makes someone a better candidate.\n- Sarah's ten years of experience are relevant to this role.\n- Experience matters more than other factors (creativity, culture fit, fresh perspective).\n\nNone of these are necessarily wrong. But none of them are obviously right either. The argument only works if all three hidden premises are true — and the speaker presented none of them for examination.\n\nTo find hidden premises, ask: **\"What would need to be true for this conclusion to follow from these premises?\"** The gap between what's stated and what's needed is where the hidden premises live."
+            "body": "## Hidden Premises\n\nMost real-world arguments have hidden premises \u2014 assumptions that aren't stated but are required for the conclusion to follow.\n\n\"She's been here the longest, so she should get the promotion.\"\n\nHidden premise: tenure is the most important criterion for promotion. Is that true? Maybe the most important criterion is performance, or leadership ability, or fit for the new role.\n\nThe hidden premise is where most arguments actually break. The stated premises might be perfectly true, but if the unstated assumption is false, the whole argument collapses.\n\nWhen you encounter an argument that feels wrong but you can't articulate why, look for the hidden premise. That's usually where the problem lives."
           }
         },
         {
           "type": "MULTIPLE_CHOICE",
           "sortOrder": 4,
           "content": {
-            "prompt": "**This one is designed to fool you.**\n\n> *\"We should invest more in public transportation because it reduces carbon emissions.\"*\n\nThis sounds straightforward. But what hidden premise is most likely to be the point where someone would challenge this argument?",
+            "prompt": "\"We need to hire more people. The team is overwhelmed.\"\n\nWhat's the hidden premise?",
             "options": [
               {
                 "id": "a",
-                "text": "The hidden premise that reducing carbon emissions is important enough to justify the cost of public transportation investment.",
-                "isCorrect": true,
-                "explanation": "The argument assumes that carbon reduction is a sufficient reason to invest. But investment has costs — financial, political, opportunity costs of not investing elsewhere. Someone might agree that public transportation reduces emissions and still disagree with the conclusion because they don't think carbon reduction justifies the expense, or because they think the money would reduce more emissions if spent on something else. The hidden premise isn't about the facts — it's about the values and tradeoffs."
+                "text": "The hidden premise is that the team is actually overwhelmed \u2014 they might just be complaining.",
+                "isCorrect": false,
+                "explanation": "That would make the stated premise false, not hidden. The stated premise is that the team is overwhelmed. If you're questioning whether that's true, you're questioning the premise, not finding a hidden one. The hidden premise is the unstated link between \"overwhelmed\" and \"hire more people.\""
               },
               {
                 "id": "b",
-                "text": "The hidden premise that public transportation actually reduces carbon emissions.",
-                "isCorrect": false,
-                "explanation": "This is a factual premise that's well-supported by evidence — public transportation generally does reduce per-capita emissions compared to individual car use. Challenging this premise is possible but it's the strongest part of the argument. The more productive challenge is to the hidden value premise: that reducing emissions justifies the investment over competing priorities."
+                "text": "The hidden premise is that hiring more people is the right solution to being overwhelmed \u2014 as opposed to reducing scope, improving processes, or redistributing work.",
+                "isCorrect": true,
+                "explanation": "The argument jumps from \"overwhelmed\" to \"hire\" without establishing that hiring is the right fix. Being overwhelmed could be solved by cutting low-value work, automating tasks, or improving processes. The hidden premise \u2014 that headcount is the answer to overload \u2014 is doing all the work and getting none of the scrutiny."
               },
               {
                 "id": "c",
-                "text": "There are no significant hidden premises — the argument is simple and direct.",
+                "text": "There's no hidden premise \u2014 if the team is overwhelmed, hiring is the obvious solution.",
                 "isCorrect": false,
-                "explanation": "Every argument has hidden premises, and the simpler an argument sounds, the more premises are hidden beneath the surface. This argument compresses a complex policy position — involving costs, tradeoffs, values, alternative investments, and effectiveness comparisons — into a single sentence. The simplicity is the argument's rhetorical strength and its analytical weakness."
+                "explanation": "\"Obvious\" solutions to complex problems are often hidden premises in disguise. Hiring is one solution among many. It's also expensive, slow, and introduces coordination overhead. The fact that it feels obvious doesn't mean it's been argued for \u2014 and anything that hasn't been argued for is vulnerable to being wrong."
               }
             ],
             "shuffleOptions": false
@@ -201,22 +201,22 @@
           "type": "INSTRUCTION",
           "sortOrder": 5,
           "content": {
-            "body": "## Building Clear Arguments\n\nWhen you're constructing your own arguments, clarity comes from making the structure visible:\n\n**State your premises explicitly.** Don't assume your audience shares your starting assumptions. What feels obvious to you may be the exact point where someone else disagrees.\n\n**Make your inference visible.** Don't just present premises and a conclusion — explain *why* the premises lead to the conclusion. This is the step most people skip, and it's where most arguments fail.\n\n**Surface your own hidden premises.** Before someone else finds them, find them yourself. Ask: \"What am I assuming that I haven't stated?\" Then decide whether to state it, defend it, or acknowledge it as an assumption.\n\n**Separate factual premises from value premises.** \"Public transportation reduces emissions\" is a factual claim. \"Reducing emissions is worth the cost\" is a value claim. Factual claims can be proved with evidence. Value claims need to be argued differently — through shared values, cost-benefit analysis, or moral reasoning. Mixing them up creates arguments that feel solid but have invisible fault lines."
+            "body": "## Building Your Own Arguments\n\nWhen constructing an argument, work backwards from your conclusion:\n\n**1. State your conclusion clearly.** What exactly are you claiming?\n\n**2. Identify the premises you need.** What has to be true for your conclusion to follow?\n\n**3. Check each premise.** Is it true? Can you support it? If a premise requires its own argument, build that too.\n\n**4. Check the inference.** Does the conclusion actually follow from the premises? Or is there a gap that requires an additional assumption?\n\n**5. Surface hidden premises.** What are you assuming without stating? Are those assumptions defensible?\n\nThis process feels slow, but it produces arguments that withstand scrutiny. Most people skip steps 3-5, which is why most arguments fall apart when challenged."
           }
         },
         {
           "type": "FREE_RESPONSE",
           "sortOrder": 6,
           "content": {
-            "prompt": "Take a position on something you care about and write the argument in explicit structure:\n\n1. State your premises (at least 2)\n2. State your inference (why the premises lead to the conclusion)\n3. State your conclusion\n4. Identify at least one hidden premise you're relying on\n\nThen ask: is the hidden premise defensible? If someone challenged it, could you support it with evidence?",
-            "sampleAnswer": "The exercise works when it forces you to see the skeleton of your own argument. Most people find that their inference step is where things get wobbly — they have premises and a conclusion that feel connected, but articulating *why* they're connected is harder than expected. That difficulty is diagnostic: if you can't explain the inference clearly, the argument may be weaker than it feels."
+            "prompt": "Take a position you hold \u2014 something you'd argue for at work or in life \u2014 and build a structured argument for it.\n\nState your conclusion. List your premises. Identify any hidden premises. Then evaluate: does the conclusion actually follow? Where is the argument weakest?",
+            "sampleAnswer": "Strong responses will identify at least one hidden premise and honestly assess where the argument is vulnerable. The exercise reveals that most positions we hold confidently have structural gaps we've never examined. This isn't a reason to abandon the position \u2014 it's a reason to strengthen the argument."
           }
         },
         {
           "type": "INSTRUCTION",
           "sortOrder": 7,
           "content": {
-            "body": "## What You Learned\n\nArguments have three visible parts — **premises**, **inference**, and **conclusion** — and often several invisible parts: **hidden premises** that are necessary for the conclusion to follow but aren't stated.\n\nAn argument is **valid** when the logic works (conclusion follows from premises). An argument is **sound** when it's valid and the premises are true. Valid but unsound arguments are everywhere — perfect logic built on false assumptions.\n\nThe most productive analytical move: find the hidden premises. Ask \"what would need to be true for this conclusion to follow?\" The answer reveals where the argument is strongest and where it's most vulnerable.\n\nWhen building arguments: state premises explicitly, make inferences visible, surface your own hidden premises, and separate factual claims from value claims."
+            "body": "## What You Learned\n\nArguments have structure: premises, inferences, and conclusions. **Valid** arguments have conclusions that follow from their premises. **Sound** arguments are valid with true premises.\n\nMost real-world arguments contain **hidden premises** \u2014 unstated assumptions required for the conclusion to follow. Hidden premises are where arguments most often break.\n\nTo build strong arguments: state your conclusion, identify needed premises, verify each one, check the inference, and surface hidden assumptions. The gaps you find are where opponents will attack \u2014 better to find them yourself first."
           }
         }
       ]
@@ -224,7 +224,7 @@
     {
       "title": "Burden of Proof",
       "slug": "burden-of-proof",
-      "description": "Who needs to prove what, and when — the rules of the game that most people play without knowing.",
+      "description": "Who needs to prove what \u2014 and how the burden shifts the entire shape of a debate.",
       "sortOrder": 3,
       "published": true,
       "steps": [
@@ -232,39 +232,39 @@
           "type": "INSTRUCTION",
           "sortOrder": 0,
           "content": {
-            "body": "\"Prove to me that ghosts don't exist.\"\n\nIf you've ever been in an argument where someone demanded you prove a negative, you've encountered a **burden of proof** problem. The person making the claim (\"ghosts exist\") shifted the burden to you (\"prove they don't\"), and suddenly you're playing defense on their assertion.\n\nThe burden of proof is a simple principle: **the person making a claim is responsible for supporting it.** If you assert something, you need to provide reasons to believe it. If you can't, the default position is non-acceptance — not that the opposite is true, but that the claim hasn't been established.\n\nThis matters because debates are won and lost on burden of proof more often than on evidence. If you can shift the burden to the other side, you don't have to prove anything — you just have to poke holes in their defense of your claim. That's a powerful rhetorical move, and recognizing it is essential to arguing well."
+            "body": "\"You can't prove it's NOT true.\"\n\nThis is one of the most common \u2014 and most effective \u2014 moves in bad argumentation. It shifts the burden of proof from the person making the claim to the person questioning it.\n\nThe basic principle: **the person making the claim has the burden of proving it.** If I say there's a teapot orbiting Jupiter, I need to prove that \u2014 you don't need to disprove it. The absence of disproof is not proof.\n\nThis sounds simple, but in practice, burden of proof gets manipulated constantly \u2014 in debates, in business, in relationships, and in public discourse. Understanding who bears the burden changes the entire shape of an argument."
           }
         },
         {
           "type": "INSTRUCTION",
           "sortOrder": 1,
           "content": {
-            "body": "## Who Bears the Burden?\n\nThe burden of proof generally falls on:\n\n**The person making the positive claim.** \"This product will increase revenue\" — prove it. \"Vaccines cause autism\" — prove it. \"You should change your diet\" — prove it. Asserting that something is the case requires evidence that it is.\n\n**The person proposing a change.** In most practical contexts — business, policy, personal relationships — the status quo has a mild presumption in its favor. Not because it's right, but because change has costs and risks. If you're arguing for a new approach, the burden is on you to show the change is worth those costs.\n\n**The person making the extraordinary claim.** The more a claim deviates from established knowledge or common experience, the more evidence it requires. This is the principle behind Carl Sagan's \"extraordinary claims require extraordinary evidence.\"\n\nImportantly: the burden of proof is about **who needs to argue**, not about who's right. A claim can be true even when the person making it hasn't met their burden. \"Prove it\" doesn't mean \"you're wrong\" — it means \"you haven't given me a reason to believe you yet.\""
+            "body": "## How Burden Works\n\n**Default positions require no proof.** If nothing has been established, the default is \"we don't know.\" Claiming something is true requires evidence. Claiming something is false also requires evidence. Saying \"I don't know\" requires nothing.\n\n**Positive claims bear the burden.** \"This drug works\" needs proof. \"This policy will help\" needs proof. \"God exists\" needs proof (and so does \"God doesn't exist\" \u2014 both are positive claims about reality).\n\n**Extraordinary claims require extraordinary evidence.** Claiming you had coffee this morning needs minimal evidence. Claiming you were abducted by aliens needs substantially more. The size of the claim should match the size of the evidence.\n\n**The burden can shift.** Once someone provides sufficient evidence for a claim, the burden shifts to the challenger to explain why the evidence is insufficient. But it has to actually shift through evidence \u2014 not through rhetoric."
           }
         },
         {
           "type": "MULTIPLE_CHOICE",
           "sortOrder": 2,
           "content": {
-            "prompt": "In a team meeting, you propose switching from weekly status reports to a real-time dashboard. A colleague responds:\n\n> *\"Prove that a dashboard would be better. I think weekly reports work fine.\"*\n\nWhere does the burden of proof sit?",
+            "prompt": "In a product meeting, a team member proposes adding a new feature. The product manager says:\n\n> *\"Prove to me that users want this.\"*\n\nThe team member responds:\n\n> *\"Prove to me they don't.\"*\n\nWho has the burden of proof?",
             "options": [
               {
                 "id": "a",
-                "text": "On you — you're proposing a change, so you need to make the case for it.",
+                "text": "The team member \u2014 they're proposing a change to the product, so they need to justify it.",
                 "isCorrect": true,
-                "explanation": "As the person proposing a change from the status quo, the initial burden is yours. You need to show what problem the dashboard solves, why weekly reports aren't adequate, and what the expected benefits are relative to the switching costs. Your colleague's 'prove it' is a legitimate response — though they should be open to being persuaded if you present a good case, not just blocking change reflexively."
+                "explanation": "The default state is the current product. Proposing a change is a positive claim (\"this feature will improve the product\") and positive claims bear the burden. \"Prove they don't want it\" reverses the burden illegitimately. The product manager isn't claiming users don't want it \u2014 they're asking for evidence that users do. That's the correct allocation of burden."
               },
               {
                 "id": "b",
-                "text": "On your colleague — they're claiming weekly reports 'work fine' without evidence.",
+                "text": "The product manager \u2014 refusing to build features requires justification.",
                 "isCorrect": false,
-                "explanation": "Your colleague is defending the status quo, which in practical contexts carries a mild presumption. 'It works fine' isn't a strong argument, but the burden to prove it's inadequate falls on the person claiming it is — you. That said, if you present good evidence and your colleague's only response is 'but it works fine' with no engagement with your evidence, the burden has effectively shifted to them to explain why your evidence isn't compelling."
+                "explanation": "Maintaining the status quo doesn't require justification \u2014 changing it does. The product manager isn't making a claim; they're asking for evidence before agreeing to a change. \"Prove users want it\" is a reasonable request. \"Prove they don't\" is burden-shifting."
               },
               {
                 "id": "c",
-                "text": "It's shared equally — both sides need to present evidence.",
+                "text": "Both \u2014 they should each present evidence for their position.",
                 "isCorrect": false,
-                "explanation": "In theory both sides should reason well. In practice, burden of proof isn't symmetric. The person proposing change has a higher initial burden because change has costs and risks that the status quo doesn't. Once that burden is met — once you've made a credible case — the burden shifts to the other side to respond. But the starting position isn't equal."
+                "explanation": "This sounds fair but misidentifies the positions. The product manager doesn't have a \"position\" to defend \u2014 they're asking a question. The team member has a position (\"we should build this\") that needs evidence. If the team member provides strong evidence, then the burden shifts and the product manager would need reasons to reject it. But the initial burden is on the proposer."
               }
             ],
             "shuffleOptions": false
@@ -274,32 +274,32 @@
           "type": "INSTRUCTION",
           "sortOrder": 3,
           "content": {
-            "body": "## Burden Shifting Tricks\n\nBurden of proof gets manipulated constantly. Here are the most common tricks:\n\n**Proving a negative.** \"You can't prove it's not true, so it might be.\" This shifts the burden to you to disprove something that was never established in the first place. The correct response: \"You haven't given me a reason to think it's true. The burden is on you.\"\n\n**Appeal to ignorance.** \"No one has ever shown that X is harmful, so it must be safe.\" Absence of evidence is not evidence of absence — maybe no one looked, or the evidence is hard to find. Safety and harm both require positive evidence.\n\n**The unfalsifiable claim.** \"There's a conspiracy, and the lack of evidence proves how deep it goes.\" When a claim is constructed so that no evidence could ever count against it, the burden of proof has been permanently evaded. This is a sign you're dealing with belief, not argument.\n\n**Demand for impossible evidence.** \"Show me one study that proves this with 100% certainty.\" No study proves anything with 100% certainty. By setting an impossible bar, the person ensures the burden can never be met. The appropriate standard isn't certainty — it's preponderance of evidence."
+            "body": "## Burden Manipulation\n\nShifting the burden of proof is one of the most effective debate tactics because it's hard to spot and harder to counter gracefully.\n\nCommon moves:\n\n**The reversal.** \"Can you prove it won't work?\" This flips the burden from the claimant to the skeptic. The correct response: \"I don't need to prove it won't work. You need to prove it will.\"\n\n**The appeal to ignorance.** \"No one has ever shown this to be false.\" Absence of disproof is not proof. It might just mean no one has looked, or the claim is unfalsifiable.\n\n**The default shift.** \"The real question is why we *shouldn't* do this.\" This reframes the proposed change as the default and the current state as requiring justification.\n\n**The emotional shift.** \"Don't you trust me?\" This replaces the burden of evidence with a burden of loyalty. You can trust someone and still ask for proof."
           }
         },
         {
           "type": "MULTIPLE_CHOICE",
           "sortOrder": 4,
           "content": {
-            "prompt": "**This one is designed to fool you.**\n\nSomeone tells you: \"There's no evidence that this herbal supplement is harmful, so it's safe to take.\"\n\nWhat's the burden of proof problem?",
+            "prompt": "**This one is designed to fool you.**\n\nA health supplement company claims their product \"boosts immune function.\" A skeptic asks for clinical evidence. The company responds:\n\n> *\"Thousands of satisfied customers report feeling healthier. There are no studies showing our product is harmful.\"*\n\nHow many burden-of-proof problems are in this response?",
             "options": [
               {
                 "id": "a",
-                "text": "No evidence of harm doesn't mean it's safe — it might mean no one has studied it. Safety requires positive evidence of safety, not just absence of evidence of harm.",
-                "isCorrect": true,
-                "explanation": "This is an appeal to ignorance — treating the absence of evidence as evidence of absence. A supplement that hasn't been studied isn't known to be safe. It's unknown. 'No evidence of harm' could mean 'extensively studied and found harmless' or it could mean 'never tested.' The burden of proof for a safety claim is on the person claiming safety — they need to show evidence that it's safe, not just note the absence of evidence that it's dangerous."
+                "text": "One \u2014 they're using testimonials instead of data.",
+                "isCorrect": false,
+                "explanation": "There are at least two problems. The testimonials (anecdote replacing data) are one. But \"no studies showing it's harmful\" is a separate and more insidious burden shift \u2014 it substitutes absence of disproof for proof. The company made a positive claim (\"boosts immune function\") and responded to a request for evidence by pointing to the absence of counter-evidence. That's two distinct moves."
               },
               {
                 "id": "b",
-                "text": "They're right — if something were harmful, we'd probably know about it by now.",
-                "isCorrect": false,
-                "explanation": "This assumption is false for most herbal supplements, which are not regulated the way pharmaceuticals are. Many supplements have never been rigorously tested. The history of medicine is full of substances that were considered safe for decades before evidence of harm emerged. 'We'd probably know' is a form of availability bias: you're estimating the likelihood of harm based on whether you can recall examples, not on whether the research has been done."
+                "text": "Two \u2014 anecdotal evidence replacing clinical data, and absence of harm evidence substituting for proof of benefit. Both shift the burden from the company to the skeptic.",
+                "isCorrect": true,
+                "explanation": "First: customer testimonials aren't clinical evidence of immune function. Feeling healthier is subjective and could be placebo. Second: \"no studies show it's harmful\" answers a question nobody asked. The skeptic asked for proof it works, not proof it's safe. The company responded to a burden of proof challenge by offering two things that look like evidence but aren't \u2014 and the combination feels more convincing than either one alone."
               },
               {
                 "id": "c",
-                "text": "The burden of proof is on them to show it's harmful before I should worry about it.",
+                "text": "None \u2014 customer satisfaction and safety data are legitimate forms of evidence.",
                 "isCorrect": false,
-                "explanation": "This inverts the burden in a risky direction. When you're putting something into your body, the safety claim needs support — the burden isn't on critics to prove danger before caution is warranted. This is the same logic as 'the drug company should prove it's safe before selling it' — which is correct and is why pharmaceutical regulation exists. Supplements often escape this standard, but that's a regulatory gap, not a logical principle."
+                "explanation": "Customer satisfaction is feedback, not clinical evidence of immune function. And safety data (absence of harm) doesn't establish efficacy (presence of benefit). These are different claims requiring different evidence. The response sounds reasonable but doesn't actually address the burden: prove the product does what you claim it does."
               }
             ],
             "shuffleOptions": false
@@ -309,22 +309,22 @@
           "type": "INSTRUCTION",
           "sortOrder": 5,
           "content": {
-            "body": "## Using Burden of Proof in Your Arguments\n\nWhen you're building arguments, burden of proof awareness makes you stronger:\n\n**Accept your burden gracefully.** If you're making a claim, own the responsibility to support it. \"Here's what I'm claiming, and here's why I believe it\" is more persuasive than dodging questions or shifting the burden.\n\n**Set reasonable standards.** When someone challenges your claim, agree on what adequate evidence looks like. \"What would convince you?\" is a powerful question because it prevents goalpost-moving and turns the discussion into a collaborative search for truth.\n\n**Recognize when the burden shifts.** Once you've met your initial burden with credible evidence, the other side needs to respond substantively — not just repeat \"I'm not convinced.\" Persistent skepticism without engagement is its own form of burden evasion.\n\n**Don't claim more than you can support.** The broader your claim, the heavier the burden. \"This might help\" is easier to support than \"this will definitely work.\" Qualifying your claims to match your evidence isn't weakness — it's precision."
+            "body": "## Using Burden Strategically\n\nBurden of proof isn't just a defensive concept \u2014 understanding it makes you a better arguer.\n\n**When making a claim:** acknowledge the burden openly. \"Here's what I'm claiming, and here's my evidence.\" Owning the burden makes you more credible, not less.\n\n**When challenging a claim:** keep the burden where it belongs. \"That's an interesting claim \u2014 what's your evidence?\" Don't let someone shift the burden to you by asking you to disprove their unsupported assertion.\n\n**When you can't meet the burden:** say so honestly. \"I believe this but I can't prove it yet. Here's why I think it's worth investigating.\" Admitting the limits of your evidence is more persuasive than pretending you've met a burden you haven't."
           }
         },
         {
           "type": "FREE_RESPONSE",
           "sortOrder": 6,
           "content": {
-            "prompt": "Think of a disagreement you've had (or are having) where the burden of proof was unclear or disputed. Who was making the claim? Was the burden properly assigned, or did someone shift it?\n\nHow would the argument have gone differently if both sides had clearly agreed on who needed to prove what?",
-            "sampleAnswer": "Many persistent disagreements are actually burden of proof disputes in disguise. Two people arguing about a policy might actually agree on the facts but disagree about who needs to prove what. Clarifying the burden — 'I'm claiming X, so here's my evidence; what would you need to see?' — often resolves what feels like an intractable disagreement by turning it into a clear evidentiary question."
+            "prompt": "Think of a debate or disagreement you've had where burden of proof was unclear or manipulated.\n\nWho was making the positive claim? Who should have borne the burden? Did the burden get shifted? If you could replay the conversation, how would you allocate the burden differently?",
+            "sampleAnswer": "Common examples: arguments about workplace changes where the proposer demanded others prove the change wouldn't work, health claims where the burden was shifted to skeptics, or relationship discussions where asking for reasons was reframed as distrust. The exercise reveals how often the shape of an argument is controlled by burden allocation."
           }
         },
         {
           "type": "INSTRUCTION",
           "sortOrder": 7,
           "content": {
-            "body": "## What You Learned\n\nThe **burden of proof** falls on the person making the claim, proposing the change, or asserting something extraordinary. It's not about who's right — it's about who needs to provide evidence.\n\nCommon burden-shifting tricks: demanding proof of a negative, treating absence of evidence as evidence of absence, making unfalsifiable claims, and setting impossible evidentiary standards.\n\nIn your own arguments: accept your burden, set reasonable standards, recognize when the burden shifts after credible evidence is presented, and don't claim more than your evidence supports. The strength of an argument is measured not by what it claims but by what it proves."
+            "body": "## What You Learned\n\nThe **burden of proof** falls on the person making the claim. The absence of disproof is not proof. Extraordinary claims require extraordinary evidence.\n\nBurden manipulation \u2014 reversals, appeals to ignorance, default shifts, emotional shifts \u2014 is one of the most common and effective tactics in bad argumentation.\n\nThe defense: keep the burden where it belongs. When you make claims, own the burden by providing evidence. When others make claims, don't accept their burden by trying to disprove what they haven't proved.\n\nThe question isn't \"can you prove it's wrong?\" It's \"can you prove it's right?\""
           }
         }
       ]
@@ -332,7 +332,7 @@
     {
       "title": "Steel-Manning",
       "slug": "steel-manning",
-      "description": "Making the strongest version of the opposing view — the move that separates thinkers from debaters.",
+      "description": "Making the strongest version of the opposing view \u2014 because defeating weak arguments proves nothing.",
       "sortOrder": 4,
       "published": true,
       "steps": [
@@ -340,39 +340,39 @@
           "type": "INSTRUCTION",
           "sortOrder": 0,
           "content": {
-            "body": "You've probably heard of a **straw man** — misrepresenting someone's argument to make it easier to defeat. Course 1 covered this.\n\nA **steel man** is the opposite: you take someone's argument and make it *stronger* than they made it. You find the best version of their position, even if they didn't articulate it well, and you engage with that.\n\nThis feels counterintuitive. Why would you strengthen the other side's argument? Three reasons:\n\n**1. It earns credibility.** When you demonstrate that you understand and can articulate the opposing view better than its proponents, you earn trust. Your audience (and your opponent) can see that you're not avoiding the strongest challenges.\n\n**2. It improves your own thinking.** If your position can survive the strongest version of the counterargument — not the weakest — then you actually know something. Beating straw men teaches you nothing.\n\n**3. It's more likely to change minds.** People rarely change their minds when they feel misrepresented. They dig in. When they feel understood — when you articulate their view better than they did — they become genuinely open to hearing your response."
+            "body": "You know the straw man \u2014 misrepresenting someone's argument to make it easier to defeat. The **steel man** is the opposite: you take the opposing argument and make it *stronger* before you respond to it.\n\nWhy would you strengthen the argument you're trying to defeat? Because defeating a weak version of an argument proves nothing. If you can only beat the worst version of the other side's case, you haven't actually engaged with the issue \u2014 you've just won a fight with a dummy.\n\nSteel-manning is the hardest skill in argumentation. It requires you to genuinely understand a position you disagree with \u2014 well enough to make it more persuasive than its own advocates have. And it's the skill that separates people who win arguments from people who actually think clearly."
           }
         },
         {
           "type": "INSTRUCTION",
           "sortOrder": 1,
           "content": {
-            "body": "## How to Steel-Man\n\nSteel-manning is a skill, not an instinct. Your brain defaults to finding weaknesses in opposing views. You have to actively override that default.\n\n**Step 1: Listen for the core concern.** Behind every argument — even poorly articulated ones — there's usually a legitimate concern. Someone arguing against immigration might have a legitimate worry about labor market effects. Someone arguing against a new company policy might have a legitimate concern about workload. Find the concern, not just the words.\n\n**Step 2: Separate the claim from the articulation.** People often argue badly for good positions and argue well for bad positions. Don't evaluate the position based on how well this particular person defended it. Ask: what's the best possible version of this claim?\n\n**Step 3: Grant reasonable assumptions.** Give the opposing view the benefit of the doubt on debatable empirical claims. If they're citing a statistic that might be slightly off, don't get lost in the numbers — engage with the underlying point.\n\n**Step 4: Articulate it back.** Before responding, state their position back to them in its strongest form. \"If I understand correctly, your strongest point is...\" If they say \"yes, exactly,\" you've steel-manned successfully. If they say \"no, that's not what I meant,\" you have more listening to do."
+            "body": "## How to Steel-Man\n\n**Step 1: Understand the position.** Not your caricature of it. What does the smartest, most reasonable person who holds this view actually believe? What evidence do they find compelling? What values are they prioritizing?\n\n**Step 2: Improve it.** Remove the weakest parts of their argument. Add the strongest evidence you can find in their favor. Frame it in the most charitable light. If they're making an emotional argument, find the rational core. If they're making a sloppy argument, clean it up.\n\n**Step 3: State it back.** Present the steel-manned version. Ideally, your opponent should say \"yes, that's exactly my point \u2014 actually, you put it better than I did.\"\n\n**Step 4: Now respond.** If you can address the strongest version of the argument and still maintain your position, your position is genuinely strong. If you can't \u2014 that's important information too."
           }
         },
         {
           "type": "MULTIPLE_CHOICE",
           "sortOrder": 2,
           "content": {
-            "prompt": "Your colleague argues: \"We shouldn't adopt AI tools for customer service. Customers want to talk to real people, and AI just frustrates them.\"\n\nWhich is the best steel man of this argument?",
+            "prompt": "Your company is debating whether to require employees to return to the office. You're pro-remote. A colleague argues for returning to the office by saying:\n\n> *\"People just goof off at home. We need to see them working.\"*\n\nWhat's the steel-manned version of this argument?",
             "options": [
               {
                 "id": "a",
-                "text": "\"AI customer service is worse than human service in every way.\"",
+                "text": "\"Surveillance is necessary because employees can't be trusted.\"",
                 "isCorrect": false,
-                "explanation": "This is actually a straw man — it makes the argument more extreme than your colleague stated. They said customers prefer humans and AI frustrates them, not that AI is worse in every way. Strengthening an argument means making it more defensible, not more absolute."
+                "explanation": "That's a straw man, not a steel man. You've taken the weakest interpretation and made it worse. The colleague may have legitimate concerns underneath their poorly stated argument."
               },
               {
                 "id": "b",
-                "text": "\"Customer service interactions often involve nuance, emotion, and complex problem-solving that current AI handles poorly. Deploying AI in these contexts risks damaging customer relationships and brand trust, which may cost more than the efficiency gains. We should wait until the technology can genuinely match human quality in these areas.\"",
+                "text": "\"In-person work creates ambient collaboration, faster feedback loops, and stronger team cohesion that are difficult to replicate remotely. Some kinds of creative and relational work genuinely benefit from physical proximity.\"",
                 "isCorrect": true,
-                "explanation": "This takes the colleague's core concern (AI frustrates customers) and builds the strongest version: it identifies *why* AI might fall short (nuance, emotion, complexity), names the specific risk (brand damage exceeding efficiency gains), and provides a reasonable path forward (wait for the technology to mature). Your colleague might not have articulated it this clearly, but this is what their concern points toward. Now you can engage with the real argument."
+                "explanation": "This takes the colleague's vague concern (people aren't as productive at home) and reconstructs it into the strongest possible case for in-person work. Notice it drops the weakest element (surveillance) and adds the strongest elements (collaboration, feedback loops, cohesion). Now if you can argue against *this* version and still win, your pro-remote case is actually strong."
               },
               {
                 "id": "c",
-                "text": "\"People are afraid of change and don't want technology replacing human jobs.\"",
+                "text": "\"People are more productive in offices because there are fewer distractions.\"",
                 "isCorrect": false,
-                "explanation": "This isn't a steel man — it's a psychoanalysis of the opponent's motives. Attributing someone's argument to fear or self-interest, rather than engaging with its content, is a form of dismissal. Your colleague made a claim about customer experience. The steel man engages with that claim at its strongest, not with speculations about why they hold it."
+                "explanation": "This is a better version of the colleague's argument, but it's not the strongest possible version. It's also empirically questionable \u2014 offices have plenty of distractions. A true steel man finds the most defensible ground for the opposing position, which is about collaboration and relationship-building, not just distraction-free work."
               }
             ],
             "shuffleOptions": false
@@ -382,32 +382,32 @@
           "type": "INSTRUCTION",
           "sortOrder": 3,
           "content": {
-            "body": "## When Steel-Manning Is Hard\n\nSteel-manning is easiest when you respect the opposing position. It's hardest — and most valuable — when you don't.\n\nWhen someone argues for something you find ridiculous, offensive, or obviously wrong, the instinct is to find the weakest version and demolish it. That feels satisfying but accomplishes nothing.\n\nThe discipline is to ask: **\"What would a smart, well-intentioned person have to believe for this position to make sense?\"**\n\nThis question doesn't require you to agree. It requires you to understand. And understanding is the prerequisite for any response that might actually matter.\n\nThere are limits. You don't need to steel-man calls for violence, bigotry, or deliberate harm. But the vast majority of disagreements — in workplaces, in families, in politics — involve people with different priors and different values, not people who are simply wrong or evil. Steel-manning is the tool for those disagreements."
+            "body": "## Why People Don't Steel-Man\n\nSteel-manning is rare because it's psychologically costly:\n\n**It feels like conceding.** Making the other side's argument stronger feels like giving ground. But understanding a position isn't the same as agreeing with it. Lawyers do this all the time \u2014 they anticipate the opposing counsel's best arguments so they can prepare.\n\n**It threatens your identity.** If you can make a genuinely compelling case for a view you oppose, it raises an uncomfortable question: maybe you're wrong? Most people would rather avoid that discomfort by never engaging with the strongest opposition.\n\n**It's harder.** Straw-manning is easy \u2014 pick the weakest version and attack it. Steel-manning requires actually understanding the other side, which takes effort and empathy.\n\n**It doesn't win social points.** In public debate, straw-manning feels more like \"winning.\" Steel-manning looks like agreement. The audience rewards decisive takedowns, not charitable reconstruction.\n\nAll of these are reasons people avoid it. None of them are reasons it's wrong."
           }
         },
         {
           "type": "MULTIPLE_CHOICE",
           "sortOrder": 4,
           "content": {
-            "prompt": "**This one is designed to fool you.**\n\nSomeone you disagree with on a political issue gives a poor argument for their position — they cite bad statistics, use emotional appeals, and make logical errors.\n\nWhat's the steel-man move?",
+            "prompt": "**This one is designed to fool you.**\n\nSomeone argues: \"College is a waste of money. You learn more in the real world.\"\n\nYou disagree. Which response best demonstrates steel-manning before responding?",
             "options": [
               {
                 "id": "a",
-                "text": "Point out all the errors in their argument — they need to know their reasoning is flawed.",
+                "text": "\"That's ridiculous \u2014 college graduates earn significantly more over their lifetimes.\"",
                 "isCorrect": false,
-                "explanation": "Correcting errors is fine, but it's not steel-manning and it won't advance the conversation. If someone argues badly for a position, dismantling their bad argument doesn't touch the strongest version of their position. You've beaten a weak opponent and learned nothing. Meanwhile, they feel attacked rather than understood, and the conversation goes nowhere."
+                "explanation": "You jumped straight to rebuttal without engaging with their argument. The lifetime earnings statistic is real, but it doesn't address the strongest version of their claim. You defeated the weak version while the strong version sits untouched."
               },
               {
                 "id": "b",
-                "text": "Ignore their bad argument entirely and construct the best possible version of their position — then respond to that version instead.",
+                "text": "\"The strongest version of your argument is that the ROI of college has declined as costs have risen faster than wage premiums, and that for many fields, practical experience and self-directed learning produce comparable skills at a fraction of the cost. That's a real concern. Here's where I think the argument breaks down...\"",
                 "isCorrect": true,
-                "explanation": "This is the move. Their bad statistics and emotional appeals are noise. Beneath them is a position that smarter, more careful people also hold. Find that position, articulate it clearly, and respond to it. If your response still holds against the strongest version, you've actually demonstrated something. If it doesn't, you've discovered that the opposing view has more merit than its worst advocates suggest."
+                "explanation": "This steel-mans the argument by finding its strongest core \u2014 declining ROI, field-specific considerations, alternative learning paths \u2014 before responding. Now whatever rebuttal you offer is addressing a real argument, not a caricature. Your disagreement becomes more credible because you've demonstrated understanding of the other side."
               },
               {
                 "id": "c",
-                "text": "Acknowledge that they have a point and find common ground.",
+                "text": "\"I see your point \u2014 college isn't for everyone.\"",
                 "isCorrect": false,
-                "explanation": "Finding common ground is a useful social skill but it's not steel-manning. Steel-manning isn't about agreeing or being diplomatic — it's about understanding the strongest version of a view you disagree with and engaging with it directly. Sometimes there is common ground. Sometimes there isn't. The steel man doesn't require you to find agreement — just to demonstrate understanding."
+                "explanation": "This is agreement, not steel-manning. Steel-manning isn't about finding middle ground \u2014 it's about constructing the strongest possible version of the opposing view and then responding to it. Agreeing partially without engaging deeply doesn't test either position."
               }
             ],
             "shuffleOptions": false
@@ -417,22 +417,22 @@
           "type": "INSTRUCTION",
           "sortOrder": 5,
           "content": {
-            "body": "## Steel-Manning Your Own Arguments\n\nSteel-manning isn't just for other people's arguments. The most powerful application is turning it on yourself.\n\nBefore you present an argument, ask: **\"What's the steel man of the position I'm arguing against?\"** Then build that into your argument.\n\n\"I think we should expand into the European market. **The strongest case against this** is that European regulatory compliance will cost us roughly $500K in the first year and we don't have local expertise. Here's why I think it's still worth it...\"\n\nThis move is devastating because it preempts your opponents' best points. They were going to raise the compliance cost — now you've already addressed it. They were going to question your expertise — now you've already acknowledged the gap. You've taken their ammunition and used it to build your credibility.\n\nArgumentatively, nothing is more powerful than showing you understand the counterargument and still hold your position. It communicates: I've considered the best case against me, and I'm still here."
+            "body": "## The Steel-Man Test\n\nHere's how you know if you've genuinely steel-manned an argument:\n\n**The advocate test.** Could a reasonable person who holds the opposing view read your steel man and say \"yes, that captures my position \u2014 maybe even better than I stated it\"? If yes, you've steel-manned. If they'd say \"that's not what I mean at all,\" you haven't understood them yet.\n\n**The discomfort test.** Does the steel-manned version make you slightly uncomfortable? Does it challenge your position even a little? If the strongest version of the other side doesn't give you pause, you probably haven't found the strongest version.\n\n**The specificity test.** Is your steel man specific enough to be wrong? Vague steel-mans (\"there might be some merit to the other side\") don't count. The steel man should be a specific, concrete argument that could be evaluated and debated."
           }
         },
         {
           "type": "FREE_RESPONSE",
           "sortOrder": 6,
           "content": {
-            "prompt": "Think of a position you disagree with — something a friend, colleague, or public figure has argued that you think is wrong.\n\nWrite the strongest possible version of their argument. Not the version they gave you — the version that the smartest, most thoughtful person with their values and concerns would give. Use the best evidence, the most reasonable assumptions, and the most persuasive framing.\n\nThen note: did the exercise change how you see the issue, even slightly?",
-            "sampleAnswer": "The exercise succeeds when you feel a moment of 'huh, that's actually a better point than I expected.' If the steel man doesn't make you pause at all, you may not have found the strongest version yet. True steel-manning should produce a moment of genuine engagement with the other side — not agreement, but understanding of why intelligent people hold the position."
+            "prompt": "Choose a position you disagree with \u2014 politically, professionally, personally.\n\nNow steel-man it. Construct the strongest possible argument *for* that position. Find the best evidence, the most compelling logic, the most defensible framing.\n\nDoes the steel-manned version give you pause? Does it change your confidence at all?",
+            "sampleAnswer": "The most valuable responses are ones where the person discovers genuine strength in a position they oppose. If the steel man doesn't give you any pause at all, you likely haven't found the strongest version \u2014 or you're protecting yourself from engaging with it. The exercise isn't about changing your mind. It's about earning your position by testing it against the best opposition."
           }
         },
         {
           "type": "INSTRUCTION",
           "sortOrder": 7,
           "content": {
-            "body": "## What You Learned\n\n**Steel-manning** is the practice of engaging with the strongest version of an opposing argument rather than the weakest. It earns credibility, improves your own thinking, and is more likely to change minds.\n\nThe process: listen for the core concern, separate the claim from the articulation, grant reasonable assumptions, and articulate the position back in its strongest form.\n\nThe hardest and most valuable application: steel-manning views you strongly disagree with. Ask what a smart, well-intentioned person would need to believe for the position to make sense.\n\nThe most powerful application: steel-manning the opposition in your own arguments. Preempting the strongest counterargument demonstrates that your position survives real scrutiny, not just scrutiny of weak objections."
+            "body": "## What You Learned\n\n**Steel-manning** is constructing the strongest possible version of the opposing argument before responding to it. It's the opposite of straw-manning and the hardest skill in argumentation.\n\nDefeating a weak version of an argument proves nothing. Defeating the strongest version proves your position can withstand real scrutiny.\n\nThe habit: before you respond to an argument you disagree with, ask \"what's the strongest version of this?\" Engage with that version, not the one that's easiest to beat.\n\nIf you can only win against the worst version of the other side, you haven't won at all."
           }
         }
       ]
@@ -440,7 +440,7 @@
     {
       "title": "Qualifying Your Claims",
       "slug": "qualifying-claims",
-      "description": "Hedging without weakening — how to be precise about what you know and what you don't.",
+      "description": "Hedging without weakening \u2014 how precise language makes arguments stronger, not weaker.",
       "sortOrder": 5,
       "published": true,
       "steps": [
@@ -448,39 +448,39 @@
           "type": "INSTRUCTION",
           "sortOrder": 0,
           "content": {
-            "body": "There's a paradox in argumentation: **the more precisely you state what you know, the more credible you become — even though you're technically claiming less.**\n\n\"This will definitely work\" is a stronger claim than \"Based on the available evidence, this is likely to work for most cases, though results may vary.\" But the second statement is more credible, more honest, and more persuasive to sophisticated audiences.\n\nThis is the art of **qualification** — adjusting your claims to match the actual strength of your evidence. It's not hedging out of weakness. It's precision. And precision, it turns out, is more convincing than confidence."
+            "body": "\"Exercise is good for you\" sounds confident.\n\"Regular moderate exercise is associated with improved cardiovascular outcomes in most adults\" sounds weaker.\n\nBut the second version is a stronger argument. Why? Because it's **precise**. It specifies what kind of exercise, what outcome, and for whom. The first version is so broad that any counterexample demolishes it.\n\nThis is the paradox of qualification: **precise claims with appropriate hedging are harder to defeat than bold, sweeping ones.** Beginners think qualifiers show weakness. Experts know qualifiers show that you understand the limits of your claim \u2014 which makes the claim more credible, not less."
           }
         },
         {
           "type": "INSTRUCTION",
           "sortOrder": 1,
           "content": {
-            "body": "## The Qualification Spectrum\n\nClaims exist on a spectrum from absolute to tentative:\n\n**Absolute:** \"X is true.\" / \"This will work.\" / \"Everyone agrees.\"\n**Strong:** \"The evidence strongly suggests X.\" / \"This is very likely to work.\"\n**Moderate:** \"X appears to be the case based on current evidence.\" / \"This will probably work in most situations.\"\n**Tentative:** \"There's some reason to think X might be true.\" / \"This could work, though there are significant uncertainties.\"\n**Speculative:** \"It's possible that X, but we really don't know yet.\"\n\nMost claims in everyday life are stated at the absolute or strong level when the evidence only supports moderate or tentative confidence. People overclaim because:\n\n**Confidence sounds authoritative.** Qualifications feel like weakness, so people drop them to sound more certain.\n\n**Nuance is harder to communicate.** \"It depends\" is a more accurate answer to most questions than \"yes\" or \"no,\" but it's less satisfying and harder to remember.\n\n**Audiences prefer certainty.** People want clear answers, and speakers learn to provide them even when the reality is murkier.\n\nThe result: a public discourse where everyone sounds more certain than they are about everything."
+            "body": "## The Vocabulary of Qualification\n\n**Scope limiters** narrow who or what the claim applies to: \"most,\" \"many,\" \"in some contexts,\" \"for experienced users.\"\n\n**Confidence markers** signal how certain you are: \"the evidence suggests,\" \"it's likely that,\" \"there are strong reasons to believe.\"\n\n**Condition markers** specify when the claim holds: \"if the market remains stable,\" \"assuming the data is accurate,\" \"when implemented correctly.\"\n\n**Magnitude qualifiers** specify how much: \"significantly,\" \"modestly,\" \"marginally.\"\n\nUsed well, qualifiers make your argument airtight. Used badly (too many hedges, qualifiers on everything), they make you sound uncertain about your own position.\n\nThe goal: qualify where the evidence demands it, and state confidently where the evidence supports it. Precision, not weakness."
           }
         },
         {
           "type": "MULTIPLE_CHOICE",
           "sortOrder": 2,
           "content": {
-            "prompt": "You're presenting research findings to your team. Your study of 200 customers found that a new feature increased satisfaction scores by 12%. Which way of presenting this is most appropriate?",
+            "prompt": "Which version of this claim is strongest?\n\n**A:** \"AI will replace all white-collar jobs within 10 years.\"\n**B:** \"AI is likely to significantly automate routine cognitive tasks in several white-collar fields over the next decade, though the pace and scope will vary by industry.\"\n**C:** \"AI might maybe possibly affect some jobs at some point.\"",
             "options": [
               {
                 "id": "a",
-                "text": "\"The new feature increases customer satisfaction by 12%.\"",
+                "text": "Version A \u2014 it's bold and clear.",
                 "isCorrect": false,
-                "explanation": "This states the finding as absolute fact, stripping away important context. How confident are you in the 12% figure? How representative were the 200 customers? Could other factors explain the increase? Presenting this as settled fact overclaims what a single study of 200 people can establish, and it will lose credibility with anyone who understands methodology."
+                "explanation": "Bold and clear, but also easily falsified. \"All\" white-collar jobs? \"Within 10 years\"? A single counterexample (one white-collar job that isn't replaced) defeats the entire claim. Sweeping claims feel strong but are structurally fragile."
               },
               {
                 "id": "b",
-                "text": "\"In our study of 200 customers, the new feature was associated with a 12% increase in satisfaction scores. If this holds in broader testing, it suggests meaningful improvement.\"",
+                "text": "Version B \u2014 it's specific enough to be meaningful and qualified enough to be defensible.",
                 "isCorrect": true,
-                "explanation": "This states exactly what you know: the sample size, the finding, and the condition under which it becomes significant (broader testing). It's honest about the limits without undermining the finding. Paradoxically, this qualified statement is more persuasive than the absolute one to anyone who thinks critically, because it signals that you understand what your evidence does and doesn't show."
+                "explanation": "Version B makes a real claim (significant automation of routine tasks) with appropriate qualifiers (likely, several fields, varying pace). It's precise enough to be tested and broad enough to survive counterexamples. This is how experts actually talk about complex topics \u2014 not because they're timid, but because reality is complex."
               },
               {
                 "id": "c",
-                "text": "\"We think the feature might improve satisfaction, but it's hard to say for sure.\"",
+                "text": "Version C \u2014 it's the most careful and therefore the hardest to disprove.",
                 "isCorrect": false,
-                "explanation": "This over-qualifies. You have real data showing a meaningful effect — a 12% increase across 200 customers is a substantive finding worth presenting with appropriate confidence. Downplaying it to 'we think it might' buries the signal. The goal of qualification is precision, not timidity. You have evidence; state it clearly and note its limits."
+                "explanation": "This is over-qualification. It's so hedged that it says almost nothing. \"Might maybe possibly affect some jobs at some point\" is unfalsifiable, which means it's also uninformative. A claim that can't be wrong can't be right either. Good qualification is precise, not vague."
               }
             ],
             "shuffleOptions": false
@@ -490,57 +490,50 @@
           "type": "INSTRUCTION",
           "sortOrder": 3,
           "content": {
-            "body": "## Qualification as Strategy\n\nQualification isn't just about honesty — it's strategically smart.\n\n**It makes you harder to attack.** An absolute claim has a single point of failure: if one counterexample exists, the claim falls. A qualified claim absorbs counterexamples gracefully. \"This usually works\" survives exceptions that \"this always works\" doesn't.\n\n**It builds trust over time.** People who qualify appropriately develop a reputation for reliability. When they do make a strong claim, it lands harder because the audience knows this person doesn't overclaim. The cry-wolf principle works in reverse: the person who rarely sounds the alarm is the one you listen to.\n\n**It invites collaboration.** \"I think X, but I'm not certain\" opens a conversation. \"X is true\" closes one. If your goal is to find the right answer rather than win the argument, qualification creates the space for others to contribute.\n\n**It protects your credibility.** If you claim something will \"definitely work\" and it doesn't, you've lost credibility. If you said it would \"probably work based on current evidence\" and it doesn't, you were honestly wrong — which is recoverable."
+            "body": "## When NOT to Qualify\n\nNot every claim needs hedging. Over-qualification is its own failure:\n\n**Established facts:** \"The earth orbits the sun\" doesn't need \"the evidence suggests.\" When something is well-established, qualifying it signals confusion, not precision.\n\n**Clear values:** \"Fraud is wrong\" doesn't need \"in most contexts.\" When you're stating a value, hedging makes you sound like you're not committed to it.\n\n**Direct observations:** \"Sales dropped 15% last quarter\" doesn't need \"it appears that.\" When you have the data, state the data.\n\nThe rule: qualify claims where the evidence is partial, the scope is limited, or the confidence is less than certain. Don't qualify where the evidence is clear, the values are firm, or the facts are known."
           }
         },
         {
           "type": "MULTIPLE_CHOICE",
           "sortOrder": 4,
           "content": {
-            "prompt": "**This one is designed to fool you.**\n\nTwo people are arguing about the same claim:\n\n**Person A:** \"I'm absolutely certain this is the right direction.\"\n**Person B:** \"I think this is probably the right direction, though I have some reservations about the timeline.\"\n\nWho is more likely to be right?",
+            "prompt": "Your manager asks for your assessment of a new hire's first month. Which response demonstrates appropriate qualification?",
             "options": [
               {
                 "id": "a",
-                "text": "Person A — their confidence suggests they have strong evidence or deep experience.",
+                "text": "\"They're great. Best hire we've made.\"",
                 "isCorrect": false,
-                "explanation": "Confidence and correctness are uncorrelated. Research consistently shows that the most confident people are not systematically more accurate — and in many domains, overconfidence is inversely correlated with expertise. Person A might have strong evidence, or they might just have a strong personality. Confidence is a social signal, not an epistemic one."
+                "explanation": "One month is insufficient data for \"best hire we've made.\" This is overconfident \u2014 it conflates a promising start with a confirmed outcome. If they underperform in month three, this assessment looks reckless."
               },
               {
                 "id": "b",
-                "text": "You can't tell who's more likely to be right from their confidence levels — but Person B's qualification suggests better calibration between their confidence and their evidence, which is a positive signal.",
+                "text": "\"Strong start. They've ramped up faster than typical for this role, and their work on the client presentation was well-received. It's early, but the trajectory is positive.\"",
                 "isCorrect": true,
-                "explanation": "Person B's qualification — 'probably right' with 'reservations about timeline' — suggests they've thought carefully about what they know and what they don't. This calibration between confidence and evidence is one of the best predictors of accuracy. Person A's absolute certainty should actually reduce your confidence in them: very few real-world decisions warrant absolute certainty, and claiming it suggests either insufficient consideration of risks or a habit of overclaiming."
+                "explanation": "This is qualified without being weak. It makes specific positive observations (faster ramp, good presentation), acknowledges the limitation (it's early), and offers a measured conclusion (positive trajectory). Anyone reading this knows exactly what the evidence is and how much weight to give it."
               },
               {
                 "id": "c",
-                "text": "Person B — uncertainty is always more honest than certainty.",
+                "text": "\"It's hard to say. They seem okay. There might be some potential there, but I'm not sure yet.\"",
                 "isCorrect": false,
-                "explanation": "Not always. Sometimes the evidence genuinely supports high confidence: 'I'm certain that 2+2=4' is perfectly appropriate. The principle isn't that uncertainty is always better — it's that confidence should be calibrated to evidence. Person B shows better calibration in this case, but the conclusion isn't a general rule that hedging is always more honest. Sometimes it's evasion."
+                "explanation": "Over-qualified to the point of uselessness. Your manager asked for an assessment, and this provides none. After a month, you have observations worth sharing \u2014 the question is how to frame their certainty level, not whether to share them at all."
               }
             ],
             "shuffleOptions": false
           }
         },
         {
-          "type": "INSTRUCTION",
+          "type": "FREE_RESPONSE",
           "sortOrder": 5,
           "content": {
-            "body": "## Practical Qualification Tools\n\nHere are specific ways to qualify without weakening:\n\n**Scope limiters.** \"In most cases...\" \"For this type of customer...\" \"Based on the data we have...\" These narrow the claim to what your evidence actually supports.\n\n**Confidence markers.** \"The evidence strongly suggests...\" \"It's likely that...\" \"There's preliminary evidence for...\" These signal how much weight the audience should put on the claim.\n\n**Condition statements.** \"If the market stays stable...\" \"Assuming our projections hold...\" \"Unless there's a significant change in...\" These make your assumptions explicit rather than hiding them.\n\n**Acknowledging alternatives.** \"One interpretation is X, though Y is also possible.\" \"This is my best reading of the evidence, but reasonable people might disagree.\" These show you've considered other views.\n\nThe key: qualification should be precise, not vague. \"I think maybe this could possibly work\" is not qualification — it's mush. \"This worked in 3 of 4 comparable trials, with the exception being a market that differs from ours in specific ways\" is real qualification that actually informs the listener."
-          }
-        },
-        {
-          "type": "FREE_RESPONSE",
-          "sortOrder": 6,
-          "content": {
-            "prompt": "Think of something you've recently stated with more confidence than your evidence warrants — a recommendation, a prediction, a claim about something you know imperfectly.\n\nRewrite the statement with appropriate qualification. Match your confidence to your actual evidence. Then notice: does the qualified version feel weaker? Does it actually communicate more useful information?",
-            "sampleAnswer": "Most people find that the qualified version feels less powerful but communicates more. The absolute version tells the listener what to believe. The qualified version tells them what you know, what you don't, and how much weight to give the claim. The second is more useful for decision-making even though the first feels more persuasive. This gap between persuasive force and informational value is the central tension of qualification."
+            "prompt": "Take a strong opinion you hold and write it two ways:\n\n**Version 1:** As a sweeping, unqualified claim.\n**Version 2:** With appropriate qualifiers \u2014 scope, confidence, conditions.\n\nWhich version would survive scrutiny better? Which would be more persuasive to a skeptic?",
+            "sampleAnswer": "Most people find that their qualified version is both harder to attack and more persuasive to critical audiences. The sweeping version feels stronger to allies but weaker to skeptics. The qualified version feels weaker to allies but stronger to skeptics. Since skeptics are the audience you actually need to persuade, qualification is a strategic advantage."
           }
         },
         {
           "type": "INSTRUCTION",
-          "sortOrder": 7,
+          "sortOrder": 6,
           "content": {
-            "body": "## What You Learned\n\n**Qualification** is matching your claims to the actual strength of your evidence. It's not hedging or weakness — it's precision.\n\nQualified claims are harder to attack, build trust over time, invite collaboration, and protect your credibility. Absolute claims sound more confident but are more fragile, more likely to be wrong, and more damaging to your reputation when they fail.\n\nThe practical tools: scope limiters, confidence markers, condition statements, and acknowledgment of alternatives. Use them with precision, not vagueness. Good qualification is specific about what you know and what you don't — not generally uncertain about everything."
+            "body": "## What You Learned\n\n**Qualification** is the art of making claims precise enough to be defensible without making them so hedged that they say nothing.\n\nSweeping claims feel bold but are structurally fragile. Appropriately qualified claims sound less dramatic but survive scrutiny.\n\nQualify where evidence is partial, scope is limited, or confidence is uncertain. Don't qualify established facts, clear values, or direct observations.\n\nThe goal isn't to hedge everything. It's to be precise about what you know, what you don't, and where the boundaries of your claim actually are."
           }
         }
       ]
@@ -548,7 +541,7 @@
     {
       "title": "Anticipating Objections",
       "slug": "anticipating-objections",
-      "description": "Building counterarguments into your case before someone else raises them.",
+      "description": "Building counterarguments into your case before your opponent can use them.",
       "sortOrder": 6,
       "published": true,
       "steps": [
@@ -556,39 +549,39 @@
           "type": "INSTRUCTION",
           "sortOrder": 0,
           "content": {
-            "body": "The strongest arguments don't just make a case — they address the best reasons to reject it.\n\nWhen you present an argument and someone raises an objection you hadn't considered, two things happen. First, you have to respond in real time, which usually produces a weaker response than if you'd prepared. Second, your audience now wonders what else you haven't considered.\n\nBut when you raise the objection yourself — and address it — the dynamic reverses. You look thorough, honest, and confident. The audience sees that you've stress-tested your own argument. And the person who was going to raise that objection now has to either accept your response or find a new angle.\n\n**Anticipating objections** is the practice of identifying the strongest counterarguments to your position and building your response into the argument itself."
+            "body": "The strongest arguments don't just make their case \u2014 they address the best reasons to disagree *before the opponent raises them*.\n\nThis is called **prolepsis** in classical rhetoric: anticipating objections and responding to them within your own argument. It's devastating because it deprives the opponent of their best moves and signals that you've thought about the issue from all sides.\n\nWhen someone says \"Now, you might be thinking...\" and then addresses exactly what you were thinking \u2014 you feel understood, and their response lands harder because it arrived before you had a chance to solidify the objection in your mind."
           }
         },
         {
           "type": "INSTRUCTION",
           "sortOrder": 1,
           "content": {
-            "body": "## Finding the Objections\n\nTo anticipate objections, you need to think like your opponent. Here are four categories to check:\n\n**Evidence objections.** \"Your data is flawed / insufficient / cherry-picked.\" Is there a methodological weakness in your evidence? A study with a small sample? A case study that might not generalize? Find it before they do.\n\n**Premise objections.** \"Your assumption is wrong.\" What assumptions is your argument resting on? Are any of them debatable? If your argument assumes \"customers value speed over accuracy,\" someone will challenge that assumption.\n\n**Inference objections.** \"Even if your premises are true, your conclusion doesn't follow.\" Is there a logical gap between your evidence and your conclusion? Could the same evidence support a different conclusion?\n\n**Practical objections.** \"Even if you're right, it won't work in practice.\" Is your proposal feasible? Affordable? Implementable? Can the people who need to execute it actually do so? Practical objections are the most common in business and policy contexts.\n\nFor each objection you identify, prepare one of three responses: refute it (show why it's wrong), concede and adapt (acknowledge the point and modify your claim), or reframe (show why the objection, while valid, doesn't undermine your core argument)."
+            "body": "## How to Anticipate\n\n**1. List the obvious objections.** What would a reasonable skeptic say? Not a hostile one \u2014 a thoughtful one. These are the objections everyone will think of.\n\n**2. List the smart objections.** What would an expert in the opposing position say? These are the objections that actually threaten your argument.\n\n**3. List the emotional objections.** What feelings will your argument trigger? Fear? Loss? Discomfort? People object emotionally even when they agree logically.\n\n**4. Address each one.** For strong objections: acknowledge them honestly and explain why your argument still holds despite them. For weak objections: acknowledge and dismiss briefly. For emotional objections: validate the feeling and reframe.\n\nThe key: never pretend objections don't exist. Audiences know the objections are there. If you ignore them, the audience assumes you don't have answers. If you address them, the audience assumes you do."
           }
         },
         {
           "type": "MULTIPLE_CHOICE",
           "sortOrder": 2,
           "content": {
-            "prompt": "You're proposing that your company offer unlimited vacation. You expect the main objection will be: \"People will abuse it and take too much time off.\"\n\nWhat's the strongest way to handle this in your argument?",
+            "prompt": "You're proposing your company switch to a four-day work week. Which approach to objections is strongest?",
             "options": [
               {
                 "id": "a",
-                "text": "Don't mention it — if no one brings it up, you don't have to deal with it.",
+                "text": "Present only the benefits and let the audience ask about downsides.",
                 "isCorrect": false,
-                "explanation": "Someone will bring it up. And when they do, you'll be on the defensive — responding to their framing of the objection rather than yours. Worse, the audience will wonder why you didn't address the most obvious concern. Omitting predictable objections doesn't prevent them; it makes you look either naive or evasive."
+                "explanation": "The audience is already thinking about downsides. If you don't address them, every concern becomes an unspoken reason to say no. Worse, the audience may assume the downsides are fatal since you didn't mention them."
               },
               {
                 "id": "b",
-                "text": "Raise it yourself: 'The most common concern is that people will abuse unlimited vacation. Data from companies that have implemented this shows the opposite — people actually take less time off, because the absence of a defined allowance creates social pressure and ambiguity about what's acceptable.'",
+                "text": "Acknowledge the three most likely objections (productivity concerns, client coverage, fairness) and address each with evidence and proposed solutions.",
                 "isCorrect": true,
-                "explanation": "By raising the objection yourself, you control the framing. By citing data from companies that have implemented the policy, you turn a hypothetical concern into an empirical question with an answer. The counterintuitive finding — people take less, not more — reframes the objection as an argument for your position. This is anticipation at its best: the strongest objection becomes a supporting point."
+                "explanation": "By naming the objections yourself, you control how they're framed. You can present data showing productivity is maintained in four-day trials, propose a rotation system for client coverage, and address fairness with a clear policy. Each preempted objection is one fewer weapon for opponents."
               },
               {
                 "id": "c",
-                "text": "Dismiss it: 'If we can't trust our employees to manage their own time off, we have bigger problems than vacation policy.'",
+                "text": "Preemptively attack anyone who might object as resistant to change.",
                 "isCorrect": false,
-                "explanation": "This sounds confident but it's deflection, not engagement. It reframes the concern as a trust issue rather than addressing it on its merits. Some employees might genuinely struggle with ambiguous policies — not because they're untrustworthy, but because unclear expectations create stress. Dismissing a legitimate operational concern as a character question alienates the people raising it."
+                "explanation": "Attacking objectors instead of addressing objections makes your argument look weak \u2014 as though it can't survive scrutiny. People with strong arguments welcome questions. People with weak ones attack the questioners."
               }
             ],
             "shuffleOptions": false
@@ -598,32 +591,32 @@
           "type": "INSTRUCTION",
           "sortOrder": 3,
           "content": {
-            "body": "## The Concession Move\n\nNot every objection can be refuted. Some are valid. The mark of a mature arguer is knowing when to concede a point without abandoning your position.\n\nThe structure:\n\n> \"It's true that [objection]. However, [why your argument still holds despite this].\"\n\n\"It's true that switching vendors will be disruptive in the short term. However, the long-term cost savings of $200K per year mean we recover the switching cost within six months.\"\n\nThe concession does several things:\n\n**It demonstrates honesty.** You're not pretending the objection doesn't exist. This builds trust.\n\n**It narrows the debate.** By conceding the valid parts, you prevent the argument from getting stuck on points of agreement disguised as disagreement.\n\n**It reframes the evaluation.** The audience is now weighing the conceded cost against the claimed benefit, rather than debating whether the cost exists. You've moved from \"is there a downside?\" to \"is the downside worth the upside?\" — which is the right question.\n\nThe worst thing you can do with a valid objection is deny it. The audience can see it's valid, and your denial damages your credibility on everything else."
+            "body": "## The Concession-and-Pivot\n\nThe most powerful pattern for handling objections:\n\n**Concede** the legitimate part of the objection.\n**Pivot** to why your argument still holds.\n\n\"You're right that switching tools will have a transition cost. That's real, and I've estimated it at about two weeks of reduced productivity. But the data from similar companies shows the productivity gain after transition more than compensates within the first quarter.\"\n\nThe concession does three things: it shows intellectual honesty, it disarms the objector, and it makes your pivot more credible because you clearly aren't ignoring inconvenient facts.\n\nNever concede the conclusion \u2014 concede a premise or a complication, then show why the conclusion holds despite it."
           }
         },
         {
           "type": "MULTIPLE_CHOICE",
           "sortOrder": 4,
           "content": {
-            "prompt": "**This one is designed to fool you.**\n\nYou've anticipated and addressed three objections in your proposal. In the meeting, someone raises a fourth objection you didn't expect. It's a good point.\n\nWhat do you do?",
+            "prompt": "**This one is designed to fool you.**\n\nYou're arguing that your team should adopt a new technology. A colleague raises a strong objection: the learning curve will slow the team down for months.\n\nWhich response is most effective?",
             "options": [
               {
                 "id": "a",
-                "text": "Acknowledge that it's a good point, ask for time to think about it, and propose following up after the meeting.",
-                "isCorrect": true,
-                "explanation": "This is the honest, strong response. You've shown you can anticipate objections (you addressed three). This one got past you. Acknowledging it rather than improvising a weak response shows intellectual integrity. Asking for time shows you take the objection seriously. Following up shows reliability. An audience that saw you handle three objections well will extend trust on the fourth — especially if you don't pretend you have an answer when you don't."
+                "text": "\"The learning curve won't be that bad \u2014 our team picks things up quickly.\"",
+                "isCorrect": false,
+                "explanation": "Dismissing the objection instead of addressing it. \"Our team picks things up quickly\" is an assertion, not evidence. The colleague's concern about months of slowdown is specific; your response should be equally specific."
               },
               {
                 "id": "b",
-                "text": "Improvise a response — you need to have an answer for everything in the moment.",
-                "isCorrect": false,
-                "explanation": "The pressure to have an instant answer is real but the results are usually poor. Improvised responses to good objections tend to be either weak (which damages your credibility) or overcommitted (you say something definitive that you later regret). The strongest communicators are comfortable saying 'I need to think about that' — because it signals that their other responses were well-considered, not improvised."
+                "text": "\"You're right \u2014 there will be a learning curve, and I'd estimate 4-6 weeks of reduced velocity. I've factored that into the timeline. Here's why the long-term gains still justify that cost...\"",
+                "isCorrect": true,
+                "explanation": "The concession-and-pivot. You acknowledged the real cost (not dismissed it), quantified it (showing you've thought about it), and pivoted to why the investment is still worth making. The colleague's objection has been absorbed into your argument rather than left standing as a challenge to it."
               },
               {
                 "id": "c",
-                "text": "Redirect to one of your prepared points to avoid looking unprepared.",
+                "text": "\"Every new technology has a learning curve. That's not a reason to avoid progress.\"",
                 "isCorrect": false,
-                "explanation": "The audience will notice. Redirecting away from a valid objection signals that you either don't have an answer (which they'll assume anyway) or that you're being evasive (which is worse). The objection doesn't go away because you changed the subject — it sits in the room, unaddressed, undermining everything you said before it."
+                "explanation": "This is a dismissal dressed up as a principle. \"Every technology has a learning curve\" is true but doesn't address the specific concern. And framing the objection as anti-progress is a subtle ad hominem \u2014 attacking the objector's framing rather than their point."
               }
             ],
             "shuffleOptions": false
@@ -633,15 +626,15 @@
           "type": "FREE_RESPONSE",
           "sortOrder": 5,
           "content": {
-            "prompt": "Think of a proposal or recommendation you might make soon — at work, in a personal context, or anywhere you need to persuade someone.\n\nList the three strongest objections someone might raise against it. For each one, decide: would you refute it, concede and adapt, or reframe? Write your planned response for each.\n\nBonus: which objection is the one you'd least want to face? That's probably the most important one to prepare for.",
-            "sampleAnswer": "The exercise works when it produces genuine discomfort at objection #3 — the one you least want to face. That discomfort usually signals the real vulnerability in your argument. Preparing for it doesn't make it go away, but it prevents the worst outcome: being caught off-guard by something you could have anticipated."
+            "prompt": "Think of a proposal or argument you need to make soon \u2014 at work, in your personal life, or anywhere.\n\nList the three strongest objections someone could raise. For each one, write a concession-and-pivot response that acknowledges the objection and explains why your argument holds despite it.",
+            "sampleAnswer": "The strongest responses identify objections that actually threaten the argument (not strawman objections), concede the legitimate core of each, and pivot with specific evidence or reasoning. If you can't find three real objections, you might not understand the opposing perspective well enough \u2014 which means your argument has a blind spot."
           }
         },
         {
           "type": "INSTRUCTION",
           "sortOrder": 6,
           "content": {
-            "body": "## What You Learned\n\n**Anticipating objections** means identifying the strongest counterarguments to your position and building your responses into the argument itself.\n\nFour categories to check: evidence objections (your data is weak), premise objections (your assumptions are wrong), inference objections (your conclusion doesn't follow), and practical objections (it won't work in practice).\n\nThree response strategies: refute (show the objection is wrong), concede and adapt (acknowledge the valid point and explain why your argument survives), or reframe (show the objection doesn't undermine the core claim).\n\nWhen you encounter an objection you didn't anticipate, the strongest move is to acknowledge it honestly and follow up — not to improvise a weak response or redirect. An argument that has survived three objections and honestly defers a fourth is stronger than one that pretends to answer everything."
+            "body": "## What You Learned\n\nAnticipating objections makes your argument stronger by addressing challenges before opponents can raise them.\n\nThe process: list obvious, smart, and emotional objections, then address each within your argument.\n\nThe **concession-and-pivot** is the most powerful pattern: acknowledge the legitimate part of the objection, then show why your conclusion holds despite it.\n\nArguments that ignore objections look fragile. Arguments that address them look airtight. Address the strongest objections \u2014 especially the ones you wish weren't there."
           }
         }
       ]
@@ -649,7 +642,7 @@
     {
       "title": "Persuasion vs. Manipulation",
       "slug": "persuasion-vs-manipulation",
-      "description": "The ethical line between convincing someone and controlling them.",
+      "description": "Where the ethical line falls \u2014 and why it matters for building arguments that are good, not just effective.",
       "sortOrder": 7,
       "published": true,
       "steps": [
@@ -657,39 +650,39 @@
           "type": "INSTRUCTION",
           "sortOrder": 0,
           "content": {
-            "body": "You now have the tools to build strong arguments. Which raises a question this course has been circling since the beginning: **when does persuasion become manipulation?**\n\nBoth persuasion and manipulation aim to change someone's mind or behavior. Both use rhetoric, evidence, framing, and emotion. A great speech and a con artist's pitch can use identical devices. So where's the line?\n\nThe line isn't in the tools. It's in the relationship between the speaker, the audience, and the truth."
+            "body": "You now have tools for building strong arguments: evidence, structure, qualification, steel-manning, anticipating objections. These tools make you more persuasive.\n\nBut persuasion and manipulation use many of the same techniques. A concession-and-pivot can be a genuine acknowledgment of complexity \u2014 or it can be a strategic performance of fairness. Anticipating objections can demonstrate thorough thinking \u2014 or it can be a way to preemptively neutralize legitimate concerns.\n\nSo where's the line?\n\nThis is the most important question in rhetoric and argumentation. The tools don't come with ethics built in. You have to supply those yourself."
           }
         },
         {
           "type": "INSTRUCTION",
           "sortOrder": 1,
           "content": {
-            "body": "## Three Tests\n\nHere are three tests for whether you're persuading or manipulating:\n\n**The transparency test.** If your audience could see exactly what you're doing — every rhetorical device, every framing choice, every deliberate omission — would they feel informed or deceived? Persuasion survives transparency. Manipulation depends on the audience not seeing the mechanism.\n\n**The interests test.** Does your argument serve the audience's interests, your interests, or both? Persuasion helps the audience make a decision that's good for them, even if it's also good for you. Manipulation serves your interests at the audience's expense. A doctor persuading you to exercise is serving your interests. A supplement company using fear to sell you something you don't need is not.\n\n**The autonomy test.** Does your argument give the audience the tools to make their own decision, or does it bypass their judgment? Persuasion presents evidence and reasoning that the audience can evaluate independently. Manipulation uses pressure, deception, or emotional exploitation to produce a decision the audience wouldn't make with full information and time to think.\n\nAll three tests point the same direction: **persuasion respects the audience's ability to judge for themselves. Manipulation circumvents it.**"
+            "body": "## A Working Distinction\n\n**Persuasion** helps the audience make a better-informed decision. It presents evidence honestly, acknowledges uncertainty, and respects the audience's right to disagree.\n\n**Manipulation** steers the audience toward a predetermined conclusion regardless of whether it's in their interest. It exploits biases, suppresses inconvenient evidence, and treats the audience as a target rather than a participant.\n\nThe gray area: most real persuasion involves some framing, some emphasis, some strategic ordering of ideas. You choose which evidence to lead with. You frame the problem in a way that favors your solution. You use rhetorical devices to make your points land.\n\nThe ethical question isn't whether you're using persuasive techniques \u2014 everyone is, all the time. The question is: **if the audience could see exactly what you're doing and why, would they feel informed or deceived?**\n\nTransparency is the test. Persuasion survives transparency. Manipulation doesn't."
           }
         },
         {
           "type": "MULTIPLE_CHOICE",
           "sortOrder": 2,
           "content": {
-            "prompt": "A charity uses photos of suffering children in its fundraising campaign. The photos are real and accurately represent the situation. The campaign includes factual information about the charity's impact.\n\nIs this persuasion or manipulation?",
+            "prompt": "A salesperson knows their product has a significant limitation that affects about 30% of use cases. They also know it's the best option for the remaining 70%.\n\nWhich approach is persuasion, and which is manipulation?",
             "options": [
               {
                 "id": "a",
-                "text": "Manipulation — they're using emotional images to bypass rational evaluation of where to donate.",
-                "isCorrect": false,
-                "explanation": "The emotional images aren't bypassing rationality — they're conveying information that's genuinely relevant. The children are real. The suffering is real. Emotion in response to real suffering isn't irrational — it's appropriate. The photos make an abstract problem concrete, which helps donors understand what they're deciding about. If the photos were staged, or if they represented a situation the charity doesn't address, that would be manipulation. Reality plus emotion is persuasion, not deception."
+                "text": "Mentioning the limitation upfront and explaining who the product is and isn't for \u2014 that's persuasion. Hiding the limitation and hoping the customer doesn't discover it \u2014 that's manipulation.",
+                "isCorrect": true,
+                "explanation": "The transparency test: if the customer could see the salesperson's full knowledge, would they feel informed by approach one? Yes. Would they feel deceived by approach two? Yes. The salesperson in approach one might lose some sales \u2014 but the ones they make are built on informed consent. Approach two might make more sales short-term but creates distrust and returns."
               },
               {
                 "id": "b",
-                "text": "Persuasion — the images are real, the information is factual, and the emotional response is appropriate to the reality. The audience can evaluate the claim and decide freely.",
-                "isCorrect": true,
-                "explanation": "Apply the three tests. Transparency: if the audience knew the charity was deliberately choosing moving images, would they feel deceived? Probably not — they'd expect it. Interests: the charity's work benefits the people in the photos, so the audience's donation serves the interests it claims to serve. Autonomy: the campaign includes factual information, so donors can evaluate the claim independently. Using emotion to convey a real situation isn't manipulation — it's effective communication."
+                "text": "Both are fine \u2014 the customer should do their own research.",
+                "isCorrect": false,
+                "explanation": "\"Buyer beware\" is a dodge, not an ethic. The salesperson has information the customer doesn't. Using that asymmetry to the customer's disadvantage is manipulation regardless of whether the customer theoretically could have discovered it. Information asymmetry creates a responsibility, not an opportunity."
               },
               {
                 "id": "c",
-                "text": "It depends on whether the donor feels pressured or informed.",
+                "text": "Both are manipulation \u2014 the salesperson is trying to make money either way.",
                 "isCorrect": false,
-                "explanation": "The donor's feeling matters, but it's not the whole picture. Some manipulation feels comfortable (a flattering sales pitch). Some persuasion feels uncomfortable (a doctor's honest warning about your health). Feelings about the communication don't determine whether it's ethical — the relationship between the communication and the truth does. A charity showing real suffering to real donors, with real information, is operating in good faith even if the emotional impact feels like pressure."
+                "explanation": "Having a financial incentive doesn't make all persuasion manipulation. A doctor recommending surgery has a financial incentive too \u2014 that doesn't make the recommendation dishonest. The question isn't whether the persuader benefits. It's whether the audience is being given accurate information and genuine choice."
               }
             ],
             "shuffleOptions": false
@@ -699,32 +692,32 @@
           "type": "INSTRUCTION",
           "sortOrder": 3,
           "content": {
-            "body": "## The Gray Zone\n\nMost real-world communication lives in a gray zone between pure persuasion and clear manipulation.\n\nA job candidate emphasizes their strengths and downplays their weaknesses. Manipulation? They're framing selectively, but the interviewer knows this and expects it. It's a social convention that both parties understand.\n\nA politician simplifies a complex issue to make it understandable. Manipulation? Simplification inevitably distorts, but complexity isn't accessible to most audiences. The question is whether the simplification preserves the essential truth or misrepresents it.\n\nA friend tells you \"you'll be fine\" when they're not sure. Manipulation? They're prioritizing your emotional state over strict accuracy. But emotional support serves your interests even when it's not perfectly truthful.\n\nThe gray zone is where most arguments live, and pretending it doesn't exist is its own form of dishonesty. The ethical practitioner doesn't avoid the gray zone — they navigate it with awareness of what they're doing and why."
+            "body": "## Manipulation Techniques to Watch For\n\nIn yourself and others:\n\n**Selective evidence.** Presenting only data that supports your position while knowing about data that undermines it.\n\n**False urgency.** Creating time pressure to prevent the audience from thinking carefully.\n\n**Emotional substitution.** Using emotion where evidence is needed \u2014 making people feel instead of think.\n\n**Strategic ambiguity.** Being deliberately vague so the audience fills in their own favorable interpretation.\n\n**Exploiting biases.** Anchoring on a number you know is misleading. Using availability bias by citing dramatic but unrepresentative examples.\n\nYou've studied these as biases and rhetorical devices. Now recognize them as ethical choices. Using them on purpose, to steer someone against their own interest, is manipulation. Using them naturally in service of honest communication is craft.\n\nThe difference is intent and transparency, not technique."
           }
         },
         {
           "type": "MULTIPLE_CHOICE",
           "sortOrder": 4,
           "content": {
-            "prompt": "**This one is designed to fool you.**\n\nYou've built a strong argument for a proposal at work. You know your boss is particularly motivated by competitive threats. You frame your proposal as a response to competitor moves, even though the real reason you think it's good is internal efficiency.\n\nPersuasion or manipulation?",
+            "prompt": "**This one is designed to fool you.**\n\nYou're making a presentation to get budget approval. You know the ROI data is mixed \u2014 some metrics are positive, others neutral. You choose to lead with the positive metrics and mention the neutral ones only briefly.\n\nIs this manipulation?",
             "options": [
               {
                 "id": "a",
-                "text": "Persuasion — you're adapting your framing to your audience, which is a basic communication skill.",
+                "text": "Yes \u2014 you're selectively presenting evidence to get the outcome you want.",
                 "isCorrect": false,
-                "explanation": "Audience adaptation is a legitimate skill, but this goes beyond adaptation. You're not emphasizing one real benefit over another — you're presenting a false reason as the primary reason. If your boss asked 'what's the real driver for this proposal?' the honest answer would be 'internal efficiency,' not 'competitive threats.' The framing isn't just strategic emphasis; it's misrepresenting your actual reasoning."
+                "explanation": "Every presentation involves selecting and ordering information \u2014 that's unavoidable. The question is whether you're suppressing disconfirming evidence or appropriately emphasizing the most relevant findings. If the neutral metrics don't threaten the core case, leading with strengths is normal persuasion. If the neutral metrics actually undermine the argument and you're burying them, that's manipulation."
               },
               {
                 "id": "b",
-                "text": "Manipulation — you're presenting a false motivation to exploit your boss's psychology. Even though the proposal itself might be good, the method bypasses honest evaluation.",
+                "text": "It depends \u2014 if the neutral metrics don't undermine your core case and you mention them honestly, it's persuasion. If they reveal a serious risk you're hiding, it's manipulation.",
                 "isCorrect": true,
-                "explanation": "Apply the transparency test: if your boss knew you were framing it as competitive defense because that's what motivates them, not because that's the real reason — would they feel informed or played? The proposal might genuinely be a good idea. But the case you're making for it is built on a false foundation. A persuasive version would be: 'The main benefit is internal efficiency, and as a secondary advantage, it also positions us well against competitor X.' That's real and audience-adapted."
+                "explanation": "Context determines ethics. Emphasizing strengths while acknowledging limitations is normal advocacy. Hiding critical weaknesses to secure approval is manipulation. The transparency test: if the audience later discovered what you knew and how you presented it, would they feel you'd been fair? That's the line."
               },
               {
                 "id": "c",
-                "text": "It doesn't matter — if the proposal is good, the framing is irrelevant.",
+                "text": "No \u2014 it's your job to make the best case for your budget request.",
                 "isCorrect": false,
-                "explanation": "The ends-justify-the-means argument is tempting but dangerous. If you can misrepresent your reasoning when the proposal is good, the same logic applies when the proposal is bad and you don't realize it. Honest framing isn't just ethical — it's a guardrail against your own mistakes. If the real reasons for a proposal can't survive scrutiny, that's information worth having."
+                "explanation": "Making the best case is fine. Hiding material information to get approval isn't. There's a difference between presenting your argument persuasively and deceiving the decision-makers. If the neutral metrics would change the decision and you know it, suppressing them is a form of deception \u2014 even if it's your \"job\" to advocate."
               }
             ],
             "shuffleOptions": false
@@ -734,15 +727,15 @@
           "type": "FREE_RESPONSE",
           "sortOrder": 5,
           "content": {
-            "prompt": "Think of a time you persuaded someone of something. Apply the three tests:\n\n1. **Transparency test:** If they could have seen your full strategy — every choice you made about what to say and how — would they feel informed or deceived?\n2. **Interests test:** Did the outcome serve their interests, your interests, or both?\n3. **Autonomy test:** Did you give them the tools to decide for themselves, or did you bypass their judgment?\n\nBe honest. Most of us have been on both sides of this line.",
-            "sampleAnswer": "The value of this exercise is self-awareness, not self-judgment. Most people, when honest, find that their persuasion has occasionally crossed into manipulation — usually through selective omission rather than outright deception. Seeing the line clearly in retrospect is how you learn to see it in advance."
+            "prompt": "Think of a time when someone persuaded you effectively. Then think of a time when you felt manipulated.\n\nWhat was different? Was it the techniques used, or something else \u2014 the transparency, the respect for your autonomy, the honesty about limitations?\n\nTry to articulate where the line was for you.",
+            "sampleAnswer": "Most people locate the line at transparency and respect for autonomy. Persuasion felt like being given information and tools to decide. Manipulation felt like being steered toward a conclusion without full information. The techniques may have been similar \u2014 the difference was whether the persuader was working with the audience or on them."
           }
         },
         {
           "type": "INSTRUCTION",
           "sortOrder": 6,
           "content": {
-            "body": "## What You Learned\n\nThe line between persuasion and manipulation isn't in the tools — both use rhetoric, evidence, framing, and emotion. It's in the relationship between the speaker, the audience, and the truth.\n\nThree tests: **transparency** (would your method survive the audience seeing it?), **interests** (does the outcome serve the audience or just you?), **autonomy** (does your argument enable independent judgment or bypass it?).\n\nMost communication lives in a gray zone. The ethical practice isn't avoiding the gray zone — it's navigating it with awareness. Adapt your framing to your audience, but don't misrepresent your reasoning. Use emotion, but not to substitute for evidence. Simplify, but not to the point of distortion.\n\nThe skills you've learned in this course — building evidence, structuring arguments, qualifying claims, anticipating objections, steel-manning — all serve persuasion when used honestly. They become manipulation only when deployed to circumvent the audience's ability to think for themselves."
+            "body": "## What You Learned\n\n**Persuasion** helps the audience decide well. **Manipulation** steers them toward a conclusion regardless of their interest.\n\nThe techniques overlap \u2014 framing, emphasis, emotional appeal, anticipating objections. What distinguishes them is **transparency**: would the audience feel informed or deceived if they could see your full knowledge and intent?\n\nBuild arguments that survive transparency. Present evidence honestly. Acknowledge limitations. Respect the audience's right to disagree. When your techniques can withstand scrutiny, you're persuading. When they can't, you're manipulating.\n\nThe goal isn't just to be effective. It's to be effective in a way you'd be willing to defend."
           }
         }
       ]
@@ -750,7 +743,7 @@
     {
       "title": "Putting It Together",
       "slug": "putting-it-together",
-      "description": "Constructing a complete argument from scratch — the final synthesis.",
+      "description": "Constructing a complete argument from scratch \u2014 everything you've learned in one exercise.",
       "sortOrder": 8,
       "published": true,
       "steps": [
@@ -758,39 +751,39 @@
           "type": "INSTRUCTION",
           "sortOrder": 0,
           "content": {
-            "body": "You've learned the components. Now you put them together.\n\nA complete, well-constructed argument does all of the following:\n\n**1. Makes a clear claim** — the audience knows exactly what you're asserting.\n**2. Supports it with convergent evidence** — multiple types of evidence pointing the same direction.\n**3. Makes the inference explicit** — the audience can see *why* the evidence supports the claim.\n**4. Qualifies appropriately** — the claim matches the strength of the evidence.\n**5. Anticipates and addresses the strongest objections** — including the ones that make you uncomfortable.\n**6. Steel-mans the opposing view** — demonstrating that you've engaged with the best counterarguments.\n**7. Respects the audience's autonomy** — persuading through evidence and reasoning, not through pressure or deception.\n\nVery few arguments in the real world do all of these. But the more of them you incorporate, the stronger your argument becomes — not just logically, but in its ability to actually change minds."
+            "body": "You've learned the components:\n\n- Claims supported by appropriate evidence\n- Logical structure with premises, inferences, and conclusions\n- Proper allocation of burden of proof\n- Steel-manning the opposition\n- Qualifying claims with precision\n- Anticipating and addressing objections\n- The line between persuasion and manipulation\n\nThis final sequence asks you to combine them. You're going to construct a complete argument \u2014 not just identify devices or spot fallacies, but actually *build* something that holds up under scrutiny.\n\nThis is the transition from defense to offense. You've been catching tricks. Now you're constructing cases."
           }
         },
         {
           "type": "INSTRUCTION",
           "sortOrder": 1,
           "content": {
-            "body": "## The Argument Blueprint\n\nHere's a template for constructing a complete argument:\n\n**Opening: State the claim and why it matters.**\nDon't bury the lead. The audience should know within the first few sentences what you're arguing and why they should care.\n\n**Evidence: Present your strongest support.**\nLead with your best evidence. Use multiple types. Be specific. Show your work.\n\n**Steel man: Acknowledge the strongest opposing view.**\n\"The best case against this position is...\" Demonstrate that you've considered it seriously.\n\n**Response: Address the objection.**\nRefute, concede and adapt, or reframe. Don't dismiss.\n\n**Qualification: Be precise about what you're claiming.**\nScope your claim to what your evidence supports. Acknowledge limitations.\n\n**Close: Restate the claim in light of everything presented.**\nThe audience should leave knowing what you believe, why you believe it, what the alternatives are, and why you still hold your position.\n\nThis structure works for a five-minute presentation, a one-page memo, or a dinner table argument. The scale changes; the skeleton doesn't."
+            "body": "## The Argument Blueprint\n\nA complete, well-constructed argument follows this architecture:\n\n**1. State your conclusion clearly.** What exactly are you arguing? Don't bury it \u2014 lead with it.\n\n**2. Provide your strongest evidence.** Present the evidence that most directly supports your conclusion. Match evidence type to claim type.\n\n**3. Acknowledge the strongest counter-argument.** Steel-man the opposition. Show you understand the best case against your position.\n\n**4. Address the counter-argument.** Concede what's legitimate. Pivot to why your conclusion holds despite it.\n\n**5. Qualify appropriately.** State what you're confident about and where uncertainty remains. Precision, not hedging.\n\n**6. Restate your conclusion.** Now it arrives with the full weight of your argument behind it.\n\nThis isn't a formula for every conversation. But for any argument that matters \u2014 a proposal, a recommendation, a position paper, a difficult conversation \u2014 this architecture makes your case as strong as it can be."
           }
         },
         {
           "type": "MULTIPLE_CHOICE",
           "sortOrder": 2,
           "content": {
-            "prompt": "Read this argument:\n\n> *\"Companies should offer four-day work weeks. Studies from Microsoft Japan and Iceland show productivity stays the same or increases. Employee satisfaction rises dramatically. The main objection is coverage — who handles work on Fridays? Companies like Buffer and Basecamp have solved this with rotating schedules and asynchronous communication. This won't work for every industry, but for knowledge work, the evidence is strong.\"*\n\nWhich elements of a complete argument are present?",
+            "prompt": "Evaluate this argument:\n\n\"We should hire a dedicated UX researcher. Our customer satisfaction scores have declined 15% over six months. Competitor analysis shows companies with UX research teams have 23% higher retention. The strongest counter-argument is cost \u2014 a senior researcher costs $120K. But the 15% satisfaction decline is costing us an estimated $400K annually in churn. The investment pays for itself within the first year, though the exact timeline depends on how quickly research insights translate to product changes.\"\n\nHow well does this follow the argument blueprint?",
             "options": [
               {
                 "id": "a",
-                "text": "All of them — claim, evidence, objection anticipation, response, and qualification.",
-                "isCorrect": true,
-                "explanation": "Let's map it. Claim: companies should offer four-day work weeks. Evidence: Microsoft Japan study, Iceland study (convergent evidence from two sources). Steel man / objection: 'who handles work on Fridays?' (the most practical concern). Response: Buffer and Basecamp have solved it (evidence-based response). Qualification: 'won't work for every industry' and 'for knowledge work' (scope limiter). It's a compact argument but structurally complete. The missing piece is more detail — the evidence is named but not described in depth — but for a brief argument, every structural element is present."
+                "text": "It's good but needs more evidence \u2014 the competitor data is correlation, not causation.",
+                "isCorrect": false,
+                "explanation": "You're right that the competitor data is correlational \u2014 but the argument already implicitly acknowledges this by grounding the primary case in the company's own satisfaction data, not just the competitor comparison. The competitor data is supporting, not primary. More importantly, the argument follows the blueprint well: clear conclusion, evidence, steel-manned objection, concession-and-pivot, appropriate qualification."
               },
               {
                 "id": "b",
-                "text": "Most but not all — it has evidence and addresses an objection, but it doesn't steel-man the opposing view.",
-                "isCorrect": false,
-                "explanation": "The coverage objection ('who handles work on Fridays?') is a form of steel-manning — it's the strongest practical case against the proposal, raised and addressed. A fuller steel man might articulate the opposing philosophy ('some argue that consistent daily presence builds team cohesion and enables real-time problem-solving in ways that asynchronous work can't replicate'), but for a brief argument, the practical objection serves the steel-man function."
+                "text": "It follows the blueprint almost perfectly: clear claim, specific evidence, strongest counter-argument addressed with cost-benefit analysis, and appropriate qualification on the timeline.",
+                "isCorrect": true,
+                "explanation": "The argument hits every element: conclusion stated upfront (hire a researcher), evidence presented (satisfaction decline, competitor data), strongest objection raised and addressed (cost vs. churn savings), and qualification included (timeline uncertainty). Notice how the qualification doesn't weaken the argument \u2014 it strengthens credibility by acknowledging what's uncertain while maintaining what's clear."
               },
               {
                 "id": "c",
-                "text": "It's just a claim with a couple of examples — not a real argument.",
+                "text": "It's manipulative \u2014 the $400K churn estimate sounds precise but might be unreliable.",
                 "isCorrect": false,
-                "explanation": "This undersells what's happening structurally. Yes, the evidence could be more detailed. But 'a claim with examples' misses the objection anticipation, the evidence-based response, and the qualification. Compare this to most arguments you encounter in daily life — it's substantially more complete than average. Recognizing structure, even in compact form, is part of the skill this course builds."
+                "explanation": "Questioning the estimate is fair (and the argument could be strengthened by sourcing that number), but using a specific estimate isn't manipulation \u2014 it's evidence. The argument would be weaker without the number. If the estimate is wrong, that's a factual challenge, not an ethical one. Manipulation would be hiding evidence that contradicts the case, not presenting evidence that supports it."
               }
             ],
             "shuffleOptions": false
@@ -800,32 +793,32 @@
           "type": "INSTRUCTION",
           "sortOrder": 3,
           "content": {
-            "body": "## Common Failure Modes\n\nEven when you know the structure, arguments fail in predictable ways:\n\n**All evidence, no inference.** You present data but never explain why it supports your conclusion. The audience has to connect the dots themselves, and they might connect them differently.\n\n**All structure, no content.** The argument has a clear claim, addresses objections, and qualifies appropriately — but the evidence is weak or generic. Structure can't compensate for thin support.\n\n**Overclaiming.** The evidence supports a moderate conclusion, but you state a strong one. This is the most common failure mode: the argument would be good if the claim were calibrated to the evidence.\n\n**Ignoring the best objection.** You address three weak objections and skip the strong one. The audience notices. The unaddressed objection becomes the elephant in the room.\n\n**Apologetic tone.** You qualify so much that the argument sounds like you don't believe it yourself. Qualification should be precise, not pervasive. State what you know with confidence; qualify what you don't.\n\nThe fix for all of these is the same: after constructing your argument, review it against the blueprint. Is every element present? Is any element doing too much or too little work?"
+            "body": "## Common Construction Errors\n\nEven with the blueprint, arguments fail in predictable ways:\n\n**The evidence pile.** Listing lots of evidence without connecting it to the conclusion. Evidence needs interpretation \u2014 explain what it means and why it supports your point.\n\n**The preemptive surrender.** Addressing so many objections that you undermine your own case. Address the two or three strongest objections. Let minor ones go.\n\n**The scope creep.** Arguing for more than your evidence supports. If your evidence shows the product needs improvement, argue for improvement \u2014 not a total overhaul.\n\n**The missing link.** Jumping from evidence to conclusion without showing the connection. \"Customer complaints are up, so we should hire more engineers.\" The link between complaints and engineering headcount needs to be explicit.\n\n**The confidence mismatch.** Speaking with certainty where qualification is needed, or hedging where confidence is warranted. Match your tone to your evidence."
           }
         },
         {
           "type": "MULTIPLE_CHOICE",
           "sortOrder": 4,
           "content": {
-            "prompt": "**This one is designed to fool you.**\n\nYou need to convince a skeptical audience of something you believe strongly. You have solid evidence but not overwhelming evidence. Which approach is most likely to succeed?",
+            "prompt": "**This one is designed to fool you.**\n\nWhich of these is the most important skill you've learned in this course?",
             "options": [
               {
                 "id": "a",
-                "text": "Present only your strongest evidence and state the conclusion confidently. Less is more.",
+                "text": "Building arguments with clear structure and evidence.",
                 "isCorrect": false,
-                "explanation": "With a skeptical audience, confidence without acknowledgment of limitations reads as either naivety or dishonesty. Skeptics are actively looking for what you're not saying. If you only present your strongest evidence, they'll wonder what you're hiding. Selective presentation works with sympathetic audiences; it backfires with skeptical ones."
+                "explanation": "This is important but it's a tool, not the core skill. Plenty of well-structured arguments are built on bad foundations."
               },
               {
                 "id": "b",
-                "text": "Present your evidence, steel-man the opposing view, acknowledge your evidence's limitations, and explain why your conclusion still holds despite those limitations. Let the audience see your reasoning process, not just your conclusion.",
-                "isCorrect": true,
-                "explanation": "Skeptical audiences are won through demonstrated intellectual honesty, not through confidence. When you show that you've considered the counterarguments, acknowledged the limits of your evidence, and still reached your conclusion — the audience can follow your reasoning and decide for themselves. This respects their autonomy (they see the full picture) and builds trust (you're not hiding anything). The conclusion feels earned rather than asserted."
+                "text": "Steel-manning \u2014 understanding the opposition before responding.",
+                "isCorrect": false,
+                "explanation": "Steel-manning is powerful, but it's one technique among several. The most important skill is more fundamental."
               },
               {
                 "id": "c",
-                "text": "Focus on finding common ground and building rapport before presenting your case.",
-                "isCorrect": false,
-                "explanation": "Common ground and rapport are useful social tools, but a skeptical audience is skeptical of the claim, not of you personally. Building rapport without addressing their skepticism feels like a sales technique — which will increase skepticism, not reduce it. The audience wants to see that you can defend your position against their concerns, not that you're a nice person."
+                "text": "The habit of asking 'What's the evidence?' and 'What's the strongest case against my view?' before committing to a position.",
+                "isCorrect": true,
+                "explanation": "All the techniques in this course serve these two questions. Asking for evidence prevents you from asserting without support. Asking for the best counter-argument prevents you from arguing against strawmen. Together, they produce arguments that are honest, robust, and genuinely persuasive \u2014 not just rhetorically effective."
               }
             ],
             "shuffleOptions": false
@@ -835,15 +828,15 @@
           "type": "FREE_RESPONSE",
           "sortOrder": 5,
           "content": {
-            "prompt": "Construct a complete argument for something you believe. Use the blueprint:\n\n1. State your claim and why it matters\n2. Present at least two types of evidence\n3. Steel-man the strongest opposing view\n4. Respond to that objection\n5. Qualify your claim to match your evidence\n6. Close by restating your position\n\nThis is the synthesis exercise. Take your time with it.",
-            "sampleAnswer": "This exercise is the capstone. Strong responses will have all six structural elements visible and well-integrated. The most common weakness: the steel man is too weak (not the strongest version of the opposition) or the qualification is too vague. The strongest responses are the ones where the writer can feel the tension between their position and the best counterargument — and still make a clear, well-supported case."
+            "prompt": "Choose something you want to argue for \u2014 a change at work, a position on an issue, a recommendation to a friend.\n\nUsing the argument blueprint, construct a complete argument:\n1. State your conclusion.\n2. Present your strongest evidence.\n3. Steel-man the best counter-argument.\n4. Address it with a concession-and-pivot.\n5. Qualify where appropriate.\n6. Restate your conclusion.\n\nThis is the synthesis of everything you've learned.",
+            "sampleAnswer": "The quality of the argument depends on honest engagement with each step. Strong responses will have specific evidence (not just assertions), will steel-man a genuinely strong counter-argument (not a strawman), and will qualify precisely rather than sweepingly. If your argument feels easy to construct, you may be avoiding the hardest part \u2014 the steel man."
           }
         },
         {
           "type": "INSTRUCTION",
           "sortOrder": 6,
           "content": {
-            "body": "## Course Complete\n\nYou started by learning the difference between claims and evidence. You built up through argument structure, burden of proof, steel-manning, qualification, objection anticipation, and the ethics of persuasion. And you finished by putting it all together.\n\nThe skills in this course are rare. Most people never learn to argue well — they learn to argue loudly, or cleverly, or persistently. Arguing well is different: it means making claims you can support, supporting them with real evidence, engaging honestly with the strongest counterarguments, qualifying precisely, and respecting the autonomy of the people you're trying to convince.\n\nThis isn't just a communication skill. It's a thinking skill. The process of building a sound argument — finding evidence, articulating inference, anticipating objections, steel-manning the opposition — forces you to actually understand what you believe and why. Many people discover, in the process of building their argument, that their position is weaker than they thought. That discovery is valuable. It means the process is working.\n\nArgue well. Not to win, but to understand — and to help others understand."
+            "body": "## Course Complete\n\nYou started this course learning to spot bad arguments. You're ending it knowing how to build good ones.\n\nThe skills connect: understanding evidence standards tells you what's missing from others' claims and what to include in yours. Understanding structure helps you build and diagnose arguments. Understanding burden of proof keeps you honest about who needs to prove what. Steel-manning forces genuine engagement with opposition. Qualification makes your claims precise. Anticipating objections makes them resilient. And the persuasion/manipulation distinction ensures your arguments are worth making.\n\nThe goal was never to win arguments. It was to make your thinking rigorous enough that your conclusions deserve confidence.\n\nBuild your case. Then check if it holds."
           }
         }
       ]
