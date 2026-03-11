@@ -29,7 +29,6 @@ export default async function ProgressPage() {
     },
   });
 
-  // Get all step progress for this user
   const progress = await prisma.stepProgress.findMany({
     where: {
       userId: session.user.id,
@@ -43,22 +42,22 @@ export default async function ProgressPage() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-10">
       <div className="mb-8">
-        <h1 className="text-2xl font-semibold text-stone-100 mb-2">
+        <h1 className="text-2xl font-serif font-semibold text-surface-100 mb-2">
           Your Progress
         </h1>
-        <p className="text-stone-500 text-sm">
+        <p className="text-surface-500 text-sm">
           Track your learning across courses and sequences.
         </p>
       </div>
 
       {enrollments.length === 0 ? (
         <div className="text-center py-12">
-          <p className="text-stone-500 mb-4">
+          <p className="text-surface-500 mb-4">
             You haven&apos;t enrolled in any courses yet.
           </p>
           <Link
             href="/courses"
-            className="px-6 py-2.5 bg-teal-700 hover:bg-teal-600 text-stone-100 font-medium rounded transition-colors"
+            className="px-6 py-2.5 bg-accent-600 hover:bg-accent-500 text-surface-950 font-medium rounded transition-colors"
           >
             Browse Courses
           </Link>
@@ -85,22 +84,22 @@ export default async function ProgressPage() {
             return (
               <div
                 key={course.id}
-                className="border border-stone-800 rounded-lg p-5"
+                className="border border-surface-700/50 rounded-lg p-5 bg-surface-850"
               >
                 <div className="flex items-start justify-between mb-3">
                   <Link
                     href={`/courses/${course.id}`}
-                    className="text-lg font-medium text-stone-200 hover:text-teal-400 transition-colors"
+                    className="text-lg font-serif font-medium text-surface-200 hover:text-accent-400 transition-colors"
                   >
                     {course.title}
                   </Link>
-                  <span className="text-sm text-stone-500">{percent}%</span>
+                  <span className="text-sm text-surface-500">{percent}%</span>
                 </div>
 
                 {/* Progress bar */}
-                <div className="h-1.5 bg-stone-800 rounded-full overflow-hidden mb-4">
+                <div className="h-1.5 bg-surface-800 rounded-full overflow-hidden mb-4">
                   <div
-                    className="h-full bg-teal-700 rounded-full transition-all"
+                    className="h-full bg-accent-600 rounded-full transition-all"
                     style={{ width: `${percent}%` }}
                   />
                 </div>
@@ -117,12 +116,12 @@ export default async function ProgressPage() {
                       <Link
                         key={seq.id}
                         href={`/learn/${seq.id}`}
-                        className="flex items-center justify-between p-3 rounded bg-stone-900/50 hover:bg-stone-900 transition-colors"
+                        className="flex items-center justify-between p-3 rounded bg-surface-800/50 hover:bg-surface-800 transition-colors"
                       >
-                        <span className="text-sm text-stone-400">
+                        <span className="text-sm text-surface-400">
                           {seq.title}
                         </span>
-                        <span className="text-xs text-stone-600">
+                        <span className="text-xs text-surface-600">
                           {seqCompleted}/{seqTotal} steps
                         </span>
                       </Link>

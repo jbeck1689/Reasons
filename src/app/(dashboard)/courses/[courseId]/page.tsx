@@ -30,16 +30,16 @@ export default async function CourseDetailPage({
     <div className="max-w-2xl mx-auto px-6 py-10">
       <Link
         href="/courses"
-        className="text-xs text-stone-600 hover:text-stone-400 uppercase tracking-wider"
+        className="text-xs text-surface-600 hover:text-surface-400 uppercase tracking-wider transition-colors"
       >
         ← All Courses
       </Link>
 
       <div className="mt-4 mb-8">
-        <h1 className="text-2xl font-semibold text-stone-100 mb-2">
+        <h1 className="text-2xl font-serif font-semibold text-surface-100 mb-2">
           {course.title}
         </h1>
-        <p className="text-stone-500 text-sm leading-relaxed">
+        <p className="text-surface-400 text-sm leading-relaxed font-serif">
           {course.description}
         </p>
       </div>
@@ -49,24 +49,24 @@ export default async function CourseDetailPage({
           <Link
             key={seq.id}
             href={`/learn/${seq.id}`}
-            className="block p-4 rounded border border-stone-800 bg-stone-900/50 hover:border-stone-600 transition-colors"
+            className="block p-4 rounded-lg border border-surface-700/50 bg-surface-850 hover:border-accent-700/40 hover:bg-surface-800 transition-all"
           >
             <div className="flex items-start gap-4">
-              <div className="w-7 h-7 rounded-full bg-teal-900 border border-teal-700 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <span className="text-xs font-medium text-teal-300">
+              <div className="w-7 h-7 rounded-full bg-accent-900/60 border border-accent-700/50 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span className="text-xs font-medium text-accent-300">
                   {index + 1}
                 </span>
               </div>
               <div>
-                <h3 className="text-sm font-medium text-stone-200">
+                <h3 className="text-sm font-medium text-surface-200">
                   {seq.title}
                 </h3>
                 {seq.description && (
-                  <p className="text-xs text-stone-500 mt-1">
+                  <p className="text-xs text-surface-500 mt-1">
                     {seq.description}
                   </p>
                 )}
-                <span className="text-xs text-stone-600 mt-2 block">
+                <span className="text-xs text-surface-600 mt-2 block">
                   {seq._count.steps} steps
                 </span>
               </div>

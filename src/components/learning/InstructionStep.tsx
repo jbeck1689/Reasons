@@ -14,7 +14,7 @@ export function InstructionStep({ content, onNext }: InstructionStepProps) {
       <div className="pt-6">
         <button
           onClick={onNext}
-          className="px-6 py-2.5 bg-teal-700 hover:bg-teal-600 text-stone-100 font-medium rounded transition-colors"
+          className="px-6 py-2.5 bg-accent-600 hover:bg-accent-500 text-surface-950 font-medium rounded transition-colors"
         >
           Continue
         </button>

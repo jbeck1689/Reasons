@@ -15,8 +15,10 @@ export default async function CoursesPage() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-10">
       <div className="mb-8">
-        <h1 className="text-2xl font-semibold text-stone-100 mb-2">Courses</h1>
-        <p className="text-stone-500 text-sm">
+        <h1 className="text-2xl font-serif font-semibold text-surface-100 mb-2">
+          Courses
+        </h1>
+        <p className="text-surface-500 text-sm">
           Each course teaches a different kind of thinking. Start anywhere.
         </p>
       </div>
@@ -26,15 +28,15 @@ export default async function CoursesPage() {
           <Link
             key={course.id}
             href={`/courses/${course.id}`}
-            className="block p-5 rounded border border-stone-800 bg-stone-900/50 hover:border-stone-600 transition-colors"
+            className="block p-5 rounded-lg border border-surface-700/50 bg-surface-850 hover:border-accent-700/40 hover:bg-surface-800 transition-all"
           >
-            <h2 className="text-lg font-medium text-stone-200 mb-1">
+            <h2 className="text-lg font-serif font-medium text-surface-100 mb-1">
               {course.title}
             </h2>
-            <p className="text-sm text-stone-500 leading-relaxed mb-3">
+            <p className="text-sm text-surface-400 leading-relaxed mb-3">
               {course.description}
             </p>
-            <span className="text-xs text-stone-600">
+            <span className="text-xs text-surface-600">
               {course._count.sequences}{" "}
               {course._count.sequences === 1 ? "sequence" : "sequences"}
             </span>
@@ -42,7 +44,7 @@ export default async function CoursesPage() {
         ))}
 
         {courses.length === 0 && (
-          <p className="text-stone-600 text-sm">No courses available yet.</p>
+          <p className="text-surface-600 text-sm">No courses available yet.</p>
         )}
       </div>
     </div>

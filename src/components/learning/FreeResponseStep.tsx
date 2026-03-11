@@ -42,14 +42,14 @@ export function FreeResponseStep({
         disabled={submitted}
         placeholder="Write your response here..."
         aria-label="Your response"
-        className="w-full h-36 p-4 bg-stone-800 border border-stone-700 rounded text-stone-300 placeholder-stone-600 focus:border-teal-600 focus:outline-none resize-y"
+        className="w-full h-36 p-4 bg-surface-800 border border-surface-700 rounded-lg text-surface-200 font-serif placeholder-surface-500 focus:border-accent-500 focus:outline-none resize-y"
       />
 
       <div aria-live="polite" aria-atomic="true">
         {submitted && content.sampleAnswer && (
-          <div className="p-4 rounded border border-stone-600 bg-stone-800 bg-opacity-50">
-            <p className="text-sm font-medium text-teal-400 mb-2">Debrief:</p>
-            <p className="text-stone-400 text-sm leading-relaxed">
+          <div className="p-4 rounded-lg border border-surface-600/50 bg-surface-850">
+            <p className="text-sm font-semibold text-accent-400 mb-2">Debrief:</p>
+            <p className="text-surface-400 text-sm leading-relaxed font-serif">
               {content.sampleAnswer}
             </p>
           </div>
@@ -63,8 +63,8 @@ export function FreeResponseStep({
             disabled={response.trim().length === 0}
             className={`px-6 py-2.5 font-medium rounded transition-colors ${
               response.trim().length === 0
-                ? "bg-stone-700 text-stone-500 cursor-not-allowed"
-                : "bg-teal-700 hover:bg-teal-600 text-stone-100"
+                ? "bg-surface-700 text-surface-500 cursor-not-allowed"
+                : "bg-accent-600 hover:bg-accent-500 text-surface-950"
             }`}
           >
             Submit
@@ -72,7 +72,7 @@ export function FreeResponseStep({
         ) : (
           <button
             onClick={handleNext}
-            className="px-6 py-2.5 bg-teal-700 hover:bg-teal-600 text-stone-100 font-medium rounded transition-colors"
+            className="px-6 py-2.5 bg-accent-600 hover:bg-accent-500 text-surface-950 font-medium rounded transition-colors"
           >
             Continue
           </button>

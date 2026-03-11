@@ -55,22 +55,22 @@ export function MultipleChoiceStep({
         aria-label="Answer choices"
       >
         {content.options.map((option) => {
-          let borderColor = "border-stone-700 hover:border-stone-500";
-          let bg = "bg-stone-800 bg-opacity-50";
+          let borderColor = "border-surface-700 hover:border-surface-600";
+          let bg = "bg-surface-850";
 
           if (submitted && option.id === selected) {
             borderColor = option.isCorrect
-              ? "border-emerald-500"
-              : "border-red-400";
+              ? "border-correct-border"
+              : "border-incorrect-border";
             bg = option.isCorrect
-              ? "bg-emerald-900 bg-opacity-30"
-              : "bg-red-900 bg-opacity-20";
+              ? "bg-[rgba(16,85,50,0.2)]"
+              : "bg-[rgba(120,40,30,0.2)]";
           } else if (submitted && option.isCorrect) {
-            borderColor = "border-emerald-700";
-            bg = "bg-emerald-900 bg-opacity-20";
+            borderColor = "border-correct-border/50";
+            bg = "bg-[rgba(16,85,50,0.1)]";
           } else if (!submitted && option.id === selected) {
-            borderColor = "border-teal-500";
-            bg = "bg-teal-900 bg-opacity-20";
+            borderColor = "border-accent-500";
+            bg = "bg-accent-950/40";
           }
 
           return (
@@ -80,11 +80,11 @@ export function MultipleChoiceStep({
               disabled={submitted}
               role="radio"
               aria-checked={option.id === selected}
-              className={`w-full text-left p-4 rounded border ${borderColor} ${bg} transition-all ${
+              className={`w-full text-left p-4 rounded-lg border ${borderColor} ${bg} transition-all ${
                 submitted ? "cursor-default" : "cursor-pointer"
               }`}
             >
-              <span className="text-stone-300">{option.text}</span>
+              <span className="text-surface-300 font-serif">{option.text}</span>
             </button>
           );
         })}
@@ -93,23 +93,23 @@ export function MultipleChoiceStep({
       <div aria-live="polite" aria-atomic="true">
         {submitted && selectedOption && (
           <div
-            className={`p-4 rounded border ${
+            className={`p-4 rounded-lg border ${
               isCorrect
-                ? "border-emerald-600 bg-emerald-900 bg-opacity-20"
-                : "border-red-500 bg-red-900 bg-opacity-20"
+                ? "border-correct-border bg-[rgba(16,85,50,0.2)]"
+                : "border-incorrect-border bg-[rgba(120,40,30,0.2)]"
             }`}
           >
             <div className="flex items-center gap-2 mb-2">
               <span
                 className={`font-semibold ${
-                  isCorrect ? "text-emerald-400" : "text-red-400"
+                  isCorrect ? "text-correct-text" : "text-incorrect-text"
                 }`}
               >
-                {isCorrect ? "You saw through it." : "It got you. Here's how:"}
+                {isCorrect ? "You saw through it." : "It got you. Here\u2019s how:"}
               </span>
             </div>
             {selectedOption.explanation && (
-              <p className="text-stone-400 text-sm leading-relaxed">
+              <p className="text-surface-400 text-sm leading-relaxed font-serif">
                 {selectedOption.explanation}
               </p>
             )}
@@ -124,8 +124,8 @@ export function MultipleChoiceStep({
             disabled={selected === null}
             className={`px-6 py-2.5 font-medium rounded transition-colors ${
               selected === null
-                ? "bg-stone-700 text-stone-500 cursor-not-allowed"
-                : "bg-teal-700 hover:bg-teal-600 text-stone-100"
+                ? "bg-surface-700 text-surface-500 cursor-not-allowed"
+                : "bg-accent-600 hover:bg-accent-500 text-surface-950"
             }`}
           >
             Lock In Answer
@@ -133,7 +133,7 @@ export function MultipleChoiceStep({
         ) : (
           <button
             onClick={handleNext}
-            className="px-6 py-2.5 bg-teal-700 hover:bg-teal-600 text-stone-100 font-medium rounded transition-colors"
+            className="px-6 py-2.5 bg-accent-600 hover:bg-accent-500 text-surface-950 font-medium rounded transition-colors"
           >
             Continue
           </button>

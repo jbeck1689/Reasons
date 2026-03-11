@@ -14,13 +14,13 @@ function renderInline(text: string): React.ReactNode {
     }
     if (match[1]) {
       parts.push(
-        <strong key={match.index} className="font-semibold text-stone-100">
+        <strong key={match.index} className="font-semibold text-surface-100">
           {match[1]}
         </strong>
       );
     } else if (match[2]) {
       parts.push(
-        <em key={match.index} className="italic text-teal-300">
+        <em key={match.index} className="italic text-accent-300">
           {match[2]}
         </em>
       );
@@ -43,7 +43,7 @@ export function Markdown({ text }: { text: string }) {
       elements.push(
         <blockquote
           key={`bq-${elements.length}`}
-          className="border-l-4 border-teal-600 pl-4 py-2 my-3 italic text-stone-300 bg-stone-800 bg-opacity-50 rounded-r"
+          className="border-l-4 border-accent-600/60 pl-4 py-2 my-3 italic text-surface-300 bg-surface-850 rounded-r"
         >
           {blockquote.map((l, i) => (
             <span key={i}>
@@ -71,7 +71,7 @@ export function Markdown({ text }: { text: string }) {
       elements.push(
         <h2
           key={i}
-          className="text-xl font-semibold text-teal-400 mt-5 mb-2"
+          className="text-xl font-serif font-semibold text-accent-400 mt-5 mb-2"
         >
           {renderInline(line.slice(3))}
         </h2>
@@ -88,5 +88,5 @@ export function Markdown({ text }: { text: string }) {
   }
   flushBlockquote();
 
-  return <div className="text-stone-300 space-y-0">{elements}</div>;
+  return <div className="text-surface-300 font-serif space-y-0">{elements}</div>;
 }

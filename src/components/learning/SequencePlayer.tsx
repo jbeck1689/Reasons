@@ -32,7 +32,6 @@ export function SequencePlayer({ sequence }: SequenceProps) {
   const progress =
     ((currentStepIndex + (completed ? 1 : 0)) / steps.length) * 100;
 
-  // Move focus to step content when navigating between steps
   useEffect(() => {
     if (stepContentRef.current) {
       stepContentRef.current.focus();
@@ -57,8 +56,7 @@ export function SequencePlayer({ sequence }: SequenceProps) {
           body: JSON.stringify({ response }),
         });
       } catch {
-        // Submission failed silently — don't block the learning experience.
-        // In production, we'd queue and retry.
+        // Submission failed silently
       }
     },
     []
@@ -79,17 +77,17 @@ export function SequencePlayer({ sequence }: SequenceProps) {
     return (
       <div className="min-h-[80vh] flex items-center justify-center p-6">
         <div className="max-w-xl text-center space-y-6">
-          <div className="text-4xl font-light text-teal-400">◆</div>
-          <h1 className="text-2xl font-semibold text-teal-400">
+          <div className="text-4xl font-light text-accent-400">◆</div>
+          <h1 className="text-2xl font-serif font-semibold text-accent-400">
             Sequence Complete
           </h1>
-          <div className="text-stone-400 space-y-3">
-            <p className="text-lg">
-              <span className="text-stone-200 font-medium">
+          <div className="text-surface-400 space-y-3">
+            <p className="text-lg font-serif">
+              <span className="text-surface-200 font-medium">
                 {sequence.title}
               </span>
             </p>
-            <p className="leading-relaxed">
+            <p className="leading-relaxed font-serif">
               You&apos;ve completed this sequence. Return to the course to continue
               with the next one.
             </p>
@@ -97,7 +95,7 @@ export function SequencePlayer({ sequence }: SequenceProps) {
           <div className="flex gap-4 justify-center pt-2">
             <Link
               href={`/courses/${sequence.course.id}`}
-              className="px-6 py-2.5 bg-teal-700 hover:bg-teal-600 text-stone-100 font-medium rounded transition-colors"
+              className="px-6 py-2.5 bg-accent-600 hover:bg-accent-500 text-surface-950 font-medium rounded transition-colors"
             >
               Back to Course
             </Link>
@@ -106,7 +104,7 @@ export function SequencePlayer({ sequence }: SequenceProps) {
                 setCurrentStepIndex(0);
                 setCompleted(false);
               }}
-              className="px-6 py-2.5 border border-stone-700 hover:border-stone-500 text-stone-300 font-medium rounded transition-colors"
+              className="px-6 py-2.5 border border-surface-700 hover:border-surface-500 text-surface-300 font-medium rounded transition-colors"
             >
               Restart
             </button>
@@ -129,23 +127,23 @@ export function SequencePlayer({ sequence }: SequenceProps) {
   return (
     <>
       {/* Sub-header with progress */}
-      <div className="sticky top-[49px] bg-stone-950 border-b border-stone-800 z-10">
+      <div className="sticky top-[49px] bg-surface-900/95 backdrop-blur-sm border-b border-surface-700/50 z-10">
         <div className="max-w-2xl mx-auto px-6 py-3">
           <div className="flex items-center justify-between mb-2">
             <div>
-              <span className="text-xs text-stone-600 tracking-wide uppercase">
+              <span className="text-xs text-surface-600 tracking-wide uppercase">
                 {sequence.course.title}
               </span>
-              <h2 className="text-sm font-medium text-stone-400">
+              <h2 className="text-sm font-medium text-surface-400">
                 {sequence.title}
               </h2>
             </div>
-            <span className="text-xs text-stone-600">
+            <span className="text-xs text-surface-600">
               {currentStepIndex + 1} / {steps.length}
             </span>
           </div>
           <div
-            className="h-1 bg-stone-800 rounded-full overflow-hidden"
+            className="h-1 bg-surface-800 rounded-full overflow-hidden"
             role="progressbar"
             aria-valuenow={Math.round(progress)}
             aria-valuemin={0}
@@ -153,7 +151,7 @@ export function SequencePlayer({ sequence }: SequenceProps) {
             aria-label={`Sequence progress: ${Math.round(progress)}%`}
           >
             <div
-              className="h-full bg-teal-700 rounded-full transition-all duration-500 ease-out"
+              className="h-full bg-accent-600 rounded-full transition-all duration-500 ease-out"
               style={{ width: `${progress}%` }}
             />
           </div>
@@ -168,7 +166,7 @@ export function SequencePlayer({ sequence }: SequenceProps) {
         aria-label={`Step ${currentStepIndex + 1} of ${steps.length}: ${stepLabel}`}
       >
         <div className="mb-4">
-          <span className="text-xs font-medium text-teal-600 tracking-wider uppercase">
+          <span className="text-xs font-medium text-accent-500 tracking-wider uppercase">
             {stepLabel}
           </span>
         </div>

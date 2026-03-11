@@ -3,7 +3,33 @@
 @tailwind utilities;
 
 body {
-  color: #e7e5e4;
-  background: #0c0a09;
-  font-family: system-ui, -apple-system, sans-serif;
+  color: #bfb3a4;
+  background: #1a1714;
+}
+
+/* Subtle warm scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #211e19;
+}
+::-webkit-scrollbar-thumb {
+  background: #443d33;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5c5347;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(196, 144, 50, 0.3);
+  color: #ede7de;
+}
+
+/* Focus ring for accessibility — amber instead of teal */
+*:focus-visible {
+  outline: 2px solid #c49032;
+  outline-offset: 2px;
 }

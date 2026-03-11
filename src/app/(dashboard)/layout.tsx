@@ -11,28 +11,30 @@ export default function DashboardLayout({
   const { data: session } = useSession();
 
   return (
-    <div className="min-h-screen bg-stone-950 text-stone-200">
+    <div className="min-h-screen bg-surface-950 text-surface-300">
       {/* Header */}
-      <header className="sticky top-0 bg-stone-950 border-b border-stone-800 z-20">
+      <header className="sticky top-0 bg-surface-900/95 backdrop-blur-sm border-b border-surface-700/50 z-20">
         <div className="max-w-4xl mx-auto px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-6">
             <Link
               href="/courses"
-              className="text-teal-400 font-medium text-sm flex items-center gap-2"
+              className="text-accent-400 font-medium text-sm flex items-center gap-2"
             >
               <span className="text-lg">◆</span>
-              <span className="hidden sm:inline">Practical Reasoning</span>
+              <span className="hidden sm:inline font-serif tracking-tight">
+                Practical Reasoning
+              </span>
             </Link>
             <nav className="flex gap-4">
               <Link
                 href="/courses"
-                className="text-xs text-stone-500 hover:text-stone-300 uppercase tracking-wider"
+                className="text-xs text-surface-500 hover:text-surface-200 uppercase tracking-wider transition-colors"
               >
                 Courses
               </Link>
               <Link
                 href="/progress"
-                className="text-xs text-stone-500 hover:text-stone-300 uppercase tracking-wider"
+                className="text-xs text-surface-500 hover:text-surface-200 uppercase tracking-wider transition-colors"
               >
                 Progress
               </Link>
@@ -41,12 +43,12 @@ export default function DashboardLayout({
           <div className="flex items-center gap-4">
             {session?.user && (
               <>
-                <span className="text-xs text-stone-600">
+                <span className="text-xs text-surface-600">
                   {session.user.name || session.user.email}
                 </span>
                 <button
                   onClick={() => signOut({ callbackUrl: "/" })}
-                  className="text-xs text-stone-500 hover:text-stone-300"
+                  className="text-xs text-surface-500 hover:text-surface-300 transition-colors"
                 >
                   Sign out
                 </button>

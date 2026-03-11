@@ -31,7 +31,6 @@ export default function RegisterPage() {
         return;
       }
 
-      // Success — send them to login
       router.push("/login?registered=true");
     } catch {
       setError("Something went wrong. Please try again.");
@@ -43,24 +42,24 @@ export default function RegisterPage() {
   return (
     <div className="w-full max-w-sm space-y-8">
       <div className="text-center">
-        <div className="text-3xl font-light text-teal-400 mb-4">◆</div>
-        <h1 className="text-2xl font-semibold text-stone-100">
+        <div className="text-3xl font-light text-accent-400 mb-4">◆</div>
+        <h1 className="text-2xl font-serif font-semibold text-surface-100">
           Create an account
         </h1>
-        <p className="text-sm text-stone-500 mt-2">
+        <p className="text-sm text-surface-500 mt-2">
           Start learning to see through bad arguments.
         </p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         {error && (
-          <div className="p-3 rounded border border-red-500/30 bg-red-950/20 text-sm text-red-400">
+          <div className="p-3 rounded border border-incorrect-border/30 bg-incorrect-bg text-sm text-incorrect-text">
             {error}
           </div>
         )}
 
         <div>
-          <label htmlFor="name" className="block text-sm text-stone-400 mb-1">
+          <label htmlFor="name" className="block text-sm text-surface-400 mb-1">
             Name
           </label>
           <input
@@ -69,13 +68,13 @@ export default function RegisterPage() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
-            className="w-full px-4 py-2.5 bg-stone-900 border border-stone-700 rounded text-stone-200 placeholder-stone-600 focus:border-teal-600 focus:outline-none"
+            className="w-full px-4 py-2.5 bg-surface-800 border border-surface-700 rounded text-surface-200 placeholder-surface-500 focus:border-accent-500 focus:outline-none"
             placeholder="Your name"
           />
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm text-stone-400 mb-1">
+          <label htmlFor="email" className="block text-sm text-surface-400 mb-1">
             Email
           </label>
           <input
@@ -84,13 +83,13 @@ export default function RegisterPage() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="w-full px-4 py-2.5 bg-stone-900 border border-stone-700 rounded text-stone-200 placeholder-stone-600 focus:border-teal-600 focus:outline-none"
+            className="w-full px-4 py-2.5 bg-surface-800 border border-surface-700 rounded text-surface-200 placeholder-surface-500 focus:border-accent-500 focus:outline-none"
             placeholder="you@example.com"
           />
         </div>
 
         <div>
-          <label htmlFor="password" className="block text-sm text-stone-400 mb-1">
+          <label htmlFor="password" className="block text-sm text-surface-400 mb-1">
             Password
           </label>
           <input
@@ -100,7 +99,7 @@ export default function RegisterPage() {
             onChange={(e) => setPassword(e.target.value)}
             required
             minLength={8}
-            className="w-full px-4 py-2.5 bg-stone-900 border border-stone-700 rounded text-stone-200 placeholder-stone-600 focus:border-teal-600 focus:outline-none"
+            className="w-full px-4 py-2.5 bg-surface-800 border border-surface-700 rounded text-surface-200 placeholder-surface-500 focus:border-accent-500 focus:outline-none"
             placeholder="At least 8 characters"
           />
         </div>
@@ -110,17 +109,17 @@ export default function RegisterPage() {
           disabled={loading}
           className={`w-full py-2.5 font-medium rounded transition-colors ${
             loading
-              ? "bg-stone-700 text-stone-500 cursor-not-allowed"
-              : "bg-teal-700 hover:bg-teal-600 text-stone-100"
+              ? "bg-surface-700 text-surface-500 cursor-not-allowed"
+              : "bg-accent-600 hover:bg-accent-500 text-surface-950"
           }`}
         >
           {loading ? "Creating account..." : "Create account"}
         </button>
       </form>
 
-      <p className="text-center text-sm text-stone-500">
+      <p className="text-center text-sm text-surface-500">
         Already have an account?{" "}
-        <Link href="/login" className="text-teal-500 hover:text-teal-400">
+        <Link href="/login" className="text-accent-400 hover:text-accent-300">
           Sign in
         </Link>
       </p>
