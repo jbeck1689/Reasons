@@ -1,0 +1,873 @@
+{
+  "title": "Numbers Don't Lie (But People Do)",
+  "slug": "numbers-dont-lie",
+  "description": "Data is supposed to settle arguments. Instead, it's become another weapon in them. Learn to read statistics, graphs, and numerical claims the way they deserve to be read — skeptically, carefully, and without being fooled by the presentation.",
+  "sortOrder": 6,
+  "published": true,
+  "sequences": [
+    {
+      "title": "Base Rates",
+      "slug": "base-rates",
+      "description": "Why your gut is wrong about probability — and how ignoring the background rate makes almost every risk assessment unreliable.",
+      "sortOrder": 1,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 0,
+          "content": {
+            "body": "Here's a test that catches almost everyone.\n\nA disease affects 1 in 1,000 people. A test for the disease is 99% accurate — if you have it, the test says positive 99% of the time; if you don't have it, the test says negative 99% of the time.\n\nYou test positive. What's the probability you actually have the disease?\n\nMost people say 99%. The actual answer is about **9%.**\n\nThat's not a trick. It's just math — math that your intuition is terrible at. And the reason your intuition fails here is the same reason it fails in dozens of everyday judgments: **you're ignoring the base rate.**"
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "## What's a Base Rate?\n\nThe base rate is how common something is in the general population *before* you have any other information. It's the background frequency.\n\nIn the disease example: the base rate is 1 in 1,000. That means in a group of 1,000 people, about 1 has the disease and 999 don't.\n\nNow apply the 99% accurate test to all 1,000 people:\n\n**The 1 person who has it:** The test correctly identifies them 99% of the time. So roughly 1 true positive.\n\n**The 999 people who don't have it:** The test incorrectly flags 1% of them. That's about 10 false positives.\n\nSo you have 11 people who tested positive — but only 1 of them actually has the disease. Your positive test result puts you in a pool where roughly 1 out of 11 people are truly sick. That's about 9%, not 99%.\n\nThe base rate — how rare the disease is — completely dominates the calculation. But most people ignore it and fixate on the 99% accuracy number instead."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 2,
+          "content": {
+            "prompt": "A news headline reads:\n\n> *\"New airport security scanner catches 95% of prohibited items in testing.\"*\n\nIf prohibited items are present in roughly 1 out of every 10,000 bags scanned, and the scanner has a 3% false positive rate, what should you expect in practice?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The scanner is highly effective — it catches 95% of threats, which is excellent security.",
+                "isCorrect": false,
+                "explanation": "The 95% detection rate is real, but it's only half the picture. With a 3% false positive rate applied to 10,000 bags, the scanner will flag about 300 innocent bags for every 1 actual threat it catches. Security personnel will spend almost all their time chasing false alarms. The headline gives you the detection rate but hides the base rate problem — and that's the number that determines the scanner's practical usefulness."
+              },
+              {
+                "id": "b",
+                "text": "The vast majority of flagged bags will be false positives — the low base rate of actual threats means the scanner will mostly cry wolf.",
+                "isCorrect": true,
+                "explanation": "Out of 10,000 bags: roughly 1 has a prohibited item (and 95% chance the scanner catches it, so ~1 true positive). But 3% of the 9,999 clean bags get falsely flagged — about 300 false positives. So for every real catch, there are ~300 false alarms. The scanner's detection ability is fine. The problem is that when the base rate is extremely low, even a small false positive rate overwhelms the true positives."
+              },
+              {
+                "id": "c",
+                "text": "The 3% false positive rate means only 3 out of 100 bags are incorrectly flagged, which seems manageable alongside the 95% catch rate.",
+                "isCorrect": false,
+                "explanation": "The 3% sounds small, but you're applying it to a huge number — nearly all 10,000 bags are clean. 3% of ~10,000 is ~300 false positives. Meanwhile the 95% catch rate applies to maybe 1 actual threat. The percentages feel balanced when stated side by side (95% vs. 3%), but the populations they apply to are wildly different sizes. That asymmetry is exactly what base rate neglect causes you to miss."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 3,
+          "content": {
+            "body": "## Base Rate Neglect in Everyday Life\n\nBase rate neglect isn't just a medical statistics problem. It's everywhere:\n\n**Hiring.** \"She went to a top school, so she'll be a great employee.\" But what's the base rate of great employees from top schools? If it's 30%, the degree is informative but far from conclusive — 70% of top-school graduates aren't great hires by that standard.\n\n**News.** \"Shark attack reported at local beach.\" The base rate of shark attacks is vanishingly small. One dramatic event doesn't change the underlying probability — but it changes your *feeling* about the probability, which is all base rate neglect needs.\n\n**Crime.** \"The neighborhood has had three burglaries this month.\" Three sounds alarming. But what's the base rate? If there are 10,000 homes and the normal rate is two burglaries per month, three is barely a blip. If there are 50 homes and the normal rate is zero, three is an emergency.\n\nThe error is always the same: you react to the specific number without asking what the background rate is."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 4,
+          "content": {
+            "prompt": "A friend is worried about flying after seeing news coverage of a plane crash. They say:\n\n> *\"Two crashes in three months — something is seriously wrong with airline safety.\"*\n\nThe most helpful response is:",
+            "options": [
+              {
+                "id": "a",
+                "text": "\"You're right to be concerned — two crashes in three months is an unusual cluster.\"",
+                "isCorrect": false,
+                "explanation": "Is it? Without the base rate, you can't know. There are roughly 100,000 commercial flights per day worldwide. Two crashes in three months out of ~9 million flights is a rate so low that the word 'cluster' barely applies. The crashes feel like a pattern because of news coverage and availability bias, not because the underlying rate has changed. Validating the concern without introducing the base rate just reinforces the distorted perception."
+              },
+              {
+                "id": "b",
+                "text": "\"I understand the worry, but what matters is the rate — how many crashes compared to how many flights. Two out of millions of flights in that period means the rate hasn't meaningfully changed.\"",
+                "isCorrect": true,
+                "explanation": "This directly addresses the base rate. The raw number (two crashes) is meaningless without the denominator (millions of flights). Your friend is converting a numerator into a conclusion without checking the denominator. That's base rate neglect in its purest form. The emotional impact of a plane crash is enormous — but the emotional impact doesn't change the math."
+              },
+              {
+                "id": "c",
+                "text": "\"Statistically, driving is way more dangerous than flying.\"",
+                "isCorrect": false,
+                "explanation": "This is true but it dodges the actual error your friend is making. Comparing flying to driving is a different argument — it's about relative risk, not about whether the flying rate has changed. Your friend's specific claim is that two crashes signals a safety problem, and that claim fails because the base rate of flights is so enormous that two crashes doesn't move the needle. Address the specific reasoning error, not a different statistical fact."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 5,
+          "content": {
+            "body": "## The Antidote to Base Rate Neglect\n\nWhenever you encounter a number that seems alarming or impressive, ask one question: **\"Out of how many?\"**\n\n\"Five employees quit this month.\" Out of how many? Out of 20, that's a crisis. Out of 5,000, that's a Tuesday.\n\n\"This supplement reduced the risk of heart disease by 50%.\" From what base? If the risk went from 2 in 10,000 to 1 in 10,000, the relative reduction is 50% but the absolute change is 0.01 percentage points.\n\n\"The city had 12 murders this year.\" Out of what population? In a city of 50,000, that's alarming. In a city of 3 million, that's a historically low rate.\n\nThe denominator is almost never in the headline. That's not always deception — sometimes the denominator is boring. But boring denominators are exactly what keep dramatic numerators in perspective."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 6,
+          "content": {
+            "prompt": "Think of a time you reacted to a number — a statistic, a news headline, a risk — without considering the base rate. What was the number, and what was the denominator you were missing?\n\nIf you can't think of one, try this: pick a fear or concern you currently hold (about health, safety, money, anything) and try to find the actual base rate. Does knowing it change how you feel?",
+            "sampleAnswer": "The exercise works when you can identify a specific number that felt alarming or meaningful and then discover that the denominator deflates it — or, occasionally, confirms it. The strongest answers show the moment of recalibration: 'I thought X was a big deal, but the base rate is Y, which means it's actually...' The rare case where the base rate confirms the concern is equally valuable — it shows the tool works in both directions."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 7,
+          "content": {
+            "body": "## What You Learned\n\nThe **base rate** is how common something is before you have any additional information. **Base rate neglect** is the error of reacting to a specific number without considering the background frequency.\n\nIt affects medical test interpretation, risk assessment, news consumption, hiring decisions, and almost any situation where a dramatic number is presented without context. The antidote is a single question: \"out of how many?\"\n\nThe denominator is almost never in the headline. Get in the habit of looking for it."
+          }
+        }
+      ]
+    },
+    {
+      "title": "Sample Size",
+      "slug": "sample-size",
+      "description": "When small numbers lie — why a handful of data points can tell you nothing and feel like they're telling you everything.",
+      "sortOrder": 2,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 0,
+          "content": {
+            "body": "A restaurant has two reviews on Yelp, both five stars. Another restaurant has 800 reviews and a 4.3 average. Which one is probably better?\n\nYour gut says the five-star one. The math says you have no idea — because two data points tell you almost nothing.\n\nThis is the **small sample problem**, and it's one of the most common ways people get fooled by numbers. A tiny dataset can produce dramatic-looking results purely by chance. The fewer observations you have, the more the results are driven by randomness rather than reality.\n\nBut small numbers *feel* conclusive. \"Every person I've talked to says the same thing\" — well, how many people have you talked to? Three? That's not a pattern. It's an anecdote in triplicate."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "## Why Small Samples Are Unreliable\n\nImagine flipping a fair coin. Over 1,000 flips, you'll get close to 50% heads. But in 4 flips, getting 75% heads (3 out of 4) isn't just possible — it happens about 25% of the time. The coin is fair. The result looks extreme. The sample was just too small for the truth to emerge.\n\nThe same principle applies to everything:\n\n**Product reviews.** A product with 5 reviews and a 4.8 average could easily be a 3.5 product that got lucky with its first customers. A product with 2,000 reviews and a 4.2 average is almost certainly close to 4.2.\n\n**Pilot programs.** \"We tested the new process with a team of six and productivity went up 30%.\" Six people. For one period. That result could be entirely noise — the team might have had a light workload, a good week, or responded to the novelty of being studied.\n\n**Personal experience.** \"I've been to Paris twice and both times the people were rude.\" Two visits. You met maybe 50 people. Paris has 2 million residents. Your sample is 0.0025% of the population."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 2,
+          "content": {
+            "prompt": "A health article claims:\n\n> *\"In a study of 12 participants, those who took the supplement showed a 40% improvement in sleep quality compared to the placebo group.\"*\n\nHow should you evaluate this finding?",
+            "options": [
+              {
+                "id": "a",
+                "text": "A 40% improvement is substantial — this supplement is probably effective.",
+                "isCorrect": false,
+                "explanation": "The 40% number is impressive, but it's built on 12 people — likely 6 in each group. With groups that small, individual variation dominates everything. One person who happens to sleep terribly or wonderfully for unrelated reasons can swing the result dramatically. A 40% difference in a 12-person study is noise until a larger study confirms it. The effect size is meaningless without considering the sample size that produced it."
+              },
+              {
+                "id": "b",
+                "text": "Twelve participants is far too small to draw reliable conclusions — this result could easily be random noise, and the dramatic percentage makes it more suspicious, not less.",
+                "isCorrect": true,
+                "explanation": "Small samples produce extreme results. That's not a sign that something interesting is happening — it's a statistical inevitability. With 6 people per group, you'd expect wild swings in either direction regardless of whether the supplement works. The 40% improvement is exactly the kind of dramatic number that small samples generate by chance. A well-designed study would need hundreds of participants before a 40% finding would be worth taking seriously."
+              },
+              {
+                "id": "c",
+                "text": "The placebo control makes it reliable — that's good experimental design regardless of size.",
+                "isCorrect": false,
+                "explanation": "Having a placebo group is necessary for good design, but it's not sufficient. A controlled experiment with 12 people is better than an uncontrolled one with 12 people, sure. But it's still 12 people. Good design can't overcome insufficient data. Imagine a placebo-controlled coin-flip study with 6 flips per group — the design is perfect and the results are still meaningless."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 3,
+          "content": {
+            "body": "## The Law of Small Numbers\n\nPsychologists Kahneman and Tversky identified a cognitive bias they called the **law of small numbers** — the mistaken belief that small samples should look like the larger population they're drawn from.\n\nPeople expect a coin to alternate heads and tails even in short sequences. They expect 5 customer reviews to accurately represent 5,000 potential customers. They expect 3 job interviews to tell them everything about a company's culture.\n\nIn reality, small samples are *noisy*. They're dominated by whatever random factors happened to be present in that particular handful of observations. It's only as the sample grows larger that the noise averages out and the true pattern emerges.\n\nThe practical implication: **the more extreme a result looks, the more you should check the sample size.** Extreme results from small samples are usually artifacts of smallness, not discoveries."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 4,
+          "content": {
+            "prompt": "Your company surveys employee satisfaction. The marketing department (8 people) scores 92% satisfaction. The engineering department (150 people) scores 74% satisfaction. The CEO says:\n\n> *\"Marketing is clearly doing something right. Let's find out what and replicate it across the company.\"*\n\nWhat's wrong with this conclusion?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Nothing — 92% vs. 74% is a clear difference, and the CEO is right to investigate why.",
+                "isCorrect": false,
+                "explanation": "The difference looks clear until you consider the sample sizes. With 8 people, a single dissatisfied employee drops the score from 100% to 87.5%. One person having a bad week could swing the number by 12 points in either direction. Marketing's 92% is as likely to reflect random variation as it is to reflect genuine superiority. Engineering's 74% from 150 people is far more stable — you can actually trust that number. Comparing them as equals is a sample size error."
+              },
+              {
+                "id": "b",
+                "text": "An 8-person department can't produce a reliable satisfaction percentage — the score is too unstable to compare meaningfully with a 150-person department.",
+                "isCorrect": true,
+                "explanation": "With 8 people, the margin of error is enormous. Marketing's true satisfaction could plausibly be anywhere from 70% to 100% — you simply don't have enough data to narrow it down. Engineering's 150-person score is much more precise. Treating both numbers as equally informative — and building company strategy on the comparison — is exactly the kind of decision that small sample illusion enables. The CEO isn't wrong to be curious, but they are wrong to treat the gap as real."
+              },
+              {
+                "id": "c",
+                "text": "The departments do different work, so the comparison isn't fair regardless of size.",
+                "isCorrect": false,
+                "explanation": "That's a valid secondary point — different departments do have different stressors. But the primary problem is more fundamental: one of the numbers isn't reliable enough to compare to anything. Even if marketing and engineering did identical work, an 8-person sample would still be too small to draw conclusions from. The comparison problem comes after the sample size problem."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 5,
+          "content": {
+            "body": "## How to Protect Yourself\n\nA few rules of thumb for evaluating claims based on numbers:\n\n**Ask \"how many?\" before \"how much?\"** The size of the effect doesn't matter if the sample can't support it. Always check the denominator before getting excited about the numerator.\n\n**Be suspicious of extreme results.** In statistics, extreme results from small samples are expected, not impressive. A 90% success rate from 10 attempts is less informative than a 65% success rate from 10,000 attempts.\n\n**Look for replication.** One small study means almost nothing. The same finding from multiple independent studies means something. Science advances through replication, not through single dramatic findings.\n\n**Distinguish anecdote from data.** \"Everyone I know\" is not a sample. It's your social circle, which is small, self-selected, and probably more alike than different. Your personal experience is real, but it's not representative."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 6,
+          "content": {
+            "prompt": "Think of an opinion you currently hold that's based on a small number of experiences — maybe about a place you visited, a type of person, a product category, a workplace practice.\n\nHow many data points is your opinion actually based on? If you could multiply that sample by 100, do you think the pattern would hold, or might it dissolve?",
+            "sampleAnswer": "The exercise reveals something when you honestly count your data points and discover the number is smaller than the confidence you feel. Most people find they hold strong opinions based on 3-5 experiences that felt representative but statistically aren't. The key question — would this hold at 100x the sample? — forces a distinction between a genuine pattern and a lucky (or unlucky) streak."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 7,
+          "content": {
+            "body": "## What You Learned\n\n**Small samples produce extreme results by chance.** The fewer observations you have, the more randomness dominates and the less you can trust the pattern. A dramatic percentage from a tiny sample is noise until proven otherwise.\n\nThe error is intuitive: people expect small samples to behave like large ones. They don't. Small numbers are volatile, unreliable, and seductive — because an extreme result from a small sample *feels* like a discovery.\n\nThe defense: always ask \"how many?\" before reacting to \"how much?\" Check the sample size before trusting the result. And treat extreme findings from small datasets as interesting hypotheses, not conclusions."
+          }
+        }
+      ]
+    },
+    {
+      "title": "Correlation and Causation",
+      "slug": "correlation-causation",
+      "description": "The most abused relationship in data — why two things moving together doesn't mean one is causing the other.",
+      "sortOrder": 3,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 0,
+          "content": {
+            "body": "Ice cream sales and drowning deaths rise and fall together throughout the year. Does ice cream cause drowning?\n\nObviously not. Both are caused by a third factor — hot weather. More people swim when it's hot (more drownings), and more people buy ice cream when it's hot. The ice cream and the drownings are **correlated** but neither **causes** the other.\n\nYou probably knew that one. But the same logical error, in less obvious forms, drives major policy decisions, medical advice, business strategy, and personal choices every day. Whenever someone shows you two things that move together and implies — or states outright — that one is causing the other, you're looking at the single most common error in data interpretation."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "## Three Ways Correlation Isn't Causation\n\nWhen two things are correlated (they move together), there are at least three explanations besides direct causation:\n\n**Reverse causation.** The causal arrow points the other way. \"Countries with more doctors have more disease\" — doctors don't cause disease. Disease causes countries to train more doctors.\n\n**Confounding variable.** A third factor causes both. \"Children who eat breakfast do better in school\" — breakfast might help, but it's also a proxy for stable home environments, which independently improve school performance. The breakfast might be a marker, not a cause.\n\n**Coincidence.** With enough variables, some will correlate by pure chance. The divorce rate in Maine and per capita margarine consumption tracked almost perfectly for a decade. That's not a relationship. That's math.\n\nThe tricky part: correlation *can* indicate causation. Smoking and lung cancer are correlated, and smoking does cause lung cancer. The correlation-causation distinction doesn't mean correlations are useless. It means they're ambiguous — they require additional work to interpret."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 2,
+          "content": {
+            "prompt": "A business article reports:\n\n> *\"Companies with diverse leadership teams outperform their less diverse competitors by an average of 25% on profitability.\"*\n\nWhat's the most careful way to interpret this?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Diversity drives profitability — the data clearly supports investing in diverse leadership.",
+                "isCorrect": false,
+                "explanation": "This is the causal leap. The data shows a correlation: diversity and profitability co-occur. But the causal story could run several ways. Maybe diversity drives profitability through better decision-making. Or maybe profitable companies have more resources to invest in diversity initiatives. Or maybe a third factor — like innovative company culture — independently produces both diversity and profitability. The correlation alone can't distinguish between these explanations."
+              },
+              {
+                "id": "b",
+                "text": "The correlation is real, but it could mean diversity causes profit, profit enables diversity, or a third factor drives both — the data alone doesn't tell you which.",
+                "isCorrect": true,
+                "explanation": "This is the disciplined reading. The 25% difference is a real correlation worth taking seriously. But three causal stories are all consistent with the same data: diverse teams make better decisions (diversity → profit), successful companies can attract diverse talent (profit → diversity), or innovative cultures produce both diversity and financial performance (culture → both). Making policy based on the first explanation while ignoring the other two is correlation-to-causation error."
+              },
+              {
+                "id": "c",
+                "text": "The study is probably biased — someone with an agenda chose these numbers to make a point.",
+                "isCorrect": false,
+                "explanation": "This is the cynical escape hatch, and it's not warranted by the information given. The correlation might be perfectly real and the methodology sound. The issue isn't that the data is fabricated — it's that the causal interpretation is underdetermined. Jumping to 'the data is biased' every time a correlation is presented lets you dismiss findings without engaging with them. The right move is to accept the correlation and question the causal claim."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 3,
+          "content": {
+            "body": "## How Causal Claims Sneak In\n\nRarely does someone say \"A correlates with B, therefore A causes B.\" The error is usually more subtle:\n\n**Language tricks.** \"Linked to,\" \"associated with,\" and \"connected to\" are technically correlation language. But readers process them as causal. \"Coffee linked to longer life\" — most people read that as \"coffee helps you live longer,\" which is a causal claim the data doesn't support.\n\n**Implied mechanism.** \"People who exercise regularly report less depression. Exercise releases endorphins, which improve mood.\" The first sentence is a correlation. The second sentence provides a plausible mechanism. Together, they *feel* like proof of causation — but the mechanism could be real without being the explanation for the correlation. Maybe people who aren't depressed exercise more (reverse causation).\n\n**Charts and visuals.** Put two rising lines on the same graph and the human eye sees a relationship. The visual proximity creates an implied causal connection that the data doesn't necessarily support."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 4,
+          "content": {
+            "prompt": "**This one is designed to fool you.**\n\nA study finds that children who were read to daily before age 5 score higher on standardized tests at age 10. A parenting blog concludes:\n\n> *\"Reading to your kids is one of the best investments you can make in their academic future.\"*\n\nThis conclusion is:",
+            "options": [
+              {
+                "id": "a",
+                "text": "Well-supported — the study directly connects early reading to later test performance.",
+                "isCorrect": false,
+                "explanation": "The study connects them correlationally, not causally. Parents who read to their children daily are also more likely to be highly educated, to have more books in the home, to live in better-resourced school districts, and to engage in dozens of other enrichment activities. Any or all of those factors could explain the test score gap. The daily reading might be a marker of an enriched environment rather than the cause of the academic advantage. Reading to kids is probably good for many reasons — but this study doesn't prove it causes higher test scores."
+              },
+              {
+                "id": "b",
+                "text": "Overstated — the correlation is real but the confounders are enormous. Parents who read to kids daily differ from those who don't in many ways that independently affect test scores.",
+                "isCorrect": true,
+                "explanation": "This is the uncomfortable but accurate reading. The blog leapt from 'these things co-occur' to 'one causes the other' without addressing the obvious confounders. Household income, parental education, school quality, genetics, number of books in the home — all of these correlate with both daily reading and test scores. To isolate the effect of reading itself, you'd need a randomized experiment, not an observational study. The correlation is interesting. The causal claim is premature."
+              },
+              {
+                "id": "c",
+                "text": "Wrong — reading to children has no effect on test scores, and this study proves nothing.",
+                "isCorrect": false,
+                "explanation": "This overcorrects. Saying 'the causal claim is premature' isn't the same as saying 'reading to children doesn't help.' It might help enormously. The point is that this particular study can't prove that, because the confounders are too large. Dismissing the possibility of a real effect is just as unjustified as asserting one. The disciplined position is: the correlation is real, the causal claim needs more evidence."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 5,
+          "content": {
+            "body": "## When Correlation *Does* Suggest Causation\n\nCorrelation isn't proof of causation, but under certain conditions it becomes strong evidence:\n\n**Dose-response.** More of A consistently produces more of B. Heavier smokers get more lung cancer than light smokers. This pattern is hard to explain with confounders alone.\n\n**Temporal precedence.** A clearly precedes B in time. If a factory opens and asthma rates rise in the surrounding area afterward, the timing supports (but doesn't prove) causation.\n\n**Mechanism.** A plausible biological, physical, or logical pathway connects A to B. Correlation plus mechanism is stronger than either alone.\n\n**Experimental evidence.** Randomized controlled trials — where you randomly assign people to groups — are the gold standard because randomization eliminates confounders. If a randomized trial shows A causes B, you can trust it.\n\n**Consistency.** The same correlation appears in different populations, different time periods, different study designs. The more independent paths lead to the same conclusion, the more likely it's causal."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 6,
+          "content": {
+            "prompt": "Think of a causal claim you've accepted — something you believe causes something else. It could be about health, productivity, parenting, economics, anything.\n\nNow stress-test it: Is your belief based on correlation, and if so, what confounding variables could explain the pattern? Is there reverse causation? Would a randomized experiment be possible to test this, and has one been done?",
+            "sampleAnswer": "The strongest responses pick a genuinely held belief (not a straw man they already doubt) and subject it to real scrutiny. The exercise works when you discover that a belief you hold with high confidence is actually supported by correlation, not controlled experiment — and when you can name at least one plausible confounding variable. The willingness to question a belief you actually hold, rather than one you were already skeptical of, is where the skill develops."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 7,
+          "content": {
+            "body": "## What You Learned\n\n**Correlation** means two things move together. **Causation** means one produces the other. The gap between them is filled with reverse causation, confounding variables, and coincidence.\n\nCausal claims sneak in through soft language (\"linked to\"), implied mechanisms, and visual proximity on charts. The more intuitive a causal story feels, the more carefully you should check whether the data actually supports it.\n\nCorrelation can suggest causation when supported by dose-response, temporal precedence, mechanism, experimental evidence, and consistency. But a single correlational finding, no matter how dramatic, is ambiguous by nature."
+          }
+        }
+      ]
+    },
+    {
+      "title": "How Graphs Lie",
+      "slug": "how-graphs-lie",
+      "description": "Visual manipulation of data — how the same numbers can tell opposite stories depending on the chart.",
+      "sortOrder": 4,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 0,
+          "content": {
+            "body": "A graph is an argument disguised as a picture.\n\nEvery chart involves choices: where to start the axis, how to scale it, what range to show, what to include and what to leave out, what colors to use, what comparison to make. Each of those choices can make the same data tell a completely different story.\n\nGraphs are uniquely dangerous because they feel objective. A number requires interpretation — you have to think about what it means. A graph seems to *show* you the answer directly. Your eyes process the visual pattern before your analytical brain engages. By the time you think critically about the graph, you've already absorbed its message."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "## The Tricks\n\n**Truncated axis.** The most common trick. A bar chart shows revenue going from $98M to $102M — a 4% change. But the y-axis starts at $97M instead of $0, making the bars look dramatically different in height. A tiny change looks like a seismic shift.\n\n**Cherry-picked timeframe.** Stock price from March to June: up 40%. Stock price from January to June: down 5%. Same stock, same data, completely different stories depending on where you start the clock.\n\n**Misleading scale.** Two datasets on the same chart with different y-axes. One axis goes from 0 to 100, the other from 0 to 10,000. The lines cross or diverge in ways that look meaningful but are artifacts of the scaling choices.\n\n**Cumulative vs. rate charts.** A cumulative chart always goes up — things accumulate. Showing a cumulative chart of cases during an epidemic always looks alarming even if the rate of new cases is declining. The rate chart tells you the trend; the cumulative chart tells you the total. They answer different questions.\n\n**3D effects and area distortion.** A 3D pie chart can make a 25% slice look like 35% depending on the viewing angle. Area-based comparisons (bubbles, icons) distort because area scales with the square of the radius — doubling the value more than doubles the visual size."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 2,
+          "content": {
+            "prompt": "A company's quarterly earnings presentation shows a bar chart of revenue growth. The bars show:\n\nQ1: $50.2M, Q2: $50.8M, Q3: $51.1M, Q4: $51.5M\n\nBut the y-axis starts at $49.5M, making the Q4 bar appear roughly three times the height of the Q1 bar.\n\nWhat's the actual growth story?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Strong, accelerating growth — each quarter is higher than the last.",
+                "isCorrect": false,
+                "explanation": "The direction is real — revenue did increase every quarter. But the magnitude is being massively exaggerated by the truncated axis. The actual growth from Q1 to Q4 is about 2.6% over the full year. The visual makes it look like revenue tripled. This is a company presenting a modest, steady year as a dramatic growth story through axis manipulation."
+              },
+              {
+                "id": "b",
+                "text": "Modest, steady growth of about 2.6% over the year — the truncated y-axis makes a small increase look dramatic.",
+                "isCorrect": true,
+                "explanation": "$50.2M to $51.5M is a $1.3M increase — about 2.6% for the year. That's fine, maybe even good depending on the industry. But it's not the explosive growth story the chart is designed to convey. Starting the axis at $49.5M instead of $0 (or even $40M) is the entire trick. If the bars started at zero, you'd see four nearly identical bars with tiny slivers of difference at the top. The visual story and the numerical story are completely different."
+              },
+              {
+                "id": "c",
+                "text": "You can't tell without knowing the industry — 2.6% might be excellent or terrible depending on the sector.",
+                "isCorrect": false,
+                "explanation": "Whether 2.6% growth is good or bad is a fair question — but it's a different question from whether the chart is honest. The chart is designed to make 2.6% growth look like 200% growth. Regardless of whether 2.6% is good for this industry, the visual representation is misleading. You can make a separate argument that 2.6% is excellent without needing to exaggerate it visually."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 3,
+          "content": {
+            "body": "## Reading Graphs Critically\n\nA few questions to ask every time you look at a chart:\n\n**Where does the axis start?** If the y-axis doesn't start at zero (for bar charts), the visual proportions are distorted. Line charts have more flexibility here, but a truncated axis on any chart type should make you look at the actual numbers.\n\n**What's the time range?** Any trend can be made to look positive or negative by choosing the right start and end dates. If someone shows you six months, ask what the full year looks like. If they show you one year, ask about five.\n\n**What's missing?** A chart of revenue that doesn't show costs. A chart of test scores that doesn't show demographics. A chart of economic growth that doesn't show inflation adjustment. What's absent from the visualization is often more important than what's present.\n\n**Is the comparison fair?** Two lines on the same chart should use the same scale, the same time period, and comparable units. If they don't, the visual comparison is meaningless.\n\n**What question does this chart actually answer?** Not what it *looks like* it answers — what it *actually* answers. A cumulative chart answers \"how many total?\" not \"is the trend getting better or worse?\""
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 4,
+          "content": {
+            "prompt": "A news article about housing includes a chart showing home prices over the past 5 years. The line goes steeply upward. The y-axis starts at $250,000 and tops out at $400,000. The actual data: prices went from $280,000 to $340,000.\n\nA commenter writes: \"Look at that chart — prices have nearly doubled!\"\n\nWhat's the right correction?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Prices increased about 21% — significant, but the truncated axis makes it look like a near-doubling.",
+                "isCorrect": true,
+                "explanation": "$280K to $340K is a $60K increase — about 21%. That's a substantial rise in housing costs worth discussing. But the chart makes it look like prices approximately doubled because the line fills nearly the entire vertical space. If the y-axis started at $0, the line would show a modest upward slope in the upper portion of the chart. The story is real; the visual dramatization distorts the magnitude."
+              },
+              {
+                "id": "b",
+                "text": "The chart is fine — starting at $250K makes sense because no homes in this area cost less than that.",
+                "isCorrect": false,
+                "explanation": "There's a reasonable argument for not starting at zero when the data range is narrow and far from zero. But the specific problem here is that a reader looked at the chart and thought prices nearly doubled when they actually increased 21%. Whatever the justification for the axis choice, the visual effect is misleading enough that someone got the magnitude wrong by a factor of 4. That's a design failure, regardless of the rationale."
+              },
+              {
+                "id": "c",
+                "text": "The commenter is right — the chart clearly shows prices rising from near the bottom to near the top.",
+                "isCorrect": false,
+                "explanation": "Near the bottom to near the top *of the chart* — not of the price range. A line going from 20% up the chart to 80% up the chart doesn't mean the value quadrupled. It means it traversed 60% of the visible range, which depends entirely on how that range was set. This is exactly the error axis truncation creates: people read the visual proportion as the data proportion."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 5,
+          "content": {
+            "body": "## Why This Keeps Working\n\nYou might think that once you know these tricks, you're immune. You're not.\n\nGraph manipulation works because it exploits a feature of human cognition that you can't turn off: **visual processing is faster than analytical processing.** You see the pattern before you think about the pattern. The steep line, the towering bar, the dramatic divergence — these register emotionally before you check the axis.\n\nKnowing the tricks doesn't prevent the initial impression. It gives you the habit of checking. Every graph should prompt the same reflex: **look at the axis, look at the range, look at the numbers.** Do the numbers match the visual story the chart is telling? If they don't, trust the numbers."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 6,
+          "content": {
+            "prompt": "Think of a chart or graph you've seen recently — in the news, on social media, in a work presentation, anywhere. Describe what it showed visually and what story it seemed to tell.\n\nNow apply the critical reading questions: Where did the axis start? What was the time range? What was missing? Was the comparison fair? Does the visual story match the numerical reality?",
+            "sampleAnswer": "The exercise succeeds when you can describe a specific chart, articulate the visual impression it created, and then identify at least one way the presentation choices shaped that impression — a truncated axis, a cherry-picked timeframe, a missing variable, or an unfair comparison. The most valuable discovery is finding a chart you initially found persuasive that, on closer inspection, was doing some visual sleight of hand."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 7,
+          "content": {
+            "body": "## What You Learned\n\nEvery graph is an argument made with visual choices: axis ranges, timeframes, scales, inclusions, and comparisons. These choices can make the same data tell opposite stories.\n\nThe core tricks: truncated axes exaggerate change, cherry-picked timeframes create false trends, dual-axis charts manufacture correlations, and cumulative charts mask declining rates.\n\nThe defense: before absorbing the visual story, check the numbers. Look at axis starting points, examine the time range, ask what's missing, and verify that the visual proportions match the data proportions. Visual processing is faster than analytical processing — the graph's story hits you before the numbers do. The skill is learning to check the numbers anyway."
+          }
+        }
+      ]
+    },
+    {
+      "title": "Percentages and Framing",
+      "slug": "percentages-framing",
+      "description": "How the same number tells completely different stories depending on whether you use relative or absolute terms.",
+      "sortOrder": 5,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 0,
+          "content": {
+            "body": "A drug reduces your risk of a certain disease by 50%. Sounds impressive.\n\nNow the same fact, different framing: the drug reduces your risk from 2 in 10,000 to 1 in 10,000. Still want to take it?\n\nBoth descriptions are mathematically true. The first is the **relative risk reduction** — the risk was cut in half. The second is the **absolute risk reduction** — your actual chance of getting the disease dropped by 0.01 percentage points.\n\nSame drug. Same data. Completely different emotional impacts. And this is how percentages are weaponized in medicine, marketing, politics, and everyday persuasion."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "## Relative vs. Absolute\n\nThe gap between relative and absolute numbers is one of the most exploited facts in data communication.\n\n**Relative change** tells you the ratio. \"Sales increased 200%.\" Sounds enormous. But 200% of what? If sales went from 1 unit to 3 units, that's a 200% increase that means almost nothing.\n\n**Absolute change** tells you the magnitude. \"Sales increased by 2 units.\" Doesn't sound impressive. But it's the same fact as the 200% increase.\n\nThe rule: **relative numbers exaggerate small changes; absolute numbers diminish large ones.** Anyone trying to make a small change look big will use relative terms. Anyone trying to make a big change look small will use absolute terms.\n\nPharmaceutical companies love relative risk reduction: \"reduces risk by 36%!\" Health skeptics love absolute risk reduction: \"reduces risk by 0.003 percentage points.\" Both are using real numbers to tell the story they want."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 2,
+          "content": {
+            "prompt": "A headline reads:\n\n> *\"Study: New screening test reduces cancer deaths by 33%\"*\n\nThe study's actual data: In the unscreened group, 3 out of 1,000 people died of this cancer over 10 years. In the screened group, 2 out of 1,000 died.\n\nHow would you summarize this result?",
+            "options": [
+              {
+                "id": "a",
+                "text": "A 33% reduction in cancer deaths is a significant medical achievement that justifies widespread screening.",
+                "isCorrect": false,
+                "explanation": "The 33% is technically accurate — going from 3 deaths to 2 deaths per 1,000 is a 33% relative reduction. But the absolute reduction is 1 death prevented per 1,000 people screened. That means 999 out of 1,000 people receive no mortality benefit from the screening (they either wouldn't have died anyway or die regardless). Whether that justifies screening depends on cost, false positive rates, and overdiagnosis risk — not just the headline percentage."
+              },
+              {
+                "id": "b",
+                "text": "The relative reduction is 33%, but the absolute benefit is 1 additional life saved per 1,000 people screened — both numbers are needed to evaluate whether the screening is worth it.",
+                "isCorrect": true,
+                "explanation": "This is the complete picture. 33% sounds like a breakthrough; 1 in 1,000 sounds marginal. Neither number alone tells the whole story. If the screening is cheap, painless, and has no false positives, saving 1 in 1,000 is clearly worth it. If it's expensive, invasive, and generates hundreds of false positives that lead to unnecessary biopsies, the calculus changes entirely. You need both the relative and absolute numbers — and the context — to make a rational decision."
+              },
+              {
+                "id": "c",
+                "text": "Only 1 in 1,000 people benefit — this screening is basically useless and the 33% headline is misleading.",
+                "isCorrect": false,
+                "explanation": "This overcorrects in the other direction. 1 in 1,000 is a real life saved. Scale that to a population of 10 million and it's 10,000 lives. Whether that's 'worth it' depends on costs and tradeoffs, but dismissing it as 'basically useless' makes the same framing error in reverse — using the absolute number to minimize what the relative number dramatized. Both framings are incomplete on their own."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 3,
+          "content": {
+            "body": "## Other Framing Tricks\n\nRelative vs. absolute is the big one, but percentages get weaponized in other ways:\n\n**Percentages without base numbers.** \"Customer satisfaction improved by 15%.\" From what? To what? 15% improvement from 20% satisfaction to 23% satisfaction is a very different story from 80% to 92%.\n\n**Percentage points vs. percentages.** \"Support dropped from 40% to 36%.\" That's a 4 percentage-point drop, but a 10% relative decline. Headlines will use whichever sounds more dramatic for their purposes.\n\n**Risk framing.** \"This food doubles your risk of cancer\" vs. \"this food increases your cancer risk from 0.001% to 0.002%.\" Both true. The first generates fear; the second generates a shrug. The framing choice is the editorial.\n\n**Natural frequencies vs. percentages.** \"A 1% chance\" and \"1 in 100\" convey the same probability but feel different. People consistently evaluate risks better when they're presented as natural frequencies (1 in 100) rather than percentages (1%)."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 4,
+          "content": {
+            "prompt": "A tech company's blog post announces:\n\n> *\"Our new algorithm reduced error rates by 90%!\"*\n\nDig deeper and you find the error rate went from 0.5% to 0.05%.\n\nIs this impressive?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Yes — a 90% reduction in errors is an enormous improvement no matter how you frame it.",
+                "isCorrect": false,
+                "explanation": "Context matters. If the error rate was already 0.5% — meaning the system was 99.5% accurate — then the improvement is from 99.5% to 99.95%. That might matter a lot in some domains (medical imaging, financial transactions) and barely at all in others (content recommendations, autocomplete). The 90% number is meaningless without knowing whether 0.5% was already acceptable. A 90% reduction from an already-tiny number might not justify the engineering investment."
+              },
+              {
+                "id": "b",
+                "text": "Depends on the domain — going from 99.5% accuracy to 99.95% accuracy might be transformative in high-stakes applications and irrelevant in low-stakes ones. The 90% headline obscures this context.",
+                "isCorrect": true,
+                "explanation": "This is the calibrated response. In aviation software, going from 0.5% errors to 0.05% errors might save lives. In a social media feed algorithm, nobody would notice. The 90% headline strips away the context needed to evaluate the claim. It converts a nuanced improvement into an unambiguous triumph. The right question isn't 'is 90% a big number?' but 'does the difference between 0.5% and 0.05% matter in this specific application?'"
+              },
+              {
+                "id": "c",
+                "text": "No — both error rates are below 1%, which means the system was already working well. This is just marketing spin.",
+                "isCorrect": false,
+                "explanation": "Dismissing any sub-1% improvement as irrelevant is its own error. In some domains, the difference between 99.5% and 99.95% is the difference between a usable system and a critical one. Dismissing the improvement because both numbers are small is the inverse of being fooled by the 90% headline — both fail to evaluate the claim in its proper context."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 5,
+          "content": {
+            "body": "## The Defense: Always Ask for Both Numbers\n\nWhenever you see a percentage — any percentage — ask two questions:\n\n**What are the absolute numbers?** \"Revenue grew 50%\" means nothing until you know it went from $2 million to $3 million, not from $200 to $300.\n\n**What's the base rate?** \"Risk increased by 100%\" sounds terrifying. But if the risk went from 1 in a million to 2 in a million, the absolute increase is negligible for any individual.\n\nThe general principle: **whoever chose whether to use relative or absolute numbers made a framing decision.** That decision tells you which story they wanted to tell. Your job is to reconstruct the story they didn't tell and see how the two compare."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 6,
+          "content": {
+            "prompt": "Find a headline, advertisement, or claim that uses a percentage. Write it down.\n\nNow figure out the absolute numbers behind it. If the source doesn't provide them, estimate. Does the percentage still feel as impressive (or as scary) once you know the base?\n\nIf you can't find one in the moment, try this: \"Exercise reduces the risk of heart disease by 40%.\" What absolute numbers would make that claim significant vs. trivial?",
+            "sampleAnswer": "The exercise works when you discover the gap between the feeling a percentage creates and the reality the absolute numbers reveal. Sometimes the absolute numbers confirm the percentage's importance — a 40% reduction from a 20% base rate is genuinely significant. Sometimes they deflate it — a 40% reduction from a 0.001% rate is practically meaningless for any individual. The skill is recognizing that the percentage alone never tells you which case you're in."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 7,
+          "content": {
+            "body": "## What You Learned\n\n**Relative numbers** (percentages, ratios) exaggerate small changes. **Absolute numbers** reveal the actual magnitude. Anyone presenting data has chosen one framing over the other, and that choice is an editorial decision.\n\nThe same fact can sound like a breakthrough or a triviality depending on whether it's expressed as a relative change or an absolute change. The defense is always the same: demand both numbers. The relative number tells you the ratio. The absolute number tells you the reality. You need both to evaluate the claim."
+          }
+        }
+      ]
+    },
+    {
+      "title": "Averages and Distributions",
+      "slug": "averages-distributions",
+      "description": "When the 'typical' doesn't exist — how averages can describe a reality that nobody actually experiences.",
+      "sortOrder": 6,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 0,
+          "content": {
+            "body": "The average American household has 2.5 people. No household actually has 2.5 people.\n\nThat sounds like a joke, but it points to something genuinely important: **an average can describe a population that nobody in the population actually resembles.** And when you make decisions based on an average — hiring an \"average\" candidate, targeting the \"average\" customer, planning for the \"average\" outcome — you might be planning for a person or scenario that doesn't exist."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "## Three Kinds of Average\n\nWhen someone says \"average,\" they could mean three different things:\n\n**Mean.** Add everything up and divide by the number of items. Ten people earn $50K each and one person earns $1M. The mean income is $136K — more than anyone in the lower group earns and far less than the one high earner.\n\n**Median.** The middle value when everything is sorted. Same group: the median income is $50K. This ignores the millionaire entirely and tells you what the \"typical\" person earns.\n\n**Mode.** The most common value. In this group, $50K is the mode — it's what most people earn.\n\nThe mean, median, and mode of the same data can be wildly different. And whichever one someone chooses to call \"the average\" shapes the story they're telling.\n\nA CEO citing average company salary to argue that employees are well-compensated will use the mean (pulled up by executive pay). An employee arguing that pay is too low will use the median. Both are reporting \"the average.\" Neither is lying. Both are framing."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 2,
+          "content": {
+            "prompt": "A real estate report states:\n\n> *\"The average home price in the metro area is $520,000.\"*\n\nYou're looking for a home and your budget is $350,000. A friend says: \"Forget it — you can't afford this market.\"\n\nWhat's wrong with that conclusion?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Nothing — if the average is $520K and your budget is $350K, you're priced out.",
+                "isCorrect": false,
+                "explanation": "This treats 'the average' as if it describes every home in the market. If the report uses the mean, a handful of $3M luxury homes could be pulling the number far above what most homes actually cost. The median might be $420K, and plenty of homes might sell for $300K–$350K. Your friend is comparing your budget to a single summary number that might not represent the actual distribution of prices at all."
+              },
+              {
+                "id": "b",
+                "text": "The average doesn't tell you the distribution — if home prices are spread widely, many homes could be within your budget even if the average is well above it.",
+                "isCorrect": true,
+                "explanation": "An average of $520K is compatible with very different distributions. If prices cluster tightly around $520K, then yes, $350K is hard. But if prices range from $200K to $2M with a right skew (a few very expensive homes pulling up the mean), the majority of homes might be under $500K and many under $400K. The average tells you one thing about the center. The distribution tells you what's actually available. Without the distribution, the average is insufficient for decision-making."
+              },
+              {
+                "id": "c",
+                "text": "You should look at the median instead — it's always more accurate than the mean.",
+                "isCorrect": false,
+                "explanation": "The median is often more useful for skewed distributions like home prices, but it's not 'always more accurate.' Accuracy isn't the issue — relevance is. The median tells you the midpoint. The mean tells you the balance point. Neither tells you how many homes fall in the $300K–$400K range, which is what you actually need to know. The right answer isn't 'use a different average.' It's 'look at the distribution.'"
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 3,
+          "content": {
+            "body": "## When Averages Mislead\n\nAverages are most misleading when the distribution is **bimodal** (two clusters) or **heavily skewed** (a long tail in one direction).\n\n**Bimodal example.** A company has two types of employees: junior staff earning ~$45K and senior management earning ~$150K, with very few people in between. The mean salary might be $80K — a number that literally nobody earns. A new hire told \"the average salary is $80K\" would have a completely wrong expectation.\n\n**Skew example.** Wealth distribution in almost every country. The mean wealth is pulled dramatically upward by billionaires, making the \"average person\" appear far wealthier than any typical person actually is. The median is usually half or less of the mean.\n\n**The general principle:** whenever the thing being measured can have extreme outliers in one direction (income, wealth, home prices, company valuations, YouTube views), the mean will be distorted and the median will be more representative of a typical case. But even the median can't tell you about the shape of the full distribution."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 4,
+          "content": {
+            "prompt": "A startup founder pitches investors:\n\n> *\"The average revenue per user in our industry is $45/month. We're already at $42. We're nearly at industry standard.\"*\n\nLater you learn that in this industry, 80% of users generate $5/month and 20% of power users generate $200/month.\n\nWhat does this change about the pitch?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The pitch is basically honest — $42 is close to the $45 industry average, which shows the startup is competitive.",
+                "isCorrect": false,
+                "explanation": "The $45 average is a mathematical artifact, not a description of any real user. If the startup's $42 average comes from a similar 80/20 split, the comparison might be valid. But if the startup's $42 comes from a more uniform distribution (most users pay $30–$50), their business model is fundamentally different from the industry despite the similar 'average.' The headline number matches; the underlying reality might not. The average obscures the business model."
+              },
+              {
+                "id": "b",
+                "text": "The industry 'average' of $45 is meaningless — the real question is whether the startup's distribution matches the industry's distribution, not whether the averages are similar.",
+                "isCorrect": true,
+                "explanation": "In a bimodal distribution, the average is a fiction. The industry doesn't have '$45 users' — it has '$5 users' and '$200 users.' The question for the startup is: what does your user distribution look like? If you're getting $42/user because everyone pays ~$42, your business model is completely different from the industry norm even though the average looks similar. If you're getting it from a similar 80/20 split, you're tracking. The average comparison hides this crucial distinction."
+              },
+              {
+                "id": "c",
+                "text": "The founder should use median revenue per user instead — that would give a more honest picture.",
+                "isCorrect": false,
+                "explanation": "The median would be around $5/month (since 80% of users are in the low tier), which would make the startup look much worse in a pitch. But 'use the median' isn't the full answer either. The real insight is that neither the mean nor the median captures the bimodal structure. What investors need to see is the full distribution — the two clusters — not any single summary number."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 5,
+          "content": {
+            "body": "## Thinking in Distributions\n\nThe single most important upgrade to your statistical thinking is this: **stop thinking in averages and start thinking in distributions.**\n\nAn average is a compression. It takes a complex, varied reality and reduces it to one number. Sometimes that compression is useful — when the data clusters tightly around the center, the average tells you a lot. But when the data is spread out, skewed, or multimodal, the average hides more than it reveals.\n\nWhenever someone gives you an average, mentally ask: **what does the spread look like?** Are most data points near the average, or are they scattered? Is the distribution symmetric or skewed? Are there outliers pulling the number in one direction?\n\nYou don't need to calculate anything. Just asking the question protects you from the most common way averages mislead."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 6,
+          "content": {
+            "prompt": "Think of a decision you've made — or a belief you hold — that was based on an average. Maybe it was about a salary range, a product rating, a travel cost, a health statistic, or an expected outcome.\n\nWhat might the distribution behind that average actually look like? Is it likely symmetric, skewed, or bimodal? Would knowing the distribution change the decision or belief?",
+            "sampleAnswer": "The exercise works when you identify a concrete decision anchored to an average and then realize the average might not represent your situation. Salary expectations are a common example — 'the average salary for this role is $X' doesn't tell you whether most people earn near $X or whether the range spans from 0.5X to 3X depending on location, company size, and experience. The distribution determines whether the average is a useful guide or a misleading one."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 7,
+          "content": {
+            "body": "## What You Learned\n\n**Averages** compress a distribution into a single number. When the distribution is symmetric and tightly clustered, the average is informative. When it's skewed, bimodal, or spread wide, the average can describe a reality that nobody actually experiences.\n\nThere are three kinds of average — mean, median, and mode — and which one someone calls \"the average\" is a framing choice. The mean is pulled by outliers; the median ignores them; the mode tells you what's most common.\n\nThe upgrade: **think in distributions, not averages.** When someone gives you an average, ask what the spread looks like. The shape of the distribution is almost always more useful than any single number summarizing it."
+          }
+        }
+      ]
+    },
+    {
+      "title": "Selection Bias",
+      "slug": "selection-bias",
+      "description": "The data you don't see — how the missing information can be more important than the information you have.",
+      "sortOrder": 7,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 0,
+          "content": {
+            "body": "During World War II, the military asked mathematician Abraham Wald to analyze bullet hole patterns on bombers returning from missions. The planes had clusters of damage on the fuselage and wings. The officers wanted to add armor to those areas.\n\nWald said the opposite: armor the spots with *no* bullet holes — the engines and cockpit.\n\nHis reasoning: the planes he was examining were the ones that **came back.** The planes hit in the engines and cockpit didn't return. The damage patterns on survivors told you where a plane could take a hit and survive, not where it was most vulnerable.\n\nThis is **survivorship bias** — a specific form of selection bias. You're drawing conclusions from a dataset that's missing its most important members. And it's everywhere."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "## What Is Selection Bias?\n\nSelection bias occurs when the data you're analyzing isn't representative of the population you're trying to understand — because the way data was collected, filtered, or made visible systematically excludes certain cases.\n\n**Survivorship bias.** You see the successes but not the failures. \"Every successful entrepreneur dropped out of college\" — but you're not counting the millions of dropouts who didn't become entrepreneurs. The success stories are visible; the failures are invisible.\n\n**Self-selection bias.** People who choose to participate differ from people who don't. A survey about job satisfaction sent to current employees misses everyone who was dissatisfied enough to quit. The remaining respondents are biased toward satisfaction by definition.\n\n**Availability bias overlap.** The cases you encounter aren't random — they're filtered by what makes the news, what gets published, what people talk about. Dramatic events are overrepresented; routine events are invisible.\n\n**Confirmation bias overlap.** You notice and remember data that confirms your existing beliefs and overlook data that contradicts them. Your dataset is biased because your attention is."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 2,
+          "content": {
+            "prompt": "A business book profiles 50 highly successful companies and identifies 8 traits they all share: strong culture, visionary leadership, focus on innovation, etc.\n\nThe book concludes: \"If you want your company to succeed, cultivate these 8 traits.\"\n\nWhat's the critical flaw in this analysis?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The sample of 50 companies is too small to draw conclusions.",
+                "isCorrect": false,
+                "explanation": "Fifty companies is a reasonable sample size for qualitative research. The problem isn't how many companies were studied — it's which ones. If you only study successes, you can find traits they share, but you can't know whether those traits are what caused the success. Failed companies might share exactly the same traits."
+              },
+              {
+                "id": "b",
+                "text": "The book only studied successful companies — without examining failed companies that also had these traits, you can't know whether the traits cause success or are just common in businesses generally.",
+                "isCorrect": true,
+                "explanation": "This is survivorship bias in business research. If you study only the planes that came back (successful companies), the bullet holes you find (shared traits) might be incidental. Maybe 500 companies had 'visionary leadership' and 50 succeeded while 450 failed. The trait is present in both groups — it doesn't explain the difference. Without a comparison group of failures, you're describing the survivors, not identifying the cause of survival."
+              },
+              {
+                "id": "c",
+                "text": "The traits are too vague — 'strong culture' and 'visionary leadership' could mean anything.",
+                "isCorrect": false,
+                "explanation": "Vagueness is a real problem with this kind of research, but it's secondary. Even if the traits were precisely defined and rigorously measured, studying only successful companies would still be a fatal methodological flaw. You can't identify what causes success by looking only at cases where success occurred. The selection of which companies to study is the core error."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 3,
+          "content": {
+            "body": "## Selection Bias in Daily Life\n\nSelection bias isn't just a research problem. It shapes everyday reasoning:\n\n**Product reviews.** People with strong opinions — very satisfied or very dissatisfied — are more likely to leave reviews. The moderate majority stays silent. The reviews you read are systematically unrepresentative of the average customer experience.\n\n**Social media.** You see people's highlights, not their average days. Comparing your everyday life to a curated feed is a selection bias problem — the data you're comparing to is filtered for impressiveness.\n\n**News.** Planes that crash make the news. The 100,000 planes that landed safely today didn't. Your sense of aviation risk is built on a completely biased dataset.\n\n**Career advice.** Successful people who took risks tell you to take risks. You don't hear from the equally bold people whose risks destroyed them. The advice pool is filtered for survivors.\n\nThe common thread: **the missing data is more important than the visible data,** and it's missing precisely because of the mechanism you'd need to understand to account for it."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 4,
+          "content": {
+            "prompt": "You're evaluating a new employee onboarding program. After 6 months, you survey the 40 new hires who went through the program. 85% report being satisfied with the onboarding experience.\n\nYour HR director concludes: \"The program is a success.\"\n\nWhat's the potential selection bias problem?",
+            "options": [
+              {
+                "id": "a",
+                "text": "85% is high enough that selection bias probably doesn't matter here — the result is clear.",
+                "isCorrect": false,
+                "explanation": "The number looks good, but who's missing? If 60 new hires started the program and 20 left the company within 6 months, you're surveying the 40 who stayed. The 20 who quit — possibly because of poor onboarding — aren't in your dataset. Your 85% satisfaction rate might be 85% of the survivors, while the 33% who left might have had a very different experience. The high number should make you more curious about who's not being counted, not less."
+              },
+              {
+                "id": "b",
+                "text": "The 40 people you surveyed are the ones who stayed — new hires who had a bad onboarding experience and quit are missing from the data, potentially inflating the satisfaction rate.",
+                "isCorrect": true,
+                "explanation": "This is self-selection bias combined with survivorship bias. The people most likely to be dissatisfied with onboarding are the same people most likely to have already left. By surveying only current employees, you've systematically excluded the group most likely to give negative feedback. The true onboarding satisfaction rate — including people who left partly because of the onboarding experience — could be significantly lower than 85%."
+              },
+              {
+                "id": "c",
+                "text": "Surveys always have bias — people who bother to respond tend to be more positive than those who don't.",
+                "isCorrect": false,
+                "explanation": "Response bias is a real concern, but the bigger issue here is more structural than whether people bother to fill out the survey. The problem is that an entire category of people — those who left the company — aren't in your population at all. That's not response bias (choosing not to answer); it's survivorship bias (not being available to answer because you've already exited the system)."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 5,
+          "content": {
+            "body": "## Asking the Invisible Question\n\nThe antidote to selection bias is a single question: **\"Who's missing?\"**\n\nFor every dataset, every study, every collection of examples — ask who or what was systematically excluded by the way the data was gathered.\n\nRestaurant reviews: who didn't leave a review? Success stories: where are the failures? Customer feedback: who already churned? Historical records: whose stories weren't recorded? Medical studies: who dropped out before the study ended?\n\nYou'll never get perfect data. Every dataset has some selection bias built in. But being aware of *who's missing* and *why they're missing* lets you adjust your interpretation accordingly. The bias doesn't disappear, but it stops being invisible."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 6,
+          "content": {
+            "prompt": "Think of a conclusion you've drawn from visible evidence — about a product, a career path, a place, a type of person, anything.\n\nNow ask: who or what is missing from the evidence that shaped your conclusion? What data would you need to see to know whether your conclusion holds up when the invisible cases are included?",
+            "sampleAnswer": "The exercise works when you identify a genuinely held conclusion and then discover a plausible category of missing data that could undermine it. Career path conclusions are especially fertile — 'successful people in my field did X' always invites the question of what happened to people who did X and didn't succeed. The strongest answers name both the conclusion and the specific missing data, and honestly evaluate whether the conclusion survives the gap."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 7,
+          "content": {
+            "body": "## What You Learned\n\n**Selection bias** means your data isn't representative because the way it was collected systematically excluded certain cases. Survivorship bias, self-selection bias, and availability-driven sampling all produce datasets where the missing data is more important than the visible data.\n\nThe error pattern: drawing conclusions from winners without seeing losers, from respondents without seeing non-respondents, from visible cases without seeing invisible ones.\n\nThe antidote is a single question: **\"Who's missing?\"** Every dataset, every study, every collection of examples has someone or something systematically absent. Finding who's absent — and why — is the difference between a conclusion that holds up and one that was built on half the evidence."
+          }
+        }
+      ]
+    },
+    {
+      "title": "Reading Data Like a Skeptic",
+      "slug": "reading-data-skeptic",
+      "description": "Putting it all together — a practical framework for evaluating any numerical claim you encounter.",
+      "sortOrder": 8,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 0,
+          "content": {
+            "body": "You now have six tools for evaluating numerical claims: base rates, sample size, correlation vs. causation, graph literacy, percentage framing, averages vs. distributions, and selection bias.\n\nThis final sequence puts them together into a practical framework you can apply to any number, statistic, chart, or data-driven argument you encounter. The goal isn't to become a statistician. It's to develop the reflex of asking the right questions before accepting a number at face value."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "## The Skeptic's Checklist\n\nWhen you encounter a numerical claim — in a headline, a presentation, a conversation, an ad — run through these questions:\n\n**1. Out of how many?** What's the base rate? What's the denominator? A number without context is just a number.\n\n**2. How many observations?** What's the sample size? Is it large enough to be reliable, or could the result be noise?\n\n**3. Does one cause the other?** If a causal claim is being made, is there an alternative explanation? Reverse causation? A confounding variable? Pure coincidence?\n\n**4. What does the graph actually show?** Where does the axis start? What's the time range? Is anything being visually exaggerated?\n\n**5. Relative or absolute?** Is a percentage being used to make a small change look big (or a big change look small)? What are the raw numbers?\n\n**6. What kind of average?** Mean, median, or mode? What might the distribution look like? Is the average describing a reality anyone actually experiences?\n\n**7. Who's missing?** Is the data biased by survivorship, self-selection, or availability? Who was systematically excluded?\n\nYou won't need all seven questions every time. But the habit of asking at least one or two will catch most of the ways numbers are used to mislead."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 2,
+          "content": {
+            "prompt": "A social media post goes viral:\n\n> *\"Studies show that people who read for 30 minutes a day earn 40% more than non-readers. Reading literally makes you richer.\"*\n\nApply the checklist. Which questions are most important to ask here?",
+            "options": [
+              {
+                "id": "a",
+                "text": "What's the sample size, and is 40% relative or absolute?",
+                "isCorrect": false,
+                "explanation": "These are valid questions, but they're not the most urgent ones for this claim. The 40% is likely relative (and the absolute difference could be more or less impressive depending on the base). But the biggest problem with this claim is more fundamental than framing or sample size."
+              },
+              {
+                "id": "b",
+                "text": "Does reading cause higher income, or do the same factors that lead to higher income (education, access, socioeconomic background) also lead to more reading? And who's missing — who wasn't in the study?",
+                "isCorrect": true,
+                "explanation": "The causal claim ('reading literally makes you richer') is the central error. People who read 30 minutes daily are likely to be more educated, from higher socioeconomic backgrounds, in professional careers that reward knowledge work, and in living situations with leisure time available for reading. Any or all of those factors independently predict higher income. The correlation between reading and income is probably real; the causal claim that reading *produces* the income is unsupported. And the selection bias question matters too — who was in the study? Who was excluded?"
+              },
+              {
+                "id": "c",
+                "text": "What does the graph look like, and what kind of average is being used for income?",
+                "isCorrect": false,
+                "explanation": "These are reasonable checklist items in general, but there's no graph here and the 40% claim is about a comparison between groups, not an average in the misleading-average sense. The most urgent questions for this specific claim are about causation (does reading cause income?) and selection bias (who was studied?). The checklist isn't meant to be applied mechanically — it's meant to help you identify which questions matter most for the claim at hand."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 3,
+          "content": {
+            "body": "## The Presentation Layer\n\nEvery number you encounter has passed through a **presentation layer** — someone decided how to frame it, what context to include, what to leave out, and how to display it.\n\nThat person might be a journalist writing a headline. A CEO giving a quarterly report. A researcher writing an abstract. A friend sharing a statistic. A politician making a case. An advertiser selling a product.\n\nNone of these people are necessarily dishonest. But all of them have made choices about how to present the number, and those choices reflect their goals. A journalist wants you to click. A CEO wants the stock price to go up. A researcher wants the finding to look significant. A politician wants your vote.\n\nThe number is rarely the issue. The presentation — what's included, what's excluded, what's emphasized, what's minimized — is where the manipulation lives.\n\nYour job isn't to assume everyone is lying. Your job is to see through the presentation layer to the data underneath, and to ask whether the data supports the story being told."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 4,
+          "content": {
+            "prompt": "**This one is designed to fool you.**\n\nYou're evaluating two investment funds. Fund A's marketing materials say: \"Averaged 12% annual returns over the past 5 years.\" Fund B's materials say: \"Outperformed the market in 4 out of the last 5 years.\"\n\nWhich presentation is more informative?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Fund A — a specific return number is more concrete and useful than a vague comparison.",
+                "isCorrect": false,
+                "explanation": "12% annual return sounds great — but 'averaged' hides the distribution. Was it 12% every year (stable) or -20%, +40%, +5%, +15%, +20% (volatile)? And averaged how? Arithmetic mean or geometric mean? The presentation gives you a number that feels precise but actually obscures the risk profile. A specific-sounding number isn't necessarily more informative."
+              },
+              {
+                "id": "b",
+                "text": "Fund B — consistently beating the market is a better measure of skill than raw returns.",
+                "isCorrect": false,
+                "explanation": "'Outperformed the market' doesn't say by how much. If Fund B beat the market by 0.1% in four years and underperformed by 15% in the fifth, the track record is terrible despite winning '4 out of 5 years.' The framing hides the magnitude. It also raises the question: which market benchmark? Picking a benchmark your fund beats is another presentation choice."
+              },
+              {
+                "id": "c",
+                "text": "Neither is informative enough — both are presentation-layer claims that hide critical information (distribution, magnitude, benchmark, and risk).",
+                "isCorrect": true,
+                "explanation": "Both presentations are designed to look good. Fund A gives a specific number but hides volatility and doesn't specify the averaging method. Fund B gives a win rate but hides the margin and the benchmark. To actually evaluate either fund, you'd need: annual returns for each year, the benchmark they're measured against, the risk level (volatility), and how the returns were calculated. Neither marketing piece gives you enough to make a decision. The lesson: when two different framings both sound impressive, neither is probably giving you the full picture."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 5,
+          "content": {
+            "body": "## Healthy Skepticism vs. Nihilism\n\nThere's a trap at the end of a course like this: deciding that since all numbers can be manipulated, no numbers can be trusted. That's not the lesson.\n\nData, used carefully, is the best tool we have for understanding the world. Clinical trials save lives. Economic statistics guide policy. Quality metrics improve products. The fact that numbers *can* be misused doesn't mean they *are* useless.\n\nThe goal is **calibrated skepticism**: asking the right questions before accepting a claim, while remaining open to being persuaded by well-presented evidence. It's the middle ground between gullibility (accepting every number at face value) and cynicism (dismissing every number as manipulation).\n\nGood evidence has these qualities: large samples, controlled comparisons, transparent methodology, appropriate framing (both relative and absolute), and honest acknowledgment of limitations. When you encounter evidence with those qualities, update your beliefs accordingly. That's not naivety. That's rationality."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 6,
+          "content": {
+            "prompt": "Choose any numerical claim you've encountered recently — from the news, social media, a work presentation, an advertisement, or a conversation.\n\nWrite it down. Then run through the skeptic's checklist: base rate, sample size, causation, graph integrity, framing, average type, and selection bias. Which questions are most relevant? Does the claim survive your scrutiny, or does it weaken?\n\nMost importantly: if the claim weakens, does your opinion about the underlying topic change, or do you find yourself wanting to believe it anyway?",
+            "sampleAnswer": "The final question — whether your opinion changes when the evidence weakens — is the most important one in the exercise. If you find yourself defending the claim despite identifying problems with the evidence, that's valuable self-knowledge. It means the belief isn't evidence-based; it's identity-based or preference-based, and the number was post-hoc justification. Noticing that pattern is arguably the highest-order skill this entire course teaches."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 7,
+          "content": {
+            "body": "## What You Learned\n\nThis course gave you seven tools: **base rates**, **sample size**, **correlation vs. causation**, **graph literacy**, **percentage framing**, **averages and distributions**, and **selection bias.**\n\nEvery numerical claim passes through a presentation layer — someone chose how to frame it, what to include, what to omit. Your job is to see through the presentation to the data, and to ask whether the data actually supports the story being told.\n\nThe goal isn't cynicism. It's calibrated skepticism — a reflex to check before you accept, combined with a willingness to be persuaded by evidence that survives your scrutiny.\n\nNumbers don't lie. But the people presenting them make choices, and those choices are always worth questioning.\n\n---\n\n## Course Complete\n\nYou've worked through all of **Numbers Don't Lie (But People Do)**: base rates, sample sizes, correlation and causation, graph manipulation, percentage framing, averages and distributions, selection bias, and a practical framework for evaluating any numerical claim.\n\nThese tools don't require a math degree. They require a habit — the habit of pausing before a dramatic number and asking: what am I not being shown?"
+          }
+        }
+      ]
+    }
+  ]
+}
