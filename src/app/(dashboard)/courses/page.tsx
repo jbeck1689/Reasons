@@ -3,30 +3,40 @@ import { prisma } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
 
-const branchMeta: Record<string, { title: string; subtitle: string }> = {
+const topicMeta: Record<string, { title: string; subtitle: string; backHref: string; backLabel: string }> = {
   reasoning: {
     title: "Practical Reasoning",
     subtitle: "Spot the tricks. Think under pressure. Build better arguments.",
+    backHref: "/home",
+    backLabel: "← Courses",
   },
-  "buddhist-studies": {
-    title: "Buddhist Studies & Critical Thinking",
-    subtitle:
-      "The four noble truths as a framework for understanding suffering — examined, not believed.",
+  "four-noble-truths": {
+    title: "The Four Noble Truths",
+    subtitle: "A diagnostic framework for suffering — examined through critical thinking, not belief.",
+    backHref: "/buddhist-studies",
+    backLabel: "← Buddhist Studies",
+  },
+  "dependent-origination": {
+    title: "Dependent Origination — Paṭiccasamuppāda",
+    subtitle: "Nothing arises independently. The twelve-link chain that constructs experience and suffering from conditions.",
+    backHref: "/buddhist-studies",
+    backLabel: "← Buddhist Studies",
   },
 };
 
 export default async function CoursesPage({
   searchParams,
 }: {
-  searchParams: { branch?: string };
+  searchParams: { topic?: string; branch?: string };
 }) {
-  const branch = searchParams.branch;
-  const meta = branch ? branchMeta[branch] : null;
+  // Support both topic (new) and branch (legacy) params
+  const topic = searchParams.topic || searchParams.branch;
+  const meta = topic ? topicMeta[topic] : null;
 
   const courses = await prisma.course.findMany({
     where: {
       published: true,
-      ...(branch ? { category: branch } : {}),
+      ...(topic ? { category: topic } : {}),
     },
     orderBy: { sortOrder: "asc" },
     include: {
@@ -39,10 +49,10 @@ export default async function CoursesPage({
       <div className="mb-8">
         <div className="mb-4">
           <Link
-            href="/home"
+            href={meta?.backHref || "/home"}
             className="text-xs text-surface-600 hover:text-accent-400 transition-colors"
           >
-            ← Courses
+            {meta?.backLabel || "← Courses"}
           </Link>
         </div>
         {meta ? (
@@ -58,7 +68,7 @@ export default async function CoursesPage({
               All Courses
             </h1>
             <p className="text-surface-500 text-sm">
-              Every course across both branches.
+              Every course across all topics.
             </p>
           </>
         )}

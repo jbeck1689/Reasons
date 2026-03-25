@@ -4,6 +4,12 @@ import { prisma } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
 
+const categoryBackLinks: Record<string, { href: string; label: string }> = {
+  reasoning: { href: "/courses?topic=reasoning", label: "← Practical Reasoning" },
+  "four-noble-truths": { href: "/courses?topic=four-noble-truths", label: "← Four Noble Truths" },
+  "dependent-origination": { href: "/courses?topic=dependent-origination", label: "← Dependent Origination" },
+};
+
 export default async function CourseDetailPage({
   params,
 }: {
@@ -26,19 +32,18 @@ export default async function CourseDetailPage({
     notFound();
   }
 
-  const backHref = `/courses?branch=${course.category}`;
-  const branchLabel =
-    course.category === "buddhist-studies"
-      ? "Buddhist Studies"
-      : "Practical Reasoning";
+  const back = categoryBackLinks[course.category] || {
+    href: "/home",
+    label: "← Courses",
+  };
 
   return (
     <div className="max-w-2xl mx-auto px-6 py-10">
       <Link
-        href={backHref}
+        href={back.href}
         className="text-xs text-surface-600 hover:text-accent-400 transition-colors"
       >
-        ← {branchLabel}
+        {back.label}
       </Link>
 
       <div className="mt-4 mb-8">

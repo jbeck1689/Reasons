@@ -16,7 +16,7 @@ export default function HomePage() {
       <div className="space-y-4">
         {/* Practical Reasoning */}
         <Link
-          href="/courses?branch=reasoning"
+          href="/courses?topic=reasoning"
           className="block p-6 rounded-lg border border-surface-700/50 bg-surface-850 hover:border-accent-700/40 hover:bg-surface-800 transition-all group"
         >
           <div className="flex items-start justify-between">
@@ -41,7 +41,7 @@ export default function HomePage() {
 
         {/* Buddhist Studies */}
         <Link
-          href="/courses?branch=buddhist-studies"
+          href="/buddhist-studies"
           className="block p-6 rounded-lg border border-surface-700/50 bg-surface-850 hover:border-accent-700/40 hover:bg-surface-800 transition-all group"
         >
           <div className="flex items-start justify-between">
