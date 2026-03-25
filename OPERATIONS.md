@@ -225,16 +225,40 @@ Every content file must match this exact structure:
 
 ## Deployment Status — CRITICAL
 
-**Unknown.** Jesse may or may not have run `scripts/deploy-all.sh` from Codespaces. If deploy-all has NOT been run:
+**As of March 25, 2026: deploy-all has NOT been confirmed as run.** Assume the following until Jesse confirms otherwise:
 
-- The `category` column does not exist in the Neon database
-- None of the Four Noble Truths courses are in the database
-- None of the Dependent Origination courses are in the database
-- The reasoning courses exist but without category values
+- The `category` column may not exist in the Neon database
+- None of the Four Noble Truths courses may be in the database
+- None of the Dependent Origination courses may be in the database
+- The reasoning courses exist but possibly without category values
 
 **At the start of every session, if content work is planned, confirm with Jesse:** "Have you run deploy-all? Is the category column in your database?" If unknown, the safe path is to run deploy-all again (it's idempotent).
 
-**deploy-all.sh is stale.** It does not include do-course-4-namarupa.json or any future DO courses. After deploy-all runs, new courses must be imported individually.
+**deploy-all.sh is stale.** It covers through do-course-3-vinnana.json only. Nāmarūpa and all future DO courses must be imported individually after deploy-all runs.
+
+**The full deployment sequence for Jesse (if starting from scratch):**
+```bash
+export DATABASE_URL="postgresql://neondb_owner:npg_LpmzajJI8nD3@ep-winter-mouse-adx3tcd9-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require"
+git pull origin main
+bash scripts/deploy-all.sh
+npx tsx scripts/import-content.ts content/do-course-4-namarupa.json
+```
+
+## Known Legacy Issues (Do Not Fix — Document Only)
+
+These exist in early content files. They are cosmetic inconsistencies, not bugs. Do not spend tokens investigating or repairing them.
+
+**Course 1 (Don't Get Tricked):** All 8 sequences use a non-standard step rhythm — they have extra MULTIPLE_CHOICE steps (typically 9 steps per sequence instead of 8). This was the first course written, before the rhythm was standardized. The app renders them fine.
+
+**Course 3 (Build Your Case):** Four sequences have only 7 steps (missing the final INSTRUCTION). Total is 60 steps instead of 64.
+
+**Course 10 (The Practice):** One sequence (`the-long-game`) has a non-standard rhythm — two extra INSTRUCTION steps where MULTIPLE_CHOICE was expected.
+
+**Courses 2 (Rhetorical Devices), 2 (Think Before You Decide):** A handful of sequences have minor rhythm variations (e.g., swapped INSTRUCTION/MULTIPLE_CHOICE positions).
+
+**All reasoning courses (1-6):** Missing `category` field in their JSON files. The import script defaults to `"reasoning"`. This is handled; no action needed.
+
+None of these affect the user experience. The player renders whatever step types it receives.
 
 ## Content Authoring Conventions (Buddhist Studies)
 
@@ -253,6 +277,15 @@ Every content file must match this exact structure:
 **DO series structure:** Each course examines one link from 6 angles (6 sequences). The angles vary per link but follow a general pattern: what the link is, how it works mechanically, its relationship to adjacent links, what it looks like in lived experience, how practice engages it, its role in the chain as a whole.
 
 ## Token Efficiency Rules for Claude
+
+### Session Start Protocol
+
+1. Read OPERATIONS.md. Do not search past conversations.
+2. If Jesse provides a GitHub PAT, set the remote immediately. Do not ask for it later.
+3. If content authoring is the task, start writing. Do not re-audit the repo, re-read the import script, or re-check the validation schemas.
+4. If a file needs to be pushed, push it in the same turn it's created. Confirm the push. Give Jesse the import command. Done.
+
+### During Content Authoring
 
 1. **Do not scan conversation history to reconstruct project state.** This document is the state. If something isn't here, ask Jesse.
 2. **Do not re-read the import script, validation schemas, or app routing every session.** The formats are documented above. If the schemas change, update this document.
@@ -276,8 +309,30 @@ Every content file must match this exact structure:
 
 The immediate content work is completing the Dependent Origination series: 9 courses remaining (Saḷāyatana through The Whole Chain). Each is 6 sequences × 8 steps = 48 steps. Total remaining: ~432 steps.
 
-The reskin (warm charcoal + amber/gold aesthetic) was produced but may not have been applied. It's purely frontend — no schema changes. Status unknown; ask Jesse if relevant.
+## Quick Validation Command
 
-LLM-assisted feedback is architecturally stubbed but not implemented. Deferred indefinitely.
+After creating a content file, run this to verify structure:
 
-App name is undecided. Not a current priority.
+```bash
+python3 -c "
+import json,sys
+with open(sys.argv[1]) as f: d=json.load(f)
+seqs=d['sequences']
+total=sum(len(s['steps']) for s in seqs)
+expected=['INSTRUCTION','INSTRUCTION','MULTIPLE_CHOICE','INSTRUCTION','MULTIPLE_CHOICE','INSTRUCTION','FREE_RESPONSE','INSTRUCTION']
+errors=[]
+for s in seqs:
+    types=[st['type'] for st in s['steps']]
+    if types!=expected: errors.append(f'{s[\"slug\"]}: {types}')
+    for st in s['steps']:
+        if st['type']=='MULTIPLE_CHOICE':
+            opts=st['content']['options']
+            if len(opts)!=3: errors.append(f'{s[\"slug\"]}: MC has {len(opts)} options')
+            if sum(1 for o in opts if o['isCorrect'])!=1: errors.append(f'{s[\"slug\"]}: MC correct count wrong')
+print(f'{d[\"title\"]}: {len(seqs)} seqs, {total} steps, category={d.get(\"category\",\"MISSING\")}')
+if errors:
+    for e in errors: print(f'  ERROR: {e}')
+else:
+    print('  All checks passed.')
+" content/[filename].json
+```
