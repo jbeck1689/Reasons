@@ -88,7 +88,9 @@ done
 echo ""
 echo "  Dependent Origination (1 course so far):"
 for f in \
-  content/do-course-1-avijja.json; do
+  content/do-course-1-avijja.json \
+  content/do-course-2-sankhara.json \
+  content/do-course-3-vinnana.json; do
   if [ -f "$f" ]; then
     echo "  Importing: $(basename $f)"
     npx tsx scripts/import-content.ts "$f"
