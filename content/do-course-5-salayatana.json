@@ -1,0 +1,658 @@
+{
+  "title": "Six Sense Bases — Saḷāyatana",
+  "slug": "salayatana",
+  "description": "The fifth link in dependent origination. Once a psychophysical organism exists, it differentiates into six channels through which experience becomes possible. Saḷāyatana examines how the doors of perception shape what we can encounter — and what we cannot.",
+  "category": "dependent-origination",
+  "sortOrder": 5,
+  "published": true,
+  "sequences": [
+    {
+      "title": "The Six Doors",
+      "slug": "the-six-doors",
+      "description": "What the six sense bases are and why experience requires specific channels.",
+      "sortOrder": 1,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "In the previous link, **nāmarūpa** established the psychophysical organism — the body-mind complex that makes experience structurally possible. But an organism doesn't encounter the world as an undifferentiated blob. It encounters the world through specific channels.\n\nYou don't just \"sense\" the room you're sitting in. You *see* colors and shapes. You *hear* sounds. You *feel* pressure and temperature. You *smell* air. Each of these is a distinct mode of contact with reality, operating through its own equipment.\n\nThe Pāli term is **saḷāyatana** — the six sense bases. \"Saḷ\" means six. \"Āyatana\" means base, sphere, or domain. These are the six doors through which anything can enter your experience at all."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 2,
+          "content": {
+            "body": "The six are: eye (**cakkhu**), ear (**sota**), nose (**ghāna**), tongue (**jivhā**), body (**kāya**), and mind (**mano**).\n\nThe first five are probably intuitive — they map to the five senses you learned in school. The sixth, mind, is the one that does the most work in Buddhist psychology. Mind is included as a sense base because it has its own objects — thoughts, memories, emotions, mental images — just as the eye has colors and the ear has sounds.\n\nThis isn't a metaphor. The early texts treat mental experience with the same structural rigor as visual or auditory experience. A thought arises at the mind-door the same way a sound arises at the ear-door. Both are events at a sense base, and both follow the same downstream pattern.\n\n> *\"Dependent on the eye and visible forms, eye-consciousness arises. Dependent on the mind and mental phenomena, mind-consciousness arises.\"*\n> — Saḷāyatana Saṃyutta (SN 35)"
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 3,
+          "content": {
+            "prompt": "You're walking down the street and a strong memory of a past argument suddenly surfaces — your stomach tightens, your jaw clenches, and you feel a wash of irritation. Which sense base is this experience arising at?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The body sense base (kāya), because you feel the physical tension in your stomach and jaw.",
+                "isCorrect": false,
+                "explanation": "The stomach tension and jaw clenching are real, and they do involve the body sense base. But the memory itself — the mental image of the argument, the replay of what was said — arose at the mind-door first. The body sensations are downstream effects. The question asks where the experience is arising, and it begins with a mental event."
+              },
+              {
+                "id": "b",
+                "text": "The mind sense base (mano), because the memory is a mental object arising at the mind-door, even though it triggers physical sensations.",
+                "isCorrect": true,
+                "explanation": "The memory is a mental phenomenon (dhamma) arising at the mind sense base. The physical sensations that follow — the tight stomach, the clenched jaw — are secondary events at the body sense base, triggered by the mental event. This is a good example of how a single moment of experience can involve multiple sense bases in rapid succession, but the initiating event is mental."
+              },
+              {
+                "id": "c",
+                "text": "Multiple sense bases simultaneously — the experience can't be assigned to just one door.",
+                "isCorrect": false,
+                "explanation": "It's true that multiple sense bases are involved in the full experience. But the early texts are precise about this: each moment of consciousness arises at one door. The memory arises at the mind-door. The physical tension arises at the body-door. They feel simultaneous because they alternate extremely rapidly, but the framework insists on tracking which door each event enters through. The question asks where the experience is *arising*, and the initiating event is the memory — a mind-door phenomenon."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 4,
+          "content": {
+            "body": "Each sense base has a corresponding type of object:\n\nThe eye encounters **visible forms** (rūpa). The ear encounters **sounds** (sadda). The nose encounters **odors** (gandha). The tongue encounters **tastes** (rasa). The body encounters **tangible objects** (phoṭṭhabba). The mind encounters **mental phenomena** (dhamma).\n\nThis pairing matters because it means experience is always *specific*. You never just \"experience\" — you experience *something* through *some channel*. The eye can't hear. The ear can't taste. The mind can't smell. Each door admits only its own kind of object.\n\nThis specificity is what saḷāyatana adds to the chain. Nāmarūpa gave us an organism. Saḷāyatana gives that organism six distinct ways of encountering the world — six apertures through which experience becomes not just possible but *differentiated*."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 5,
+          "content": {
+            "prompt": "The early texts include \"mind\" as a sixth sense base alongside the five physical senses. Why does this matter for understanding how suffering operates?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Because it means the mind is just another biological organ, no more special than the eye or ear.",
+                "isCorrect": false,
+                "explanation": "The framework doesn't claim the mind is biologically identical to the eye. It claims the mind operates with the same *structural pattern*: a base encounters an object, and consciousness arises at that meeting point. The insight isn't about reducing mind to biology — it's about recognizing that thoughts and memories are events that arrive at a door, just like sights and sounds. This matters because it means mental experience can be observed with the same clarity we bring to physical sensation."
+              },
+              {
+                "id": "b",
+                "text": "Because it means thoughts, memories, and emotions follow the same pattern as physical sensations — they arise at a sense base and can be observed the same way, rather than treated as uniquely private or unexaminable.",
+                "isCorrect": true,
+                "explanation": "This is the key move. If thoughts are events at a sense door, they aren't the self thinking — they're phenomena appearing at the mind-base. This reframing makes mental experience available for the same kind of careful observation that the framework applies to seeing or hearing. And since much of suffering is generated through mental events (rumination, fantasy, self-narration), being able to observe those events *as events at a door* is essential to the whole project."
+              },
+              {
+                "id": "c",
+                "text": "Because it explains how meditation works — by closing the mind-door to stop thoughts from arising.",
+                "isCorrect": false,
+                "explanation": "The framework doesn't aim to close any door. The sense bases aren't problems to be shut down — they're the channels through which all experience, including liberating insight, occurs. The practice isn't about stopping experience but about changing the relationship to what arises at each door. Trying to close the mind-door would be like trying to stop hearing — neither possible nor desirable."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 6,
+          "content": {
+            "body": "There's something worth sitting with here. The six sense bases are the *totality* of your experiential world. There is nothing you have ever experienced that didn't arrive through one of these six doors.\n\nEvery landscape you've admired — eye-door. Every song that moved you — ear-door. Every plan you've made for the future — mind-door. Every physical pain — body-door.\n\nThis means your entire experienced reality is shaped by the equipment you have for encountering it. You don't see the world as it is. You see the world as your six doors allow you to encounter it. A creature with different sense bases — different doors — would encounter a fundamentally different world from the same raw reality.\n\nSaḷāyatana isn't a philosophical abstraction. It's a description of the architecture of your experience."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 7,
+          "content": {
+            "prompt": "Right now, wherever you are, notice which sense door is most dominant in your experience. Is it vision? Sound? Bodily sensation? Mental activity? Spend a few seconds actually checking before you answer.\n\nThen consider: what would shift if you deliberately moved your attention to a different door — say, from vision to hearing, or from thinking to bodily sensation? What changes about your experience of this moment?",
+            "sampleAnswer": "This exercise is designed to make the six-door framework experiential rather than theoretical. Most people discover that one door is usually dominant (often vision or thinking) and that deliberately shifting attention to another door produces a noticeably different quality of experience — the same room feels different when you're attending to sounds versus sights. The key insight is that what you call 'my experience right now' is always filtered through whichever door you're attending to. Saḷāyatana isn't something happening beneath awareness — it's the structure of awareness itself."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 8,
+          "content": {
+            "body": "The six sense bases are the doors through which all experience enters. They take the undifferentiated organism of nāmarūpa and give it six specific modes of encounter with the world. Nothing is experienced that doesn't come through one of these channels.\n\nBut having doors isn't the same as something coming through them. The sense bases are *potential* — they establish what kinds of experience are possible. The next step in the chain is what happens when something actually arrives at a door.\n\nThat arrival — the meeting of sense base, object, and consciousness — is **phassa**, contact. We'll examine that next."
+          }
+        }
+      ]
+    },
+    {
+      "title": "The Equipment of Experience",
+      "slug": "the-equipment-of-experience",
+      "description": "How each sense base works and what it means that experience requires specific hardware.",
+      "sortOrder": 2,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "The six sense bases aren't interchangeable. Each one operates through specific physical or mental equipment, encounters a specific type of object, and produces a specific type of consciousness.\n\nThe eye base requires a functioning visual organ, light, and visible forms. The ear base requires a functioning auditory organ, a medium for vibration, and sounds. The body base requires a functioning nervous system and tangible contact. Each of these is a complete system — base, object, and the consciousness that arises when they meet.\n\nThe mind base is structurally parallel but its \"equipment\" is different. Its objects — thoughts, memories, concepts, emotions — don't require external stimulation. A memory can arise at the mind-door while you're sitting in a silent, dark room with nothing touching you. The mind generates its own objects in a way the eye and ear cannot."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 2,
+          "content": {
+            "body": "This structural difference between the mind-door and the five physical doors has practical consequences.\n\nThe physical sense bases are largely involuntary. If a loud noise occurs, the ear-door registers it whether you want it to or not. If a bright light flashes, the eye-door responds. You can close your eyes or plug your ears, but you can't will the sense base itself to stop functioning.\n\nThe mind-door, by contrast, is almost continuously active and almost entirely unsupervised. Thoughts, memories, plans, judgments, fantasies — they arise in an unbroken stream, and most of the time you don't even notice which door they came through. You mistake them for \"you thinking\" rather than recognizing them as events arising at a sense base.\n\n> *\"The mind is more dangerous than the other five because it is always active, always generating objects, always providing fuel for the process that leads to suffering.\"*\n\nThis isn't a quote about the mind being bad. It's about the mind being *busy* — and busyness without awareness is where the chain finds most of its traction."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 3,
+          "content": {
+            "prompt": "You're trying to focus on a work task, but you keep getting pulled into a mental replay of an awkward conversation from yesterday. From the perspective of the six sense bases, what's happening?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Your mind-door is malfunctioning — it's producing objects it shouldn't be producing, which is a sign of mental weakness or lack of discipline.",
+                "isCorrect": false,
+                "explanation": "The mind-door isn't malfunctioning. It's doing exactly what it does — generating mental objects. The replay of the conversation is an object (a dhamma) arising at the mind-base, just as a sound arises at the ear-base. Calling it a malfunction implies the mind should only produce objects you consciously choose, but that's not how any sense base works. The ear doesn't malfunction when it hears an unwanted noise. The framework invites observation, not self-judgment."
+              },
+              {
+                "id": "b",
+                "text": "The mind-door is generating mental objects (the memory replay) the same way the ear-door generates hearing when a sound is present — it's an event at a sense base, not a personal failing.",
+                "isCorrect": true,
+                "explanation": "The memory arising is structurally identical to a sound arriving at the ear. It's an object at a sense base. The difference is that you're more likely to identify with the mental event — to feel like you are the one replaying the conversation, rather than noticing that a replay is happening at the mind-door. This identification is what gives the memory its grip. Seeing it as a sense-base event loosens that grip without requiring you to suppress it."
+              },
+              {
+                "id": "c",
+                "text": "You need to close the mind-door temporarily so you can focus the eye-door and body-door on the work task instead.",
+                "isCorrect": false,
+                "explanation": "You can't close the mind-door any more than you can close the ear-door while keeping it functional. And the work task itself requires mind-door activity — planning, reasoning, language processing are all mental phenomena. The issue isn't that the mind-door is open; it's that attention has been captured by a particular object at that door. The practice response is to notice the capture, not to attempt the impossible task of shutting down mental experience."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 4,
+          "content": {
+            "body": "Here's something that becomes clear when you examine the sense bases closely: **you are always at a door.**\n\nThere is no moment of waking experience that isn't experience at one of the six doors. Even the feeling of \"not experiencing anything\" is a mental event at the mind-door. Even boredom is an object at the mind-base. Even the attempt to observe the sense bases is itself an event at the mind-door.\n\nThis means there's no neutral vantage point from which you observe experience. You're always already inside one of the six channels. When you \"step back and observe your thoughts,\" you're using the mind-door to observe objects at the mind-door. When you \"just see\" a sunset, you're at the eye-door — but the appreciation of beauty that accompanies it is at the mind-door.\n\nExperience is always happening *somewhere*. Saḷāyatana is the map of where."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 5,
+          "content": {
+            "prompt": "Someone says: \"I've learned to step outside my thoughts and observe them from a neutral place.\" From the perspective of the six sense bases, what's the most precise way to understand what they're describing?",
+            "options": [
+              {
+                "id": "a",
+                "text": "They've developed the ability to use the mind-door to observe other mind-door events — which is genuinely useful, even though there's no 'outside' to step to.",
+                "isCorrect": true,
+                "explanation": "This is the precise description. What people call 'stepping outside thoughts' is actually a particular quality of mind-door activity — awareness directed at other mental phenomena. It's valuable and real, but it isn't a view from nowhere. The observing awareness is itself at the mind-door. Understanding this doesn't diminish the practice — it clarifies what's actually happening, which prevents the subtle trap of thinking you've found a permanent escape from the sense-base structure."
+              },
+              {
+                "id": "b",
+                "text": "They've accessed a seventh sense base — pure awareness — that transcends the six doors.",
+                "isCorrect": false,
+                "explanation": "The early Pāli texts don't recognize a seventh sense base or a pure awareness that sits outside the six-door structure. Later traditions sometimes propose this, but in the framework we're working with, all experience occurs at one of the six doors. The clarity they're describing is real, but it's a quality of mind-door experience, not an escape from the sense-base framework."
+              },
+              {
+                "id": "c",
+                "text": "They're confused — you can't observe thoughts, because the observer and the observed are the same thing.",
+                "isCorrect": false,
+                "explanation": "This sounds philosophically sophisticated but it's not what the framework says. The mind can observe its own objects — this is a basic capacity that makes the entire contemplative tradition possible. The point isn't that observation is impossible, but that the observation itself is another event at the mind-door, not a transcendence of it. The person is describing something real; the question is just how precisely they understand what they're doing."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 6,
+          "content": {
+            "body": "The early texts sometimes use the metaphor of a city with six gates. Each gate admits a different kind of visitor. The gatekeeper can't control who approaches, but can pay attention to who enters and what they bring.\n\nThis metaphor captures something important about the sense bases: they're not problems to be solved. They're the necessary architecture of experience. Without six doors, there's no experience at all. The question is never whether to have sense bases — it's what happens after something comes through the door.\n\nAnd that \"what happens after\" is where the chain continues. A door exists (saḷāyatana). Something comes through it (an object). The meeting of door, object, and consciousness produces contact (phassa). Contact produces feeling (vedanā). Feeling produces craving (taṇhā). And from there, the familiar momentum builds.\n\nThe sense bases are the point where the abstract architecture of the organism becomes the concrete machinery of experience."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 7,
+          "content": {
+            "prompt": "Over the next few hours, try to catch the moment when your attention shifts from one sense door to another — from hearing to thinking, from seeing to bodily sensation, from thinking to seeing.\n\nDescribe what you notice about these transitions. Are they deliberate or automatic? Is there a gap between doors, or does one door seem to close as another opens? What does this tell you about the structure of your moment-to-moment experience?",
+            "sampleAnswer": "Most people discover that door-transitions are almost entirely automatic — attention is pulled to whichever door has the strongest current signal, and the shift happens before any decision to shift. The 'gap' question is interesting: some people report a sense of brief blankness between doors, others feel the transition is seamless. What the exercise typically surfaces is how much of experience is a rapid alternation between doors rather than a single unified field. This matters because it means 'my experience' is actually a rapid sequence of events at different doors, stitched together into apparent continuity."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 8,
+          "content": {
+            "body": "The six sense bases are the equipment of experience — the specific channels through which the organism encounters its world. Each door admits only its own kind of object, and each produces its own kind of consciousness. There is no moment of waking life that isn't occurring at one of these six doors.\n\nThe mind-door deserves special attention because it's the most active, the least supervised, and the most likely to generate the kind of experience that feeds the rest of the chain. But all six doors are part of the structure.\n\nNext, we'll examine how saḷāyatana sits between nāmarūpa and phassa — why the chain requires this step of differentiation before contact can occur."
+          }
+        }
+      ]
+    },
+    {
+      "title": "Between Form and Contact",
+      "slug": "between-form-and-contact",
+      "description": "How saḷāyatana connects to its adjacent links — conditioned by nāmarūpa, conditioning phassa.",
+      "sortOrder": 3,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "Every link in dependent origination is both conditioned and conditioning. It arises because of what came before, and it gives rise to what comes next. Saḷāyatana is no exception.\n\nThe formula is precise: **nāmarūpa conditions saḷāyatana.** The psychophysical organism gives rise to the six sense bases. And **saḷāyatana conditions phassa.** The six sense bases give rise to contact.\n\nThis isn't a temporal sequence where one disappears and the next takes its place. Nāmarūpa doesn't vanish when saḷāyatana appears. Rather, the relationship is one of structural dependence — the sense bases require an organism to exist within, and contact requires sense bases to occur at."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 2,
+          "content": {
+            "body": "The conditioning from nāmarūpa to saḷāyatana is the relationship between a whole and its differentiated parts.\n\nNāmarūpa established the organism — the body-mind complex as a functioning whole. But a whole that can't differentiate its encounter with the world can't have *specific* experiences. Saḷāyatana is the differentiation: the organism develops eyes that respond to light, ears that respond to vibration, a mind that processes mental phenomena.\n\nThink of it this way: nāmarūpa is a house. Saḷāyatana is the house having windows, doors, a chimney — specific openings through which the outside world can enter in specific ways. Without the house, there's nothing for the openings to be *in*. Without the openings, the house is sealed off from the world.\n\nThe texts sometimes express the mutual dependence between nāmarūpa and saḷāyatana in the strongest terms:\n\n> *\"With nāmarūpa as condition, the six sense bases come to be. With the six sense bases as condition, there is contact.\"*\n> — Mahānidāna Sutta (DN 15)"
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 3,
+          "content": {
+            "prompt": "If nāmarūpa (the psychophysical organism) conditions saḷāyatana (the six sense bases), why does the chain need both links? Why not just go straight from viññāṇa to saḷāyatana?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Because nāmarūpa is the organism as an undifferentiated whole, and saḷāyatana is its differentiation into specific channels — you need the whole before you can have the parts.",
+                "isCorrect": true,
+                "explanation": "The chain is precise about levels of organization. Viññāṇa (consciousness) requires a psychophysical base to land in (nāmarūpa). That base then differentiates into specific modes of encounter (saḷāyatana). Each level depends on the previous one. Skipping nāmarūpa would be like saying 'consciousness directly produces eyes and ears' — but eyes and ears need a body to be part of. The chain tracks the full sequence of structural dependencies."
+              },
+              {
+                "id": "b",
+                "text": "The chain is just being thorough — nāmarūpa and saḷāyatana are essentially the same thing described at different levels of detail.",
+                "isCorrect": false,
+                "explanation": "They're related but not identical. Nāmarūpa is the body-mind complex as a functioning whole — the fact that there is an organism at all. Saḷāyatana is the specific channels through which that organism can encounter the world. A creature could hypothetically have nāmarūpa (a functioning body-mind) with different sense bases than ours — more doors, fewer doors, different kinds of doors. The organism and its specific equipment are genuinely different aspects of the structure."
+              },
+              {
+                "id": "c",
+                "text": "Because nāmarūpa is physical and saḷāyatana is mental — the chain needs to bridge from body to mind.",
+                "isCorrect": false,
+                "explanation": "Nāmarūpa is explicitly *both* physical and mental — nāma is the mental component, rūpa is the physical. And saḷāyatana includes both physical sense bases (eye, ear, nose, tongue, body) and a mental one (mind). The chain isn't moving from body to mind at this point. It's moving from 'organism as a whole' to 'organism differentiated into specific experiential channels.'"
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 4,
+          "content": {
+            "body": "The conditioning from saḷāyatana to phassa is perhaps the most intuitive link in the entire chain.\n\nContact (phassa) is the meeting of three things: a sense base, an object, and consciousness. Without a sense base, there's nothing for an object to arrive at. Without a functioning eye, visible forms don't become visual experience. Without a functioning mind-base, thoughts don't become mental experience.\n\nSaḷāyatana provides the *where* — the location at which contact can occur. It's like a dock: the dock doesn't create the ship, but the ship can't land without it.\n\nThis is why damage to a sense base changes experience so directly. When the eye-base is impaired, the entire domain of visual experience is altered — not because visible forms cease to exist, but because the door through which they enter has changed shape. The objects are still there. The door has narrowed."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 5,
+          "content": {
+            "prompt": "A person is born deaf. From the perspective of dependent origination, what is true about their experience?",
+            "options": [
+              {
+                "id": "a",
+                "text": "They have five functioning sense bases instead of six. The ear-door is absent, so auditory contact never occurs, and the entire downstream chain from auditory experience is absent for that sense domain.",
+                "isCorrect": true,
+                "explanation": "This is precisely how the framework handles it. The ear sense base isn't functioning, so sounds don't produce auditory contact, auditory feeling, or auditory craving. The chain still operates fully through the other five doors. This illustrates something important: the chain doesn't require all six doors. It operates through whatever doors are present. Suffering doesn't require hearing or seeing — it operates through whichever sense bases are active."
+              },
+              {
+                "id": "b",
+                "text": "They experience the same amount of suffering as a hearing person because the mind-door compensates for the missing ear-door.",
+                "isCorrect": false,
+                "explanation": "The framework doesn't claim the mind-door 'compensates' for a missing physical door. A person born deaf may indeed have rich mental experience, but the specific mode of auditory contact — sound arriving at the ear-door — doesn't occur. Whether they experience 'the same amount' of suffering is an empirical question the framework doesn't try to answer. What it does say is that the chain operates through whatever doors are present, and an absent door means an absent domain of contact."
+              },
+              {
+                "id": "c",
+                "text": "Their dependent origination chain is broken because a link is missing — without all six sense bases, the chain can't produce suffering.",
+                "isCorrect": false,
+                "explanation": "The chain doesn't require all six doors. It requires *some* doors. A person with five functioning sense bases has five domains of contact, five domains of feeling, five domains of potential craving. The chain operates through whatever channels are available. This is an important insight: suffering isn't tied to a specific sense base. It's a pattern that can run through any of them."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 6,
+          "content": {
+            "body": "There's a subtlety in the relationship between saḷāyatana and phassa that's easy to miss.\n\nThe sense bases are *potential*. Contact is *actual*. Having an eye doesn't mean you're always seeing. Having an ear doesn't mean you're always hearing. The sense base must meet an appropriate object, and consciousness must arise at that meeting, for contact to occur.\n\nThis gap between potential and actual is where much of practice operates. The sense bases are always present (while you're alive), but how contact unfolds at each door — with what quality of attention, with what degree of awareness — is not fixed.\n\nThe six doors will keep opening. Objects will keep arriving. The question the rest of the chain examines is: what happens in the moment of meeting?"
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 7,
+          "content": {
+            "prompt": "The chain moves from organism (nāmarūpa) to differentiated channels (saḷāyatana) to contact (phassa). In your own words, explain why this sequence of differentiation matters — why the chain can't skip from \"having a body-mind\" directly to \"experiencing things.\"",
+            "sampleAnswer": "This question tests whether the logic of the chain is landing. The key insight is that 'experiencing things' isn't generic — it's always specific experience through a specific channel. You don't just experience; you see, hear, feel, think. The chain needs saḷāyatana as a separate link because it marks the transition from 'there is an organism' to 'there is an organism equipped with specific modes of encounter.' Without that differentiation, there's no account of why experience has the particular character it does — why seeing is different from hearing, why thinking is different from tasting. The specificity of experience requires specific equipment."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 8,
+          "content": {
+            "body": "Saḷāyatana sits at the pivot between structure and experience. Below it in the chain, we have the deep architecture — ignorance, formations, consciousness, the psychophysical organism. Above it, we have lived experience — contact, feeling, craving, clinging.\n\nThe six sense bases are where architecture becomes experience. They're where the abstract fact of being an organism becomes the concrete reality of seeing, hearing, thinking, and feeling.\n\nNext, we'll look at what this means in the texture of everyday life — how the six doors shape the quality of ordinary experience."
+          }
+        }
+      ]
+    },
+    {
+      "title": "The Texture of a Day",
+      "slug": "the-texture-of-a-day",
+      "description": "What saḷāyatana looks like in the grain of ordinary lived experience.",
+      "sortOrder": 4,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "Theory is useful but it's not the point. The point is seeing the six sense bases operating in the mundane texture of your day.\n\nYou wake up. Before you open your eyes, the body-door is already active — warmth of blankets, pressure of mattress, the weight of your own limbs. The mind-door fires almost immediately — a thought about the day ahead, a fragment of dream, a feeling of reluctance or readiness.\n\nYou open your eyes. The eye-door floods with light, shapes, colors. You hear something — an alarm, birdsong, traffic. Ear-door. You smell coffee or stale air. Nose-door.\n\nWithin the first thirty seconds of waking, all six doors have been active. Experience hasn't been a single stream — it's been a rapid alternation between channels, each one delivering its own kind of information."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 2,
+          "content": {
+            "body": "Here's what's remarkable about ordinary experience through the six doors: **you almost never notice which door you're at.**\n\nWhen you eat lunch, you'd say you're \"eating.\" But the framework reveals a rapid oscillation: tongue-door (taste), nose-door (aroma), body-door (texture and temperature), eye-door (appearance of food), mind-door (judgment — \"this is good,\" \"this needs salt,\" \"I wish I'd ordered something else\").\n\n\"Eating\" isn't one experience. It's a construction assembled from dozens of sense-door events per second, woven together so seamlessly that you experience it as a single activity.\n\nThis isn't pedantry. It matters because the chain operates at the level of individual sense-door events, not at the level of \"eating lunch.\" Craving doesn't arise from \"eating\" — it arises from a specific moment of pleasant taste at the tongue-door, or a specific thought at the mind-door about wanting more. The links are fine-grained, even when experience feels continuous."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 3,
+          "content": {
+            "prompt": "You're scrolling through social media. You see a photo of a friend on vacation. You feel a twinge of envy. From the perspective of the six sense bases, what's the most accurate description of what just happened?",
+            "options": [
+              {
+                "id": "a",
+                "text": "A visual event at the eye-door (the photo) triggered a mental event at the mind-door (the comparison and envy). The envy isn't in the photo — it's a mind-door response to an eye-door event.",
+                "isCorrect": true,
+                "explanation": "The photo arrives at the eye-door as a visual form. But the envy — the comparison between their vacation and your life, the sense of lacking — is entirely a mind-door event. The eye saw colors and shapes. The mind generated the narrative. Tracking which door each part of the experience occurs at reveals that most of the suffering in this moment is happening at the mind-door, not the eye-door. The photo itself is neutral; the story about it is where the chain gains traction."
+              },
+              {
+                "id": "b",
+                "text": "The eye-door produced the envy directly — seeing the photo caused the feeling, so the solution is to stop looking at social media.",
+                "isCorrect": false,
+                "explanation": "If the eye-door directly produced envy, then everyone who saw the photo would feel envious. But they don't — some feel happy for the friend, some feel nothing, some feel inspired. The envy arises at the mind-door in response to the eye-door event, mediated by comparison, self-narrative, and existing dissatisfaction. Avoiding the photo avoids the trigger, which is sometimes wise — but it doesn't address the mind-door patterns that generate envy."
+              },
+              {
+                "id": "c",
+                "text": "This is a single unified experience — trying to separate it into sense doors is artificially fragmenting a natural emotional response.",
+                "isCorrect": false,
+                "explanation": "It feels unified because the transitions are extremely rapid and the mind stitches them together into a narrative. But the framework insists on the analysis precisely because the intervention points are at the level of individual sense-door events. If you can notice the mind-door event (the comparison) as it arises — separate from the eye-door event (the photo) — you have a choice point that isn't available when the whole thing is experienced as one seamless emotional response."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 4,
+          "content": {
+            "body": "One of the most practically important features of the six sense bases is the **dominance of the mind-door in suffering.**\n\nPhysical pain occurs at the body-door. But the suffering that accompanies pain — \"how long will this last,\" \"what if it gets worse,\" \"why is this happening to me\" — occurs at the mind-door. The actual sensory event at the body-door is one component. The mind-door elaboration is often the larger one.\n\nThe same is true for nearly every difficult experience. The event itself occurs at one of the five physical doors. The story, the anticipation, the resistance, the self-pity, the planning — all of these are mind-door events piling on top of the original sense-door event.\n\nThis is not a claim that \"it's all in your head.\" The body-door pain is real. The eye-door sight is real. But the *amplification* of suffering typically happens at the mind-door, and that's where the chain has the most room to run."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 5,
+          "content": {
+            "prompt": "You stub your toe badly. For the next ten minutes, you're irritable, replaying the moment, and angry at the furniture. The initial pain has subsided but you're still suffering. What's happening in terms of the six sense bases?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The body-door event (pain) has ended, but the mind-door has taken over — generating replays, narratives, and resistance that sustain the suffering long after the physical sensation has faded.",
+                "isCorrect": true,
+                "explanation": "The body-door pain peaked and is fading. But the mind-door is now producing its own objects: the replay of the stubbing, the anger at the furniture, the irritability directed at the next person who speaks to you. The suffering has migrated from one sense door to another. This is one of the most practically relevant insights from the six-door framework: physical events are often brief, but mind-door elaboration can sustain the suffering indefinitely."
+              },
+              {
+                "id": "b",
+                "text": "The body-door pain is still active but below your conscious threshold — the irritability is still physical in origin.",
+                "isCorrect": false,
+                "explanation": "There may be residual body-door sensation, but the anger at the furniture and the replaying of the moment are clearly mind-door events. The framework asks you to track where each component of the experience is occurring, and the irritability ten minutes later is mental elaboration, not sensory pain. The distinction matters because the intervention for body-door events (changing the physical stimulus) is different from the intervention for mind-door events (awareness of the mental narrative)."
+              },
+              {
+                "id": "c",
+                "text": "You're experiencing a single continuous event — the stubbing — that naturally takes ten minutes to process emotionally.",
+                "isCorrect": false,
+                "explanation": "The 'single continuous event' framing is exactly what the six-door analysis is designed to dissolve. The stubbing was a brief body-door event. The emotional processing is a series of mind-door events that take the original body-door event as their object. Seeing them as distinct allows you to notice that the suffering has shifted from the physical to the mental — and that the mental component is something you're generating, not something happening to you."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 6,
+          "content": {
+            "body": "This is why the early texts give so much attention to the mind-door. Not because the other five are unimportant, but because the mind-door is where simple events become complex suffering.\n\nA sound at the ear-door becomes a grudge at the mind-door. A sight at the eye-door becomes jealousy at the mind-door. A pleasant taste at the tongue-door becomes craving at the mind-door. In each case, the physical sense-door event is brief and specific. The mind-door elaboration is where the chain extends.\n\nThis doesn't mean the mind is the enemy. It means the mind-door is where awareness has the most leverage. If you can catch the moment when a physical sense-door event becomes a mind-door story, you're catching the chain in action — right at the point where simple experience becomes compounded suffering."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 7,
+          "content": {
+            "prompt": "Think of a recent experience that caused you more suffering than the event itself seemed to warrant — where your reaction was disproportionate to what actually happened. Can you identify the original sense-door event and the mind-door elaboration that amplified it? What did the mind-door add that wasn't in the original event?",
+            "sampleAnswer": "This exercise asks you to apply the six-door framework to your own experience of amplified suffering. The typical pattern is: a relatively small event at a physical sense door (someone's tone of voice at the ear-door, a message seen at the eye-door) gets elaborated at the mind-door into a much larger narrative (they don't respect me, this always happens, what's wrong with me). What the mind-door adds is usually interpretation, comparison, self-reference, and projection into the future — none of which were in the original sensory event. The gap between the original event and the mind-door elaboration is where most disproportionate suffering lives."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 8,
+          "content": {
+            "body": "The six sense bases aren't theoretical constructs. They're the architecture of every moment of your waking life — the doors through which everything you've ever experienced has arrived.\n\nIn the texture of a day, saḷāyatana reveals itself as the constant background structure of experience: rapid alternation between doors, seamless construction of apparently unified experience from discrete sense-door events, and the persistent dominance of the mind-door in generating and sustaining the patterns that become suffering.\n\nNext, we'll look at how contemplative practice engages directly with the six sense bases — the practice of sense restraint and mindful attention at the doors."
+          }
+        }
+      ]
+    },
+    {
+      "title": "Guarding the Doors",
+      "slug": "guarding-the-doors",
+      "description": "How practice engages with saḷāyatana — sense restraint and mindful attention at each door.",
+      "sortOrder": 5,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "The early texts describe a practice called **indriya saṃvara** — restraint of the sense faculties. It's one of the most frequently mentioned practices in the Pāli canon, and one of the most misunderstood.\n\nThe misunderstanding is this: people hear \"sense restraint\" and think it means avoiding sensory experience — closing your eyes, plugging your ears, retreating to a cave. Sensory deprivation as spiritual practice.\n\nThat's not what the texts describe. Indriya saṃvara is about **how you meet what arrives at each door**, not about preventing things from arriving. The doors stay open. The practice is in the quality of attention at the threshold.\n\n> *\"Having seen a form with the eye, he does not grasp at its signs and features. Since, if he left the eye faculty unguarded, unwholesome states of covetousness and grief might invade him, he practices the way of its restraint.\"*\n> — Sāmaññaphala Sutta (DN 2)"
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 2,
+          "content": {
+            "body": "The key phrase is \"does not grasp at its signs and features.\" This isn't about not seeing. It's about not *elaborating*.\n\nWhen you see an attractive person walk by, the eye-door registers the visual form. That's just seeing. Sense restraint doesn't ask you to avoid seeing. It asks you to notice the moment when seeing becomes *appraising* — when the mind-door picks up the eye-door event and begins elaborating: \"attractive,\" \"I wish,\" \"they're out of my league,\" \"I wonder if they noticed me.\"\n\nThe practice is catching that transition — from bare sensory event to mind-door elaboration — and not feeding the elaboration. Not suppressing it, not judging it, just not adding fuel.\n\nThis is remarkably precise work. It requires knowing which door you're at and recognizing when one door's event has been picked up and amplified by the mind-door. Saḷāyatana isn't just a theoretical framework. It's the operating map for this practice."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 3,
+          "content": {
+            "prompt": "You walk past a bakery and smell fresh bread. The aroma is intensely pleasant. You notice yourself starting to think about going in, even though you're not hungry. What does sense restraint look like in this moment?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Holding your breath or crossing the street so you don't smell the bread.",
+                "isCorrect": false,
+                "explanation": "This is sensory avoidance, not sense restraint. The practice isn't about preventing nose-door events from occurring. It's about changing the relationship to what follows them. Crossing the street to avoid a bakery smell treats the nose-door as a problem to be managed through environmental control, which is neither practical (you can't avoid all pleasant smells) nor what the texts describe."
+              },
+              {
+                "id": "b",
+                "text": "Noticing the pleasant smell, noticing the mind-door beginning to elaborate ('I should go in, that would be so good'), and not feeding the elaboration — letting the smell be a smell without it becoming a plan.",
+                "isCorrect": true,
+                "explanation": "This is sense restraint as the texts describe it. The nose-door event (pleasant smell) is just a nose-door event. The mind-door picks it up and begins generating desire, plans, justifications. The practice is recognizing that transition and not adding fuel. The smell continues to be pleasant — you're not pretending it isn't. You're just not letting the mind-door turn a sensory event into a behavioral chain."
+              },
+              {
+                "id": "c",
+                "text": "Going in and buying the bread, but doing so mindfully — fully present with each step of the experience.",
+                "isCorrect": false,
+                "explanation": "There's nothing wrong with buying bread, and mindfulness while eating is a real practice. But this answer sidesteps the specific situation: you're not hungry, and the impulse to go in is generated by the mind-door elaboration of a nose-door event. 'Doing it mindfully' can become a way of justifying every impulse as long as you pay attention while following it. Sense restraint is specifically about the moment before action — catching the elaboration before it becomes behavior."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 4,
+          "content": {
+            "body": "The practice of sense restraint reveals something important about how the chain operates in real time.\n\nMost of the time, the transition from sense-door event to mind-door elaboration is instantaneous and invisible. You don't experience \"hearing a sound\" followed by \"judging the sound.\" You experience \"hearing an annoying sound\" — the judgment is fused with the sensation before you even notice.\n\nThis fusion is what makes the chain so effective. By the time you notice what's happening, the elaboration is already underway. Craving or aversion has already begun. The chain has already moved from saḷāyatana (sense base) through phassa (contact) to vedanā (feeling) before you've caught up.\n\nSense restraint isn't about being fast enough to catch every transition. It's about gradually developing the ability to notice the fusion *after the fact* — \"Oh, I just turned a sound into a story\" — and then, over time, catching it closer and closer to the moment of contact."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 5,
+          "content": {
+            "prompt": "Someone practices sense restraint for several months. They report that they still have the same reactions to pleasant and unpleasant experiences, but they notice them sooner. Is this progress?",
+            "options": [
+              {
+                "id": "a",
+                "text": "No — real progress would mean the reactions stop occurring. Noticing them sooner without changing them isn't enough.",
+                "isCorrect": false,
+                "explanation": "This sets the bar at suppression, not awareness. The early texts describe a progression where awareness of the process comes first, and the natural weakening of reactive patterns follows. Expecting the reactions to stop before noticing improves is like expecting to catch a ball before learning to see it coming. The noticing *is* the first stage of the transformation."
+              },
+              {
+                "id": "b",
+                "text": "Yes — noticing the reaction sooner means the gap between the sense-door event and the mind-door elaboration is becoming visible, which is exactly where practice creates space for a different response.",
+                "isCorrect": true,
+                "explanation": "This is precisely what the early texts describe as the development of mindfulness at the sense doors. The reactions haven't disappeared, but the person can now see the moment where a sense-door event becomes a mind-door story. That visibility is the space in which the chain can be interrupted — not by force, but by the simple fact that what is clearly seen has less power to operate on autopilot."
+              },
+              {
+                "id": "c",
+                "text": "It's impossible to tell — progress in meditation can only be assessed by a qualified teacher, not through self-report.",
+                "isCorrect": false,
+                "explanation": "While a teacher's guidance is valuable, the framework is explicit that the practitioner can observe their own process. The whole point of the six-door analysis is that it gives you a map you can check against your own experience. 'I notice the reaction sooner' is exactly the kind of observation the framework is designed to support. Deferring entirely to external authority misses the self-investigative nature of the practice."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 6,
+          "content": {
+            "body": "There's a deeper dimension to sense restraint that goes beyond managing reactions.\n\nWhen you practice sustained attention at the sense doors — really tracking which door you're at, what's arriving, how the mind-door picks it up — something begins to shift in the quality of experience itself.\n\nExperience becomes more granular. What used to feel like a continuous stream reveals itself as a series of discrete events. \"I'm having a terrible morning\" dissolves into: a sound at the ear-door, a thought at the mind-door, a tension at the body-door, another thought at the mind-door. The unified narrative of \"terrible morning\" turns out to be a construction — assembled from individual sense-door events, most of which, taken one at a time, are perfectly manageable.\n\nThis dissolution of the unified narrative is not a technique. It's a natural consequence of clear seeing at the six doors. And it matters because unified narratives of suffering have a momentum that individual sense-door events do not."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 7,
+          "content": {
+            "prompt": "Try a brief exercise: for the next sixty seconds, try to note which sense door each experience is arriving at. You don't need to label them formally — just notice: 'hearing... thinking... seeing... feeling in body... thinking...' as they arise.\n\nAfter the sixty seconds, describe what you noticed. Was it easy or hard to track? Did the mind-door dominate? Were there moments where you weren't sure which door you were at?",
+            "sampleAnswer": "This exercise gives a direct taste of what sense restraint involves at the most basic level. Most people find it surprisingly difficult — the mind-door dominates almost immediately with meta-commentary ('am I doing this right?'), and the transitions between doors are faster than the labeling can keep up with. The moments of uncertainty about which door are especially instructive: they reveal that what we call 'experience' is normally pre-categorized before we notice it. The exercise isn't about achieving perfect tracking. It's about discovering how rich and rapid the sense-door activity is in any given moment."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 8,
+          "content": {
+            "body": "Sense restraint isn't about building walls around the six doors. It's about standing at each door with enough awareness to see what's arriving, how the mind picks it up, and where the elaboration begins to run.\n\nThe practice is gradual. First you notice the elaboration after it's fully formed. Then you catch it earlier. Then you begin to see the moment of contact itself — the bare meeting of sense base and object before the mind-door adds its interpretation.\n\nThis progression moves us naturally toward the next link in the chain: phassa, contact. Because the place where sense restraint operates — the moment an object meets a sense base — is exactly where contact occurs.\n\nThe examination continues with **phassa** — contact, the convergence that turns potential into experience."
+          }
+        }
+      ]
+    },
+    {
+      "title": "The Architecture of Encounter",
+      "slug": "the-architecture-of-encounter",
+      "description": "Saḷāyatana's role in the chain as a whole — why the differentiation of experience matters.",
+      "sortOrder": 6,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "We've examined the six sense bases from multiple angles: what they are, how they work, how they relate to adjacent links, how they show up in daily life, and how practice engages with them. Now let's step back and consider what saḷāyatana contributes to the chain as a whole.\n\nThe twelve links of dependent origination describe how suffering arises through a series of structural dependencies. Each link adds something that the previous links couldn't produce on their own. The question for saḷāyatana is: **what does the differentiation of experience into six channels add to the story of suffering?**"
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 2,
+          "content": {
+            "body": "Here's what saḷāyatana adds: **specificity.**\n\nWithout the six sense bases, the organism would be a sealed unit — a body-mind complex with no way to encounter anything. Nāmarūpa establishes that there *is* an experiencer, but saḷāyatana establishes *how* that experiencer encounters its world.\n\nAnd the how matters enormously for suffering. You don't suffer generically. You suffer because of *this* sight, *this* sound, *this* thought. Craving doesn't arise from \"experience in general\" — it arises from a specific pleasant taste, a specific attractive form, a specific compelling thought. The specificity of the sense bases is what gives the chain its particular texture in each person's life.\n\nYour suffering has a sensory signature. The things that hook you arrive through particular doors. Understanding which doors are most active in generating your particular patterns of craving and aversion is one of the most practically useful insights the framework offers."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 3,
+          "content": {
+            "prompt": "Why does the chain require saḷāyatana — why can't suffering arise directly from the existence of an organism (nāmarūpa) without the intermediate step of differentiated sense bases?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Because suffering requires specific encounters — a particular sound, sight, or thought — and those specific encounters require specific channels. Without differentiated sense bases, there's no mechanism for specific experience to occur.",
+                "isCorrect": true,
+                "explanation": "This is the core contribution of saḷāyatana to the chain. Suffering isn't abstract — it's always about something specific. And specific experience requires specific channels. The chain tracks the full sequence of dependencies: there must be an organism (nāmarūpa), that organism must have differentiated modes of encounter (saḷāyatana), those modes must actually make contact with objects (phassa), that contact must produce feeling (vedanā), and feeling must give rise to craving (taṇhā). Remove saḷāyatana and you lose the mechanism by which experience becomes specific."
+              },
+              {
+                "id": "b",
+                "text": "It doesn't really require it — saḷāyatana is a philosophical elaboration that could be simplified out of the chain without losing anything essential.",
+                "isCorrect": false,
+                "explanation": "Try removing it and see what happens. You'd have: organism → contact. But contact with what? Through what? Contact (phassa) is defined as the meeting of a sense base, an object, and consciousness. Without the sense base, there's no meeting point. Saḷāyatana isn't padding — it provides the structural prerequisite for contact to occur. The chain is precise about dependencies, and this one is load-bearing."
+              },
+              {
+                "id": "c",
+                "text": "Because the six sense bases are the self — they're what makes you a person rather than just an organism, and suffering requires a self to experience it.",
+                "isCorrect": false,
+                "explanation": "The framework is explicit that the sense bases are not a self. They're functional capacities of the organism — impersonal, conditioned, and subject to change. The eye-base isn't 'yours' in any deep sense; it's a functioning capacity that arose through conditions. The reason the chain needs saḷāyatana isn't to establish a self but to establish the mechanism by which experience becomes differentiated into specific channels. Suffering doesn't require a self — it requires specific contact, and specific contact requires specific doors."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 4,
+          "content": {
+            "body": "There's another reason saḷāyatana matters to the chain: it's the link where **intervention becomes most concrete.**\n\nThe earlier links — ignorance, formations, consciousness, nāmarūpa — are deep structural conditions. You can't easily observe ignorance operating. You can't watch consciousness landing in nāmarūpa. These are processes that the framework describes but that are difficult to access directly in meditation.\n\nThe sense bases, by contrast, are right there. You can feel your eyes seeing. You can notice your ears hearing. You can catch thoughts arising at the mind-door. Saḷāyatana is where the chain becomes experientially accessible — where the abstract dependencies of the first four links manifest as something you can actually observe in real time.\n\nThis is why the Satipaṭṭhāna Sutta (the foundational text on mindfulness practice) gives extensive attention to the six sense bases. They're the most accessible entry point into the chain."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 5,
+          "content": {
+            "prompt": "A meditation teacher says: \"Don't try to understand the deep links of dependent origination. Just practice mindfulness at the six sense doors — the rest will take care of itself.\" Is this good advice?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Yes — the sense doors are where the chain becomes observable, and direct observation at the sense doors naturally reveals how the downstream links (contact, feeling, craving) operate. Understanding the earlier links matters less than seeing the process in action.",
+                "isCorrect": true,
+                "explanation": "This captures the practical emphasis of the early texts. Theoretical understanding of how ignorance conditions formations is useful, but the transformative work happens at the level of direct observation — and the sense doors are where direct observation is most available. When you clearly see how a sight at the eye-door becomes craving at the mind-door, you're seeing dependent origination in action. The earlier links are the deep roots of the process, but the sense bases are where you can actually watch the tree grow."
+              },
+              {
+                "id": "b",
+                "text": "No — skipping the deep links means you'll never understand why the process is happening, only that it's happening. Full understanding requires studying all twelve links equally.",
+                "isCorrect": false,
+                "explanation": "There's value in understanding all twelve links, which is what this course series is doing. But the teacher's advice is pragmatically sound: for practice purposes, the sense doors are the most productive place to work. The early texts themselves spend far more time on the sense bases in practical instruction than on the abstract earlier links. Understanding the full chain provides context and motivation, but the actual work of observation and transformation happens most accessibly at saḷāyatana and the links that follow it."
+              },
+              {
+                "id": "c",
+                "text": "No — this is anti-intellectual avoidance. Meditation without theoretical understanding is just relaxation.",
+                "isCorrect": false,
+                "explanation": "Mindfulness at the sense doors isn't relaxation — it's precise observation of how experience arises, how the mind elaborates it, and how suffering gets constructed moment by moment. The teacher isn't saying 'don't think.' They're saying that the deepest understanding comes from observing the process directly, and the sense doors are where that direct observation is most available. This is a methodological priority, not anti-intellectualism."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 6,
+          "content": {
+            "body": "One final perspective on saḷāyatana's role in the chain. The six sense bases are sometimes called \"the all\" (sabba) in the early texts:\n\n> *\"What is the all? The eye and visible forms, the ear and sounds, the nose and odors, the tongue and tastes, the body and tangible objects, the mind and mental phenomena. This is called the all.\"*\n> — Sabba Sutta (SN 35.23)\n\nThis is a radical claim. The Buddha is saying that the six sense bases and their objects constitute the entirety of what can be known, experienced, or discussed. There is no experience outside this framework.\n\nFor the chain, this means saḷāyatana isn't just one link among twelve. It's the link that establishes the total field within which all the subsequent links operate. Contact, feeling, craving, clinging, becoming, birth, aging and death — all of these occur within the domain established by the six sense bases. There is no suffering that doesn't enter through one of these doors."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 7,
+          "content": {
+            "prompt": "Having studied saḷāyatana from multiple angles, what do you now understand about the six sense bases that you didn't before starting this course? What, if anything, has shifted in how you understand your own moment-to-moment experience?",
+            "sampleAnswer": "This reflective question invites integration. Common shifts people report: recognizing that 'my experience' is actually a rapid alternation between different sense doors, not a single unified stream; realizing how much of suffering is mind-door elaboration of events at other doors; understanding that thoughts are sense-door events rather than 'me thinking'; discovering that the sense bases are a practical framework for observation, not just a philosophical taxonomy. What matters is whether the framework has moved from conceptual understanding to something that connects with how you actually experience your day."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 8,
+          "content": {
+            "body": "Saḷāyatana — the six sense bases — is where the organism meets its world through specific, differentiated channels. It's where abstract architecture becomes concrete experience, and where contemplative practice finds its most accessible entry point.\n\nThe six doors are always open. Objects are always arriving. The question the rest of the chain examines is: what happens in the moment of meeting?\n\nThe examination continues with **phassa** — contact, the convergence of sense base, object, and consciousness that turns potential into actual experience."
+          }
+        }
+      ]
+    }
+  ]
+}
