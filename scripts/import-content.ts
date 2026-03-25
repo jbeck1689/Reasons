@@ -136,6 +136,7 @@ async function importContent(filePath: string) {
     update: {
       title: courseData.title,
       description: courseData.description,
+      category: courseData.category,
       sortOrder: courseData.sortOrder,
       published: courseData.published,
     },
@@ -143,6 +144,7 @@ async function importContent(filePath: string) {
       title: courseData.title,
       slug: courseData.slug,
       description: courseData.description,
+      category: courseData.category,
       sortOrder: courseData.sortOrder,
       published: courseData.published,
     },

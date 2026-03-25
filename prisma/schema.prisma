@@ -80,6 +80,7 @@ model Course {
   title       String
   slug        String   @unique
   description String   @db.Text
+  category    String   @default("reasoning")  // "reasoning" or "buddhist-studies"
   published   Boolean  @default(false)
   sortOrder   Int      @default(0)
   createdAt   DateTime @default(now())
@@ -90,6 +91,7 @@ model Course {
 
   @@index([slug])
   @@index([published])
+  @@index([category])
 }
 
 model Sequence {

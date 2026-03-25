@@ -3,9 +3,31 @@ import { prisma } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
 
-export default async function CoursesPage() {
+const branchMeta: Record<string, { title: string; subtitle: string }> = {
+  reasoning: {
+    title: "Practical Reasoning",
+    subtitle: "Spot the tricks. Think under pressure. Build better arguments.",
+  },
+  "buddhist-studies": {
+    title: "Buddhist Studies & Critical Thinking",
+    subtitle:
+      "The four noble truths as a framework for understanding suffering — examined, not believed.",
+  },
+};
+
+export default async function CoursesPage({
+  searchParams,
+}: {
+  searchParams: { branch?: string };
+}) {
+  const branch = searchParams.branch;
+  const meta = branch ? branchMeta[branch] : null;
+
   const courses = await prisma.course.findMany({
-    where: { published: true },
+    where: {
+      published: true,
+      ...(branch ? { category: branch } : {}),
+    },
     orderBy: { sortOrder: "asc" },
     include: {
       _count: { select: { sequences: { where: { published: true } } } },
@@ -15,12 +37,31 @@ export default async function CoursesPage() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-10">
       <div className="mb-8">
-        <h1 className="text-2xl font-serif font-semibold text-surface-100 mb-2">
-          Courses
-        </h1>
-        <p className="text-surface-500 text-sm">
-          Each course teaches a different kind of thinking. Start anywhere.
-        </p>
+        {meta ? (
+          <>
+            <div className="mb-4">
+              <Link
+                href="/home"
+                className="text-xs text-surface-600 hover:text-accent-400 transition-colors"
+              >
+                ← Back to home
+              </Link>
+            </div>
+            <h1 className="text-2xl font-serif font-semibold text-surface-100 mb-2">
+              {meta.title}
+            </h1>
+            <p className="text-surface-500 text-sm">{meta.subtitle}</p>
+          </>
+        ) : (
+          <>
+            <h1 className="text-2xl font-serif font-semibold text-surface-100 mb-2">
+              All Courses
+            </h1>
+            <p className="text-surface-500 text-sm">
+              Every course across both branches. Start anywhere.
+            </p>
+          </>
+        )}
       </div>
 
       <div className="space-y-4">

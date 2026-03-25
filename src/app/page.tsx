@@ -4,12 +4,14 @@ export default function Home() {
       <div className="max-w-xl text-center space-y-8">
         <div className="text-4xl font-light text-accent-400">◆</div>
         <h1 className="text-3xl font-serif font-semibold text-surface-100 tracking-tight">
-          Practical Reasoning
+          Public Reasons
         </h1>
         <p className="text-surface-400 leading-relaxed text-lg font-serif">
-          Learn to spot bad arguments, think under pressure, and see through
-          the tricks that bypass your careful thinking — from salespeople,
-          politicians, headlines, and your own brain.
+          Train your mind to see clearly — through practical reasoning,
+          critical thinking, and the ancient diagnostic framework of the
+          four noble truths. The adversary is everywhere: in bad arguments,
+          in manipulation, and in the patterns your own mind runs without
+          your permission.
         </p>
         <div className="flex gap-4 justify-center pt-4">
           <a
@@ -19,10 +21,10 @@ export default function Home() {
             Get Started
           </a>
           <a
-            href="/courses"
+            href="/home"
             className="px-6 py-2.5 border border-surface-700 hover:border-surface-500 text-surface-300 font-medium rounded transition-colors"
           >
-            Browse Courses
+            Browse
           </a>
         </div>
       </div>

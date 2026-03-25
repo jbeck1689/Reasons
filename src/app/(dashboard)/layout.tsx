@@ -17,20 +17,26 @@ export default function DashboardLayout({
         <div className="max-w-4xl mx-auto px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-6">
             <Link
-              href="/courses"
+              href="/home"
               className="text-accent-400 font-medium text-sm flex items-center gap-2"
             >
               <span className="text-lg">◆</span>
               <span className="hidden sm:inline font-serif tracking-tight">
-                Practical Reasoning
+                Public Reasons
               </span>
             </Link>
             <nav className="flex gap-4">
               <Link
+                href="/home"
+                className="text-xs text-surface-500 hover:text-surface-200 uppercase tracking-wider transition-colors"
+              >
+                Home
+              </Link>
+              <Link
                 href="/courses"
                 className="text-xs text-surface-500 hover:text-surface-200 uppercase tracking-wider transition-colors"
               >
-                Courses
+                All Courses
               </Link>
               <Link
                 href="/progress"

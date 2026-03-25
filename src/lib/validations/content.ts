@@ -204,6 +204,7 @@ export const ImportCourseSchema = z.object({
   title: z.string().min(1, "Course title cannot be empty"),
   slug: z.string().min(1),
   description: z.string().min(1, "Course description cannot be empty"),
+  category: z.string().optional().default("reasoning"),
   sortOrder: z.number().int().min(0).optional().default(0),
   published: z.boolean().optional().default(false),
   sequences: z.array(ImportSequenceSchema).min(1, "Course must have at least one sequence"),
