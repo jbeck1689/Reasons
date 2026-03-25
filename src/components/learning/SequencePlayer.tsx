@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback, useRef, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { InstructionStep } from "./InstructionStep";
 import { MultipleChoiceStep } from "./MultipleChoiceStep";
@@ -27,6 +28,7 @@ export function SequencePlayer({ sequence }: SequenceProps) {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [completed, setCompleted] = useState(false);
   const stepContentRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
 
   const steps = sequence.steps;
   const progress =
@@ -46,6 +48,15 @@ export function SequencePlayer({ sequence }: SequenceProps) {
       setCompleted(true);
     }
   }, [currentStepIndex, steps.length]);
+
+  const handleBack = useCallback(() => {
+    if (currentStepIndex > 0) {
+      setCurrentStepIndex((i) => i - 1);
+      window.scrollTo(0, 0);
+    } else {
+      router.push(`/courses/${sequence.course.id}`);
+    }
+  }, [currentStepIndex, router, sequence.course.id]);
 
   const submitResponse = useCallback(
     async (stepId: string, response: unknown) => {
@@ -130,13 +141,37 @@ export function SequencePlayer({ sequence }: SequenceProps) {
       <div className="sticky top-[49px] bg-surface-900/95 backdrop-blur-sm border-b border-surface-700/50 z-10">
         <div className="max-w-2xl mx-auto px-6 py-3">
           <div className="flex items-center justify-between mb-2">
-            <div>
-              <span className="text-xs text-surface-600 tracking-wide uppercase">
-                {sequence.course.title}
-              </span>
-              <h2 className="text-sm font-medium text-surface-400">
-                {sequence.title}
-              </h2>
+            <div className="flex items-center gap-3">
+              <button
+                onClick={handleBack}
+                className="text-surface-600 hover:text-surface-300 transition-colors"
+                aria-label={currentStepIndex === 0 ? "Back to course" : "Previous step"}
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="block"
+                >
+                  <path
+                    d="M10 12L6 8L10 4"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+              <div>
+                <span className="text-xs text-surface-600 tracking-wide uppercase">
+                  {sequence.course.title}
+                </span>
+                <h2 className="text-sm font-medium text-surface-400">
+                  {sequence.title}
+                </h2>
+              </div>
             </div>
             <span className="text-xs text-surface-600">
               {currentStepIndex + 1} / {steps.length}

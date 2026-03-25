@@ -26,13 +26,19 @@ export default async function CourseDetailPage({
     notFound();
   }
 
+  const backHref = `/courses?branch=${course.category}`;
+  const branchLabel =
+    course.category === "buddhist-studies"
+      ? "Buddhist Studies"
+      : "Practical Reasoning";
+
   return (
     <div className="max-w-2xl mx-auto px-6 py-10">
       <Link
-        href="/courses"
-        className="text-xs text-surface-600 hover:text-surface-400 uppercase tracking-wider transition-colors"
+        href={backHref}
+        className="text-xs text-surface-600 hover:text-accent-400 transition-colors"
       >
-        ← All Courses
+        ← {branchLabel}
       </Link>
 
       <div className="mt-4 mb-8">

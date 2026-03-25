@@ -30,13 +30,7 @@ export default function DashboardLayout({
                 href="/home"
                 className="text-xs text-surface-500 hover:text-surface-200 uppercase tracking-wider transition-colors"
               >
-                Home
-              </Link>
-              <Link
-                href="/courses"
-                className="text-xs text-surface-500 hover:text-surface-200 uppercase tracking-wider transition-colors"
-              >
-                All Courses
+                Courses
               </Link>
               <Link
                 href="/progress"

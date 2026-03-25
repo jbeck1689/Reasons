@@ -3,7 +3,7 @@
   "slug": "something-is-off",
   "description": "The first noble truth isn't that life is suffering. It's that your mind adds unnecessary friction to everything it touches — and you can learn to see it happening. This course trains you to recognize dukkha: the gap between what is and what your mind insists should be.",
   "category": "buddhist-studies",
-  "sortOrder": 7,
+  "sortOrder": 1,
   "published": true,
   "sequences": [
     {
@@ -107,7 +107,7 @@
         },
         {
           "type": "INSTRUCTION",
-          "sortOrder": 7,
+          "sortOrder": 1,
           "content": {
             "body": "## What You've Seen\n\n**Dukkha** is not the claim that life is suffering. It's the observation that your mind generates a specific kind of friction — a gap between reality and expectation — and that this process is automatic, constant, and usually invisible.\n\nThe gap operates on everything: good moments (\"this won't last\"), neutral moments (\"something better should be happening\"), and bad moments (\"this shouldn't be happening to me\").\n\nDukkha stacks: the raw event is the first arrow, your mental reaction to it is the second, and the second does more damage than the first.\n\nNone of this requires belief. It requires attention. The question isn't whether you accept the first noble truth as doctrine. The question is: can you see the gap in your own experience?\n\nIf you can, you've already started. Not because you've adopted a Buddhist worldview, but because you've identified a pattern that was running without your awareness. That's the same skill this platform has been training from the beginning — pattern recognition. The only difference is that the pattern is inside."
           }
@@ -215,7 +215,7 @@
         },
         {
           "type": "INSTRUCTION",
-          "sortOrder": 7,
+          "sortOrder": 1,
           "content": {
             "body": "## Three Flavors, One Process\n\n**Dukkha-dukkha**: raw, obvious suffering. The first arrow. Largely unavoidable. Amplified by the stories your mind adds.\n\n**Viparināma-dukkha**: the suffering embedded in pleasure itself. Your mind grips what's changing, encodes the peak as the standard, and then suffers the decline. The hedonic treadmill.\n\n**Sankhāra-dukkha**: the background hum. The low-grade, ambient friction of a mind that perpetually compares, projects, and evaluates. So constant it feels like reality.\n\nAll three are modes of the same process: your mind generating a gap between what is and what it demands. The first operates on painful events. The second operates on pleasant ones. The third operates on everything.\n\nYou don't need to eliminate any of these. You need to *see* them. The seeing itself changes the relationship — not because awareness is magic, but because a pattern you can identify has less power over you than one that runs invisibly. That's the same principle this entire platform is built on."
           }
@@ -323,7 +323,7 @@
         },
         {
           "type": "INSTRUCTION",
-          "sortOrder": 7,
+          "sortOrder": 1,
           "content": {
             "body": "## The Hinge\n\n**Vedanā** is the body's first response to experience: a bare classification of pleasant, unpleasant, or neutral. It happens before thought, before story, before emotion.\n\nEach tone of vedanā triggers an automatic reaction: pleasant → wanting more, unpleasant → wanting it gone, neutral → checking out. These reactions are the raw material from which craving is built.\n\nThe skill isn't changing the vedanā — that's automatic. The skill is catching it before the story starts. Between the feeling-tone and the reaction, there's a space. That space is where the chain of suffering either engages or doesn't.\n\nThis is interoception — the capacity to sense your own body's internal signals. Both the Buddhist tradition (through the practice of vedanānupassanā, contemplation of feeling) and contemporary neuroscience identify this capacity as trainable. The more you practice noticing the body's first signal, the more space opens up between stimulus and response.\n\nYou're building that space now."
           }
@@ -431,7 +431,7 @@
         },
         {
           "type": "INSTRUCTION",
-          "sortOrder": 7,
+          "sortOrder": 1,
           "content": {
             "body": "## What You've Seen\n\n**Papañca** — mental proliferation — is your mind's tendency to take raw experience (vedanā) and spin it into increasingly elaborate narratives.\n\nThe process is automatic, fast, and biased toward threat. Your prediction engine fills gaps with worst-case scenarios because it was built for survival, not equanimity.\n\nThe proliferation chain: contact → vedanā → interpretation → narrative → emotional cascade. By the time you're aware of what you're feeling, you're usually deep in the story, mistaking it for reality.\n\nThe solution isn't a better story. It's seeing the storytelling. Not stopping it — that's not possible — but recognizing it as an activity your mind is performing, not a report on what's actually happening.\n\nThis skill connects directly to the critical thinking training in the Practical Reasoning courses. There, you learned to catch external manipulation — someone else constructing a misleading narrative. Here, you're catching the same thing, perpetrated by your own mind, against yourself.\n\nThe adversary is the same. The location has changed."
           }
@@ -539,7 +539,7 @@
         },
         {
           "type": "INSTRUCTION",
-          "sortOrder": 7,
+          "sortOrder": 1,
           "content": {
             "body": "## What You've Seen\n\n**Anicca** — impermanence — is not a philosophical position. It's an observable feature of every moment of experience. Sensations, emotions, thoughts, relationships, and identities are all processes, not objects.\n\nSuffering doesn't come from impermanence itself. It comes from **gripping** — the mind's insistence that changing things should stay fixed. The grip turns natural change into experienced loss.\n\nImpermanence operates at every scale: the death of a loved one and the fading of a moment of pleasure share the same underlying structure. Your mind resists change at all scales, generating friction proportional to the grip.\n\nBut impermanence is also the basis for relief: no suffering state is permanent either. The same process that dissolves joy dissolves despair.\n\nThe practice isn't to become indifferent. It's to see clearly enough that the grip becomes a choice rather than a default. You can choose to hold what you value without demanding that it never change. That distinction — between holding and gripping — is where the path begins."
           }
@@ -647,7 +647,7 @@
         },
         {
           "type": "INSTRUCTION",
-          "sortOrder": 7,
+          "sortOrder": 1,
           "content": {
             "body": "## What You've Seen\n\n**Anattā** — non-self — is not the claim that you don't exist. It's the observation that the fixed, essential self you feel yourself to be is a construction: assembled from aggregates, maintained by habit, and constantly shifting.\n\nThe self operates like a story your mind tells continuously — selecting memories, curating identity, defending the image. When the image is threatened, suffering arises. The suffering is proportional to the grip on the image, not to the severity of the threat.\n\nCognitive science supports this: the self is modular, constructed, and context-dependent. Memory is reconstructive. Identity shifts with circumstance. The unified, essential \"me\" is a useful fiction, not a discovery.\n\nAnattā is not an invitation to dissolve your sense of self. For trauma survivors especially, it should be approached with care. It's an invitation to *see* the construction — to notice the self-image as something your mind is doing, rather than something you are.\n\nWith this sequence, you've now encountered the three marks of existence as described in the early Buddhist texts: **dukkha** (suffering as friction), **anicca** (impermanence), and **anattā** (non-self). None of them are beliefs to adopt. All of them are patterns to observe — in your own experience, on your own terms.\n\nThat's the first noble truth, fully mapped. Next: the engine that keeps it running."
           }
