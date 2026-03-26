@@ -1,0 +1,658 @@
+{
+  "title": "Root and Object — Hetu & Ārammaṇa",
+  "slug": "hetu-arammana",
+  "description": "Two fundamental modes of conditionality: how something conditions from within as a root pervading what it produces, and how something conditions by being the object of awareness. Together they dissolve the naive model of cause and effect.",
+  "category": "paccaya",
+  "sortOrder": 1,
+  "published": true,
+  "sequences": [
+    {
+      "title": "What Makes a Root a Root",
+      "slug": "what-makes-a-root-a-root",
+      "description": "Introducing hetu-paccaya — root condition — and why it's different from the cause-and-effect model you're used to.",
+      "sortOrder": 1,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "In the Dependent Origination series, you watched conditions give rise to other conditions — ignorance conditioning formations, feeling conditioning craving, clinging conditioning becoming. Every link in the chain was described the same way: *with this as condition, that arises.*\n\nBut here's what that formula doesn't tell you: **how** one thing conditions another.\n\nConsider two very different situations. A tree's roots feed the entire organism — every branch, every leaf is pervaded by what the roots provide. A ball strikes another ball and sends it rolling. Both are \"conditioning.\" But they work in completely different ways.\n\nThe root doesn't push the tree from behind. It saturates it. The ball doesn't saturate anything — it transfers force through contact.\n\nThis series gives you the vocabulary to tell those apart. We start with the most fundamental mode: **hetu-paccaya** — root condition."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 2,
+          "content": {
+            "body": "## Hetu-Paccaya: Root Condition\n\n**Hetu-paccaya** describes how something conditions by pervading from within — the way a root feeds and colors everything that grows from it.\n\nThe canonical roots are three: **lobha** (greed), **dosa** (aversion), and **moha** (delusion). Their wholesome counterparts: **alobha** (non-greed/generosity), **adosa** (non-aversion/goodwill), and **amoha** (non-delusion/wisdom).\n\nWhen greed is the root of a mental state, it doesn't just trigger that state and step aside. It pervades the state. A thought rooted in greed *tastes* of greed all the way through — the perception is colored by wanting, the attention is shaped by wanting, the intention carries wanting in its texture.\n\nThis is what makes root conditioning different from a billiard ball. The ball leaves no trace of itself in what it moves. The root leaves its character in everything it feeds.\n\nIf you completed the DO series, you already saw this. Avijjā conditioning saṅkhāra (DO Course 1) isn't ignorance *pushing* formations into existence. It's ignorance *pervading* them — every formation that arises from ignorance carries ignorance in its grain."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 3,
+          "content": {
+            "prompt": "You wake up anxious about a meeting later today. The anxiety colors your morning — your coffee tastes flat, the news feels more threatening than usual, a neutral text from a friend reads as passive-aggressive.\n\nWhat type of conditioning is the anxiety performing on the rest of your experience?",
+            "options": [
+              {
+                "id": "a",
+                "text": "It's triggering each negative reaction in sequence — one bad feeling causing the next.",
+                "isCorrect": false,
+                "explanation": "This describes a chain of separate causes and effects — one domino hitting the next. But that's not what's happening. The anxiety isn't causing a separate reaction to the coffee and then a separate reaction to the news. It's coloring everything simultaneously. The coffee, the news, the text — they all taste of the same anxiety. That's pervading, not triggering."
+              },
+              {
+                "id": "b",
+                "text": "It's acting as a root — pervading your perception so that everything you encounter is experienced through it.",
+                "isCorrect": true,
+                "explanation": "That's hetu-paccaya. The anxiety doesn't cause each negative perception separately. It saturates your experiential field so that everything you encounter is tinted by it. The coffee isn't objectively worse. Your perception of it is pervaded by the anxious root. This is exactly how the tradition describes lobha, dosa, and moha operating — not as triggers but as dyes."
+              },
+              {
+                "id": "c",
+                "text": "It's creating a feedback loop where each negative experience reinforces the anxiety.",
+                "isCorrect": false,
+                "explanation": "Feedback loops are real — you studied mutual conditioning (aññamañña) in the DO series with the viññāṇa-nāmarūpa loop. But that's a different mode of conditionality. What's being described here isn't the anxiety getting reinforced by its effects. It's the anxiety pervading everything from within, like a dye in water. The loop might also be happening, but the root conditioning is the more fundamental thing to see first."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 4,
+          "content": {
+            "body": "Notice what just happened in that scenario. The anxiety wasn't a single event that produced other single events. It was a **quality** that saturated a field of experience.\n\nThis is the key insight about root conditioning: **the root doesn't disappear after it conditions.** It remains present in what it produces.\n\nThink about how different this is from the everyday understanding of causation. If you push a cup off a table, your push doesn't remain in the falling cup. The cause is over; only the effect continues.\n\nBut when delusion is the root of a perception, the delusion is *in* the perception. When generosity is the root of an action, the generosity is *in* the action. The root and what grows from it aren't separable the way a cause and its effect are.\n\nThis is why the tradition calls them *roots* and not *causes*. A root is part of the organism it feeds."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 5,
+          "content": {
+            "prompt": "A friend does you an unexpected favor. You feel grateful, but then a thought arises: \"They probably want something in return.\"\n\nIf suspicion is functioning as a root condition here, which of the following best describes what's happening?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The suspicion is a reasonable inference based on past experience with this person.",
+                "isCorrect": false,
+                "explanation": "It might be. But the question isn't whether the suspicion is justified — it's how the suspicion is functioning. If it's acting as hetu-paccaya, then it's not just a conclusion you reached. It's pervading the entire perception of the favor — recoloring the friend's kindness, reshaping the memory of the gesture, flavoring the gratitude with doubt. Whether the suspicion is 'reasonable' doesn't change the mode of conditioning."
+              },
+              {
+                "id": "b",
+                "text": "The suspicion is pervading and recoloring the original experience of gratitude — the favor itself now looks different because the root has changed.",
+                "isCorrect": true,
+                "explanation": "Exactly. The favor hasn't changed. The friend's action is the same. But once the suspicious root takes hold, the entire experience reorganizes around it. The gratitude thins. The memory of the gesture shifts. The friend's face in your mind's eye looks slightly different. This is root conditioning — the root doesn't just produce a new thought. It retroactively recolors the field it pervades."
+              },
+              {
+                "id": "c",
+                "text": "The suspicion is blocking the gratitude — one emotion replacing another.",
+                "isCorrect": false,
+                "explanation": "Replacement is too simple a model. If the suspicion merely replaced the gratitude, you'd just feel suspicious and the gratitude would be gone. But that's not what happens — you feel both, uneasily, with the suspicion *changing the taste* of the gratitude. The root pervades; it doesn't erase. This mixed, flavored quality is the signature of hetu-paccaya."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 6,
+          "content": {
+            "body": "The practical significance of hetu-paccaya is this: **you can't change what grows from a root without addressing the root itself.**\n\nIf your perceptions are pervaded by aversion, you can't fix the perceptions one by one. The aversion will color the next perception, and the next. The tradition's emphasis on working with the roots directly — cultivating non-greed, non-aversion, non-delusion — isn't moral advice. It's structural. It's addressing the mode of conditioning at the level where it actually operates.\n\nThis is also why mindfulness practice targets awareness of the roots as they arise, not just awareness of their effects. If you only notice that your coffee tastes bad this morning, you're working at the surface. If you notice the anxious root pervading the tasting, you're seeing the conditioning itself."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 7,
+          "content": {
+            "prompt": "Think of a recent period — a few hours or a day — when your experience seemed uniformly colored by a single quality. Maybe everything felt slightly threatening, or slightly exciting, or slightly flat.\n\nDescribe the quality, and then describe two or three specific experiences during that period that were colored by it. Looking back, can you identify the root? Was it one of the three unwholesome roots (greed, aversion, delusion) or one of the three wholesome roots (generosity, goodwill, clarity)?",
+            "sampleAnswer": "This exercise is designed to surface the difference between seeing individual experiences as separate events and seeing them as expressions of a common root. Most people can identify the coloring quality fairly easily once they look for it — the harder part is noticing that the individual experiences weren't independent. They were all being fed by the same root. If you struggled to identify a specific root, that's worth noticing too: delusion (moha) is the hardest root to spot because it conditions by obscuring — including obscuring itself."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 8,
+          "content": {
+            "body": "You now have the first mode of conditionality: **hetu-paccaya**, root condition.\n\nThe key features:\n\n**Pervading, not pushing.** The root doesn't trigger an effect and disappear. It saturates what it conditions.\n\n**Present in its product.** What grows from the root carries the root's character. A thought rooted in greed tastes of greed.\n\n**Structural, not moral.** Understanding root conditioning isn't about being a better person. It's about seeing where the leverage actually is when experience goes wrong.\n\nNext, we'll look at conditioning from the opposite direction — not what pervades from within, but what draws from outside. If hetu is the engine, the next mode is the road."
+          }
+        }
+      ]
+    },
+    {
+      "title": "What You Attend To Shapes You",
+      "slug": "what-you-attend-to-shapes-you",
+      "description": "Introducing ārammaṇa-paccaya — object condition — and how what you attend to conditions the mind doing the attending.",
+      "sortOrder": 2,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "Root condition works from the inside out — the root pervades whatever grows from it. Now we look at conditioning that works from the outside in.\n\n**Ārammaṇa-paccaya** — object condition — describes how something conditions by being the object of awareness. Whatever the mind takes as its object shapes the mind taking it.\n\nThis sounds obvious until you sit with it. You're not just passively receiving information from the world. Every object of your attention is actively conditioning your mind in the moment you attend to it. The news article you're reading right now is conditioning your mind. The sound of traffic outside. The sensation of the chair beneath you. Each object of awareness is a condition shaping the awareness directed at it."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 2,
+          "content": {
+            "body": "## The Object Isn't Passive\n\nConsider how different objects of attention produce different mental states — not as a vague generality, but as precise conditioning.\n\nYou see a plate of food when hungry. The visual object conditions desire. You hear a harsh word directed at you. The auditory object conditions aversion. You try to follow a confusing argument. The conceptual object conditions confusion.\n\nIn each case, the object doesn't *cause* the mental state the way a match causes a fire. The relationship is more specific: the object conditions by being *what the mind is directed toward*. The same harsh word heard when you're calm and when you're already irritated produces different results — because ārammaṇa-paccaya works alongside other modes, including the root condition you just studied.\n\nIf you completed the Dependent Origination series, you watched this at the saḷāyatana-to-phassa junction (DO Course 5). The sense bases meet their objects, and contact arises. What you're now learning is the specific *mode* of conditionality operating at that junction — the object conditioning consciousness by being what consciousness is directed toward."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 3,
+          "content": {
+            "prompt": "You're scrolling through your phone before bed. You see a news headline about an economic downturn. You weren't worried about money before, but now you're running financial calculations in your head and can't sleep.\n\nWhat is the headline functioning as?",
+            "options": [
+              {
+                "id": "a",
+                "text": "A root condition — it's pervading your mental state with anxiety.",
+                "isCorrect": false,
+                "explanation": "The anxiety may well become a root that pervades subsequent experience. But the headline itself isn't functioning as a root. It's external — something your mind took as an object. The headline didn't pervade your mind from within. It drew your mind toward it, and in that drawing, shaped what your mind became. The anxiety that follows might then function as a root (hetu), but the headline's conditioning is ārammaṇa — object condition."
+              },
+              {
+                "id": "b",
+                "text": "An object condition — by being what your mind took as its object, it shaped the mental state that arose.",
+                "isCorrect": true,
+                "explanation": "That's ārammaṇa-paccaya. The headline conditioned your mind by being what your mind was directed toward. You weren't anxious before the headline. The object — the specific content of the headline — drew your mind into a particular configuration. Notice also: the headline is still just words on a screen. It conditions not by doing anything to you but by being *what you attended to*."
+              },
+              {
+                "id": "c",
+                "text": "A trigger for a pre-existing worry — the headline just activated something already there.",
+                "isCorrect": false,
+                "explanation": "This might also be true — there could be a latent disposition (anusaya) that the headline activated. But even if that's the case, the headline is still functioning as an object condition in the moment of contact. The disposition needed something to activate it, and what activated it was this specific object of awareness. Saying 'it was already there' doesn't eliminate the role of the object — it highlights that ārammaṇa-paccaya works with other conditions, not instead of them."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 4,
+          "content": {
+            "body": "Here's what makes ārammaṇa-paccaya so practically important: **you have some choice about what you take as your object.**\n\nYou can't always choose your roots. If aversion has arisen, it's already conditioning. But you often can choose — or at least influence — what objects your mind engages with.\n\nThis is why every contemplative tradition has something to say about guarding the sense doors. It's not puritanism. It's structural awareness of how object conditioning works. The objects you habitually attend to shape the mind that does the attending.\n\nScroll through outrage content, and the mind becomes an outrage-shaped mind. Attend to the breath, and the mind takes on the qualities the breath offers — rhythm, steadiness, non-urgency. The object doesn't just inform you. It conditions you.\n\nThis isn't willpower advice. It's a description of a mode of conditioning. You can use it or not, but you can't opt out of it. Objects will condition your mind whether you're paying attention to the process or not."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 5,
+          "content": {
+            "prompt": "A meditator sits down to practice and focuses on the breath. After a few minutes, they notice their mind has wandered to a conversation they had earlier that day — specifically, to something hurtful someone said.\n\nIn terms of object conditioning, what happened?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The breath failed as a meditation object — it wasn't strong enough to hold attention.",
+                "isCorrect": false,
+                "explanation": "This frames it as the breath's failure, but objects don't succeed or fail. What happened is that a different object — the memory of the hurtful comment — drew the mind more powerfully. The memory was a stronger ārammaṇa condition in that moment. This isn't about the breath being inadequate. It's about which object the mind took and why. The memory carries emotional charge (vedanā), which gives it strong pulling power as an object."
+              },
+              {
+                "id": "b",
+                "text": "The memory replaced the breath as the object of awareness, and the mind was then conditioned by the emotional charge of the memory rather than the qualities of the breath.",
+                "isCorrect": true,
+                "explanation": "Exactly. Two different objects, two different conditioning effects. The breath, as an object, was conditioning the mind toward steadiness and present-moment awareness. The memory, as an object, conditioned the mind toward re-experiencing the emotional quality of that conversation. The meditator can see this clearly: the shift in object produced a shift in mental quality. That noticing is itself a form of understanding ārammaṇa-paccaya."
+              },
+              {
+                "id": "c",
+                "text": "The meditator's aversion to the comment was the real condition — the memory was just a vehicle.",
+                "isCorrect": false,
+                "explanation": "The aversion may be functioning as hetu-paccaya — a root pervading the experience. But the memory is not 'just a vehicle.' It's the specific object the mind took, and different objects would have produced different results. If the mind had wandered to a pleasant memory instead, the configuration would be different. Both the root (aversion) and the object (the specific memory) are conditioning — through different modes, simultaneously. Naming one as 'real' and the other as 'just a vehicle' loses the precision the paccaya framework offers."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 6,
+          "content": {
+            "body": "Notice a pattern emerging: **hetu and ārammaṇa often operate simultaneously.**\n\nThe anxious root (hetu) pervades your experience from within. The news headline (ārammaṇa) shapes your mind from without. In any given moment, your experience is being conditioned both by what's driving from inside and by what's drawing from outside.\n\nThis is why the paccaya framework matters. \"Cause and effect\" gives you one dimension — this caused that. The paccaya framework gives you multiple simultaneous modes. The same moment of experience can be conditioned as hetu (root pervading), as ārammaṇa (object shaping), and — as you'll learn in later courses — as several other modes at once.\n\nThe analytical power isn't in knowing one mode. It's in seeing how they layer."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 7,
+          "content": {
+            "prompt": "Choose a habitual object of attention in your life — something you regularly direct your mind toward. It could be a social media feed, a type of conversation, a recurring worry, a practice like meditation or exercise, or anything else.\n\nDescribe what qualities that object tends to condition in your mind. Then consider: if you changed the object (replaced the feed, shifted the conversation topic, redirected the worry), what qualities might arise instead?",
+            "sampleAnswer": "The point of this exercise is to move ārammaṇa-paccaya from theory to felt experience. Most people find they can identify the conditioning effect of their habitual objects once they look — the doom-scroll that produces a slightly frantic quality, the nature walk that produces a slightly expanded quality. The harder part is seeing that this isn't metaphorical — it's a specific mode of conditioning operating right now. If you struggled to identify the qualities, try being more concrete: don't describe what you think the object 'should' do to you. Describe what your mind actually feels like during and after engagement with it."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 8,
+          "content": {
+            "body": "You now have two modes of conditionality:\n\n**Hetu-paccaya** — root condition. Conditioning from within. The root pervades what it produces. The character of the root is present in everything that grows from it.\n\n**Ārammaṇa-paccaya** — object condition. Conditioning from without. The object shapes the mind directed toward it. What you attend to conditions the quality of your attending.\n\nTogether, they reveal something the simple \"cause and effect\" model hides: **conditioning has direction.** Some conditions work by pervading from the inside. Others work by drawing from the outside. The same moment of experience can be conditioned in both directions at once.\n\nNext, we'll look at how these two modes interact — what happens when a root meets an object, and how the combination produces something neither could produce alone."
+          }
+        }
+      ]
+    },
+    {
+      "title": "When Root Meets Object",
+      "slug": "when-root-meets-object",
+      "description": "How hetu and ārammaṇa interact — the way internal roots shape what objects you seek, and how objects strengthen or weaken roots.",
+      "sortOrder": 3,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "You've now seen two modes of conditionality operating in different directions — the root pervading from within, the object shaping from without. But in lived experience, they don't take turns. They operate together, and their interaction is where things get interesting.\n\nConsider: a person rooted in craving (lobha as hetu) doesn't encounter objects neutrally. The craving-root shapes *which objects the mind reaches for* and *how it engages with them.* A person rooted in generosity encounters the same objects differently.\n\nAnd it works the other way too. The objects you habitually engage with strengthen certain roots and weaken others. A steady diet of objects that provoke wanting reinforces the wanting-root. Engagement with objects that invite clarity strengthens the clarity-root.\n\nThe root conditions the relationship to the object. The object conditions the strength of the root. This isn't a feedback loop in the simple sense — it's two distinct modes of conditionality operating simultaneously on the same moment of experience."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 2,
+          "content": {
+            "body": "## The Root Selects the Object\n\nHere's something you can verify in your own experience: **your roots pre-sort the world for you.**\n\nWhen aversion is the active root, you notice threats. Not because the world became more threatening — because the aversive root conditions your attention to select aversion-relevant objects. The rude comment stands out. The compliment slides past. The neutral face looks slightly hostile.\n\nWhen desire is the active root, you notice opportunities for gratification. The advertisement catches your eye. The dessert menu gets more attention than the main course. The attractive stranger registers; the ordinary stranger doesn't.\n\nThis isn't bias in the modern psychological sense — though it includes that. It's hetu-paccaya conditioning which ārammaṇa-paccaya gets to operate. The root doesn't just color your experience of objects. It selects *which objects* your mind takes.\n\nThe practical implication: if you want to understand why you're attending to what you're attending to, look at the root. The root often explains the object."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 3,
+          "content": {
+            "prompt": "Two people are at the same dinner party. Person A has been feeling insecure about their career. Person B just received good news about a promotion. The same person at the party mentions their recent vacation.\n\nPerson A thinks: \"Must be nice to have that kind of money.\" Person B thinks: \"That sounds like a great trip — I should plan something similar.\"\n\nSame object (the vacation story). Different responses. What best explains the difference?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Person A and Person B have different personalities, which leads them to interpret the same information differently.",
+                "isCorrect": false,
+                "explanation": "\"Different personalities\" is too broad to be useful. The paccaya framework offers something more precise: the difference isn't in some stable personality trait. It's in the active root. Person A's insecurity (a form of dosa — aversion toward their own situation) conditions them to take the vacation story as an object that reflects their lack. Person B's satisfaction (alobha — non-greed, contentment) conditions them to take the same object as an opportunity. Different roots, different relationship to the same object."
+              },
+              {
+                "id": "b",
+                "text": "The active root in each person is conditioning how they take the vacation story as an object — the insecurity-root selects for comparison, the contentment-root selects for possibility.",
+                "isCorrect": true,
+                "explanation": "This is the hetu-ārammaṇa interaction at work. The object is identical — the same words, the same story. But the root in each person conditions not just the feeling-tone of the experience but the very way the object is taken. Person A's root selects the comparison dimension of the object. Person B's root selects the inspiration dimension. Neither person is seeing the 'real' object — both are seeing the object as conditioned by their root."
+              },
+              {
+                "id": "c",
+                "text": "Person A is being irrational and Person B is responding appropriately — the story is objectively neutral.",
+                "isCorrect": false,
+                "explanation": "This assumes there's a 'correct' way to take the object, and Person A is failing at it. The paccaya framework doesn't work that way. Neither response is more 'accurate' — both are conditioned. Person B isn't more rational; they're conditioned by a different root. The point isn't to judge the responses but to see the conditioning clearly. Once you see that the root is selecting the object, you can investigate the root directly instead of arguing about whether the vacation story 'should' make you feel one way or another."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 4,
+          "content": {
+            "body": "## The Object Feeds the Root\n\nThe relationship works in the other direction too. The objects you engage with don't just reflect your roots — they strengthen or weaken them.\n\nThis is why the Buddha's teaching on guarding the sense doors isn't arbitrary asceticism. It's a structural recognition that objects condition roots. Repeated engagement with objects that provoke craving strengthens the craving-root. Repeated engagement with objects that invite clarity strengthens the clarity-root.\n\nNotice the precision here. This isn't the folk-wisdom claim that \"you are what you eat\" or \"garbage in, garbage out.\" Those are metaphors. This is a specific claim about two modes of conditionality interacting: the object (ārammaṇa) conditions the mind directed toward it, and the resulting mental state strengthens the root (hetu) it shares character with.\n\nThe loop looks like this: root conditions which objects the mind selects → the selected objects condition the mind toward a particular quality → that quality strengthens the root that selected those objects.\n\nBut it's not a trap. The loop has an entry point: the object. You can — with effort and awareness — redirect which objects you engage with, and over time, the roots will shift."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 5,
+          "content": {
+            "prompt": "A person decides to stop checking social media first thing in the morning and instead spends the first 20 minutes of their day sitting quietly with a cup of tea, looking out the window.\n\nAfter two weeks, they notice that their mornings feel calmer and they're less reactive during the day. In terms of hetu and ārammaṇa, what happened?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The new routine eliminated the sources of stress, so the person naturally became calmer.",
+                "isCorrect": false,
+                "explanation": "The sources of stress (social media content) weren't eliminated — they're still there, available anytime. What changed is which objects the person's mind takes in the vulnerable first minutes of the day. The social media feed, as an object, was conditioning reactivity, agitation, and comparison. The tea and the window, as objects, condition a different quality. Over two weeks, the shift in habitual objects began to shift the dominant root — not by eliminating stress but by feeding a different root."
+              },
+              {
+                "id": "b",
+                "text": "By changing the habitual object (from social media to quiet morning), the person changed which root was being fed — the new objects conditioned a calmer quality, which over time strengthened the non-agitation root.",
+                "isCorrect": true,
+                "explanation": "This is the hetu-ārammaṇa interaction in its practical dimension. The person intervened at the object level — changing what the mind takes as its first objects of the day. Those new objects conditioned a different mental quality (ārammaṇa-paccaya). That quality, over time, strengthened the root of non-aversion (adosa), which then pervaded the rest of the day's experience (hetu-paccaya). Two modes of conditionality, working together, producing a cumulative shift."
+              },
+              {
+                "id": "c",
+                "text": "The person was already becoming calmer, and the routine change was a symptom of that shift, not its cause.",
+                "isCorrect": false,
+                "explanation": "This reverses the direction of conditioning. It's possible that a root shift preceded the behavioral change — maybe a growing sense of non-aversion motivated the person to change their routine. But even if that's true, the new routine still functions as ārammaṇa-paccaya: the quiet morning objects are conditioning the mind directed at them. The paccaya framework doesn't require you to find the 'first cause.' It asks you to see all the modes operating. The root may have started the change. The objects sustained and deepened it."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 6,
+          "content": {
+            "body": "What you're seeing now is something the simple cause-and-effect model could never show you: **multiple modes of conditionality operating on the same situation at the same time, in different directions.**\n\nThe root pervades from within. The object shapes from without. The root selects the object. The object feeds the root. These aren't competing explanations of the same thing — they're different modes of conditioning, all active, all observable.\n\nThis layered view is what the Paṭṭhāna offers. It's not more complicated than cause-and-effect for the sake of complexity. It's more precise because experience actually is this precise. When you sit with a single moment of craving and ask \"what's conditioning this?\" the honest answer is: the root of desire is pervading from within (hetu), the specific object of desire is shaping the mind from without (ārammaṇa), and the two are reinforcing each other.\n\nYou'll add more layers in the courses ahead. But these two are the foundation."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 7,
+          "content": {
+            "prompt": "Think of a habit you've tried to change — successfully or unsuccessfully. Describe it briefly, then analyze it through the hetu-ārammaṇa lens:\n\n1. What root was driving the habit (which of the six roots was most active)?\n2. What objects was the root selecting for (what did the habit direct your attention toward)?\n3. How were those objects feeding the root back?\n4. If you successfully changed the habit, where did you intervene — at the root level, the object level, or both?",
+            "sampleAnswer": "This exercise tests whether the hetu-ārammaṇa interaction has moved from concept to working tool. The most common insight people report: they thought they were changing a behavior (the surface level), but the real work was changing either the root or the habitual objects — usually the objects first, since those are more accessible. People who failed to change a habit often find, looking back, that they addressed neither the root nor the objects — they tried to override the behavior through willpower while the root kept selecting the same objects. The framework doesn't guarantee success, but it shows you where the leverage points actually are."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 8,
+          "content": {
+            "body": "You've now seen hetu and ārammaṇa not just as separate modes but as interacting ones — the root conditioning which objects the mind selects, the objects conditioning which roots get strengthened.\n\nThis interaction pattern will recur throughout the series. The modes of conditionality aren't isolated gears. They mesh. Every course ahead will show you new modes, and every new mode will interact with the ones you already know.\n\nNext, we'll turn the lens inward: what does it feel like, from the inside, when hetu and ārammaṇa are both operating? How do you learn to see these modes in real time, not just in retrospective analysis?"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Seeing the Modes in Real Time",
+      "slug": "seeing-the-modes-in-real-time",
+      "description": "Moving from retrospective analysis to present-moment recognition of root and object conditioning.",
+      "sortOrder": 4,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "So far you've analyzed hetu and ārammaṇa by looking backward — examining scenarios after the fact, reconstructing what conditioned what. That's a necessary first step. You need the concepts before you can apply them.\n\nBut the real value of the paccaya framework is present-moment recognition. Seeing the conditioning *as it happens*, not just understanding it in retrospect.\n\nThis is harder than it sounds. When a root is actively pervading your experience, you're inside it. The anxious root doesn't announce itself — it presents its version of reality as *reality*. The greed-root doesn't say \"I'm coloring your perception now\" — it just makes the object look more desirable than it is.\n\nRecognizing conditioning in real time means developing a kind of peripheral vision for your own mental processes. Not analyzing every moment (that would be another form of obsession), but catching the signature moments — the moments when a root takes hold, or when an object draws the mind in a particular direction."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 2,
+          "content": {
+            "body": "## Signatures of Root Conditioning\n\nRoots have signatures — characteristic ways they feel when they're operating. Learning these signatures is how you move from analysis to recognition.\n\n**Lobha (greed/desire):** A leaning-forward quality. The mind reaches toward the object. There's a sense of not-enough-yet, of incompleteness that the object promises to resolve. The world narrows to the desired thing.\n\n**Dosa (aversion/hatred):** A pushing-away quality. The mind contracts against the object. There's a hardness, a rigidity. The world narrows to the threatening thing.\n\n**Moha (delusion/confusion):** A fog quality. The mind loses definition. There's a vagueness, a haziness, a sense of not-quite-seeing. Moha is the hardest root to catch because its signature is the absence of clarity — you don't notice it the way you notice the sharpness of desire or aversion.\n\nThe wholesome roots have signatures too. **Alobha** (non-greed) feels like sufficiency — not needing the object to be other than it is. **Adosa** (non-aversion) feels like softness — meeting the object without contraction. **Amoha** (non-delusion) feels like clarity — seeing the object and your relationship to it without fog."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 3,
+          "content": {
+            "prompt": "You're in a meeting and someone presents an idea you disagree with. You notice your jaw tightening and a rising urge to argue. You're formulating a rebuttal before they've finished speaking.\n\nWhich root signature is most active, and how is it conditioning your relationship to the object (the person's idea)?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Lobha — you want to be right, and you're reaching toward the satisfaction of winning the argument.",
+                "isCorrect": false,
+                "explanation": "Desire to be right could be present, but the signature described — jaw tightening, contraction, pushing back before fully hearing — is the signature of dosa (aversion), not lobha (greed). Greed leans toward. What's described here is a pushing-against. The distinction matters practically: if you treat this as a wanting and try to satisfy it, you'll feed the argument. If you recognize it as contraction and soften, the whole dynamic shifts."
+              },
+              {
+                "id": "b",
+                "text": "Dosa — the contraction and pushing-away is the aversion signature, and it's conditioning you to take the idea as a threat rather than as information.",
+                "isCorrect": true,
+                "explanation": "The physical contraction, the urgency to counter, the inability to hear the rest — these are dosa's signatures. And notice the ārammaṇa effect: with dosa as the active root, the person's idea is being taken as a *threat-object*. A different root would take the same idea as an *information-object* or even an *opportunity-object*. The root is selecting how the object is taken, and the resulting experience confirms the root: the idea feels threatening, so the aversion feels justified."
+              },
+              {
+                "id": "c",
+                "text": "Moha — you're confused about the idea and the confusion is making you defensive.",
+                "isCorrect": false,
+                "explanation": "Moha's signature is fog, vagueness, not-seeing. What's described is the opposite — a sharp, hard, urgent quality. This person isn't confused; they're contracted. The mind is very focused, just focused on opposing rather than understanding. Dosa often masquerades as clarity ('I see exactly what's wrong with this idea'), but the contraction and rigidity give it away."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 4,
+          "content": {
+            "body": "## Catching the Object-Shift\n\nThe other moment to catch in real time is the **object-shift** — the moment when the mind's object changes and the conditioning changes with it.\n\nYou're walking in the park, attending to the trees and the sky. You feel expansive, calm. Then your phone buzzes. You glance at it — an email from your boss. Instantly, the quality of your experience changes. You're no longer attending to the trees. You're attending to the email, and the email is conditioning a different mental quality.\n\nThe shift happened in a moment. The world didn't change. Your root may not have changed. But the object changed, and with it, the ārammaṇa-conditioning changed.\n\nLearning to catch these shifts is enormously practical. Not because you should never check your phone, but because the shift from one object to another is a moment of visibility — a moment when you can see the conditioning happen in real time rather than being carried along by it unconsciously."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 5,
+          "content": {
+            "prompt": "A meditator is practicing breath awareness. They're calm and concentrated. Then they hear a dog barking loudly outside. Their concentration breaks and irritation arises.\n\nFrom the perspective of real-time recognition, what's the most useful thing the meditator could notice?",
+            "options": [
+              {
+                "id": "a",
+                "text": "That the dog is a distraction and they should find a quieter place to meditate.",
+                "isCorrect": false,
+                "explanation": "This is a practical consideration, but it's not recognition — it's problem-solving. The meditator has a chance to see something much more valuable than 'dogs are distracting.' They have a chance to watch the object-shift happen in real time: the breath was the object, then the bark became the object, and the conditioning changed instantly. That visibility — seeing the shift as it happens — is more valuable than fixing the environment."
+              },
+              {
+                "id": "b",
+                "text": "That the irritation is their fault for not concentrating hard enough.",
+                "isCorrect": false,
+                "explanation": "This adds a layer of self-judgment that obscures the conditioning. The irritation isn't 'their fault' — it's conditioned. The bark, as an object, conditioned a disruption. The disruption, meeting a root-disposition toward wanting things to be a certain way, produced irritation. Blaming yourself for a conditioned process is itself a conditioned response — and not a very useful one. The opportunity here is seeing, not judging."
+              },
+              {
+                "id": "c",
+                "text": "The exact moment the object changed — from breath to bark — and how the quality of their mind changed with it. That moment of shift is the conditioning becoming visible.",
+                "isCorrect": true,
+                "explanation": "This is real-time recognition of ārammaṇa-paccaya. The meditator watched the object change and felt the conditioning change in the same moment. The breath conditioned steadiness. The bark conditioned disruption. The meditator who catches this shift has learned something about the nature of their mind that a thousand hours of uninterrupted meditation wouldn't teach. The interruption is the lesson."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 6,
+          "content": {
+            "body": "Real-time recognition has a paradoxical quality: **the moment you see the conditioning, you're no longer fully inside it.**\n\nWhen dosa is pervading your experience and you don't recognize it, you're just *angry*. The anger presents itself as the truth about the situation. But the moment you recognize the signature of dosa — the contraction, the hardness, the narrowing — something shifts. You're now aware of the anger rather than being the anger. The root is still operating, but its grip loosens.\n\nThe same with ārammaṇa. When you're absorbed in an object unconsciously, the object's conditioning is invisible. But the moment you catch the object-shift — the moment you notice \"my mind just moved from the trees to the email\" — you've introduced a gap between the conditioning and your response to it.\n\nThis gap is tiny. It's not enlightenment and it's not control. But it's where practice begins. The paccaya framework isn't just for understanding how conditioning works. It's for developing the precision to see it as it's working on you."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 7,
+          "content": {
+            "prompt": "Over the next day (or right now, if you prefer), try to catch one instance of each:\n\n1. A root signature — the moment you notice the leaning-forward of desire, the contraction of aversion, or the fog of delusion.\n2. An object-shift — the moment your mind moves from one object to another and the quality of your experience changes.\n\nDescribe what you noticed. What was the root? What was the object? What happened when you caught the conditioning in the moment rather than analyzing it afterward?",
+            "sampleAnswer": "Most people find the object-shift easier to catch than the root signature, because object-shifts often have external triggers (a sound, a notification, someone entering the room). Root signatures are subtler — they pervade from within and don't have a clear beginning you can point to. If you caught a root signature, notice what tipped you off: was it a physical sensation (jaw tightening, leaning forward, foggy feeling), an emotional tone, or a quality of your thinking? These signatures are your access points. If catching either in real time felt impossible, that itself is worth noting — moha (delusion) conditions precisely by making conditioning invisible. The exercise works even when you don't succeed."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 8,
+          "content": {
+            "body": "You've now moved from understanding hetu and ārammaṇa conceptually to practicing real-time recognition of their signatures and shifts.\n\nThe signatures of root conditioning: the leaning-forward of desire, the contraction of aversion, the fog of delusion — and their wholesome counterparts: sufficiency, softness, clarity.\n\nThe visibility of object conditioning: catching the moment the mind shifts from one object to another and feeling the conditioning change.\n\nThe paradox of recognition: seeing the conditioning creates a gap that loosens its grip — not by force, but by awareness.\n\nNext, we'll examine a subtlety that most treatments of conditionality overlook: the difference between an object that your mind reaches for and an object that arrives uninvited. Both condition. But they condition differently."
+          }
+        }
+      ]
+    },
+    {
+      "title": "Objects Sought and Objects Arrived",
+      "slug": "objects-sought-and-arrived",
+      "description": "The difference between objects the mind reaches for and objects that arrive uninvited — and how each type of object conditioning operates differently.",
+      "sortOrder": 5,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "All objects condition the mind directed toward them. But there's a distinction the tradition draws that has immediate practical value: the difference between an object the mind **reaches for** and an object that **arrives uninvited**.\n\nYou open your phone and search for restaurant reviews. You scroll through photos of food. You chose this object — your mind reached for it.\n\nYou're walking down the street and a car backfires. The explosive sound is now the object of your awareness. You didn't choose it — it arrived.\n\nBoth are ārammaṇa-paccaya. Both objects are conditioning the mind directed toward them. But the relationship is different. The sought object was already selected by a root — you were looking for food because desire was active. The arrived object may interact with whatever root was already present, or it may activate a new one.\n\nThis distinction matters because it reveals how much of your object-conditioning is self-selected (and therefore potentially modifiable) versus how much arrives from the world (and therefore requires a different response)."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 2,
+          "content": {
+            "body": "## Sought Objects: The Root Shops for Itself\n\nWhen you actively seek an object, the root is usually driving the search. Craving seeks gratification-objects. Aversion seeks confirmation-of-threat-objects. Even delusion has its objects — distractions, entertainments, anything that sustains the fog.\n\nThis is why certain habits are so persistent. The root doesn't just color your experience of objects — it motivates you to seek specific objects that will reinforce it. The craving-root drives you to open the food delivery app. The app provides objects that feed the craving. The strengthened craving drives you to open the app again tomorrow.\n\nRecognizing that a sought object was selected by a root gives you a specific intervention point. Not willpower (\"I just won't look\") but investigation (\"What root is driving this search? What is it actually looking for?\").\n\nOften, the root is looking for something the object can't actually provide. The craving isn't for the food — it's for the feeling of anticipation the scrolling provides. The aversion-driven news consumption isn't for information — it's for the feeling of being right about how bad things are. The object is a proxy. Seeing that is how the root's grip loosens."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 3,
+          "content": {
+            "prompt": "You're feeling restless and vaguely dissatisfied. Without a clear intention, you pick up your phone and start scrolling through social media. After twenty minutes, you feel worse — slightly envious and empty.\n\nWhich analysis best captures the hetu-ārammaṇa dynamics?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The social media content caused the envy and emptiness. The solution is to stop using social media.",
+                "isCorrect": false,
+                "explanation": "This only addresses the object and ignores the root. The restlessness and dissatisfaction were already present before the phone was picked up. That feeling — a form of desire (lobha) seeking something to fill the incompleteness — selected the social media objects. The objects then fed back a specific flavor of suffering: comparison and emptiness. Removing social media removes one set of objects, but the root will find other objects to select. The analysis is incomplete without the root."
+              },
+              {
+                "id": "b",
+                "text": "The root of restless desire selected social media as its object, the social media objects fed back comparison and emptiness, which strengthened the original dissatisfaction — the root was shopping for itself.",
+                "isCorrect": true,
+                "explanation": "This captures both modes and their interaction. The root (restless desire, a form of lobha) drove the object-selection (picking up the phone, scrolling). The objects (curated images of other people's lives) conditioned the mind toward comparison and lack. The resulting feeling strengthened the original root. The root was shopping for objects that would confirm its own worldview: 'you don't have enough.' This is the hetu-ārammaṇa loop in its most common and most insidious form."
+              },
+              {
+                "id": "c",
+                "text": "The person was already in a bad mood, so everything they encountered would have made them feel worse. The specific object doesn't matter.",
+                "isCorrect": false,
+                "explanation": "The root was real — the restless dissatisfaction was conditioning before the phone was picked up. But the specific object very much matters. If, in that same restless state, the person had picked up a novel, or gone for a walk, or called a friend, the ārammaṇa-conditioning would have been different. Different objects feed back different qualities. The root explains why the person reached for social media specifically. But what social media fed back — comparison, curated highlight reels, a pace of consumption that prevents settling — is specific to that object. The root selects the object, but the object has its own conditioning power."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 4,
+          "content": {
+            "body": "## Arrived Objects: Meeting What You Didn't Choose\n\nArrived objects — the car backfire, the unexpected bad news, the stranger's offhand comment — don't come pre-selected by a root. They arrive, and then they interact with whatever roots are already active.\n\nThis is where the practice of recognizing root signatures becomes especially useful. When an uninvited object arrives, the root that's already active shapes how you take it. The same startling sound, encountered with a calm mind, produces a brief startle and then curiosity. Encountered with an already-anxious mind, it produces fear and a scanning for further threats.\n\nThe object is the same. The ārammaṇa-paccaya is the same — a loud sound conditions a certain kind of attention. But the hetu-paccaya shapes what happens next. The root that was already pervading determines which direction the mind moves after the initial contact.\n\nThis is why the tradition emphasizes the quality of mind you cultivate habitually, not just in response to specific events. You can't control which objects arrive. But the root you've cultivated determines how arrived objects condition you."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 5,
+          "content": {
+            "prompt": "Two people receive the same unexpected email: their company is restructuring and their positions may be affected. Person A has been cultivating contentment and equanimity through practice. Person B has been in a state of chronic worry about job security.\n\nThe email (same object, same ārammaṇa-paccaya) produces very different responses. What's the most precise explanation?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Person A doesn't care about their job, so the email doesn't affect them.",
+                "isCorrect": false,
+                "explanation": "Non-attachment isn't indifference. Person A may care deeply about their livelihood. The difference isn't in caring or not caring — it's in the root that's active when the uninvited object arrives. Equanimity (a form of adosa and amoha) doesn't prevent the email from conditioning the mind. It provides a different root-context for the conditioning to meet. The email still registers as significant. But it's taken with clarity rather than with panic."
+              },
+              {
+                "id": "b",
+                "text": "The same object meets different active roots — equanimity in Person A, chronic worry in Person B — and the root determines how the object's conditioning unfolds beyond the initial contact.",
+                "isCorrect": true,
+                "explanation": "Precisely. Both people have the same ārammaṇa-paccaya operating — the email, as an object, conditions both minds with the same initial information. But the active root in each person determines what happens next. Person B's worry-root (dosa) takes the email as confirmation of threat and spirals into catastrophic thinking. Person A's equanimity-root (adosa + amoha) takes the email as information to be assessed. The object is the same. The root-context is different. The resulting experience is different — not because one person is stronger, but because the conditioning configuration is different."
+              },
+              {
+                "id": "c",
+                "text": "Person A has trained themselves to suppress emotional reactions, which is why they're less affected.",
+                "isCorrect": false,
+                "explanation": "Suppression is a different mechanism entirely — it's a form of pushing away (dosa, actually) that creates its own problems. What's described for Person A is equanimity — a root condition of non-aversion and clarity that pervades how objects are taken. Suppression hides the reaction. Equanimity changes the root-context so that the reaction arises differently in the first place. The distinction matters practically: suppression is exhausting and eventually breaks. A cultivated root-quality changes the field of conditioning sustainably."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 6,
+          "content": {
+            "body": "The sought/arrived distinction has a pointed implication for practice:\n\n**For sought objects:** The leverage point is the root. Ask what's driving the search. Interrupt the root, and the object-seeking changes.\n\n**For arrived objects:** The leverage point is the background root you've cultivated. You can't control the arrival. You can influence what meets it.\n\nThis maps onto two aspects of Buddhist practice that sometimes seem contradictory: the emphasis on sense restraint (guarding the doors, being careful about what you seek) and the emphasis on equanimity (meeting whatever arises without reactivity). These aren't contradictory strategies. They address different modes of the same conditioning process.\n\nSense restraint addresses the hetu-ārammaṇa loop in its sought-object form — breaking the root's habit of shopping for itself. Equanimity addresses the hetu-ārammaṇa interaction in its arrived-object form — ensuring that uninvited objects meet a mind conditioned by wholesome roots."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 7,
+          "content": {
+            "prompt": "Think of a recent situation where an uninvited object arrived — bad news, an unexpected interaction, a sudden disruption. Describe how you took it.\n\nNow ask: what root was active *before* the object arrived? How did that pre-existing root shape your response to the uninvited object? If the root had been different — if you'd been in a calmer or more agitated state before the disruption — how might the same object have conditioned you differently?",
+            "sampleAnswer": "This exercise tests whether the sought/arrived distinction has practical traction. The key insight most people arrive at: they can't change the arrived object, but they can recognize that their response to it was largely determined by the root already active. This isn't about blaming yourself for having the 'wrong' root — it's about seeing that the root-quality you cultivate in ordinary moments determines how you meet the extraordinary ones. The person who discovers that their reaction to bad news was mostly about the root they were already in, rather than the badness of the news, has found an actionable lever."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 8,
+          "content": {
+            "body": "The sought/arrived distinction completes the practical picture of hetu and ārammaṇa:\n\n**Sought objects** are selected by the active root. The root shops for itself. Intervention point: investigate the root driving the search.\n\n**Arrived objects** interact with whatever root is already present. The root you've cultivated determines the response. Intervention point: the quality of mind you develop habitually.\n\n**Both types** condition the mind directed toward them (ārammaṇa) and both interact with the pervading root (hetu). The framework gives you precision about where to look and what to do — not willpower, but structural understanding.\n\nThe final sequence of this course pulls everything together and examines what these two modes reveal about the nature of conditionality itself."
+          }
+        }
+      ]
+    },
+    {
+      "title": "What Two Modes Reveal",
+      "slug": "what-two-modes-reveal",
+      "description": "Synthesis: what hetu and ārammaṇa together reveal about the nature of conditionality, and what lies ahead.",
+      "sortOrder": 6,
+      "published": true,
+      "steps": [
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 1,
+          "content": {
+            "body": "You've spent this course with two modes of conditionality: hetu-paccaya (root condition) and ārammaṇa-paccaya (object condition). Before we move on, it's worth stepping back and seeing what these two modes, taken together, have already revealed about how conditionality works.\n\nThe most important revelation: **conditionality has structure.**\n\nWhen you started the Dependent Origination series, conditionality might have seemed like a single thing — X conditions Y. Now you've seen that the *way* X conditions Y matters enormously. A root conditioning from within is doing something fundamentally different from an object conditioning from without. Both are conditioning. But they're different modes of conditioning, with different dynamics, different signatures, and different intervention points.\n\nThis means that understanding *that* something is conditioned is only the first step. Understanding *how* it's conditioned — through which modes — is where precision and practical power come from."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 2,
+          "content": {
+            "body": "## The Billiard Ball Is Dead\n\nConsider the model of causation most people carry: one thing causes another, like a billiard ball striking a second ball. The first ball moves; the second ball moves. Cause, then effect. Done.\n\nHetu and ārammaṇa together demolish this model.\n\n**Hetu** shows that some conditioning is pervading, not pushing. The root doesn't strike a mental state and move on. It saturates the mental state. The 'cause' is inside the 'effect.'\n\n**Ārammaṇa** shows that some conditioning operates by being attended to, not by doing anything. The object doesn't push the mind. The mind takes the object, and in the taking, is shaped. The 'cause' is passive.\n\n**Their interaction** shows that conditioning can be bidirectional and simultaneous. The root selects the object; the object strengthens the root. Neither is 'first.' There is no billiard ball.\n\nThis is not a minor philosophical refinement. It's a completely different model of how experience is structured. And you've only seen two modes. There are twenty-four."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 3,
+          "content": {
+            "prompt": "Someone says: \"My childhood trauma caused my anxiety.\" This is a reasonable thing to say. But from the paccaya perspective, what's missing from this account?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Nothing is missing — trauma does cause anxiety, and the paccaya framework doesn't change that.",
+                "isCorrect": false,
+                "explanation": "The paccaya framework doesn't deny that trauma is a condition for anxiety. It asks: *how* is it a condition? The statement 'trauma caused anxiety' uses the billiard-ball model — one event causing one outcome. But the actual conditioning is more complex. The trauma may function as hetu (a root-quality pervading subsequent experience), as ārammaṇa (a memory-object that the mind returns to, conditioning the mind each time), or as other modes you'll learn later (upanissaya — decisive support, purejāta — pre-nascence condition). Each mode implies a different dynamic and a different intervention point. 'Trauma caused anxiety' is true but imprecise — and the imprecision matters practically."
+              },
+              {
+                "id": "b",
+                "text": "The account is too simple — it names the 'what' (trauma → anxiety) but not the 'how.' The trauma might be conditioning as a root (pervading present experience), as an object (a memory the mind keeps returning to), or through other modes — and each implies different dynamics.",
+                "isCorrect": true,
+                "explanation": "This is the central insight of the paccaya framework applied to a real situation. Saying 'trauma caused anxiety' is like saying 'the food nourished the body' — true, but it tells you nothing about whether the nourishment came from protein, carbohydrates, vitamins, or something else. The specificity matters because different modes of conditioning respond to different interventions. If the trauma is functioning primarily as hetu (a root pervading present experience), the work is at the root level. If it's functioning primarily as ārammaṇa (a memory-object the mind keeps taking), the work might be at the object level — changing the mind's relationship to the memory."
+              },
+              {
+                "id": "c",
+                "text": "The person is giving themselves an excuse by blaming the past for present problems.",
+                "isCorrect": false,
+                "explanation": "This response is itself conditioned — probably by an aversive root toward what's perceived as excuse-making. The paccaya framework isn't interested in blame or excuses. It's interested in precision. Understanding how the trauma conditions the anxiety isn't about excusing the anxiety. It's about seeing the conditioning clearly enough to work with it. The person who says 'my childhood trauma caused my anxiety' is identifying a real condition. The paccaya framework helps them understand *how* that condition operates, which is where practical work becomes possible."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 4,
+          "content": {
+            "body": "## What This Means for the Path\n\nThe Dependent Origination series showed you that experience is conditioned — thoroughly, completely, without exception. This series is showing you that the conditioning itself has structure.\n\nWhy does the structure matter?\n\nBecause the path — the practice of reducing suffering — depends on knowing where and how to intervene in conditioned processes. And you can't intervene precisely if you only have one model of causation.\n\nIf you think all conditioning is billiard-ball causation, your only strategy is to find the first ball and stop it from moving. That leads to a futile search for root causes, a belief that fixing the original trauma or the original mistake will cascade into healing.\n\nBut if you see that conditioning operates through multiple simultaneous modes, your strategies multiply. You can work at the root level (hetu). You can work at the object level (ārammaṇa). You can — as future courses will show — work at the level of proximity, co-arising, decisive support, nutriment, and more.\n\nThe Paṭṭhāna isn't an intellectual exercise. It's a map of intervention points."
+          }
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "sortOrder": 5,
+          "content": {
+            "prompt": "A practitioner says: \"I've been trying to get rid of my anger for years, but it keeps coming back. I think I need to find the original cause and resolve it.\"\n\nFrom the paccaya perspective, what would be the most helpful reframe?",
+            "options": [
+              {
+                "id": "a",
+                "text": "They should stop trying to get rid of anger and just accept it as part of who they are.",
+                "isCorrect": false,
+                "explanation": "Resignation isn't what the paccaya framework offers. The anger is conditioned — it arises from specific conditions through specific modes. Accepting it as permanent or inherent contradicts the very nature of conditioned phenomena. What the framework offers instead is precision: not 'get rid of anger' or 'accept anger' but 'understand how the anger is being conditioned right now and work with the conditioning at the mode where it's most accessible.'"
+              },
+              {
+                "id": "b",
+                "text": "Instead of searching for a single root cause, they could investigate the multiple modes through which the anger is being sustained right now — the roots pervading it (hetu), the objects feeding it (ārammaṇa), and the modes they'll learn in later courses.",
+                "isCorrect": true,
+                "explanation": "This is the shift from the billiard-ball model to the paccaya model. The practitioner is looking for the first ball — the original cause. The paccaya framework says: the anger isn't being caused by one thing in the past. It's being *sustained* by multiple conditions operating through multiple modes right now. Some of those conditions are roots (what's pervading the anger from within?). Some are objects (what's the anger taking as its object, and is it seeking those objects?). Each mode is an intervention point. The practitioner doesn't need to find the origin. They need to see the present-moment conditioning clearly."
+              },
+              {
+                "id": "c",
+                "text": "They need to find a better therapist who can help them access the original trauma.",
+                "isCorrect": false,
+                "explanation": "Therapy can be valuable — but the suggestion assumes the billiard-ball model: find the original cause and fixing it will fix everything downstream. The paccaya framework offers a complementary perspective: even if there is an original trauma, the anger right now is being sustained by present-moment conditions through specific modes. Working with the original event (purejāta — pre-nascence conditioning) might be part of the picture. But so might working with the objects the anger currently seeks (ārammaṇa) or the root that currently pervades it (hetu). The framework doesn't replace therapy — it provides additional precision about where and how to work."
+              }
+            ],
+            "shuffleOptions": false
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 6,
+          "content": {
+            "body": "## The Map Ahead\n\nYou've learned two of the twenty-four modes. These two — root and object — are the most fundamental because they address the two basic directions of conditioning: from within and from without.\n\nThe courses ahead will add layers:\n\n**Course 2** examines how one moment of consciousness immediately conditions the next — the temporal dimension of conditionality, where the speed of the process itself becomes visible.\n\n**Course 3** examines co-arising and mutual conditioning — what happens when things condition each other simultaneously, breaking the assumption that one thing must come first.\n\n**Course 4** examines the difference between background support and decisive catalyst — the distinction between conditions that are always present and conditions that tip things over.\n\nEach new pair of modes will interact with the ones you've already learned. The picture gets richer, not just wider. By the end of this series, a single moment of experience — a moment of craving, a moment of insight, a moment of ordinary seeing — will reveal itself as conditioned through multiple modes simultaneously.\n\nThat visibility is not intellectual decoration. It's what the tradition calls wisdom — seeing things as they actually are, not as the simplified model suggests."
+          }
+        },
+        {
+          "type": "FREE_RESPONSE",
+          "sortOrder": 7,
+          "content": {
+            "prompt": "Look back at the Dependent Origination chain — any link, any junction that you remember well from the DO series. Pick one specific junction (e.g., feeling → craving, or ignorance → formations).\n\nNow describe that junction using the language of hetu and ārammaṇa. How might root conditioning be operating at that junction? How might object conditioning be operating? Does seeing the junction through these two modes change anything about how you understood it before?",
+            "sampleAnswer": "This exercise is designed to bridge the DO series and the Paccaya series — to show that the 'what' (DO) and the 'how' (paccaya) illuminate each other. The most common insight: learners realize that the DO formula ('with X as condition, Y arises') was compressing multiple simultaneous modes into a single arrow. Feeling → craving isn't just one thing conditioning another. The feeling functions as ārammaṇa (the object craving takes), the underlying root pervades the craving (hetu), and both are operating at once. If this exercise felt forced or confusing, that's useful information — it may mean the connection between the two frameworks isn't clear yet, and it's worth revisiting as you learn more modes."
+          }
+        },
+        {
+          "type": "INSTRUCTION",
+          "sortOrder": 8,
+          "content": {
+            "body": "This completes the first course in the Paccaya series.\n\n**Hetu-paccaya** — root condition. Conditioning from within. The root pervades its product. The character of the root is present in everything that grows from it. The six roots: greed, aversion, delusion, and their wholesome counterparts — generosity, goodwill, wisdom.\n\n**Ārammaṇa-paccaya** — object condition. Conditioning from without. The object shapes the mind directed toward it. What you attend to conditions the quality of your attending.\n\n**Their interaction:** The root selects the object. The object feeds the root. Sought objects are driven by roots; arrived objects meet whatever root is active. Both patterns are observable. Both patterns offer intervention points.\n\n**What they reveal:** Conditionality has structure. Different modes work differently. Precision about the mode is where practical power comes from.\n\nThe examination continues with Course 2: **anantara** and **samanantara** — the immediate next moment. How one moment of consciousness makes way for and gives rise to the next."
+          }
+        }
+      ]
+    }
+  ]
+}
