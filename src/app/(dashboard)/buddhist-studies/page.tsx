@@ -61,7 +61,30 @@ export default function BuddhistStudiesPage() {
                 constructed from conditions — and how seeing the conditions
                 changes everything.
               </p>
-              <span className="text-xs text-surface-600">1 course</span>
+              <span className="text-xs text-surface-600">13 courses</span>
+            </div>
+            <span className="text-surface-600 group-hover:text-accent-500 transition-colors text-lg mt-1">
+              →
+            </span>
+          </div>
+        </Link>
+
+        <Link
+          href="/courses?topic=paccaya"
+          className="block p-6 rounded-lg border border-surface-700/50 bg-surface-850 hover:border-accent-700/40 hover:bg-surface-800 transition-all group"
+        >
+          <div className="flex items-start justify-between">
+            <div>
+              <h2 className="text-lg font-serif font-medium text-surface-100 mb-2 group-hover:text-accent-300 transition-colors">
+                Modes of Conditionality — Paccaya
+              </h2>
+              <p className="text-sm text-surface-400 leading-relaxed mb-2">
+                If Dependent Origination answered &ldquo;what conditions
+                what,&rdquo; this series answers &ldquo;how.&rdquo; The
+                twenty-four modes through which conditions actually operate
+                &mdash; root, object, proximity, co-arising, and beyond.
+              </p>
+              <span className="text-xs text-surface-600">9 courses</span>
             </div>
             <span className="text-surface-600 group-hover:text-accent-500 transition-colors text-lg mt-1">
               →

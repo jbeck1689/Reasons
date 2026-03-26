@@ -22,6 +22,12 @@ const topicMeta: Record<string, { title: string; subtitle: string; backHref: str
     backHref: "/buddhist-studies",
     backLabel: "← Buddhist Studies",
   },
+  paccaya: {
+    title: "Modes of Conditionality — Paccaya",
+    subtitle: "How conditions actually operate — root, object, proximity, co-arising, and the twenty-four modes that make the chain visible.",
+    backHref: "/buddhist-studies",
+    backLabel: "← Buddhist Studies",
+  },
 };
 
 export default async function CoursesPage({
