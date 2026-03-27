@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useSession, signOut } from "next-auth/react";
+import ThemeToggle from "@/components/ui/ThemeToggle";
 
 export default function DashboardLayout({
   children,
@@ -40,10 +41,11 @@ export default function DashboardLayout({
               </Link>
             </nav>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
+            <ThemeToggle />
             {session?.user && (
               <>
-                <span className="text-xs text-surface-600">
+                <span className="text-xs text-surface-600 hidden sm:inline">
                   {session.user.name || session.user.email}
                 </span>
                 <button

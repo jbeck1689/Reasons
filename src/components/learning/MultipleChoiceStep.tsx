@@ -63,11 +63,11 @@ export function MultipleChoiceStep({
               ? "border-correct-border"
               : "border-incorrect-border";
             bg = option.isCorrect
-              ? "bg-[rgba(16,85,50,0.2)]"
-              : "bg-[rgba(120,40,30,0.2)]";
+              ? "bg-correct-bg"
+              : "bg-incorrect-bg";
           } else if (submitted && option.isCorrect) {
             borderColor = "border-correct-border/50";
-            bg = "bg-[rgba(16,85,50,0.1)]";
+            bg = "bg-correct-bg";
           } else if (!submitted && option.id === selected) {
             borderColor = "border-accent-500";
             bg = "bg-accent-950/40";
@@ -95,8 +95,8 @@ export function MultipleChoiceStep({
           <div
             className={`p-4 rounded-lg border ${
               isCorrect
-                ? "border-correct-border bg-[rgba(16,85,50,0.2)]"
-                : "border-incorrect-border bg-[rgba(120,40,30,0.2)]"
+                ? "border-correct-border bg-correct-bg"
+                : "border-incorrect-border bg-incorrect-bg"
             }`}
           >
             <div className="flex items-center gap-2 mb-2">

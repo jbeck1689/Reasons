@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${lora.variable} ${dmSans.variable}`}>
+    <html lang="en" className={`${lora.variable} ${dmSans.variable}`} suppressHydrationWarning>
       <body className="font-sans antialiased">
         <a
           href="#main-content"

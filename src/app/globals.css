@@ -2,9 +2,97 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  /* ── Dark theme (default) ── */
+  :root {
+    --surface-950: #1a1714;
+    --surface-900: #211e19;
+    --surface-850: #2a261f;
+    --surface-800: #342f27;
+    --surface-700: #443d33;
+    --surface-600: #5c5347;
+    --surface-500: #7a6f61;
+    --surface-400: #9c9083;
+    --surface-300: #bfb3a4;
+    --surface-200: #d9d0c4;
+    --surface-100: #ede7de;
+    --surface-50:  #f7f3ed;
+
+    --accent-950: #2a1f0a;
+    --accent-900: #3d2d0f;
+    --accent-800: #5c4316;
+    --accent-700: #7a5a1e;
+    --accent-600: #a07528;
+    --accent-500: #c49032;
+    --accent-400: #d4a84e;
+    --accent-300: #e0be73;
+    --accent-200: #ebd49e;
+    --accent-100: #f5e8c8;
+    --accent-50:  #faf4e8;
+
+    --correct-bg: rgba(16, 85, 50, 0.2);
+    --correct-border: #2d7a50;
+    --correct-text: #5dba82;
+
+    --incorrect-bg: rgba(120, 40, 30, 0.2);
+    --incorrect-border: #9c4a3a;
+    --incorrect-text: #d4766a;
+
+    --selection-bg: rgba(196, 144, 50, 0.3);
+    --selection-text: #ede7de;
+    --focus-ring: #c49032;
+    --scrollbar-track: #211e19;
+    --scrollbar-thumb: #443d33;
+    --scrollbar-thumb-hover: #5c5347;
+  }
+
+  /* ── Light theme ── */
+  .light {
+    --surface-950: #f7f3ed;
+    --surface-900: #f0ebe3;
+    --surface-850: #e8e1d7;
+    --surface-800: #ddd5c9;
+    --surface-700: #cdc3b5;
+    --surface-600: #b0a594;
+    --surface-500: #8c8172;
+    --surface-400: #6b6155;
+    --surface-300: #4d453c;
+    --surface-200: #362f28;
+    --surface-100: #241f1a;
+    --surface-50:  #1a1714;
+
+    --accent-950: #faf4e8;
+    --accent-900: #f5e8c8;
+    --accent-800: #ebd49e;
+    --accent-700: #d4a84e;
+    --accent-600: #a07528;
+    --accent-500: #8a6520;
+    --accent-400: #7a5a1e;
+    --accent-300: #5c4316;
+    --accent-200: #3d2d0f;
+    --accent-100: #2a1f0a;
+    --accent-50:  #1a1408;
+
+    --correct-bg: rgba(16, 120, 60, 0.12);
+    --correct-border: #3a9e66;
+    --correct-text: #1a7a42;
+
+    --incorrect-bg: rgba(180, 50, 30, 0.1);
+    --incorrect-border: #c45a4a;
+    --incorrect-text: #a83828;
+
+    --selection-bg: rgba(160, 117, 40, 0.25);
+    --selection-text: #241f1a;
+    --focus-ring: #8a6520;
+    --scrollbar-track: #e8e1d7;
+    --scrollbar-thumb: #cdc3b5;
+    --scrollbar-thumb-hover: #b0a594;
+  }
+}
+
 body {
-  color: #bfb3a4;
-  background: #1a1714;
+  color: var(--surface-300);
+  background: var(--surface-950);
 }
 
 /* Subtle warm scrollbar */
@@ -12,24 +100,24 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #211e19;
+  background: var(--scrollbar-track);
 }
 ::-webkit-scrollbar-thumb {
-  background: #443d33;
+  background: var(--scrollbar-thumb);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #5c5347;
+  background: var(--scrollbar-thumb-hover);
 }
 
 /* Selection color */
 ::selection {
-  background: rgba(196, 144, 50, 0.3);
-  color: #ede7de;
+  background: var(--selection-bg);
+  color: var(--selection-text);
 }
 
-/* Focus ring for accessibility — amber instead of teal */
+/* Focus ring for accessibility */
 *:focus-visible {
-  outline: 2px solid #c49032;
+  outline: 2px solid var(--focus-ring);
   outline-offset: 2px;
 }

@@ -9,46 +9,42 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Warm charcoal backgrounds
         surface: {
-          950: "#1a1714", // deepest bg
-          900: "#211e19", // primary bg
-          850: "#2a261f", // elevated surface
-          800: "#342f27", // cards, inputs
-          700: "#443d33", // borders, subtle dividers
-          600: "#5c5347", // muted borders, hover states
-          500: "#7a6f61", // placeholder text
-          400: "#9c9083", // secondary text
-          300: "#bfb3a4", // body text
-          200: "#d9d0c4", // primary text
-          100: "#ede7de", // headings, emphasis
-          50: "#f7f3ed",  // brightest text
+          950: "var(--surface-950)",
+          900: "var(--surface-900)",
+          850: "var(--surface-850)",
+          800: "var(--surface-800)",
+          700: "var(--surface-700)",
+          600: "var(--surface-600)",
+          500: "var(--surface-500)",
+          400: "var(--surface-400)",
+          300: "var(--surface-300)",
+          200: "var(--surface-200)",
+          100: "var(--surface-100)",
+          50: "var(--surface-50)",
         },
-        // Amber/gold accent
         accent: {
-          950: "#2a1f0a",
-          900: "#3d2d0f",
-          800: "#5c4316",
-          700: "#7a5a1e",
-          600: "#a07528",
-          500: "#c49032",
-          400: "#d4a84e",
-          300: "#e0be73",
-          200: "#ebd49e",
-          100: "#f5e8c8",
-          50: "#faf4e8",
+          950: "var(--accent-950)",
+          900: "var(--accent-900)",
+          800: "var(--accent-800)",
+          700: "var(--accent-700)",
+          600: "var(--accent-600)",
+          500: "var(--accent-500)",
+          400: "var(--accent-400)",
+          300: "var(--accent-300)",
+          200: "var(--accent-200)",
+          100: "var(--accent-100)",
+          50: "var(--accent-50)",
         },
-        // Keep emerald for correct answers
         correct: {
-          bg: "rgba(16, 85, 50, 0.2)",
-          border: "#2d7a50",
-          text: "#5dba82",
+          bg: "var(--correct-bg)",
+          border: "var(--correct-border)",
+          text: "var(--correct-text)",
         },
-        // Keep red-ish for incorrect (but warmer)
         incorrect: {
-          bg: "rgba(120, 40, 30, 0.2)",
-          border: "#9c4a3a",
-          text: "#d4766a",
+          bg: "var(--incorrect-bg)",
+          border: "var(--incorrect-border)",
+          text: "var(--incorrect-text)",
         },
       },
       fontFamily: {
