@@ -106,7 +106,7 @@ export function SequencePlayer({ sequence }: SequenceProps) {
           <div className="flex gap-4 justify-center pt-2">
             <Link
               href={`/courses/${sequence.course.id}`}
-              className="px-6 py-2.5 bg-accent-600 hover:bg-accent-500 text-surface-950 font-medium rounded transition-colors"
+              className="px-6 py-2.5 bg-accent-600 hover:bg-accent-500 text-surface-950 font-medium hover:shadow-lg hover:shadow-accent-600/20 rounded-lg transition-all"
             >
               Back to Course
             </Link>
@@ -115,7 +115,7 @@ export function SequencePlayer({ sequence }: SequenceProps) {
                 setCurrentStepIndex(0);
                 setCompleted(false);
               }}
-              className="px-6 py-2.5 border border-surface-700 hover:border-surface-500 text-surface-300 font-medium rounded transition-colors"
+              className="px-6 py-2.5 border border-surface-700 hover:border-surface-500 text-surface-300 font-medium rounded-lg transition-all"
             >
               Restart
             </button>
@@ -138,7 +138,7 @@ export function SequencePlayer({ sequence }: SequenceProps) {
   return (
     <>
       {/* Sub-header with progress */}
-      <div className="sticky top-[49px] bg-surface-900/95 backdrop-blur-sm border-b border-surface-700/50 z-10">
+      <div className="sticky top-[53px] bg-surface-900/90 backdrop-blur-md border-b border-surface-700/30 z-10">
         <div className="max-w-2xl mx-auto px-6 py-3">
           <div className="flex items-center justify-between mb-2">
             <div className="flex items-center gap-3">
@@ -186,7 +186,7 @@ export function SequencePlayer({ sequence }: SequenceProps) {
             aria-label={`Sequence progress: ${Math.round(progress)}%`}
           >
             <div
-              className="h-full bg-accent-600 rounded-full transition-all duration-500 ease-out"
+              className="h-full bg-accent-600 rounded-full transition-all duration-500 ease-out progress-glow"
               style={{ width: `${progress}%` }}
             />
           </div>
@@ -197,7 +197,7 @@ export function SequencePlayer({ sequence }: SequenceProps) {
       <div
         ref={stepContentRef}
         tabIndex={-1}
-        className="max-w-2xl mx-auto px-6 py-8 outline-none"
+        className="max-w-2xl mx-auto px-6 py-8 outline-none animate-fade-in"
         aria-label={`Step ${currentStepIndex + 1} of ${steps.length}: ${stepLabel}`}
       >
         <div className="mb-4">

@@ -40,10 +40,10 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="w-full max-w-sm space-y-8">
+    <div className="w-full max-w-sm space-y-8 animate-fade-in">
       <div className="text-center">
-        <div className="text-3xl font-light text-accent-400 mb-4">◆</div>
-        <h1 className="text-2xl font-serif font-semibold text-surface-100">
+        <div className="text-3xl font-light text-accent-400 mb-4 heading-glow">◆</div>
+        <h1 className="text-2xl font-serif font-semibold text-surface-100 heading-glow">
           Create an account
         </h1>
         <p className="text-sm text-surface-500 mt-2">
@@ -107,7 +107,7 @@ export default function RegisterPage() {
         <button
           type="submit"
           disabled={loading}
-          className={`w-full py-2.5 font-medium rounded transition-colors ${
+          className={`w-full py-2.5 font-medium rounded-lg transition-all ${
             loading
               ? "bg-surface-700 text-surface-500 cursor-not-allowed"
               : "bg-accent-600 hover:bg-accent-500 text-surface-950"

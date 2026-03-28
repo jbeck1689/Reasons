@@ -43,7 +43,7 @@ export function Markdown({ text }: { text: string }) {
       elements.push(
         <blockquote
           key={`bq-${elements.length}`}
-          className="border-l-4 border-accent-600/60 pl-4 py-2 my-3 italic text-surface-300 bg-surface-850 rounded-r"
+          className="border-l-4 blockquote-border pl-4 py-2 my-4 italic text-surface-400 bg-surface-850/50 rounded-r-lg"
         >
           {blockquote.map((l, i) => (
             <span key={i}>
@@ -71,7 +71,7 @@ export function Markdown({ text }: { text: string }) {
       elements.push(
         <h2
           key={i}
-          className="text-xl font-serif font-semibold text-accent-400 mt-5 mb-2"
+          className="text-xl font-serif font-semibold text-accent-400 mt-6 mb-2 heading-glow"
         >
           {renderInline(line.slice(3))}
         </h2>

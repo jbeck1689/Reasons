@@ -57,7 +57,7 @@ export default async function ProgressPage() {
           </p>
           <Link
             href="/courses"
-            className="px-6 py-2.5 bg-accent-600 hover:bg-accent-500 text-surface-950 font-medium rounded transition-colors"
+            className="px-6 py-2.5 bg-accent-600 hover:bg-accent-500 text-surface-950 font-medium hover:shadow-lg hover:shadow-accent-600/20 rounded-lg transition-all"
           >
             Browse Courses
           </Link>
@@ -84,7 +84,7 @@ export default async function ProgressPage() {
             return (
               <div
                 key={course.id}
-                className="border border-surface-700/50 rounded-lg p-5 bg-surface-850"
+                className="border border-surface-700/30 rounded-xl p-5 bg-surface-900/50"
               >
                 <div className="flex items-start justify-between mb-3">
                   <Link
@@ -99,7 +99,7 @@ export default async function ProgressPage() {
                 {/* Progress bar */}
                 <div className="h-1.5 bg-surface-800 rounded-full overflow-hidden mb-4">
                   <div
-                    className="h-full bg-accent-600 rounded-full transition-all"
+                    className="h-full bg-accent-600 rounded-full transition-all progress-glow"
                     style={{ width: `${percent}%` }}
                   />
                 </div>

@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <div className="max-w-2xl mx-auto px-6 py-16">
-      <div className="text-center mb-12">
-        <div className="text-accent-400 text-2xl mb-4">◆</div>
-        <h1 className="text-3xl font-serif font-semibold text-surface-100 mb-3">
+    <div className="max-w-2xl mx-auto px-6 py-16 animate-fade-in">
+      <div className="text-center mb-14">
+        <div className="text-accent-400 text-2xl mb-4 heading-glow">◆</div>
+        <h1 className="text-3xl font-serif font-semibold text-surface-100 mb-3 heading-glow tracking-tight">
           What are you working on?
         </h1>
         <p className="text-surface-500 text-sm max-w-md mx-auto leading-relaxed">
@@ -17,7 +17,7 @@ export default function HomePage() {
         {/* Practical Reasoning */}
         <Link
           href="/courses?topic=reasoning"
-          className="block p-6 rounded-lg border border-surface-700/50 bg-surface-850 hover:border-accent-700/40 hover:bg-surface-800 transition-all group"
+          className="block p-6 rounded-xl border border-surface-700/30 bg-surface-900/50 hover:border-accent-700/30 transition-all group card-hover"
         >
           <div className="flex items-start justify-between">
             <div>
@@ -33,7 +33,7 @@ export default function HomePage() {
                 Courses on fallacies, biases, rhetoric, and decision-making
               </span>
             </div>
-            <span className="text-surface-600 group-hover:text-accent-500 transition-colors text-lg mt-1">
+            <span className="text-surface-700 group-hover:text-accent-500 transition-colors text-lg mt-1 group-hover:translate-x-0.5 transform transition-transform">
               →
             </span>
           </div>
@@ -42,7 +42,7 @@ export default function HomePage() {
         {/* Buddhist Studies */}
         <Link
           href="/buddhist-studies"
-          className="block p-6 rounded-lg border border-surface-700/50 bg-surface-850 hover:border-accent-700/40 hover:bg-surface-800 transition-all group"
+          className="block p-6 rounded-xl border border-surface-700/30 bg-surface-900/50 hover:border-accent-700/30 transition-all group card-hover"
         >
           <div className="flex items-start justify-between">
             <div>
@@ -58,7 +58,7 @@ export default function HomePage() {
                 Courses on dukkha, the mechanics of craving, cessation, and the path
               </span>
             </div>
-            <span className="text-surface-600 group-hover:text-accent-500 transition-colors text-lg mt-1">
+            <span className="text-surface-700 group-hover:text-accent-500 transition-colors text-lg mt-1 group-hover:translate-x-0.5 transform transition-transform">
               →
             </span>
           </div>

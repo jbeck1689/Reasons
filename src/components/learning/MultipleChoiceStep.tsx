@@ -122,7 +122,7 @@ export function MultipleChoiceStep({
           <button
             onClick={handleSubmit}
             disabled={selected === null}
-            className={`px-6 py-2.5 font-medium rounded transition-colors ${
+            className={`px-6 py-2.5 font-medium rounded-lg transition-all ${
               selected === null
                 ? "bg-surface-700 text-surface-500 cursor-not-allowed"
                 : "bg-accent-600 hover:bg-accent-500 text-surface-950"
@@ -133,7 +133,7 @@ export function MultipleChoiceStep({
         ) : (
           <button
             onClick={handleNext}
-            className="px-6 py-2.5 bg-accent-600 hover:bg-accent-500 text-surface-950 font-medium rounded transition-colors"
+            className="px-6 py-2.5 bg-accent-600 hover:bg-accent-500 text-surface-950 font-medium hover:shadow-lg hover:shadow-accent-600/20 rounded-lg transition-all"
           >
             Continue
           </button>

@@ -26,7 +26,7 @@ export default function BuddhistStudiesPage() {
       <div className="space-y-4">
         <Link
           href="/courses?topic=four-noble-truths"
-          className="block p-6 rounded-lg border border-surface-700/50 bg-surface-850 hover:border-accent-700/40 hover:bg-surface-800 transition-all group"
+          className="block p-6 rounded-xl border border-surface-700/30 bg-surface-900/50 hover:border-accent-700/30 transition-all group card-hover"
         >
           <div className="flex items-start justify-between">
             <div>
@@ -40,7 +40,7 @@ export default function BuddhistStudiesPage() {
               </p>
               <span className="text-xs text-surface-600">4 courses</span>
             </div>
-            <span className="text-surface-600 group-hover:text-accent-500 transition-colors text-lg mt-1">
+            <span className="text-surface-700 group-hover:text-accent-500 transition-colors text-lg mt-1 group-hover:translate-x-0.5 transform transition-transform">
               →
             </span>
           </div>
@@ -48,7 +48,7 @@ export default function BuddhistStudiesPage() {
 
         <Link
           href="/courses?topic=dependent-origination"
-          className="block p-6 rounded-lg border border-surface-700/50 bg-surface-850 hover:border-accent-700/40 hover:bg-surface-800 transition-all group"
+          className="block p-6 rounded-xl border border-surface-700/30 bg-surface-900/50 hover:border-accent-700/30 transition-all group card-hover"
         >
           <div className="flex items-start justify-between">
             <div>
@@ -63,7 +63,7 @@ export default function BuddhistStudiesPage() {
               </p>
               <span className="text-xs text-surface-600">13 courses</span>
             </div>
-            <span className="text-surface-600 group-hover:text-accent-500 transition-colors text-lg mt-1">
+            <span className="text-surface-700 group-hover:text-accent-500 transition-colors text-lg mt-1 group-hover:translate-x-0.5 transform transition-transform">
               →
             </span>
           </div>
@@ -71,7 +71,7 @@ export default function BuddhistStudiesPage() {
 
         <Link
           href="/courses?topic=paccaya"
-          className="block p-6 rounded-lg border border-surface-700/50 bg-surface-850 hover:border-accent-700/40 hover:bg-surface-800 transition-all group"
+          className="block p-6 rounded-xl border border-surface-700/30 bg-surface-900/50 hover:border-accent-700/30 transition-all group card-hover"
         >
           <div className="flex items-start justify-between">
             <div>
@@ -86,7 +86,7 @@ export default function BuddhistStudiesPage() {
               </p>
               <span className="text-xs text-surface-600">9 courses</span>
             </div>
-            <span className="text-surface-600 group-hover:text-accent-500 transition-colors text-lg mt-1">
+            <span className="text-surface-700 group-hover:text-accent-500 transition-colors text-lg mt-1 group-hover:translate-x-0.5 transform transition-transform">
               →
             </span>
           </div>

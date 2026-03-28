@@ -8,6 +8,7 @@ const categoryBackLinks: Record<string, { href: string; label: string }> = {
   reasoning: { href: "/courses?topic=reasoning", label: "← Practical Reasoning" },
   "four-noble-truths": { href: "/courses?topic=four-noble-truths", label: "← Four Noble Truths" },
   "dependent-origination": { href: "/courses?topic=dependent-origination", label: "← Dependent Origination" },
+  paccaya: { href: "/courses?topic=paccaya", label: "← Modes of Conditionality" },
 };
 
 export default async function CourseDetailPage({
@@ -60,7 +61,7 @@ export default async function CourseDetailPage({
           <Link
             key={seq.id}
             href={`/learn/${seq.id}`}
-            className="block p-4 rounded-lg border border-surface-700/50 bg-surface-850 hover:border-accent-700/40 hover:bg-surface-800 transition-all"
+            className="block p-4 rounded-xl border border-surface-700/30 bg-surface-900/50 hover:border-accent-700/30 transition-all card-hover"
           >
             <div className="flex items-start gap-4">
               <div className="w-7 h-7 rounded-full bg-accent-900/60 border border-accent-700/50 flex items-center justify-center flex-shrink-0 mt-0.5">
