@@ -68,6 +68,12 @@ export async function middleware(request: NextRequest) {
       loginUrl.searchParams.set("callbackUrl", pathname);
       return NextResponse.redirect(loginUrl);
     }
+
+    // Owner lock — only this email can access the app
+    const ownerEmail = "psilosophicc@gmail.com";
+    if (token.email?.toLowerCase() !== ownerEmail) {
+      return NextResponse.redirect(new URL("/private", request.url));
+    }
   }
 
   return NextResponse.next();
