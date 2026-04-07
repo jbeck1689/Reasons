@@ -9,6 +9,7 @@ const categoryBackLinks: Record<string, { href: string; label: string }> = {
   "four-noble-truths": { href: "/courses?topic=four-noble-truths", label: "← Four Noble Truths" },
   "dependent-origination": { href: "/courses?topic=dependent-origination", label: "← Dependent Origination" },
   paccaya: { href: "/courses?topic=paccaya", label: "← Modes of Conditionality" },
+  "gradual-training": { href: "/courses?topic=gradual-training", label: "← The Gradual Training" },
 };
 
 export default async function CourseDetailPage({

@@ -91,6 +91,30 @@ export default function BuddhistStudiesPage() {
             </span>
           </div>
         </Link>
+
+        <Link
+          href="/courses?topic=gradual-training"
+          className="block p-6 rounded-xl border border-surface-700/30 bg-surface-900/50 hover:border-accent-700/30 transition-all group card-hover"
+        >
+          <div className="flex items-start justify-between">
+            <div>
+              <h2 className="text-lg font-serif font-medium text-surface-100 mb-2 group-hover:text-accent-300 transition-colors">
+                The Gradual Training — Anupubbasikkhā
+              </h2>
+              <p className="text-sm text-surface-400 leading-relaxed mb-2">
+                The Buddha&apos;s step-by-step practice path, read through the
+                early suttas without commentary or mystification. Drawing on
+                Ñāṇamoli&apos;s translations and Ñāṇavīra&apos;s radical
+                present-moment interpretation &mdash; philosophy as practice
+                manual.
+              </p>
+              <span className="text-xs text-surface-600">6 courses</span>
+            </div>
+            <span className="text-surface-700 group-hover:text-accent-500 transition-colors text-lg mt-1 group-hover:translate-x-0.5 transform transition-transform">
+              →
+            </span>
+          </div>
+        </Link>
       </div>
     </div>
   );

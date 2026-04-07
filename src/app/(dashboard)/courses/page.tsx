@@ -28,6 +28,12 @@ const topicMeta: Record<string, { title: string; subtitle: string; backHref: str
     backHref: "/buddhist-studies",
     backLabel: "← Buddhist Studies",
   },
+  "gradual-training": {
+    title: "The Gradual Training — Anupubbasikkhā",
+    subtitle: "The practice path of the early suttas — demystified, philosophically grounded, read for the modern practitioner through Ñāṇamoli and Ñāṇavīra.",
+    backHref: "/buddhist-studies",
+    backLabel: "← Buddhist Studies",
+  },
 };
 
 export default async function CoursesPage({
