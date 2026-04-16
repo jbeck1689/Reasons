@@ -117,19 +117,19 @@ export default function BuddhistStudiesPage() {
         </Link>
 
         <Link
-          href="/courses?topic=gradual-talk"
+          href="/courses?topic=slow-reading"
           className="block p-6 rounded-xl border border-surface-700/30 bg-surface-900/50 hover:border-accent-700/30 transition-all group card-hover"
         >
           <div className="flex items-start justify-between">
             <div>
               <h2 className="text-lg font-serif font-medium text-surface-100 mb-2 group-hover:text-accent-300 transition-colors">
-                Gradual Talk — Anupubbikathā
+                Slow Reading
               </h2>
               <p className="text-sm text-surface-400 leading-relaxed mb-2">
-                The Buddha&apos;s preparatory discourse &mdash; the sequence of
-                reflections he offered to new listeners before the four noble
-                truths. Extended contemplative reading rather than
-                step-by-step training. Prose that prepares the ground.
+                Sustained contemplative prose on the same subjects as the
+                other series, in a different register. Extended readings
+                rather than stage-by-stage courses &mdash; written to be sat
+                with, returned to, and read slowly.
               </p>
               <span className="text-xs text-surface-600">1 course</span>
             </div>

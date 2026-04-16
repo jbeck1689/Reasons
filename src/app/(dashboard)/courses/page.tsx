@@ -34,9 +34,9 @@ const topicMeta: Record<string, { title: string; subtitle: string; backHref: str
     backHref: "/buddhist-studies",
     backLabel: "← Buddhist Studies",
   },
-  "gradual-talk": {
-    title: "Gradual Talk — Anupubbikathā",
-    subtitle: "Extended contemplative reading on the preparatory discourses — prose that prepares the ground rather than drilling technique.",
+  "slow-reading": {
+    title: "Slow Reading",
+    subtitle: "Sustained contemplative prose on the same subjects as the other series, in a different register. Written to be sat with, returned to, read slowly.",
     backHref: "/buddhist-studies",
     backLabel: "← Buddhist Studies",
   },

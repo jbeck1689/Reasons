@@ -10,7 +10,7 @@ const categoryBackLinks: Record<string, { href: string; label: string }> = {
   "dependent-origination": { href: "/courses?topic=dependent-origination", label: "← Dependent Origination" },
   paccaya: { href: "/courses?topic=paccaya", label: "← Modes of Conditionality" },
   "gradual-training": { href: "/courses?topic=gradual-training", label: "← The Gradual Training" },
-  "gradual-talk": { href: "/courses?topic=gradual-talk", label: "← Gradual Talk" },
+  "slow-reading": { href: "/courses?topic=slow-reading", label: "← Slow Reading" },
 };
 
 export default async function CourseDetailPage({
