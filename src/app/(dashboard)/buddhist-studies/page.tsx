@@ -131,7 +131,7 @@ export default function BuddhistStudiesPage() {
                 rather than stage-by-stage courses &mdash; written to be sat
                 with, returned to, and read slowly.
               </p>
-              <span className="text-xs text-surface-600">1 course</span>
+              <span className="text-xs text-surface-600">6 courses</span>
             </div>
             <span className="text-surface-700 group-hover:text-accent-500 transition-colors text-lg mt-1 group-hover:translate-x-0.5 transform transition-transform">
               →
