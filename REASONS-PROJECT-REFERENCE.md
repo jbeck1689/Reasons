@@ -459,6 +459,7 @@ Foundation, auth, content pipeline, security hardening, Vercel deployment.
 
 ## Token Efficiency Rules for Claude
 
+0. **At the start of every session, before any work, read `REASONS-PROJECT-REFERENCE.md` from the repo.** Clone the repo if not already present (`git clone https://github.com/jbeck1689/Public-Reasons.git /tmp/Reasons`), then read the file. This is the state. Do not proceed from memory or chat history.
 1. This document is the state. Don't scan chat history unless explicitly asked.
 2. Don't re-read import scripts, validation schemas, or routing each session.
 3. When writing content: know the format, write to it, validate, push. One pass.
@@ -467,6 +468,7 @@ Foundation, auth, content pipeline, security hardening, Vercel deployment.
 6. Don't update deploy-all.sh for each new course. Individual imports.
 7. Slow Reading uses a different validation check than the standard courses — see below.
 8. Do not draw on personal conversations or experiences in Slow Reading authorship.
+9. At the end of any session where something meaningful changed, update this file and push it.
 
 ---
 
