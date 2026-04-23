@@ -39,7 +39,7 @@ export default function HomePage() {
           </div>
         </Link>
 
-        {/* Buddhist Studies */}
+        {/* Buddhism */}
         <Link
           href="/buddhist-studies"
           className="block p-6 rounded-xl border border-surface-700/30 bg-surface-900/50 hover:border-accent-700/30 transition-all group card-hover"
@@ -47,7 +47,7 @@ export default function HomePage() {
           <div className="flex items-start justify-between">
             <div>
               <h2 className="text-xl font-serif font-medium text-surface-100 mb-2 group-hover:text-accent-300 transition-colors">
-                Buddhist Studies &amp; Critical Thinking
+                Buddhism
               </h2>
               <p className="text-sm text-surface-400 leading-relaxed mb-3">
                 The four noble truths as a diagnostic framework for suffering.
