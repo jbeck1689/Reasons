@@ -14,31 +14,31 @@ const topicMeta: Record<string, { title: string; subtitle: string; backHref: str
     title: "The Four Noble Truths",
     subtitle: "A diagnostic framework for suffering — examined through critical thinking, not belief.",
     backHref: "/buddhist-studies",
-    backLabel: "← Buddhist Studies",
+    backLabel: "← Buddhism",
   },
   "dependent-origination": {
     title: "Dependent Origination — Paṭiccasamuppāda",
     subtitle: "Nothing arises independently. The twelve-link chain that constructs experience and suffering from conditions.",
     backHref: "/buddhist-studies",
-    backLabel: "← Buddhist Studies",
+    backLabel: "← Buddhism",
   },
   paccaya: {
     title: "Modes of Conditionality — Paccaya",
     subtitle: "How conditions actually operate — root, object, proximity, co-arising, and the twenty-four modes that make the chain visible.",
     backHref: "/buddhist-studies",
-    backLabel: "← Buddhist Studies",
+    backLabel: "← Buddhism",
   },
   "gradual-training": {
     title: "The Gradual Training — Anupubbasikkhā",
     subtitle: "The practice path of the early suttas — demystified, philosophically grounded, read for the modern practitioner through Ñāṇamoli and Ñāṇavīra.",
     backHref: "/buddhist-studies",
-    backLabel: "← Buddhist Studies",
+    backLabel: "← Buddhism",
   },
   "slow-reading": {
     title: "Slow Reading",
     subtitle: "Sustained contemplative prose on the same subjects as the other series, in a different register. Written to be sat with, returned to, read slowly.",
     backHref: "/buddhist-studies",
-    backLabel: "← Buddhist Studies",
+    backLabel: "← Buddhism",
   },
 };
 
