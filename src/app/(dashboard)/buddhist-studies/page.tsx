@@ -14,7 +14,7 @@ export default function BuddhistStudiesPage() {
 
       <div className="mb-10">
         <h1 className="text-2xl font-serif font-semibold text-surface-100 mb-2">
-          Buddhist Studies &amp; Critical Thinking
+          Buddhism
         </h1>
         <p className="text-surface-500 text-sm leading-relaxed">
           The mind&apos;s patterns examined through the lens of early Buddhist
