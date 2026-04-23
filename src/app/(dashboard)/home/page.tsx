@@ -50,7 +50,8 @@ export default function HomePage() {
                 Buddhism
               </h2>
               <p className="text-sm text-surface-400 leading-relaxed mb-3">
-                The Buddha's analysis of experience — how suffering arises, how it ceases, and the training that leads out of it.
+                The Buddha&apos;s analysis of experience — how suffering arises,
+                how it ceases, and the training that leads out of it.
               </p>
               <span className="text-xs text-surface-600">
                 Four noble truths, dependent origination, modes of conditionality, and the gradual training
