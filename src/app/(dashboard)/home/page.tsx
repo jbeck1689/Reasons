@@ -50,12 +50,10 @@ export default function HomePage() {
                 Buddhism
               </h2>
               <p className="text-sm text-surface-400 leading-relaxed mb-3">
-                The four noble truths as a diagnostic framework for suffering.
-                The adversary is in here — craving, aversion, and delusion
-                operating below your awareness.
+                The Buddha's analysis of experience — how suffering arises, how it ceases, and the training that leads out of it.
               </p>
               <span className="text-xs text-surface-600">
-                Courses on dukkha, the mechanics of craving, cessation, and the path
+                Four noble truths, dependent origination, modes of conditionality, and the gradual training
               </span>
             </div>
             <span className="text-surface-700 group-hover:text-accent-500 transition-colors text-lg mt-1 group-hover:translate-x-0.5 transform transition-transform">
