@@ -1,17 +1,16 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/db";
-import { Category } from "@prisma/client";
 
 export const dynamic = "force-dynamic";
 
-const categoryBackLinks: Record<Category, { href: string; label: string }> = {
-  [Category.REASONING]: { href: "/courses?topic=reasoning", label: "← Practical Reasoning" },
-  [Category.FOUR_NOBLE_TRUTHS]: { href: "/courses?topic=four-noble-truths", label: "← Four Noble Truths" },
-  [Category.DEPENDENT_ORIGINATION]: { href: "/courses?topic=dependent-origination", label: "← Dependent Origination" },
-  [Category.PACCAYA]: { href: "/courses?topic=paccaya", label: "← Modes of Conditionality" },
-  [Category.GRADUAL_TRAINING]: { href: "/courses?topic=gradual-training", label: "← The Gradual Training" },
-  [Category.SLOW_READING]: { href: "/courses?topic=slow-reading", label: "← Slow Reading" },
+const categoryBackLinks: Record<string, { href: string; label: string }> = {
+  reasoning: { href: "/courses?topic=reasoning", label: "← Practical Reasoning" },
+  "four-noble-truths": { href: "/courses?topic=four-noble-truths", label: "← Four Noble Truths" },
+  "dependent-origination": { href: "/courses?topic=dependent-origination", label: "← Dependent Origination" },
+  paccaya: { href: "/courses?topic=paccaya", label: "← Modes of Conditionality" },
+  "gradual-training": { href: "/courses?topic=gradual-training", label: "← The Gradual Training" },
+  "slow-reading": { href: "/courses?topic=slow-reading", label: "← Slow Reading" },
 };
 
 export default async function CourseDetailPage({
