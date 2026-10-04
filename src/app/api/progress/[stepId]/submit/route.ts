@@ -31,7 +31,7 @@ export async function POST(
   const { stepId } = params;
 
   // Rate limit: 30 submissions/minute per user
-  const rateCheck = submissionLimiter.check(userId);
+  const rateCheck = await submissionLimiter.check(userId);
   if (!rateCheck.allowed) {
     return NextResponse.json(
       { error: "Too many submissions. Please slow down." },

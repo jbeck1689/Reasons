@@ -23,7 +23,7 @@ export const authOptions: NextAuthOptions = {
         const email = credentials.email.toLowerCase();
 
         // Rate limit: 5 login attempts/minute per email
-        const rateCheck = loginLimiter.check(email);
+        const rateCheck = await loginLimiter.check(email);
         if (!rateCheck.allowed) {
           // Throw so NextAuth surfaces an error to the client
           throw new Error("Too many login attempts. Please wait a minute.");
