@@ -44,7 +44,7 @@
 //   ]
 // }
 
-import { PrismaClient, StepType, Category } from "@prisma/client";
+import { PrismaClient, StepType } from "@prisma/client";
 import * as fs from "fs";
 import * as path from "path";
 import {
@@ -53,29 +53,6 @@ import {
 } from "../src/lib/validations/content";
 
 const prisma = new PrismaClient();
-
-/**
- * Content JSON uses kebab-case category slugs; the database uses the
- * Category enum (which maps to the same kebab-case strings via @map).
- */
-const CATEGORY_MAP: Record<string, Category> = {
-  reasoning: Category.REASONING,
-  "dependent-origination": Category.DEPENDENT_ORIGINATION,
-  "four-noble-truths": Category.FOUR_NOBLE_TRUTHS,
-  "gradual-training": Category.GRADUAL_TRAINING,
-  paccaya: Category.PACCAYA,
-  "slow-reading": Category.SLOW_READING,
-};
-
-function toCategory(slug: string): Category {
-  const category = CATEGORY_MAP[slug];
-  if (!category) {
-    throw new Error(
-      `Unknown category "${slug}". Valid: ${Object.keys(CATEGORY_MAP).join(", ")}`
-    );
-  }
-  return category;
-}
 
 // ─── COLORS FOR TERMINAL OUTPUT ───
 const green = (s: string) => `\x1b[32m${s}\x1b[0m`;
@@ -159,7 +136,7 @@ async function importContent(filePath: string) {
     update: {
       title: courseData.title,
       description: courseData.description,
-      category: toCategory(courseData.category),
+      category: courseData.category,
       sortOrder: courseData.sortOrder,
       published: courseData.published,
     },
@@ -167,7 +144,7 @@ async function importContent(filePath: string) {
       title: courseData.title,
       slug: courseData.slug,
       description: courseData.description,
-      category: toCategory(courseData.category),
+      category: courseData.category,
       sortOrder: courseData.sortOrder,
       published: courseData.published,
     },

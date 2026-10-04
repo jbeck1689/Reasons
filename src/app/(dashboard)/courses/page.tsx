@@ -1,18 +1,7 @@
 import Link from "next/link";
 import { prisma } from "@/lib/db";
-import { Category } from "@prisma/client";
 
 export const dynamic = "force-dynamic";
-
-/** URL slug -> Category enum. Unknown slugs yield no filter (show all). */
-const TOPIC_TO_CATEGORY: Record<string, Category> = {
-  reasoning: Category.REASONING,
-  "dependent-origination": Category.DEPENDENT_ORIGINATION,
-  "four-noble-truths": Category.FOUR_NOBLE_TRUTHS,
-  "gradual-training": Category.GRADUAL_TRAINING,
-  paccaya: Category.PACCAYA,
-  "slow-reading": Category.SLOW_READING,
-};
 
 const topicMeta: Record<string, { title: string; subtitle: string; backHref: string; backLabel: string }> = {
   reasoning: {
@@ -61,12 +50,11 @@ export default async function CoursesPage({
   // Support both topic (new) and branch (legacy) params
   const topic = searchParams.topic || searchParams.branch;
   const meta = topic ? topicMeta[topic] : null;
-  const categoryFilter = topic ? TOPIC_TO_CATEGORY[topic] : undefined;
 
   const courses = await prisma.course.findMany({
     where: {
       published: true,
-      ...(categoryFilter ? { category: categoryFilter } : {}),
+      ...(topic ? { category: topic } : {}),
     },
     orderBy: { sortOrder: "asc" },
     include: {
