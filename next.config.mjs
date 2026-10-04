@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Required for the Docker/Cloud Run deploy: `next build` emits
+  // .next/standalone/server.js, which the Dockerfile copies and runs.
+  output: "standalone",
   async headers() {
     return [
       {

@@ -1,16 +1,24 @@
 /**
- * In-memory rate limiter using a sliding window.
+ * Rate limiting with a fixed window per key (IP, email, userId, …).
  *
- * Each "limiter" is a counter per key (IP, email, userId, etc.)
- * that tracks requests within a time window. When the count exceeds
- * the limit, subsequent requests are rejected until the window slides.
+ * Backend selection:
+ * - If UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN are set, counters
+ *   live in Upstash Redis. This is the correct backend on serverless platforms
+ *   (Vercel, Cloud Run with min-instances=0), where each instance has isolated
+ *   memory and an in-memory map cannot enforce a global limit.
+ * - Otherwise it falls back to an in-memory map and logs a one-time warning.
+ *   That fallback is best-effort only (per instance) — fine for local dev,
+ *   not a real defense in production.
  *
- * For production: swap this for @upstash/ratelimit with Redis.
- * The interface stays the same — only the storage backend changes.
+ * If Redis is configured but unreachable, checks fail OPEN (allow the request)
+ * and log the error — a Redis outage should not lock every user out.
  */
 
-interface RateLimitEntry {
-  count: number;
+import { Redis } from "@upstash/redis";
+
+export interface RateLimitResult {
+  allowed: boolean;
+  remaining: number;
   resetAt: number; // Unix timestamp in ms
 }
 
@@ -21,73 +29,132 @@ interface RateLimiterConfig {
   windowSeconds: number;
 }
 
-interface RateLimitResult {
-  allowed: boolean;
-  remaining: number;
-  resetAt: number;
+interface RateLimitEntry {
+  count: number;
+  resetAt: number; // Unix timestamp in ms
 }
 
-const stores = new Map<string, Map<string, RateLimitEntry>>();
+// ─── Backend selection ───
 
-// Periodic cleanup to prevent memory leaks in long-running dev server
-const CLEANUP_INTERVAL = 60_000; // 1 minute
+let redisClient: Redis | null = null;
+let backendResolved = false;
+let fallbackWarned = false;
+
+function getRedis(): Redis | null {
+  if (!backendResolved) {
+    backendResolved = true;
+    const url = process.env.UPSTASH_REDIS_REST_URL;
+    const token = process.env.UPSTASH_REDIS_REST_TOKEN;
+    if (url && token) {
+      redisClient = new Redis({ url, token });
+    }
+  }
+  return redisClient;
+}
+
+function warnInMemoryFallback(): void {
+  if (!fallbackWarned) {
+    fallbackWarned = true;
+    console.warn(
+      "[rate-limit] UPSTASH_REDIS_REST_URL / UPSTASH_REDIS_REST_TOKEN not set — " +
+        "using in-memory rate limiting (per server instance only; ineffective on serverless)."
+    );
+  }
+}
+
+// ─── In-memory fallback (fixed window) ───
+
+const memoryStores = new Map<string, Map<string, RateLimitEntry>>();
 let cleanupStarted = false;
 
-function startCleanup() {
+function startMemoryCleanup(): void {
   if (cleanupStarted) return;
   cleanupStarted = true;
+  // setInterval does not exist in the Edge runtime (middleware) — skip there.
+  if (typeof setInterval === "undefined") return;
   setInterval(() => {
     const now = Date.now();
-    stores.forEach((store) => {
+    memoryStores.forEach((store) => {
       store.forEach((entry, key) => {
-        if (entry.resetAt < now) {
-          store.delete(key);
-        }
+        if (entry.resetAt < now) store.delete(key);
       });
     });
-  }, CLEANUP_INTERVAL);
+  }, 60_000);
 }
 
-export function createRateLimiter(name: string, config: RateLimiterConfig) {
-  if (!stores.has(name)) {
-    stores.set(name, new Map());
+function checkInMemory(
+  store: Map<string, RateLimitEntry>,
+  key: string,
+  config: RateLimiterConfig
+): RateLimitResult {
+  const now = Date.now();
+  const entry = store.get(key);
+
+  // No entry, or window expired — start a fresh window
+  if (!entry || entry.resetAt < now) {
+    const resetAt = now + config.windowSeconds * 1000;
+    store.set(key, { count: 1, resetAt });
+    return { allowed: true, remaining: config.limit - 1, resetAt };
   }
-  const store = stores.get(name)!;
-  startCleanup();
+
+  entry.count += 1;
+  if (entry.count > config.limit) {
+    return { allowed: false, remaining: 0, resetAt: entry.resetAt };
+  }
+  return {
+    allowed: true,
+    remaining: config.limit - entry.count,
+    resetAt: entry.resetAt,
+  };
+}
+
+// ─── Redis backend (fixed window via INCR + EXPIRE) ───
+
+async function checkWithRedis(
+  client: Redis,
+  name: string,
+  key: string,
+  config: RateLimiterConfig
+): Promise<RateLimitResult> {
+  const now = Date.now();
+  const redisKey = `ratelimit:${name}:${key}`;
+
+  const count = await client.incr(redisKey);
+  if (count === 1) {
+    // First hit in this window — set the expiry
+    await client.expire(redisKey, config.windowSeconds);
+  }
+  const ttl = await client.ttl(redisKey);
 
   return {
-    check(key: string): RateLimitResult {
-      const now = Date.now();
-      const entry = store.get(key);
+    allowed: count <= config.limit,
+    remaining: Math.max(config.limit - count, 0),
+    resetAt: now + Math.max(ttl, 0) * 1000,
+  };
+}
 
-      // No existing entry, or window expired — start fresh
-      if (!entry || entry.resetAt < now) {
-        store.set(key, {
-          count: 1,
-          resetAt: now + config.windowSeconds * 1000,
-        });
-        return {
-          allowed: true,
-          remaining: config.limit - 1,
-          resetAt: now + config.windowSeconds * 1000,
-        };
+// ─── Public factory ───
+
+export function createRateLimiter(name: string, config: RateLimiterConfig) {
+  if (!memoryStores.has(name)) {
+    memoryStores.set(name, new Map());
+  }
+  const store = memoryStores.get(name)!;
+  startMemoryCleanup();
+
+  return {
+    async check(key: string): Promise<RateLimitResult> {
+      const redis = getRedis();
+      if (redis) {
+        try {
+          return await checkWithRedis(redis, name, key, config);
+        } catch (err) {
+          console.error("[rate-limit] Redis error — failing open:", err);
+        }
+      } else {
+        warnInMemoryFallback();
       }
-
-      // Within window — increment
-      entry.count += 1;
-      if (entry.count > config.limit) {
-        return {
-          allowed: false,
-          remaining: 0,
-          resetAt: entry.resetAt,
-        };
-      }
-
-      return {
-        allowed: true,
-        remaining: config.limit - entry.count,
-        resetAt: entry.resetAt,
-      };
+      return checkInMemory(store, key, config);
     },
   };
 }

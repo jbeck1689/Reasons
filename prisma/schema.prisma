@@ -75,12 +75,34 @@ enum UserRole {
 
 // ─── CONTENT STRUCTURE ───
 
+// Course topic. The @map values preserve the kebab-case strings already
+// stored in the database and used in content JSON files and URLs — in
+// TypeScript you use the member names (Category.DEPENDENT_ORIGINATION).
+//
+// NOTE: this project uses `prisma db push` (no migration history). To apply
+// the String -> Category conversion against the existing database, run the
+// USING cast manually first:
+//
+//   CREATE TYPE "Category" AS ENUM
+//     ('reasoning', 'dependent-origination', 'four-noble-truths',
+//      'gradual-training', 'paccaya', 'slow-reading');
+//   ALTER TABLE "Course" ALTER COLUMN "category"
+//     TYPE "Category" USING "category"::"Category";
+enum Category {
+  REASONING             @map("reasoning")
+  DEPENDENT_ORIGINATION @map("dependent-origination")
+  FOUR_NOBLE_TRUTHS     @map("four-noble-truths")
+  GRADUAL_TRAINING      @map("gradual-training")
+  PACCAYA               @map("paccaya")
+  SLOW_READING          @map("slow-reading")
+}
+
 model Course {
   id          String   @id @default(cuid())
   title       String
   slug        String   @unique
   description String   @db.Text
-  category    String   @default("reasoning")  // "reasoning" or "buddhist-studies"
+  category    Category @default(REASONING)
   published   Boolean  @default(false)
   sortOrder   Int      @default(0)
   createdAt   DateTime @default(now())
