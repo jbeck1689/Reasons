@@ -63,9 +63,9 @@ scripts/
 
 ## Content authoring
 
-Courses are authored as JSON in `content/` and imported with `scripts/import-content.ts`, which validates against the Zod schemas in `src/lib/validations/content.ts` and upserts (safe to re-run). See `content/test-import.json` for a minimal example. Course `category` is a Prisma enum (`Category`) — the JSON uses kebab-case values (`reasoning`, `dependent-origination`, `four-noble-truths`, `gradual-training`, `paccaya`, `slow-reading`), mapped to the enum in the import script.
+Courses are authored as JSON in `content/` and imported with `scripts/import-content.ts`, which validates against the Zod schemas in `src/lib/validations/content.ts` and upserts (safe to re-run). See `content/test-import.json` for a minimal example. Course `category` is a plain String in Prisma — a `Category` enum was tried in Oct 2026 and reverted because the live database column was still text. The JSON uses kebab-case values (`reasoning`, `dependent-origination`, `four-noble-truths`, `gradual-training`, `paccaya`, `slow-reading`), validated in the import script.
 
-> **DB note:** `prisma/migrations` is intentionally empty — the schema was applied with `prisma db push`. If you convert the `Category` enum (or any type change) against the existing database, run the `USING` cast manually first, e.g.:
+> **DB note:** `prisma/migrations` is intentionally empty — the schema was applied with `prisma db push`. If you ever convert `category` to a `Category` enum (or any type change) against the existing database, run the `USING` cast manually first — *before* deploying code that expects the new type, e.g.:
 >
 > ```sql
 > CREATE TYPE "Category" AS ENUM ('reasoning', 'dependent-origination', 'four-noble-truths', 'gradual-training', 'paccaya', 'slow-reading');
